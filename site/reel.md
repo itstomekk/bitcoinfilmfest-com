@@ -27,12 +27,12 @@ screen: paper
   <section id="press" class="reel-section">
     <h2>Press</h2>
     <p>Coverage and mentions from outlets writing about Bitcoin FilmFest.</p>
-    <p class="reel-empty">Press roundup migration in progress — check back soon, or see the <a href="{{ '/sitemap/' | relative_url }}">full site map</a> for archived press routes.</p>
+    <p class="reel-empty">Press archive migration is in progress. Verified coverage will appear here as it is restored.</p>
   </section>
 
   <section id="blog" class="reel-section">
     <h2>Blog</h2>
     <p>Interviews, guest posts, and stories from the Bitcoin Cinema Hub.</p>
-    <p class="reel-empty">Blog migration in progress — check back soon, or see the <a href="{{ '/sitemap/' | relative_url }}">full site map</a> for archived interview routes.</p>
+    <p class="reel-empty">Blog migration is in progress. Interviews and stories will appear here as they are restored.</p>
   </section>
 </article>

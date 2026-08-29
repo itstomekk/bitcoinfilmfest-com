@@ -71,8 +71,8 @@ Before the repository was made public, GitHub returned HTTP 422 because private 
 ### Verified
 
 - Jekyll build succeeds using `C:/Ruby33-x64/bin/bundle.bat exec jekyll build --trace`.
-- Shared cinema shell is in place: black room frame, bezel, perforation pattern, fixed cinema seats, logo-home link, shared footer, black ending.
-- Main navigation is data-driven and currently contains Storyboard, Festivals (BFF'24-27), Reel, Credits, and Contribute. Site map remains footer-only.
+- Shared cinema shell is in place: dark room frame, bezel shadow, fixed cinema seats, logo-home link, and shared charcoal footer canvas.
+- Main navigation is data-driven and currently contains Storyboard, Festivals (BFF'24-27), Reel, Credits, and Contribute. Public sitemap page and footer menu links were removed.
 - Soft same-origin navigation preserves the shell, updates active navigation/current label, and falls back to standard navigation when unavailable.
 - Desktop and mobile checks verified no horizontal overflow; current-page indicator, dim-to-bright nav behavior, bottom-right rabbit placement, and menu structure were checked.
 - Credits source was migrated to structured data and rendered as a respectful end-credits roll. The animation stops after user input and respects reduced-motion settings.

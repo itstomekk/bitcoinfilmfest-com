@@ -6,8 +6,8 @@ The Bitcoin FilmFest website is a static Jekyll site with a shared cinematic she
 
 ## What is here
 
-- Homepage, Storyboard, Reel, Credits, Contribute, Site map, BFF'24, BFF'25, BFF'26, BFF'27, 404, and a migrated newsletter.
-- Shared navigation, footer, cinema bezel, film-perforation pattern, fixed seats, logo-home control, and black page ending.
+- Homepage, Storyboard, Reel, Credits, Contribute, BFF'24, BFF'25, BFF'26, BFF'27, 404, and a migrated newsletter.
+- Shared navigation, footer, cinema bezel shadow, fixed seats, logo-home control, and framed screen ending.
 - Progressive same-origin navigation with ordinary navigation as fallback.
 - A tokenized visual system in `design.md` and `tokens.css`.
 - A GitHub Pages Actions workflow at `../.github/workflows/deploy-pages.yml`.
@@ -62,13 +62,13 @@ Use `screen: blue` for homepage/edition-style content and `screen: paper` for re
 
 Create `site/_newsletters/YYYY-MM-DD-your-title.md`. The collection automatically outputs at `/newsletters/your-title/`. See `site/_newsletters/2024-06-19-summer-2024.md` for the working pattern.
 
-### Change menu or footer links
+### Change menu links
 
-Edit only `_data/navigation.yml`. Primary and footer navigation are rendered from this single file. The sitemap belongs in the footer, not the primary menu.
+Edit only `_data/navigation.yml`. Reel is a direct route; Festivals is the only current grouped menu. The footer intentionally has no repeated menu links.
 
 ### Change credits
 
-Edit `_data/credits.yml` or `_data/credits.json`. `credits.md` renders the structured data. Keep both data files aligned if you change the roster.
+Edit `_data/credits.json`. `credits.md` renders this structured data. `credits.yml` is not a current source of truth.
 
 ## Code map
 

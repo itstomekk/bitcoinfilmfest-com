@@ -1,7 +1,7 @@
 {% comment %}
-Shared footer. Links come from _data/navigation.yml; the form behavior lives
-in assets/js/subscribe.js. Keep this footer in the shared layout so every route
-ends against the room-black surface.
+Shared footer. It intentionally contains subscription and social contact only:
+primary navigation belongs in the top bar, not repeated here. The form behavior
+lives in assets/js/subscribe.js. Keep this footer in the shared layout.
 {% endcomment %}
 <footer class="site-footer" data-site-footer>
   <div class="footer-inner">
@@ -26,19 +26,13 @@ ends against the room-black surface.
       </form>
     </div>
 
-    <nav class="footer-links" aria-label="Footer navigation">
-      {% for link in site.data.navigation.footer %}
-        <a href="{{ link.url | relative_url }}">{{ link.label }}</a>
-      {% endfor %}
-    </nav>
-
     <div class="footer-meta">
       <p class="footer-social" aria-label="Bitcoin FilmFest social channels">
-        {% if site.social.x %}<a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer">X</a>{% endif %}
-        {% if site.social.instagram %}<a href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer">Instagram</a>{% endif %}
-        {% if site.social.telegram %}<a href="{{ site.social.telegram }}" target="_blank" rel="noopener noreferrer">Telegram</a>{% endif %}
-        <a href="https://primal.net/p/{{ site.nostr_npub }}" target="_blank" rel="noopener noreferrer">Nostr</a>
-        {% if site.social.linkedin %}<a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{% endif %}
+        {% if site.social.x %}<a class="social-icon social-icon--x" href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer" aria-label="Bitcoin FilmFest on X" title="X"><span aria-hidden="true">X</span><span class="sr-only">X</span></a>{% endif %}
+        {% if site.social.instagram %}<a class="social-icon social-icon--instagram" href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer" aria-label="Bitcoin FilmFest on Instagram" title="Instagram"><span aria-hidden="true">◎</span><span class="sr-only">Instagram</span></a>{% endif %}
+        {% if site.social.telegram %}<a class="social-icon social-icon--telegram" href="{{ site.social.telegram }}" target="_blank" rel="noopener noreferrer" aria-label="Bitcoin FilmFest on Telegram" title="Telegram"><span aria-hidden="true">↗</span><span class="sr-only">Telegram</span></a>{% endif %}
+        <a class="social-icon social-icon--nostr" href="https://primal.net/p/{{ site.nostr_npub }}" target="_blank" rel="noopener noreferrer" aria-label="Bitcoin FilmFest on Nostr" title="Nostr"><span aria-hidden="true">N</span><span class="sr-only">Nostr</span></a>
+        {% if site.social.linkedin %}<a class="social-icon social-icon--linkedin" href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="Bitcoin FilmFest on LinkedIn" title="LinkedIn"><span aria-hidden="true">in</span><span class="sr-only">LinkedIn</span></a>{% endif %}
       </p>
       <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }} · Warsaw</p>
     </div>

@@ -184,22 +184,6 @@ p {
   pointer-events: none;
 }
 
-.screen-bezel::before {
-  position: absolute;
-  inset-block-start: 0;
-  inset-inline: 0;
-  height: var(--space-xs);
-  background-image: repeating-linear-gradient(
-    90deg,
-    var(--color-room) 0,
-    var(--color-room) var(--space-md),
-    transparent var(--space-md),
-    transparent var(--space-xl)
-  );
-  content: "";
-  opacity: 0.72;
-}
-
 /* Fixed foreground seats: a physical cinema edge, not a background decoration. */
 .cinema-seats {
   position: fixed;
@@ -303,7 +287,7 @@ p {
   height: 0.3rem;
   flex: 0 0 auto;
   border-radius: 50%;
-  background: var(--color-screen-soft);
+  background: var(--color-accent);
 }
 
 .nav-current span[data-nav-current-label] {
@@ -429,10 +413,6 @@ p {
   height: var(--rule-thin);
   background: currentColor;
   content: "";
-}
-
-.nav-cta {
-  color: var(--color-on-dark);
 }
 
 .nav-group {
@@ -1095,13 +1075,14 @@ article img,
   padding-inline-start: var(--space-lg);
 }
 
-/* Shared black close */
+/* Shared footer close: a lifted charcoal screen inside the outer room frame. */
 .site-footer {
   position: relative;
   z-index: var(--z-base);
+  margin-inline: var(--frame-side);
   min-height: calc(var(--frame-bottom) + 22rem);
-  padding: clamp(var(--space-2xl), 8vw, var(--space-4xl)) var(--frame-side) calc(var(--frame-bottom) + var(--space-3xl));
-  background: var(--color-room);
+  padding: clamp(var(--space-2xl), 8vw, var(--space-4xl)) clamp(var(--space-xl), 6vw, var(--space-3xl)) calc(var(--frame-bottom) + var(--space-3xl));
+  background: var(--color-room-raised);
   color: var(--color-on-dark);
 }
 
@@ -1206,14 +1187,12 @@ form[data-subscribe] button:active {
   font-size: var(--text-sm);
 }
 
-.footer-links,
 .footer-social {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-sm) var(--space-lg);
 }
 
-.footer-links a,
 .footer-social a {
   color: var(--color-on-dark);
   font-family: var(--font-display);
@@ -1222,10 +1201,36 @@ form[data-subscribe] button:active {
   white-space: nowrap;
 }
 
-.footer-links a:hover,
 .footer-social a:hover {
   color: var(--color-screen-soft);
 }
+
+.social-icon {
+  display: inline-grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  border: var(--rule-thin) solid color-mix(in oklch, var(--color-on-dark) 33%, transparent);
+  border-radius: 50%;
+  color: color-mix(in oklch, var(--color-on-dark) 72%, transparent) !important;
+  font-family: var(--font-display) !important;
+  font-size: var(--text-sm) !important;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none !important;
+  transition: border-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out);
+}
+
+.social-icon:hover,
+.social-icon:focus-visible {
+  border-color: var(--color-accent);
+  color: var(--color-accent) !important;
+}
+
+.social-icon:active { transform: scale(0.94); }
+.social-icon--instagram { font-size: 1.25rem !important; }
+.social-icon--telegram { font-family: var(--font-body) !important; font-size: 1.1rem !important; }
+.social-icon--linkedin { font-family: var(--font-body) !important; font-size: var(--text-xs) !important; }
 
 .footer-meta {
   display: grid;

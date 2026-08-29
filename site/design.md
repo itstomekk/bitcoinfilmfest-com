@@ -50,7 +50,7 @@ A 4-point named scale lives in `tokens.css`. Components use named tokens or flui
 
 - The viewport has a near-black room frame on all sides.
 - A fixed inner bezel/shadow gives the screen depth without a grey page tail.
-- A small film-perforation pattern runs along the screen’s top edge.
+- The screen edge is defined only by a soft bezel shadow. Do not add a perforation pattern.
 - Cinema seats stay fixed to the true bottom edge.
 - The shared footer always closes on the room black and includes enough bottom padding for the seats.
 
@@ -64,7 +64,7 @@ A 4-point named scale lives in `tokens.css`. Components use named tokens or flui
 
 ## Footer
 
-One shared colophon footer from `_includes/footer.html` appears on every route. It contains the BFF mark, the festival statement, core/footer links, social links, sitemap access, and copyright. Its background and the page tail are always room black.
+One shared colophon footer from `_includes/footer.html` appears on every route. It contains the BFF mark, festival statement, subscription form, compact labelled social icons, and copyright. It is a lifted charcoal canvas inside the outer dark room frame; do not repeat primary navigation there.
 
 ## Motion
 
@@ -103,7 +103,7 @@ One shared colophon footer from `_includes/footer.html` appears on every route. 
 ## Modularity and future backend
 
 - `_data/navigation.yml` controls navigation structure.
-- `_data/sitemap.json` controls the public roadmap/sitemap.
+- `_data/sitemap.json` is a builder-only route inventory. It must not be rendered or linked publicly.
 - `_includes/` owns shared shell components.
 - `tokens.css` owns design tokens.
 - `assets/css/cinema-frame.css` owns component/layout rules.
