@@ -17,6 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Keep downloaded gems outside site/. Jekyll 3.10 otherwise scans a Bundler
+    # template under site/vendor/ as if it were a post on GitHub runners.
+    env:
+      BUNDLE_PATH: ${{ runner.temp }}/bff-bundle
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -26,8 +30,13 @@ jobs:
         with:
           # Matches the locally verified RubyInstaller toolchain.
           ruby-version: "3.3"
-          bundler-cache: true
+          # Dependencies are installed explicitly below into runner.temp.
+          bundler-cache: false
           working-directory: site
+
+      - name: Install Ruby dependencies
+        working-directory: site
+        run: bundle install
 
       - name: Build Jekyll site
         working-directory: site
