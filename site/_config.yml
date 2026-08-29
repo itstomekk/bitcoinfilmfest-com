@@ -16,7 +16,8 @@ contact_email: "hello@bitcoinfilmfest.com"
 social:
   x: "https://x.com/bitcoinfilmfest"
   instagram: "https://instagram.com/bitcoin_filmfest"
-  telegram: "https://t.me/bitcoinfilmfest"
+  telegram: "https://telegram.bitcoinfilmfest.com"
+  github: "https://github.com/itstomekk/bitcoinfilmfest-com"
   linkedin: "https://linkedin.com/company/bitcoin-filmfest"
 
 # Nostr npub for the DM-based subscribe form (see assets/js/subscribe.js)
@@ -27,6 +28,9 @@ collections:
   newsletters:
     output: true
     permalink: /:collection/:name/
+  chronicle:
+    output: false
+    sort_by: date
 
 defaults:
   - scope:
