@@ -68,6 +68,20 @@ The Jekyll scaffold builds and serves cleanly. Three rounds of work are complete
 
 **What has NOT been done**: the round-3 screenshots have not yet been shown to the user in this session (they will be attached in the same chat turn as this handoff). The minor rabbit/showtime-row overlap has not been fixed. The credits auto-scroll effect has not been manually eyeballed in a real (non-headless, non-reduced-motion) browser session — only its code logic was reviewed.
 
+## Git / GitHub status — UPDATED (post-push)
+
+**Repo created and pushed.** `git init` ran in `rebuild-jekyll/` (repo root), initial commit made (53 files), authenticated via `gh auth login` (device flow, account `itstomekk`), and pushed to:
+
+**https://github.com/itstomekk/bitcoinfilmfest-com** — private, default branch `main`.
+
+Root-level `.gitignore` added (excludes `site/_site/`, `.jekyll-cache/`, `.bundle/`, `vendor/`, OS/editor cruft); `site/.gitignore` from earlier still in place too. Verified `_site/` build output did NOT leak into the commit.
+
+**Still open, not yet done:**
+- GitHub Pages is NOT yet enabled on the repo (no Pages source configured).
+- No `CNAME` file added yet for `bitcoinfilmfest.com` — needs the domain decision + DNS changes.
+- No collaborator (the user's friend) has been invited yet.
+- No GitHub Actions workflow exists — if native Pages Jekyll build is used, none is needed; if `github-pages` gem parity ever breaks, an Actions workflow using `actions/jekyll-build-pages` is the fallback.
+
 ## Deployment readiness — what's needed to push to GitHub for a friend to edit
 
 **Short answer: yes, this is deployable to GitHub Pages today, and yes, a collaborator can edit pages with custom design in this Jekyll setup — but a few concrete steps remain before "push and share" is turned into reality.** Details below.
