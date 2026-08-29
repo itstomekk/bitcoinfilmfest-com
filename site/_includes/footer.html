@@ -1,0 +1,40 @@
+<footer class="site-footer" data-site-footer>
+  <div class="footer-inner">
+    <div class="footer-lead">
+      <a class="footer-brand" href="{{ '/' | relative_url }}" aria-label="Bitcoin FilmFest — home">
+        <img src="{{ '/assets/images/brand/bff-logo-mark-white.png' | relative_url }}" width="530" height="530" alt="">
+      </a>
+      <div>
+        <p class="footer-statement">Fix the money.<br>Fix the culture.</p>
+        <p class="footer-tagline">{{ site.tagline }}</p>
+      </div>
+    </div>
+
+    <div class="footer-subscribe">
+      <h2>Stay on set</h2>
+      <p>Bitcoin cinema, festival notes, and community news.</p>
+      <form data-subscribe>
+        <label class="sr-only" for="footer-contact">Your e-mail or npub</label>
+        <input id="footer-contact" type="text" name="contact" placeholder="your e-mail or npub" autocomplete="email" required>
+        <button type="submit">Subscribe</button>
+        <p data-subscribe-status class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      {% for link in site.data.navigation.footer %}
+        <a href="{{ link.url | relative_url }}">{{ link.label }}</a>
+      {% endfor %}
+    </nav>
+
+    <div class="footer-meta">
+      <p class="footer-social" aria-label="Bitcoin FilmFest social channels">
+        {% if site.social.x %}<a href="{{ site.social.x }}" target="_blank" rel="noopener noreferrer">X</a>{% endif %}
+        {% if site.social.telegram %}<a href="{{ site.social.telegram }}" target="_blank" rel="noopener noreferrer">Telegram</a>{% endif %}
+        <a href="https://primal.net/p/{{ site.nostr_npub }}" target="_blank" rel="noopener noreferrer">Nostr</a>
+        {% if site.social.linkedin %}<a href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn</a>{% endif %}
+      </p>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }} · Warsaw</p>
+    </div>
+  </div>
+</footer>

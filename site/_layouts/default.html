@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head-meta.html %}
+</head>
+<body data-nostr-npub="{{ site.nostr_npub }}" data-current-route="{{ page.url | default: '/' }}">
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+{% include nav.html %}
+<div class="screen-bezel" aria-hidden="true"></div>
+
+<main class="stage stage--{{ page.screen | default: 'paper' }}" id="main-content" data-page-main tabindex="-1">
+  <div class="screen-canvas">
+    <div class="inner">
+      {{ content }}
+    </div>
+  </div>
+</main>
+
+{% include footer.html %}
+
+<img class="cinema-seats" src="{{ '/assets/images/cinema-seats.png' | relative_url }}" width="2322" height="202" alt="" aria-hidden="true">
+<div class="sr-only" id="route-status" aria-live="polite" aria-atomic="true"></div>
+
+<script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/credits-roll.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/subscribe.js' | relative_url }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+# Ruby / Jekyll build artifacts
+site/_site/
+site/.jekyll-cache/
+site/.jekyll-metadata
+site/.bundle/
+site/vendor/
+site/.sass-cache/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# Editor/tooling
+.vscode/
+.idea/

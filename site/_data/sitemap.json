@@ -1,0 +1,542 @@
+{
+  "generated": "2026-08-28",
+  "summary": {
+    "discovered_routes": 64,
+    "public_or_planned_routes": 60,
+    "implemented_now": 10,
+    "planned": 48,
+    "redirect_candidates": 2,
+    "excluded_or_separate": 4
+  },
+  "categories": [
+    {
+      "name": "Festival & editions",
+      "pages": [
+        {
+          "route": "/about/",
+          "title": "About Bitcoin FilmFest",
+          "category": "Festival & editions",
+          "source": "site/about.md",
+          "status": "implemented",
+          "note": ""
+        },
+        {
+          "route": "/bff25/",
+          "title": "BFF’25",
+          "category": "Festival & editions",
+          "source": "website/static-site/bff25/index.php",
+          "status": "implemented",
+          "note": "Local shared-shell edition landing; full programme migration remains later."
+        },
+        {
+          "route": "/26/",
+          "title": "BFF’26",
+          "category": "Festival & editions",
+          "source": "BFF26-guest-page/index.html",
+          "status": "implemented",
+          "note": "Local shared-shell edition landing; the production microsite remains the rich source."
+        },
+        {
+          "route": "/27/",
+          "title": "BFF’27",
+          "category": "Festival & editions",
+          "source": "BFF27-guest-page/index.html",
+          "status": "implemented",
+          "note": "Local shared-shell edition landing; full programme remains a later migration step."
+        },
+        {
+          "route": "/",
+          "title": "Bitcoin FilmFest",
+          "category": "Festival & editions",
+          "source": "site/index.md",
+          "status": "implemented",
+          "note": ""
+        },
+        {
+          "route": "/bff24-event-coverage-bitesize-media-may-2024/",
+          "title": "BFF24 in a guest post by Sean McNamara",
+          "category": "Festival & editions",
+          "source": "website/static-site/bff24-event-coverage-bitesize-media-may-2024/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/bff2024/",
+          "title": "BFF’24",
+          "category": "Festival & editions",
+          "source": "website/static-site/bff2024/index.php",
+          "status": "redirect candidate",
+          "note": "Keep as the historical 2024 route until canonical edition routing is decided."
+        },
+        {
+          "route": "/26/laurels/",
+          "title": "BFF’26 laurels & press kit",
+          "category": "Festival & editions",
+          "source": "website/wayback-recovered-2026-08-28/26-laurels.md",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/bff26/",
+          "title": "Bitcoin FilmFest 2026: June 4-7, Warsaw 🐇 - see you at BFF’26!",
+          "category": "Festival & editions",
+          "source": "website/static-site/bff26/index.php",
+          "status": "redirect candidate",
+          "note": "Prefer canonical /26/."
+        },
+        {
+          "route": "/bff24-official-selection-freedom-themed-films/",
+          "title": "Bitcoin FilmFest Warsaw | Official Selection - BFF24",
+          "category": "Festival & editions",
+          "source": "website/static-site/bff24-official-selection-freedom-themed-films/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/festival-flashbacks/",
+          "title": "Festival Flashbacks",
+          "category": "Festival & editions",
+          "source": "website/static-site/festival-flashbacks/index.php",
+          "status": "planned",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "name": "Participate & connect",
+      "pages": [
+        {
+          "route": "/join/",
+          "title": "Contribute",
+          "category": "Participate & connect",
+          "source": "website/static-site/join/index.php",
+          "status": "implemented",
+          "note": ""
+        },
+        {
+          "route": "/credits/",
+          "title": "Credits",
+          "category": "Participate & connect",
+          "source": "website/static-site/credits/index.php",
+          "status": "implemented",
+          "note": ""
+        },
+        {
+          "route": "/bff-rabits/",
+          "title": "Friends & family",
+          "category": "Participate & connect",
+          "source": "website/static-site/bff-rabits/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/press-and-media/",
+          "title": "Press and Media Coverage | Bitcoin FilmFest 2024",
+          "category": "Participate & connect",
+          "source": "website/static-site/press-and-media/index.php",
+          "status": "planned",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "name": "Bitcoin cinema",
+      "pages": [
+        {
+          "route": "/cinema-digest-monthly-content/",
+          "title": "BFF Monthly Digest: updates from the heart of bitcoin cinema",
+          "category": "Bitcoin cinema",
+          "source": "website/static-site/cinema-digest-monthly-content/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/cinematic-hub/",
+          "title": "Bitcoin FilmFest Cinematic Hub",
+          "category": "Bitcoin cinema",
+          "source": "website/static-site/cinematic-hub/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/blog/",
+          "title": "Blog",
+          "category": "Bitcoin cinema",
+          "source": "website/static-site/blog/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/cinema-digest/",
+          "title": "Cinema Digest",
+          "category": "Bitcoin cinema",
+          "source": "website/static-site/cinema-digest/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/part-two-official-selection-experimental-shorts-at-bff25/",
+          "title": "Experimental Shorts at BFF25 | Official Selection - Part Two",
+          "category": "Bitcoin cinema",
+          "source": "website/static-site/part-two-official-selection-experimental-shorts-at-bff25/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/part-one-official-selection-feature-films-at-bff25/",
+          "title": "Feature Films at BFF25 | Official Selection - Part One",
+          "category": "Bitcoin cinema",
+          "source": "website/static-site/part-one-official-selection-feature-films-at-bff25/index.php",
+          "status": "planned",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "name": "Newsletters",
+      "pages": [
+        {
+          "route": "/newsletters/2024-06-19-summer-2024/",
+          "title": "Bitcoin Cinema Digest: Summer 2024",
+          "category": "Newsletters",
+          "source": "site/_newsletters/2024-06-19-summer-2024.md",
+          "status": "implemented",
+          "note": ""
+        },
+        {
+          "route": "/newsletters/2023-12-bitcoin-cinema-digest/",
+          "title": "Bitcoin Cinema Digest — December 2023",
+          "category": "Newsletters",
+          "source": "website/wayback-recovered-2026-08-28/bitcoin-cinema-digest-dec23.md",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/newsletters/2024-01/",
+          "title": "Bitcoin Cinema Digest — January 2024",
+          "category": "Newsletters",
+          "source": "website/wayback-recovered-2026-08-28/newsletter-jan2024.md",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/august-2024-newsletter/",
+          "title": "Bitcoin Cinema Digest: August 2024",
+          "category": "Newsletters",
+          "source": "website/static-site/august-2024-newsletter/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/december-2024-newsletter/",
+          "title": "Bitcoin Cinema Digest: December 2024",
+          "category": "Newsletters",
+          "source": "website/static-site/december-2024-newsletter/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/february-2025-newsletter/",
+          "title": "Bitcoin Cinema Digest: February 2025",
+          "category": "Newsletters",
+          "source": "website/static-site/february-2025-newsletter/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/january-2025-newsletter/",
+          "title": "Bitcoin Cinema Digest: January 2025",
+          "category": "Newsletters",
+          "source": "website/static-site/january-2025-newsletter/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/march-april-2025-newsletter/",
+          "title": "Bitcoin Cinema Digest: March - April 2025",
+          "category": "Newsletters",
+          "source": "website/static-site/march-april-2025-newsletter/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/may-2024-newsletter/",
+          "title": "Bitcoin Cinema Digest: May 2024",
+          "category": "Newsletters",
+          "source": "website/static-site/may-2024-newsletter/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/november-2024-newsletter/",
+          "title": "Bitcoin Cinema Digest: November 2024",
+          "category": "Newsletters",
+          "source": "website/static-site/november-2024-newsletter/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/october-2024-newsletter/",
+          "title": "Bitcoin Cinema Digest: October 2024",
+          "category": "Newsletters",
+          "source": "website/static-site/october-2024-newsletter/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/september-2024-special-edition/",
+          "title": "Bitcoin Cinema Digest: September 2024",
+          "category": "Newsletters",
+          "source": "website/static-site/september-2024-special-edition/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/june-2024/",
+          "title": "Bitcoin Cinema Digest: Summer 2024",
+          "category": "Newsletters",
+          "source": "website/static-site/june-2024/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/july-2024/",
+          "title": "July 2024 Newsletter",
+          "category": "Newsletters",
+          "source": "website/static-site/july-2024/index.php",
+          "status": "planned",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "name": "Interviews & features",
+      "pages": [
+        {
+          "route": "/bff-interviews/",
+          "title": "BFF Interviews",
+          "category": "Interviews & features",
+          "source": "website/static-site/bff-interviews/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/alana-mediavilla-dec-2023/",
+          "title": "BFF Interviews: Alana Mediavilla, DIRTY COIN",
+          "category": "Interviews & features",
+          "source": "website/static-site/alana-mediavilla-dec-2023/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/graham-rittener-jan-2024/",
+          "title": "BFF Interviews: Graham Rittener, DARE TO DREAM",
+          "category": "Interviews & features",
+          "source": "website/static-site/graham-rittener-jan-2024/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/indeehub-bitcoin-friendly-vod-platform/",
+          "title": "BFF interviews: IndeeHub Studio",
+          "category": "Interviews & features",
+          "source": "website/static-site/indeehub-bitcoin-friendly-vod-platform/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/jessica-solce-feb-2024/",
+          "title": "BFF Interviews: Jessica Solce, DEATH ATHLETIC",
+          "category": "Interviews & features",
+          "source": "website/static-site/jessica-solce-feb-2024/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/luke-willms-unbankable-may-2025/",
+          "title": "BFF interviews: Luke Willms about his work",
+          "category": "Interviews & features",
+          "source": "website/static-site/luke-willms-unbankable-may-2025/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/naeem-mahmood-april-2024/",
+          "title": "BFF interviews: Naeem Mahmood",
+          "category": "Interviews & features",
+          "source": "website/static-site/naeem-mahmood-april-2024/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/zack-mahoney-and-indeehub-sep-2024/",
+          "title": "BFF interviews: Zack Mahoney and the IndeeHub Studio",
+          "category": "Interviews & features",
+          "source": "website/static-site/zack-mahoney-and-indeehub-sep-2024/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/guest-post-bff-magazine-daniel-prince-2024/",
+          "title": "BFF Magazine 2024: Guest post by Daniel Prince",
+          "category": "Interviews & features",
+          "source": "website/static-site/guest-post-bff-magazine-daniel-prince-2024/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/bff-magazine-2024-kudzai-kutukwa/",
+          "title": "BFF Magazine 2024: Guest post by Kudzai Kutukwa",
+          "category": "Interviews & features",
+          "source": "website/static-site/bff-magazine-2024-kudzai-kutukwa/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/bitcoin-news-chatting-with-mr-rabbit/",
+          "title": "Bitcoin News and Mr. Rabbit in an exclusive chat",
+          "category": "Interviews & features",
+          "source": "website/static-site/bitcoin-news-chatting-with-mr-rabbit/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/authors/tomek-k/",
+          "title": "Tomek K. — author archive",
+          "category": "Interviews & features",
+          "source": "website/wayback-recovered-2026-08-28/author-tomekk.md",
+          "status": "planned",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "name": "Special projects",
+      "pages": [
+        {
+          "route": "/wall/",
+          "title": "Bitcoin FilmFest - thank you for coming!",
+          "category": "Special projects",
+          "source": "website/static-site/wall/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/qr/",
+          "title": "Bitcoin FilmFest - the heart of Bitcoin Cinema",
+          "category": "Special projects",
+          "source": "website/static-site/qr/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/linktree/",
+          "title": "European Halving Party X Bitcoin FilmFest! Warsaw, 20/4/2024",
+          "category": "Special projects",
+          "source": "website/static-site/linktree/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/bitcoin-filmfest-2024-european-halving-party-🐇/",
+          "title": "European Halving Party 🟪🥳🟧 Celebrate Bitcoin in Warsaw",
+          "category": "Special projects",
+          "source": "website/static-site/bitcoin-filmfest-2024-european-halving-party-🐇/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/european-halving-party-thankyou/",
+          "title": "European Halving Party 🟪🥳🟧 Celebrate Bitcoin in Warsaw",
+          "category": "Special projects",
+          "source": "website/static-site/european-halving-party-thankyou/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/europeanhalvingparty/",
+          "title": "European Halving Party 🟪🥳🟧 Celebrate Bitcoin in Warsaw",
+          "category": "Special projects",
+          "source": "website/static-site/europeanhalvingparty/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/infoboard/",
+          "title": "Infoboard",
+          "category": "Special projects",
+          "source": "website/static-site/infoboard/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/pow/",
+          "title": "POW!",
+          "category": "Special projects",
+          "source": "website/static-site/pow/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/unique-bitcoin-video-ads/",
+          "title": "Unique Bitcoin Ads | 6 unique commercials combined in 2 videos",
+          "category": "Special projects",
+          "source": "website/static-site/unique-bitcoin-video-ads/index.php",
+          "status": "planned",
+          "note": ""
+        },
+        {
+          "route": "/26/wintrezor/",
+          "title": "Win a Trezor",
+          "category": "Special projects",
+          "source": "website/wayback-recovered-2026-08-28/26-wintrezor.md",
+          "status": "planned",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "name": "Utility & legal",
+      "pages": [
+        {
+          "route": "/sitemap/",
+          "title": "Site map",
+          "category": "Utility & legal",
+          "source": "site/sitemap.md",
+          "status": "implemented",
+          "note": ""
+        },
+        {
+          "route": "/privacy-policy/",
+          "title": "privacy-policy",
+          "category": "Utility & legal",
+          "source": "website/static-site/privacy-policy/index.php",
+          "status": "planned",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "route": "/shop/",
+      "reason": "WooCommerce/shop was already retired and is outside the static rebuild.",
+      "source": "website/static-site/shop/index.php"
+    },
+    {
+      "route": "/refund_returns/",
+      "reason": "Commerce policy route; retain only as a redirect or archival record if legally required.",
+      "source": "website/static-site/refund_returns/index.php"
+    },
+    {
+      "route": "/tickets/",
+      "reason": "Moving to an external ticketing system; explicitly out of scope.",
+      "source": "PLAN.md"
+    },
+    {
+      "route": "/analytics/",
+      "reason": "Matomo remains separate from the GitHub-hosted static site.",
+      "source": "PLAN.md"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+# Bitcoin FilmFest — Jekyll site config
+# Equivalent to the old inc/config.php constants (SITE_NAME, NAV, FOOTER_LINKS, SOCIAL).
+
+title: "Bitcoin FilmFest"
+tagline: "the heart of Bitcoin Cinema"
+description: "Orange-pill cinema, unfiat the culture. BFF'27 — June 24–27, 2027, Warsaw."
+url: "https://bitcoinfilmfest.com"
+baseurl: ""
+
+contact_email: "hello@bitcoinfilmfest.com"
+
+# Shared menu and footer links live in _data/navigation.yml so collaborators
+# can edit structure without touching layout markup or site metadata.
+
+social:
+  x: "https://x.com/bitcoinfilmfest"
+  telegram: "https://t.me/bitcoinfilmfest"
+  linkedin: "https://linkedin.com/company/bitcoin-filmfest"
+
+# Nostr npub for the DM-based subscribe form (see assets/js/subscribe.js)
+nostr_npub: "npub1rjtrs7xqdvj3588r9njrexh2n750j7jdwx9qs543nutmdsj6ljaqpfmp8a"
+
+# Jekyll's native blog engine — used for newsletters/digest posts
+collections:
+  newsletters:
+    output: true
+    permalink: /:collection/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "newsletters"
+    values:
+      layout: "newsletter"
+      nav_label: "Reel"
+      screen: "paper"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - README.md
+  - design.md
+  - SITEMAP-PLAN.md
+  - .hallmark
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
