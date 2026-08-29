@@ -1,4 +1,6 @@
-# HANDOFF — Bitcoin FilmFest Jekyll Rebuild (session 3, round 3 nav/credits pass)
+# Historical Handoff - Bitcoin FilmFest Jekyll Rebuild (session 3)
+
+> **Historical session record (2026-08-28 to 2026-08-29).** This captures the nav/credits and first GitHub setup pass. For current work, start with `BUILDER-GUIDE.md`, `BUILD-LOG.md`, and `site/README.md`.
 
 Date: 2026-08-28
 Project: Hermes desktop project "Bitcoin FilmFest" (slug `bitcoin-filmfest`, id `p_5da04a06`), anchored at

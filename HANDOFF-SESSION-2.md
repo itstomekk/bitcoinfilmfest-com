@@ -1,4 +1,6 @@
-# HANDOFF — Bitcoin FilmFest Jekyll Rebuild (session continuation)
+# Historical Handoff - Bitcoin FilmFest Jekyll Rebuild (session 2)
+
+> **Historical session record (2026-08-28).** This captures the redesign/asset-recovery point in time. It is not the live operating manual; start with `BUILDER-GUIDE.md`, `BUILD-LOG.md`, and `site/README.md`.
 
 Date: 2026-08-28
 Prior handoff: `HANDOFF.md` (original scaffold brief) — this file supersedes it for current state.

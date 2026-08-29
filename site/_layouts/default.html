@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<!--
+  Shared cinema shell. All normal pages render inside data-page-main so main.js
+  can swap only page content during same-origin navigation. Keep nav, bezel,
+  footer, seats, and route-status outside that target: they must persist.
+-->
 <html lang="en">
 <head>
 {% include head-meta.html %}

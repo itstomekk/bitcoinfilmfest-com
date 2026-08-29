@@ -1,4 +1,7 @@
-# Handoff — bitcoinfilmfest.com Jekyll rebuild
+# Historical Handoff - bitcoinfilmfest.com Jekyll rebuild
+
+> **Historical record only (2026-08-28).** This original scaffold brief predates the verified build, expanded pages, GitHub repository, and Pages deployment attempt. Start with `BUILDER-GUIDE.md`, `BUILD-LOG.md`, and `site/README.md` instead.
+
 Updated: 2026-08-28
 
 ## Where this stands

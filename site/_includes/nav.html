@@ -1,3 +1,8 @@
+{% comment %}
+Data-driven primary navigation. Edit _data/navigation.yml for links/labels;
+keep the current-page marker and data-route attributes because main.js updates
+them after progressive page swaps.
+{% endcomment %}
 {% assign current_url = page.url | default: '/' %}
 {% assign current_label = page.nav_label | default: page.title | default: 'Bitcoin FilmFest' %}
 <nav class="topnav" data-site-nav aria-label="Primary navigation">

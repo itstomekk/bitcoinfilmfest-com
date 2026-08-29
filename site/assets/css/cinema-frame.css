@@ -1,3 +1,9 @@
+/*
+  Bitcoin FilmFest cinema-frame components.
+  Global tokens belong in /tokens.css; visual rules and responsive component
+  behavior belong here. Read /design.md before altering the frame or adding a
+  new page component. Preserve the shared black ending and reduced-motion rules.
+*/
 /* Hallmark · genre: atmospheric editorial · macrostructure: Marquee Hero / Long Document / Index-first · design-system: design.md · designed-as-app */
 
 * {

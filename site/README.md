@@ -1,53 +1,122 @@
-# bitcoinfilmfest.com — Jekyll source
+# bitcoinfilmfest.com - Jekyll source
 
-Static site, built with Jekyll, deployed via GitHub Pages. See `../PLAN.md` (one level up) for the full rebuild plan and rationale.
+The Bitcoin FilmFest website is a static Jekyll site with a shared cinematic shell. Content is Markdown/YAML; the cinema frame, navigation, footer, and visual tokens are reusable site-wide.
 
-## Local setup
+**Builder entry point:** read `../BUILDER-GUIDE.md` first. It explains repository status, the historical handoffs, ownership boundaries, and the non-regression rules.
 
-Requires Ruby with dev headers (`ruby-dev` / `ruby-devel` — needed to build native gem extensions like `json`). On Windows 11, the tested setup is RubyInstaller 3.3 with MSYS2:
+## What is here
+
+- Homepage, Storyboard, Reel, Credits, Contribute, Site map, BFF'24, BFF'25, BFF'26, BFF'27, 404, and a migrated newsletter.
+- Shared navigation, footer, cinema bezel, film-perforation pattern, fixed seats, logo-home control, and black page ending.
+- Progressive same-origin navigation with ordinary navigation as fallback.
+- A tokenized visual system in `design.md` and `tokens.css`.
+- A GitHub Pages Actions workflow at `../.github/workflows/deploy-pages.yml`.
+
+## Local setup - Windows 11 (verified)
+
+Tested with RubyInstaller Ruby 3.3.12, Bundler 2.5.22, `github-pages` 232, and Jekyll 3.10.0.
 
 ```bash
-winget install --id RubyInstallerTeam.RubyWithDevKit.3.3 --exact
+# From the repository root
+cd site
+
+# Install dependencies if needed
+C:/Ruby33-x64/bin/bundle.bat install
+
+# Production build - required before committing
+C:/Ruby33-x64/bin/bundle.bat exec jekyll build --trace
+
+# Local preview
+C:/Ruby33-x64/bin/jekyll.bat serve --host 127.0.0.1 --port 4000 --trace
 ```
 
-Open a new terminal after installation so Ruby is on `PATH`, then run:
+Open http://127.0.0.1:4000/
 
-```bash
-gem install bundler
-bundle install
-bundle exec jekyll serve
+The non-blocking Faraday `faraday-retry` notice may appear during builds. The verified build still exits successfully.
+
+## Add or edit content
+
+### Add a regular page
+
+Create `site/<slug>.md`:
+
+```md
+---
+layout: default
+title: "Page title"
+nav_label: "Menu label"
+description: "One useful sentence for search/social previews."
+permalink: /your-route/
+screen: paper
+---
+
+<article class="page-content">
+  <h1>Page title</h1>
+  <p>Write content here.</p>
+</article>
 ```
 
-Then open `http://localhost:4000`.
+Use `screen: blue` for homepage/edition-style content and `screen: paper` for reading pages. The shared navigation, footer, seats, and black ending are automatic - do not copy them into a page.
 
-The `github-pages` gem in the `Gemfile` pins Jekyll and all plugins to the exact versions GitHub's own servers run, so anything that builds cleanly here will also build cleanly when pushed.
+### Add a newsletter
 
-The build was verified on Windows 11 with Ruby 3.3.12, Bundler 2.5.22, `github-pages` 232, and Jekyll 3.10.0 on 2026-08-28. The committed lockfile includes Windows and x86-64 Linux platforms for local and GitHub Pages builds.
+Create `site/_newsletters/YYYY-MM-DD-your-title.md`. The collection automatically outputs at `/newsletters/your-title/`. See `site/_newsletters/2024-06-19-summer-2024.md` for the working pattern.
 
-## Structure
+### Change menu or footer links
 
-- `_config.yml` — site title, nav, footer links, social links, Nostr npub. Edit this to change the nav site-wide.
-- `_layouts/default.html` — the shell every page uses: nav, cinema frame, footer, seats image, scripts.
-- `_layouts/newsletter.html` — extends `default`, adds a dated article header. Used by the `_newsletters` collection.
-- `_includes/` — nav, footer, and `<head>` meta tags, each pulled into `default.html`.
-- `assets/css/cinema-frame.css` — the whole design system: palette, type scale, and the fixed black cinema-room frame (3% top / 5% sides / 10% bottom margins) with the seats image glued to the bottom edge. Adapted from the working pattern already live on `/26/`.
-- `assets/js/main.js` — scroll-reveal (`data-reveal` attribute + IntersectionObserver), respects `prefers-reduced-motion`.
-- `assets/js/subscribe.js` — the `your e-mail or npub` subscribe form. **Placeholder implementation**: currently just opens a mailto: for emails and shows a static message for npubs. Real NIP-04 DM sending (or a Mailchimp/database backend) is intentionally deferred — see `../PLAN.md`.
-- `_newsletters/` — one Markdown file per newsletter issue, e.g. `2024-06-19-summer-2024.md`. Jekyll collection, auto-dated, ready for an auto-generated archive index later.
-- `index.md`, `about.md` — standalone pages. One `.md` file per page, front matter sets `layout`, `title`, `description`.
+Edit only `_data/navigation.yml`. Primary and footer navigation are rendered from this single file. The sitemap belongs in the footer, not the primary menu.
 
-## What's migrated so far (proof-of-concept, not the full site)
+### Change credits
 
-- Homepage (`index.md`)
-- About (`about.md`)
-- One newsletter (`_newsletters/2024-06-19-summer-2024.md`)
+Edit `_data/credits.yml` or `_data/credits.json`. `credits.md` renders the structured data. Keep both data files aligned if you change the roster.
 
-This is intentionally a small slice — enough to verify the cinema-frame layout, nav, footer, and newsletter collection all work together before mass-migrating the remaining ~50+ pages from `static-site/` and the content archive.
+## Code map
 
-## Known gaps / next steps
+| Path | Owner / responsibility |
+| --- | --- |
+| `_config.yml` | Site metadata, collections, social links, plugins, Jekyll exclusions. |
+| `_config.github-pages.yml` | Temporary GitHub project-site URL/baseurl override. Use only for the GitHub Pages workflow. |
+| `design.md` | Locked visual language and rules for custom designs. Read before design work. |
+| `tokens.css` | Canonical colors, typography, spacing, z-index, frame, and motion tokens. |
+| `_data/navigation.yml` | Sole source of truth for primary/footer navigation. |
+| `_data/credits.yml`, `_data/credits.json` | Historic credits roster. |
+| `_layouts/default.html` | Shared document structure and persistent cinema shell. |
+| `_layouts/newsletter.html` | Newsletter/article layout. |
+| `_includes/head-meta.html` | SEO, Open Graph, fonts, styles, favicon, View Transitions metadata. |
+| `_includes/nav.html` | Data-driven navigation, logo-home link, current-page indicator. |
+| `_includes/footer.html` | Shared footer, social links, subscription form. |
+| `assets/css/cinema-frame.css` | Screen/frame/component styling. Use token variables, not ad-hoc design values. |
+| `assets/js/main.js` | Mobile menu, active states, accessible soft navigation, route announcements. |
+| `assets/js/credits-roll.js` | Optional Credits auto-scroll; stops after user input/reduced-motion. |
+| `assets/js/subscribe.js` | Current safe fallback subscription behavior - no backend exists yet. |
+| `assets/images/` | Local production image assets. |
 
-- **Images still point at the old WordPress CDN** (`bitcoinfilmfest.com/wp-content/uploads/...`) in migrated content. Needs a pass to pull the real files from `../bff-site-mirror-2026-07-16-parts/` and rewrite paths to `/assets/images/...`.
-- **Cinema frame proportions are a first pass** — Tomek wants to iterate on the design once more pages are in place to look at.
-- **Subscribe form has no real backend** — see above.
-- **Build verified locally** — `bundle install`, `bundle exec jekyll build`, and the served homepage/About/newsletter/404 pages have been exercised. Continue to run the build before every deploy.
-- **Remaining ~50 pages** from `static-site/*/index.php` and the content archive not yet converted.
+## GitHub Pages status
+
+The private GitHub repository exists:
+
+https://github.com/itstomekk/bitcoinfilmfest-com
+
+An Actions-based Pages workflow is committed because the Jekyll source lives in this `site/` subdirectory. The current GitHub plan rejected Pages for the private repository. Full blocker details and next choices are in `../BUILD-LOG.md`.
+
+When private Pages becomes available, the workflow uses `_config.github-pages.yml` to build the temporary project URL. When the custom domain is ready, update the deployment configuration deliberately and add a `CNAME` file only after the owner confirms DNS is ready.
+
+## Contribution workflow
+
+1. Create a branch from `main`.
+2. Make the smallest focused change.
+3. Run the production build command above.
+4. Check the affected page at desktop and mobile widths.
+5. Commit source only - never `site/_site/`, caches, local gems, secrets, or credentials.
+6. Open a pull request or push only after review permission.
+
+## Known gaps
+
+- Around 40+ catalogued archive/content routes still need migration.
+- Subscription is not connected to a mailing-list/database backend.
+- The final custom-domain switch and DNS are intentionally deferred.
+- Credits auto-scroll is accessibility-safe but should be visually checked in a normal browser with motion enabled after future UI changes.
+
+## Older documents
+
+`../HANDOFF.md`, `../HANDOFF-SESSION-2.md`, and `../HANDOFF-SESSION-3.md` are historical snapshots. Do not use them as the current plan; follow `../BUILDER-GUIDE.md` and `../BUILD-LOG.md`.
