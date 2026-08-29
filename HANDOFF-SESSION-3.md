@@ -76,11 +76,13 @@ The Jekyll scaffold builds and serves cleanly. Three rounds of work are complete
 
 Root-level `.gitignore` added (excludes `site/_site/`, `.jekyll-cache/`, `.bundle/`, `vendor/`, OS/editor cruft); `site/.gitignore` from earlier still in place too. Verified `_site/` build output did NOT leak into the commit.
 
-**Still open, not yet done:**
-- GitHub Pages is NOT yet enabled on the repo (no Pages source configured).
-- No `CNAME` file added yet for `bitcoinfilmfest.com` — needs the domain decision + DNS changes.
+**GitHub Pages deployment attempt (2026-08-29):**
+- Added `.github/workflows/deploy-pages.yml` and `site/_config.github-pages.yml`. The workflow builds from the actual `site/` subfolder and publishes GitHub Pages artifacts; the override correctly uses the temporary project-site path `/bitcoinfilmfest-com` while preserving the existing custom-domain configuration for later.
+- Local Pages-equivalent build passed: `bundle exec jekyll build --trace --config _config.yml,_config.github-pages.yml` and generated HTML contains the `/bitcoinfilmfest-com/assets/` prefix.
+- GitHub rejected activation with HTTP 422: `Your current plan does not support GitHub Pages for this repository.` The repository remains **private**. The first workflow run consequently failed while deploying, not while building.
+- Do **not** make the repository public without explicit user approval. To publish while keeping it private, upgrade the GitHub account/organization to a plan that permits Pages for private repositories, then rerun the workflow/enable Pages. The alternative is changing the repository to public (only with explicit approval) or deploying to a different host.
+- No `CNAME` file added yet for `bitcoinfilmfest.com`; user explicitly deferred custom-domain setup.
 - No collaborator (the user's friend) has been invited yet.
-- No GitHub Actions workflow exists — if native Pages Jekyll build is used, none is needed; if `github-pages` gem parity ever breaks, an Actions workflow using `actions/jekyll-build-pages` is the fallback.
 
 ## Deployment readiness — what's needed to push to GitHub for a friend to edit
 
