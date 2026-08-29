@@ -2,7 +2,25 @@
 
 This is a short operational record for builders. It records verified facts and active blockers. For implementation details, use `BUILDER-GUIDE.md` and `site/README.md`.
 
-## 2026-08-29 - GitHub repository and Pages preparation
+## 2026-08-29 - GitHub Pages deployment is live
+
+### Verified
+
+- Repository is public: https://github.com/itstomekk/bitcoinfilmfest-com
+- GitHub Pages source is **GitHub Actions**, using `.github/workflows/deploy-pages.yml` because the Jekyll source is in the `site/` subdirectory.
+- Deployment run `33260175248` completed successfully: both the Jekyll build and Pages deploy jobs passed.
+- Live temporary URL: https://itstomekk.github.io/bitcoinfilmfest-com/
+- A remote web fetch verified the deployed homepage title: `Bitcoin FilmFest — the heart of Bitcoin Cinema`.
+- The workflow pins Ruby 3.3 and installs gems outside `site/` to prevent Jekyll 3.10 from scanning Bundler templates as site posts on GitHub runners.
+
+### Deliberately not done
+
+- No `CNAME` file.
+- No DNS changes.
+- No custom domain connection.
+- No collaborator invite (requires the collaborator's GitHub username).
+
+## 2026-08-29 - Initial private-repository Pages attempt (resolved)
 
 ### Verified
 
@@ -19,17 +37,11 @@ This is a short operational record for builders. It records verified facts and a
 
   It exits successfully and emits the expected `/bitcoinfilmfest-com/assets/` paths.
 
-### Active blocker
+### Historical note
 
-GitHub returned HTTP 422 while enabling Pages:
+Before the repository was made public, GitHub returned HTTP 422 because private Pages was unavailable on the account plan. The owner then made the repository public, which resolved this specific blocker. The successful live deployment is recorded above.
 
-```text
-Your current plan does not support GitHub Pages for this repository.
-```
-
-The repository must stay private unless the owner explicitly requests a visibility change. To publish through GitHub Pages while private, upgrade to a plan that supports private Pages, then enable Pages using the existing workflow. Alternative paths are making the repository public with explicit approval or deploying the same static output to another host.
-
-### Deliberately not done
+### Deliberately not done at that point
 
 - No `CNAME` file.
 - No DNS changes.

@@ -4,12 +4,12 @@ This is the current entry point for anyone extending the Bitcoin FilmFest site. 
 
 ## Current status
 
-- Source repository: https://github.com/itstomekk/bitcoinfilmfest-com (private, `main`)
+- Source repository: https://github.com/itstomekk/bitcoinfilmfest-com (public, `main`)
 - Site engine: Jekyll 3.10.0 via the `github-pages` gem
 - Site source directory: `site/`
 - Local production build: verified on Windows 11 with RubyInstaller Ruby 3.3.12 and Bundler 2.5.22
 - Pages workflow: `.github/workflows/deploy-pages.yml`
-- GitHub Pages is **not live yet** because the current GitHub plan does not allow Pages for this private repository. The workflow build configuration is committed and ready. See `BUILD-LOG.md`.
+- Live temporary Pages URL: https://itstomekk.github.io/bitcoinfilmfest-com/
 - Custom domain: deliberately deferred. Do not add a `CNAME` file or change DNS until the owner asks.
 
 ## Read these in order

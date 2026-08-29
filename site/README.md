@@ -93,13 +93,15 @@ Edit `_data/credits.yml` or `_data/credits.json`. `credits.md` renders the struc
 
 ## GitHub Pages status
 
-The private GitHub repository exists:
+The public GitHub repository and temporary GitHub Pages deployment are live:
 
 https://github.com/itstomekk/bitcoinfilmfest-com
 
-An Actions-based Pages workflow is committed because the Jekyll source lives in this `site/` subdirectory. The current GitHub plan rejected Pages for the private repository. Full blocker details and next choices are in `../BUILD-LOG.md`.
+https://itstomekk.github.io/bitcoinfilmfest-com/
 
-When private Pages becomes available, the workflow uses `_config.github-pages.yml` to build the temporary project URL. When the custom domain is ready, update the deployment configuration deliberately and add a `CNAME` file only after the owner confirms DNS is ready.
+Pages uses the committed Actions workflow because the Jekyll source is in this `site/` subdirectory. The workflow pins Ruby 3.3 and keeps its temporary dependencies outside the Jekyll source tree.
+
+When the custom domain is ready, update the deployment configuration deliberately and add a `CNAME` file only after the owner confirms DNS is ready.
 
 ## Contribution workflow
 
