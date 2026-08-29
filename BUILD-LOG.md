@@ -2,6 +2,24 @@
 
 This is a short operational record for builders. It records verified facts and active blockers. For implementation details, use `BUILDER-GUIDE.md` and `site/README.md`.
 
+## 2026-08-29 - Builder clarity and cinema polish pass
+
+### Verified
+
+- Added a welcoming root `README.md` that explains the website source, public/private boundaries, content flow, safe editing paths, and deployment pipeline in non-developer language.
+- Confirmed `site/` remains the Jekyll website source directory by design. It is conventional and avoids needless deployment-path churn; documentation calls it the website source in plain language.
+- Added the official Instagram link `https://instagram.com/bitcoin_filmfest` through the central social config and shared footer.
+- Desktop menu groups now open on real hover, retain native keyboard/touch disclosure behavior, and close every other open group. Mobile permits only one expanded subgroup at a time.
+- Homepage rabbit was pushed deliberately farther into the bottom-right screen edge. Showtime controls were narrowed and shortened.
+- Fixed cinema seats now use a dedicated foreground z-layer and a reduced-motion-safe scroll-driven zoom where the browser supports scroll timelines.
+- Credits now uses a dedicated raised-black auditorium screen, with historic Credits data rendered as centered one-name-per-line end credits rather than a paper page or multi-column list.
+- Local normal build and GitHub Pages-equivalent build both passed. Real browser checks passed 8/8: desktop hover, mutual submenu closure, mobile single disclosure, Instagram, foreground seats, rabbit placement, compact showtimes, and dark Credits layout.
+
+### Known follow-up
+
+- The source repository is public. Keep private film/licensing/contact data outside it. A separate private source plus GitHub Actions secrets can generate an approved public movie snapshot later.
+- Credits auto-roll remains intentionally disabled when a visitor prefers reduced motion; it should be visually revisited whenever credit typography changes.
+
 ## 2026-08-29 - GitHub Pages deployment is live
 
 ### Verified

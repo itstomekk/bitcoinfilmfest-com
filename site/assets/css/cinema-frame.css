@@ -200,16 +200,34 @@ p {
   opacity: 0.72;
 }
 
+/* Fixed foreground seats: a physical cinema edge, not a background decoration. */
 .cinema-seats {
   position: fixed;
   inset-inline: 0;
   inset-block-end: 0;
-  z-index: var(--z-modal);
+  z-index: var(--z-seats);
   width: 100%;
-  height: var(--frame-bottom);
+  height: calc(var(--frame-bottom) + var(--space-md));
   object-fit: cover;
   object-position: center bottom;
   pointer-events: none;
+  transform-origin: center bottom;
+}
+
+/* Modern browsers add a restrained projector-like seat push as the page moves. */
+@supports (animation-timeline: scroll()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .cinema-seats {
+      animation: seats-scroll-zoom linear both;
+      animation-timeline: scroll(root block);
+      animation-range: 0% 100%;
+    }
+  }
+}
+
+@keyframes seats-scroll-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.055); }
 }
 
 /* Shared navigation */
@@ -360,6 +378,7 @@ p {
   display: grid;
   align-content: start;
   gap: var(--space-xs);
+  min-height: calc(100dvh - var(--nav-height) - var(--frame-bottom));
   max-height: calc(100dvh - var(--nav-height) - var(--frame-bottom));
   padding: var(--space-lg);
   overflow-y: auto;
@@ -502,6 +521,12 @@ p {
   color: var(--color-on-screen);
 }
 
+/* Credits use a dedicated, slightly lifted black auditorium, not paper. */
+.stage--credits .screen-canvas {
+  background: var(--color-room-raised);
+  color: var(--color-on-dark);
+}
+
 .inner {
   width: min(100%, var(--content-max));
   margin-inline: auto;
@@ -522,12 +547,13 @@ p {
 }
 
 .home-rabbit {
+  /* Keep the mascot tucked into the lower-right screen corner. */
   position: absolute;
-  inset-inline-end: 0;
-  inset-block-end: 0;
-  z-index: var(--z-base);
+  inset-inline-end: clamp(-1.25rem, -2vw, -0.5rem);
+  inset-block-end: calc(var(--space-xl) * -1);
+  z-index: var(--z-raised);
   order: 0;
-  width: min(38vw, 12.0625rem);
+  width: min(42vw, 14rem);
   margin: 0;
   pointer-events: none;
 }
@@ -570,13 +596,15 @@ p {
   text-transform: lowercase;
 }
 
+/* The homepage programme controls stay compact, leaving the rabbit and title room. */
 .showtimes {
+  width: min(100%, 32rem);
   border-block-end: var(--rule-thin) solid color-mix(in oklch, var(--color-on-screen) 48%, transparent);
 }
 
 .showtime {
   display: grid;
-  min-height: 4.5rem;
+  min-height: 3.875rem;
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: var(--space-xs) var(--space-md);
@@ -862,10 +890,33 @@ article img,
   white-space: nowrap;
 }
 
-/* Credits */
+/* Credits: based on the historic vertical roll, rebuilt for accessible reading. */
+.credits-page {
+  width: min(100%, 34rem);
+  margin-inline: auto;
+  padding-block: clamp(var(--space-2xl), 9vw, var(--space-4xl));
+  text-align: center;
+}
+
+.credits-page .page-masthead {
+  max-width: 28rem;
+  margin-inline: auto;
+  margin-block-end: clamp(var(--space-3xl), 10vw, var(--space-4xl));
+  color: var(--color-on-dark);
+}
+
+.credits-page .page-context,
+.credits-date {
+  color: color-mix(in oklch, var(--color-on-dark) 58%, transparent);
+}
+
+.credits-page .page-masthead h1 {
+  color: var(--color-on-dark);
+}
+
 .credits-roll {
   display: grid;
-  gap: var(--space-3xl);
+  gap: clamp(var(--space-3xl), 10vw, var(--space-4xl));
   transition: opacity var(--dur-short) var(--ease-out);
 }
 
@@ -875,21 +926,24 @@ article img,
 
 .credits-section {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-lg);
-  padding-block-start: var(--space-lg);
-  border-block-start: var(--rule-thin) solid var(--color-rule);
+  padding: 0;
+  border: 0;
 }
 
 .credits-section h2 {
   margin: 0;
-  font-size: var(--text-lg);
+  color: var(--color-accent);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .credits-section ul {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: var(--space-xs) var(--space-xl);
+  gap: var(--space-xs);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -901,21 +955,23 @@ article img,
 
 .credits-section a {
   display: block;
-  overflow: hidden;
-  color: var(--color-ink);
-  font-size: var(--text-sm);
-  text-decoration-color: var(--color-rule);
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  overflow-wrap: anywhere;
+  color: var(--color-on-dark);
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-sm), 2.1vw, var(--text-md));
+  letter-spacing: 0.035em;
+  line-height: 1.35;
+  text-decoration-color: color-mix(in oklch, var(--color-on-dark) 28%, transparent);
+  text-underline-offset: 0.25em;
 }
 
-.credits-section a:hover {
-  color: var(--color-screen);
+.credits-section a:hover,
+.credits-section a:focus-visible {
+  color: var(--color-screen-soft);
 }
 
 .credits-date {
-  margin-block-start: var(--space-3xl);
-  color: var(--color-muted);
+  margin-block-start: clamp(var(--space-3xl), 10vw, var(--space-4xl));
 }
 
 /* Site map */
@@ -1267,14 +1323,6 @@ body.is-navigating {
     padding-inline-start: var(--space-xl);
   }
 
-  .credits-section {
-    grid-template-columns: minmax(9rem, 0.32fr) minmax(0, 1fr);
-  }
-
-  .credits-section ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .sitemap-group {
     grid-template-columns: minmax(11rem, 0.32fr) minmax(0, 1fr);
   }
@@ -1328,6 +1376,7 @@ body.is-navigating {
     align-items: center;
     justify-content: flex-end;
     gap: clamp(var(--space-md), 2.5vw, var(--space-xl));
+    min-height: 0;
     max-height: none;
     padding: 0;
     overflow: visible;
@@ -1372,18 +1421,9 @@ body.is-navigating {
 }
 
 @media (min-width: 60rem) and (hover: hover) and (pointer: fine) {
-  .nav-group:hover .nav-dropdown {
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%, 0);
-  }
-
+  /* main.js opens the hovered native details group and closes every sibling. */
   .showtime:hover {
     transform: translateX(var(--space-2xs));
-  }
-
-  .credits-section ul {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

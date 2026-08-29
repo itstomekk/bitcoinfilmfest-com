@@ -4,7 +4,7 @@ title: "Credits"
 nav_label: "Credits"
 description: "Bitcoin FilmFest crew, collaborators, production partners, and special cameos."
 permalink: /credits/
-screen: paper
+screen: credits
 ---
 
 <article class="credits-page">

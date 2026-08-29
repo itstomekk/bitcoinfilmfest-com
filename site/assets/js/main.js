@@ -10,7 +10,33 @@
   var navMenu = document.querySelector('[data-nav-menu]');
   var routeStatus = document.getElementById('route-status');
   var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  var desktopHover = window.matchMedia('(min-width: 60rem) and (hover: hover) and (pointer: fine)');
   var navigating = false;
+
+  // Festival/Reel groups remain native <details> controls for keyboard and touch.
+  // This coordinator adds desktop hover and guarantees only one open submenu.
+  function closeOtherGroups(activeGroup) {
+    document.querySelectorAll('[data-nav-group][open]').forEach(function (group) {
+      if (group !== activeGroup) group.removeAttribute('open');
+    });
+  }
+
+  document.querySelectorAll('[data-nav-group]').forEach(function (group) {
+    group.addEventListener('toggle', function () {
+      if (group.open) closeOtherGroups(group);
+    });
+
+    group.addEventListener('pointerenter', function (event) {
+      if (!desktopHover.matches || event.pointerType === 'touch') return;
+      closeOtherGroups(group);
+      group.open = true;
+    });
+
+    group.addEventListener('pointerleave', function (event) {
+      if (!desktopHover.matches || event.pointerType === 'touch') return;
+      group.open = false;
+    });
+  });
 
   function normalizePath(value) {
     var url = value instanceof URL ? value : new URL(value, window.location.href);
