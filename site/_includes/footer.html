@@ -34,7 +34,7 @@ lives in assets/js/subscribe.js. Keep this footer in the shared layout.
         <a class="social-icon social-icon--nostr" href="https://primal.net/p/{{ site.nostr_npub }}" target="_blank" rel="noopener noreferrer" aria-label="Bitcoin FilmFest on Nostr" title="Nostr"><span aria-hidden="true">N</span><span class="sr-only">Nostr</span></a>
         {% if site.social.linkedin %}<a class="social-icon social-icon--linkedin" href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="Bitcoin FilmFest on LinkedIn" title="LinkedIn"><span aria-hidden="true">in</span><span class="sr-only">LinkedIn</span></a>{% endif %}
       </p>
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }} · Warsaw</p>
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }} · Warsaw <span class="footer-version">v{{ site.version }}</span></p>
     </div>
   </div>
 </footer>

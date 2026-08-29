@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{% if page.title and page.title != site.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
 <meta name="description" content="{{ page.description | default: site.description }}">
-<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="robots" content="{{ page.robots | default: 'index, follow, max-image-preview:large' }}">
 <meta name="theme-color" content="{% if page.screen == 'blue' %}#0090dc{% else %}#08090a{% endif %}">
 <meta name="view-transition" content="same-origin">
 <link rel="canonical" href="{{ page.url | absolute_url }}">

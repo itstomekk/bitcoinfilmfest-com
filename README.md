@@ -12,13 +12,13 @@ https://github.com/itstomekk/bitcoinfilmfest-com
 
 The public URL will later move to `bitcoinfilmfest.com`. Until then, do not add a `CNAME` file or edit DNS records.
 
-## What this project is
+## 🎬 What this project is
 
 This is a **Jekyll static website**. Jekyll turns Markdown content, data files, templates, CSS, images, and JavaScript into ordinary HTML files. GitHub Actions performs that build whenever `main` changes, then GitHub Pages publishes the result.
 
 You do not need to be a developer to make routine changes. Most content work happens in Markdown (`.md`) and YAML (`.yml`) files.
 
-## Start here
+## 🧭 Start here
 
 | If you want to... | Read or edit... |
 | --- | --- |
@@ -31,7 +31,7 @@ You do not need to be a developer to make routine changes. Most content work hap
 | Follow the current future-builder handoff | `HANDOFF-CURRENT.md` |
 | See the old-site migration roadmap | `REBUILD-PHASES.md` |
 
-## Folder map
+## 🗂️ Folder map
 
 ```text
 .
@@ -81,7 +81,7 @@ GitHub Pages publishes the generated website
 | Visual language | `site/design.md` and `site/tokens.css` | Read first; change tokens before component CSS |
 | Interactive behavior | JavaScript files in `site/assets/js/` | See comments at the top of each file |
 
-## Important: public versus private
+## 🔒 Important: public versus private
 
 This repository is public. **Anything committed here is readable by anyone**, even if it is not published as a web page.
 
@@ -111,7 +111,7 @@ This is a good next phase when the movie catalogue is ready. It should be design
 
 Do not copy navigation, footer, cinema seats, or frame markup into a new page. They arrive automatically through the shared layout.
 
-## Offline copy, Git workflow, and collaboration
+## 💾 Offline copy, Git workflow, and collaboration
 
 Yes, there is an offline maintained copy. The local Git clone is:
 
@@ -151,7 +151,7 @@ For a one-line urgent correction, a trusted maintainer may push to `main` after 
 - Before a large phase, create and push an annotated tag such as `phase-2-ready`.
 - Store unreleased source files, private databases, contracts, and sensitive material separately. A public repository is not private storage.
 
-## Development and deployment
+## 🚀 Development and deployment
 
 - A change pushed to `main` runs `.github/workflows/deploy-pages.yml`.
 - The workflow uses Ruby 3.3, installs Jekyll dependencies, builds the `site/` folder, and deploys the generated output to GitHub Pages.
@@ -166,17 +166,17 @@ For a one-line urgent correction, a trusted maintainer may push to `main` after 
 - Custom pages must use `site/design.md` and token variables from `site/tokens.css`.
 - Motion is progressive enhancement and must respect reduced-motion preferences.
 
-## Old-site rebuild roadmap
+## 🧱 Old-site rebuild roadmap
 
 The public Site map page was intentionally removed: visitors should not see the migration queue. Builders can use `REBUILD-PHASES.md`, `site/SITEMAP-PLAN.md`, and `site/_data/sitemap.json` to plan internally.
 
 The next work sequence is: archive triage and redirect decisions, completed festival edition hubs, a real Reel/publication archive, and then a safe build-time private movie-catalogue pipeline. Schema, a reviewed public XML sitemap, and `AGENTS.md` are later discovery/onboarding work, once enough real routes and data exist.
 
-## Questions and improvements
+## ✨ Questions and improvements
 
 Jekyll currently includes SEO metadata, feed support, and GitHub Pages compatibility. Schema and XML sitemap work are intentionally deferred. See `site/README.md` and `BUILD-LOG.md` before adding a plugin. Because deployment uses GitHub Actions, we can add carefully chosen build-time plugins later, but every plugin must be documented, pinned, and verified in the deployment workflow.
 
-## Historical records
+## 🧾 Historical records
 
 `HANDOFF.md`, `HANDOFF-SESSION-2.md`, and `HANDOFF-SESSION-3.md` are preserved snapshots of earlier work. They explain why decisions were made, but they are not the current source of truth. `HANDOFF-CURRENT.md` is the live handoff.
 

@@ -1245,6 +1245,15 @@ form[data-subscribe] button:active {
   margin: 0;
 }
 
+.footer-version {
+  position: absolute;
+  inset-inline-end: clamp(var(--space-xl), 6vw, var(--space-3xl));
+  inset-block-end: calc(var(--frame-bottom) + var(--space-xl));
+  color: color-mix(in oklch, var(--color-on-dark) 35%, transparent);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+}
+
 /* Progressive page transitions */
 @view-transition {
   navigation: auto;
@@ -1451,6 +1460,41 @@ body.is-navigating {
     display: none;
   }
 }
+
+/* Experimental design-test route. Unlinked concept page for future content patterns. */
+.design-test { display: grid; gap: clamp(var(--space-3xl), 12vw, var(--space-4xl)); padding-block: clamp(var(--space-xl), 5vw, var(--space-3xl)); color: var(--color-on-screen); }
+.design-test-hero { display: grid; gap: clamp(var(--space-xl), 6vw, var(--space-3xl)); align-items: center; }
+.design-test-hero-copy { max-width: 38rem; }
+.design-test-kicker, .design-test-card-label { margin-block-end: var(--space-md); color: var(--color-accent); font-family: var(--font-display); font-size: var(--text-xs); letter-spacing: 0.11em; text-transform: uppercase; }
+.design-test h1 { max-width: 9ch; margin-block-end: var(--space-lg); font-size: clamp(3rem, 7vw, 6.5rem); letter-spacing: -0.06em; line-height: 0.94; }
+.design-test h2 { max-width: 13ch; font-size: clamp(var(--text-2xl), 5vw, var(--text-display-s)); }
+.design-test h3 { font-size: clamp(var(--text-lg), 3vw, var(--text-2xl)); }
+.design-test-intro, .design-test-section-heading > p, .design-test-card-copy > p:last-child, .design-test-card--text > p:not(.design-test-card-label), .design-test-close p { max-width: 43ch; font-size: var(--text-md); }
+.design-test-cta { display: inline-flex; align-items: center; gap: var(--space-sm); margin-block-start: var(--space-lg); padding: var(--space-sm) var(--space-md) var(--space-sm) var(--space-lg); border: var(--rule-thin) solid color-mix(in oklch, var(--color-on-screen) 55%, transparent); background: var(--color-on-screen); color: var(--color-screen); font-family: var(--font-display); text-decoration: none; transition: transform var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out); }
+.design-test-cta span { display: grid; width: 1.45rem; height: 1.45rem; place-items: center; border-radius: 50%; background: var(--color-screen); color: var(--color-on-screen); }
+.design-test-cta:hover { background: var(--color-accent); color: var(--color-ink); }
+.design-test-cta:hover span { background: var(--color-ink); }
+.design-test-cta:active { transform: scale(0.98); }
+.design-test-hero-image { margin: 0; padding: var(--space-xs); background: color-mix(in oklch, var(--color-on-screen) 16%, transparent); box-shadow: 0 1.4rem 3.6rem color-mix(in oklch, var(--color-room) 54%, transparent); }
+.design-test-hero-image img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; }
+.design-test-hero-image figcaption { margin-block-start: var(--space-xs); color: color-mix(in oklch, var(--color-on-screen) 58%, transparent); font-size: var(--text-xs); }
+.design-test-frames { display: grid; gap: var(--space-2xl); }
+.design-test-section-heading { max-width: 42rem; }
+.design-test-grid { display: grid; gap: var(--space-md); }
+.design-test-card { display: grid; min-width: 0; overflow: hidden; background: color-mix(in oklch, var(--color-room) 34%, var(--color-screen)); box-shadow: inset 0 1px 0 color-mix(in oklch, var(--color-on-screen) 22%, transparent), 0 1rem 2.5rem color-mix(in oklch, var(--color-room) 50%, transparent); }
+.design-test-card-copy, .design-test-card--text { padding: clamp(var(--space-lg), 4vw, var(--space-2xl)); }
+.design-test-card-image img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; }
+.design-test-card--text { align-content: start; background: var(--color-room-raised); }
+.design-test-card--text a { margin-block-start: auto; color: var(--color-accent); font-family: var(--font-display); }
+.design-test-card--rabbit { position: relative; min-height: 22rem; align-items: end; padding: clamp(var(--space-lg), 4vw, var(--space-2xl)); background: var(--color-accent); color: var(--color-ink); }
+.design-test-card--rabbit .design-test-card-label { color: var(--color-ink); }
+.design-test-card--rabbit img { position: absolute; right: clamp(-2rem, -4vw, -0.5rem); bottom: calc(var(--space-lg) * -1); width: min(56%, 16rem); max-height: 21rem; object-fit: contain; object-position: bottom right; }
+.design-test-card--rabbit > div { position: relative; z-index: var(--z-raised); max-width: 19rem; }
+.design-test-close { display: flex; flex-wrap: wrap; gap: var(--space-xl); align-items: end; justify-content: space-between; padding-block-start: var(--space-2xl); border-block-start: var(--rule-thin) solid color-mix(in oklch, var(--color-on-screen) 42%, transparent); }
+.design-test-cta--quiet { background: transparent; color: var(--color-on-screen); }
+.design-test-cta--quiet span { background: var(--color-on-screen); color: var(--color-screen); }
+@media (min-width: 40rem) { .design-test-grid { grid-template-columns: minmax(0, 1.35fr) minmax(15rem, 0.8fr); } .design-test-card--feature { grid-row: span 2; } .design-test-card--rabbit { min-height: 26rem; } }
+@media (min-width: 52rem) { .design-test-hero { grid-template-columns: minmax(0, 0.85fr) minmax(23rem, 1.15fr); } }
 
 @media (prefers-reduced-motion: reduce) {
   html {
