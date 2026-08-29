@@ -184,9 +184,7 @@ p {
   pointer-events: none;
 }
 
-/* Fixed foreground seats: a physical cinema edge, not a background decoration.
-   Source image is a wide, short strip (~11.5:1) — object-fit:contain keeps the
-   full seat silhouette visible instead of cropping it to fill a shorter box. */
+/* Fixed foreground seats: a physical cinema edge, not a background decoration. */
 .cinema-seats {
   position: fixed;
   inset-inline: 0;
@@ -194,7 +192,7 @@ p {
   z-index: var(--z-seats);
   width: 100%;
   height: calc(var(--frame-bottom) + var(--space-md));
-  object-fit: contain;
+  object-fit: cover;
   object-position: center bottom;
   pointer-events: none;
   transform-origin: center bottom;
@@ -243,7 +241,6 @@ p {
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: var(--space-xs);
   height: calc(var(--nav-height) - var(--space-sm));
   color: var(--color-on-dark);
   text-decoration: none;
@@ -261,13 +258,11 @@ p {
   flex: 0 0 auto;
 }
 
-.brand-name {
-  font-family: var(--font-display);
-  font-size: var(--text-sm);
-  letter-spacing: 0.02em;
-  line-height: 1;
-  white-space: nowrap;
-  text-transform: lowercase;
+.brand-wordmark {
+  display: none;
+  width: auto;
+  height: 1.5rem;
+  object-fit: contain;
 }
 
 .nav-current {
@@ -402,36 +397,13 @@ p {
 }
 
 .nav-link:hover,
-.nav-group > summary:hover {
-  color: var(--color-ink);
-  background: var(--color-paper);
-}
+.nav-group > summary:hover,
 
 .nav-link.active,
 .nav-group.active > summary {
   color: var(--color-screen-soft);
 }
 
-.nav-icon {
-  padding-inline: var(--space-xs);
-  font-size: 1.15rem;
-}
-
-.nav-icon-heart {
-  display: inline-block;
-  line-height: 1;
-  transition: transform var(--dur-short) var(--ease-out);
-}
-
-.nav-icon:hover .nav-icon-heart {
-  transform: scale(1.12);
-}
-
-.nav-icon:hover,
-.nav-icon.active {
-  background: transparent;
-  color: var(--color-on-dark);
-}
 
 .nav-link.active::after,
 .nav-group.active > summary::after {
@@ -1111,7 +1083,7 @@ article img,
   margin-inline: var(--frame-side);
   min-height: calc(var(--frame-bottom) + 22rem);
   padding: clamp(var(--space-2xl), 8vw, var(--space-4xl)) clamp(var(--space-xl), 6vw, var(--space-3xl)) calc(var(--frame-bottom) + var(--space-3xl));
-  background: var(--color-footer);
+  background: var(--color-room-raised);
   color: var(--color-on-dark);
 }
 
@@ -1419,6 +1391,11 @@ body.is-navigating {
 }
 
 @media (min-width: 52rem) {
+  .brand-wordmark {
+    display: block;
+  }
+
+  .brand-mark,
   .nav-toggle {
     display: none;
   }
@@ -1502,186 +1479,6 @@ body.is-navigating {
 
   .route-state {
     display: none;
-  }
-}
-
-/* Reel — press, blog, and the news chronicle. A film-reel reading page:
-   paper screen, sprocket-edge details on the chronicle strip, showtime-style
-   rows reused for consistency with the homepage programme. */
-.reel-page .page-masthead {
-  border-block-end-color: var(--color-ink);
-}
-
-.reel-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-xs) var(--space-lg);
-  margin-block-end: var(--space-2xl);
-  padding-block-end: var(--space-md);
-  border-block-end: var(--rule-thin) solid var(--color-rule);
-}
-
-.reel-nav a {
-  color: var(--color-muted);
-  font-family: var(--font-display);
-  font-size: var(--text-xs);
-  letter-spacing: 0.08em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.reel-nav a:hover {
-  color: var(--color-ink);
-  text-decoration: underline;
-  text-underline-offset: 0.3em;
-}
-
-.reel-section {
-  margin-block-end: clamp(var(--space-3xl), 9vw, var(--space-4xl));
-}
-
-.reel-section > .section-label {
-  margin-block-end: var(--space-2xs);
-}
-
-.reel-section > h2 {
-  margin-block-start: 0;
-  margin-block-end: var(--space-sm);
-}
-
-.reel-section > .reel-lede {
-  max-width: var(--prose-max);
-  margin-block-end: var(--space-xl);
-  color: var(--color-muted);
-}
-
-.reel-empty {
-  padding-block: var(--space-lg);
-  border-block-start: var(--rule-thin) solid var(--color-rule);
-  color: var(--color-muted);
-  font-style: italic;
-}
-
-/* Newsletter issues: reuse the showtime-row rhythm on a paper ground. */
-.reel-list {
-  display: grid;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-  border-block-end: var(--rule-thin) solid var(--color-rule);
-  list-style: none;
-}
-
-.reel-list li {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: var(--space-xs) var(--space-lg);
-  margin: 0;
-  padding-block: var(--space-md);
-  border-block-start: var(--rule-thin) solid var(--color-rule);
-}
-
-.reel-list a {
-  color: var(--color-ink);
-  font-family: var(--font-display);
-  font-size: var(--text-md);
-  text-decoration: none;
-  text-underline-offset: 0.3em;
-}
-
-.reel-list a:hover {
-  text-decoration: underline;
-}
-
-.reel-list time {
-  color: var(--color-muted);
-  font-size: var(--text-xs);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-}
-
-/* Chronicle: a film-strip motif — a faint sprocket edge on the leading side
-   of each entry, restrained rather than literal, matching the "vintage
-   screen" brief without reintroducing the removed global perforation band. */
-.chronicle {
-  display: grid;
-  gap: 0;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.chronicle-entry {
-  position: relative;
-  display: grid;
-  grid-template-columns: minmax(6.5rem, auto) minmax(0, 1fr);
-  gap: var(--space-xs) var(--space-lg);
-  padding-block: var(--space-lg);
-  padding-inline-start: var(--space-lg);
-  border-block-start: var(--rule-thin) solid var(--color-rule);
-}
-
-.chronicle-entry:first-child {
-  border-block-start: var(--rule-thin) solid var(--color-ink);
-}
-
-.chronicle-entry::before {
-  position: absolute;
-  inset-block: 0;
-  inset-inline-start: 0;
-  width: var(--space-2xs);
-  background-image: radial-gradient(circle, var(--color-rule) 0.075rem, transparent 0.08rem);
-  background-position: center;
-  background-repeat: repeat-y;
-  background-size: 100% var(--space-md);
-  content: "";
-}
-
-.chronicle-date {
-  color: var(--color-screen);
-  font-family: var(--font-display);
-  font-size: var(--text-xs);
-  font-variant-numeric: tabular-nums;
-  letter-spacing: 0.04em;
-  white-space: nowrap;
-}
-
-.chronicle-source {
-  display: block;
-  margin-block-start: var(--space-3xs);
-  color: var(--color-muted);
-  font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-}
-
-.chronicle-body {
-  min-width: 0;
-  max-width: var(--prose-max);
-}
-
-.chronicle-body p {
-  margin: 0;
-}
-
-.chronicle-body a {
-  color: var(--color-ink);
-  text-decoration-color: color-mix(in oklch, var(--color-ink) 35%, transparent);
-  text-underline-offset: 0.2em;
-}
-
-.chronicle-body a:hover {
-  color: var(--color-screen);
-  text-decoration-color: currentColor;
-}
-
-@media (min-width: 40rem) {
-  .chronicle-entry {
-    grid-template-columns: 8rem minmax(0, 1fr);
-    gap: var(--space-lg);
   }
 }
 
