@@ -74,7 +74,8 @@ Edit `_data/credits.json`. `credits.md` renders this structured data. `credits.y
 
 | Path | Owner / responsibility |
 | --- | --- |
-| `_config.yml` | Site metadata, collections, social links, plugins, Jekyll exclusions. |
+| `_config.yml` | Global metadata, share-image default, social links, collections, plugins, and Jekyll exclusions. |
+| `robots.txt`, `site.webmanifest` | Crawler/installability files. `robots.txt` points bots to the generated XML sitemap; the manifest references app icons. |
 | `_config.github-pages.yml` | Temporary GitHub project-site URL/baseurl override. Use only for the GitHub Pages workflow. |
 | `design.md` | Locked visual language and rules for custom designs. Read before design work. |
 | `tokens.css` | Canonical colors, typography, spacing, z-index, frame, and motion tokens. |
