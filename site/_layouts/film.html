@@ -1,0 +1,55 @@
+---
+layout: default
+---
+<article class="cinema-profile">
+  <a class="cinema-back" href="{{ '/cinema/films/' | relative_url }}">← All films</a>
+
+  <header class="page-masthead">
+    <p class="page-context">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.synopsis %}<p>{{ page.synopsis }}</p>{% endif %}
+  </header>
+
+  <dl class="cinema-profile-meta">
+    {% if page.director %}<dt>Director</dt><dd>{{ page.director }}</dd>{% endif %}
+    {% if page.cast and page.cast.size > 0 %}<dt>Cast</dt><dd>{{ page.cast | join: ", " }}</dd>{% endif %}
+    {% if page.studio %}<dt>Studio</dt><dd>{{ page.studio }}</dd>{% endif %}
+    {% if page.country %}<dt>Country</dt><dd>{{ page.country }}</dd>{% endif %}
+    {% if page.runtime %}<dt>Runtime</dt><dd>{{ page.runtime }} min</dd>{% endif %}
+    {% if page.platform %}<dt>Where to watch</dt><dd>{{ page.platform }}</dd>{% endif %}
+    {% if page.bff_screening %}<dt>Bitcoin FilmFest</dt><dd>{{ page.bff_screening }}</dd>{% endif %}
+  </dl>
+
+  {% if page.bitcoin_angle %}
+    <section>
+      <p class="section-label">The Bitcoin angle</p>
+      <p>{{ page.bitcoin_angle }}</p>
+    </section>
+  {% endif %}
+
+  {% if page.trailer %}
+    <section>
+      <p class="section-label">Trailer</p>
+      <p><a href="{{ page.trailer }}" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></p>
+    </section>
+  {% endif %}
+
+  {% if page.company %}
+    {% assign linked_company = site.companies | where: "slug", page.company | first %}
+    {% if linked_company %}
+      <section>
+        <p class="section-label">Production company</p>
+        <p><a href="{{ linked_company.url | relative_url }}">{{ linked_company.title }} →</a></p>
+      </section>
+    {% endif %}
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.sources and page.sources.size > 0 %}
+    <p class="section-label">Sources</p>
+    <p class="cinema-sources">
+      {% for source in page.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a>{% endfor %}
+    </p>
+  {% endif %}
+</article>

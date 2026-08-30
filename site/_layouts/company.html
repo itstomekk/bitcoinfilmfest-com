@@ -1,0 +1,52 @@
+---
+layout: default
+---
+<article class="cinema-profile">
+  <a class="cinema-back" href="{{ '/cinema/companies/' | relative_url }}">← All companies</a>
+
+  <header class="page-masthead">
+    <p class="page-context">{{ page.type }}{% if page.established %} · est. {{ page.established }}{% endif %}{% if page.status %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
+    <h1>{{ page.title }}</h1>
+  </header>
+
+  <dl class="cinema-profile-meta">
+    {% if page.founders and page.founders.size > 0 %}<dt>Founders</dt><dd>{{ page.founders | join: ", " }}</dd>{% endif %}
+    {% if page.location %}<dt>Location</dt><dd>{{ page.location }}</dd>{% endif %}
+    {% if page.website %}<dt>Website</dt><dd><a href="{{ page.website }}" target="_blank" rel="noopener noreferrer">{{ page.website | remove: "https://" | remove: "http://" }}</a></dd>{% endif %}
+  </dl>
+
+  {% if page.bitcoin_angle %}
+    <section>
+      <p class="section-label">The Bitcoin angle</p>
+      <p>{{ page.bitcoin_angle }}</p>
+    </section>
+  {% endif %}
+
+  {% if page.productions and page.productions.size > 0 %}
+    <section>
+      <p class="section-label">Notable productions</p>
+      <p>{{ page.productions | join: " · " }}</p>
+    </section>
+  {% endif %}
+
+  {% assign linked_films = site.films | where: "company", page.slug %}
+  {% if linked_films.size > 0 %}
+    <section>
+      <p class="section-label">Films in the database</p>
+      <ul class="cinema-index">
+        {% for film in linked_films %}
+          {% include cinema-row.html entry=film kind="film" %}
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {{ content }}
+
+  {% if page.sources and page.sources.size > 0 %}
+    <p class="section-label">Sources</p>
+    <p class="cinema-sources">
+      {% for source in page.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a>{% endfor %}
+    </p>
+  {% endif %}
+</article>

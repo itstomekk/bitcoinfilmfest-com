@@ -1,0 +1,26 @@
+{% comment %}
+  Shared row for /cinema/films/ and /cinema/companies/ index pages.
+  Extends the existing .showtime programme-row language (design.md: no
+  generic rounded cards) rather than introducing a new card idiom.
+
+  Usage: {% include cinema-row.html entry=film kind="film" %}
+  kind is "film" or "company" — only changes which meta fields print.
+{% endcomment %}
+{% assign row = include.entry %}
+{% assign kind = include.kind %}
+<li class="cinema-row">
+  <a class="cinema-row-link" href="{{ row.url | relative_url }}">
+    <span class="cinema-row-title">{{ row.title }}</span>
+    <span class="cinema-row-meta">
+      {% if kind == "film" %}
+        {% if row.year %}<span>{{ row.year }}</span>{% endif %}
+        {% if row.type %}<span>{{ row.type }}</span>{% endif %}
+        {% if row.status %}<span class="cinema-status cinema-status--{{ row.status }}">{{ row.status | replace: '-', ' ' }}</span>{% endif %}
+      {% else %}
+        {% if row.type %}<span>{{ row.type }}</span>{% endif %}
+        {% if row.established %}<span>est. {{ row.established }}</span>{% endif %}
+        {% if row.status %}<span class="cinema-status cinema-status--{{ row.status }}">{{ row.status | replace: '-', ' ' }}</span>{% endif %}
+      {% endif %}
+    </span>
+  </a>
+</li>

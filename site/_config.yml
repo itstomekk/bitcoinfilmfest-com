@@ -30,6 +30,10 @@ social:
 nostr_npub: "npub1rjtrs7xqdvj3588r9njrexh2n750j7jdwx9qs543nutmdsj6ljaqpfmp8a"
 
 # Jekyll's native blog engine — used for newsletters/digest posts
+# films/companies: the /cinema/ ecosystem section (see PLAN-CINEMA.md). Each
+# entry is one Markdown file with front matter — no build-time importer from
+# the private research KB; a curator hand-writes/reviews every file that lands
+# here, per the plan's data-source boundary.
 collections:
   newsletters:
     output: true
@@ -37,6 +41,14 @@ collections:
   chronicle:
     output: false
     sort_by: date
+  films:
+    output: true
+    permalink: /cinema/films/:name/
+    sort_by: title
+  companies:
+    output: true
+    permalink: /cinema/companies/:name/
+    sort_by: title
 
 defaults:
   - scope:
@@ -53,6 +65,22 @@ defaults:
       nav_label: "Reel"
       screen: "paper"
       image: "/assets/images/social/bff-social-default.jpg"
+  - scope:
+      path: ""
+      type: "films"
+    values:
+      layout: "film"
+      nav_label: "Films"
+      screen: "paper"
+      image: "/assets/images/social/bff-social-default.jpg"
+  - scope:
+      path: ""
+      type: "companies"
+    values:
+      layout: "company"
+      nav_label: "Companies"
+      screen: "paper"
+      image: "/assets/images/social/bff-social-default.jpg"
 
 markdown: kramdown
 kramdown:
@@ -66,6 +94,7 @@ plugins:
 exclude:
   - README.md
   - design.md
+  - _cinema-schema.md
   - SITEMAP-PLAN.md
   - .hallmark
   - Gemfile
