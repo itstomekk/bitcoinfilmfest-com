@@ -176,6 +176,22 @@ The next work sequence is: archive triage and redirect decisions, completed fest
 
 Jekyll currently includes SEO metadata, feed support, and GitHub Pages compatibility. Schema and XML sitemap work are intentionally deferred. See `site/README.md` and `BUILD-LOG.md` before adding a plugin. Because deployment uses GitHub Actions, we can add carefully chosen build-time plugins later, but every plugin must be documented, pinned, and verified in the deployment workflow.
 
+## Recent changes
+
+This is the simplified, day-grouped change summary. `BUILD-LOG.md` remains the detailed verified record; Git history is the complete source of every file-level change.
+
+### 2026-08-30
+
+- Added SEO assets, structured metadata, `robots.txt`, XML sitemap, and the web manifest.
+- Added safe pull-request checks, a downloadable PR build artifact, and collaboration guidance.
+- Refined the cinema shell: optimized supplied favicon, SVG social marks, film-reel controls, screen texture, seat overlay/zoom, hero, footer, and navigation.
+- Current temporary production URL remains the GitHub Pages project site. No custom-domain DNS/CNAME change was made.
+
+### 2026-08-29
+
+- Published the modular Jekyll rebuild through GitHub Actions Pages.
+- Added shared navigation, Credits roll, footer, public builder guides, and the custom-domain cutover checklist.
+
 ## 🧾 Historical records
 
 `HANDOFF.md`, `HANDOFF-SESSION-2.md`, and `HANDOFF-SESSION-3.md` are preserved snapshots of earlier work. They explain why decisions were made, but they are not the current source of truth. `HANDOFF-CURRENT.md` is the live handoff.

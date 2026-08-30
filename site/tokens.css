@@ -56,7 +56,8 @@
   --rule-thin: 1px;
 
   --frame-side: clamp(0.75rem, 4vw, 4.5rem);
-  --frame-bottom: clamp(5.5rem, 11vh, 8.5rem);
+  /* Extra 1vh keeps the lower cinema screen breathing above the seat foreground. */
+  --frame-bottom: clamp(5.5rem, 12vh, 8.5rem);
   --nav-height: clamp(2.75rem, 5.5vh, 3.375rem);
   --content-max: 74rem;
   --prose-max: 68ch;
