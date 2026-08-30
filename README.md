@@ -10,7 +10,7 @@ https://itstomekk.github.io/bitcoinfilmfest-com/
 
 https://github.com/itstomekk/bitcoinfilmfest-com
 
-The public URL will later move to `bitcoinfilmfest.com`. Until then, do not add a `CNAME` file or edit DNS records.
+The public URL will later move to `bitcoinfilmfest.com`. Until then, do not add a `CNAME` file or edit DNS records. The owner-approved release procedure is documented in `DOMAIN-SEO-CUTOVER.md`.
 
 ## 🎬 What this project is
 
