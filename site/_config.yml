@@ -2,7 +2,7 @@
 # Equivalent to the old inc/config.php constants (SITE_NAME, NAV, FOOTER_LINKS, SOCIAL).
 
 title: "Bitcoin FilmFest"
-tagline: "the heart of Bitcoin Cinema"
+tagline: "at the 🧡of Bitcoin Cinema"
 version: "0.4.0"
 description: "Orange-pill cinema, unfiat the culture. BFF'27 — June 24–27, 2027, Warsaw."
 url: "https://bitcoinfilmfest.com"

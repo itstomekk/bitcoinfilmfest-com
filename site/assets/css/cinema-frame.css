@@ -256,10 +256,11 @@ p {
 }
 
 .brand-mark {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 2.1rem;
+  height: 2.1rem;
   object-fit: contain;
   flex: 0 0 auto;
+  filter: drop-shadow(0 0 0.18rem color-mix(in oklch, var(--color-on-dark) 34%, transparent));
 }
 
 .brand-name {
@@ -283,7 +284,7 @@ p {
   font-size: var(--text-xs);
   letter-spacing: 0.06em;
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: lowercase;
   white-space: nowrap;
 }
 
@@ -420,6 +421,7 @@ p {
 
 .nav-icon-heart {
   display: inline-block;
+  color: var(--color-on-dark);
   line-height: 1;
   transition: transform var(--dur-short) var(--ease-out);
 }
@@ -1362,27 +1364,26 @@ form[data-subscribe] button:active {
   width: 2.7rem;
   height: 2.7rem;
   place-items: center;
-  overflow: hidden;
-  border: var(--rule-thin) solid color-mix(in oklch, var(--color-on-dark) 62%, transparent);
-  border-radius: var(--radius-control);
-  background: color-mix(in oklch, var(--color-room) 72%, var(--color-room-raised));
-  box-shadow: inset 0 0 0 0.16rem color-mix(in oklch, var(--color-room) 80%, transparent), inset 0 0 0 0.22rem color-mix(in oklch, var(--color-on-dark) 16%, transparent);
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
   color: color-mix(in oklch, var(--color-on-dark) 72%, transparent) !important;
   font-family: var(--font-display) !important;
   font-size: var(--text-sm) !important;
   font-weight: 700;
   line-height: 1;
   text-decoration: none !important;
-  transition: border-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out);
+  transition: color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out);
 }
 
 .social-icon::before,
 .social-icon::after {
   position: absolute;
-  inset-inline: 0.28rem;
-  height: 0.32rem;
-  border-inline: var(--rule-thin) solid color-mix(in oklch, var(--color-on-dark) 18%, transparent);
-  background: repeating-linear-gradient(90deg, var(--color-room) 0 0.18rem, transparent 0.18rem 0.43rem);
+  inset-inline: 0.42rem;
+  height: 0.14rem;
+  background: repeating-linear-gradient(90deg, currentColor 0 0.12rem, transparent 0.12rem 0.34rem);
   content: "";
   opacity: 1;
 }
@@ -1405,8 +1406,6 @@ form[data-subscribe] button:active {
 
 .social-icon:hover,
 .social-icon:focus-visible {
-  border-color: var(--color-accent);
-  background: color-mix(in oklch, var(--color-accent) 17%, var(--color-room-raised));
   color: var(--color-accent) !important;
 }
 
