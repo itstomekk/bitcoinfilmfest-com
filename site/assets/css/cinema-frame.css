@@ -196,7 +196,8 @@ p {
   max-width: none;
   height: auto;
   pointer-events: none;
-  transform: translateX(-50%);
+  --seat-scroll-scale: 1;
+  transform: translateX(-50%) scale(var(--seat-scroll-scale));
   transform-origin: center bottom;
 }
 
@@ -399,13 +400,36 @@ p {
 }
 
 .nav-link:hover,
-.nav-group > summary:hover,
+.nav-group > summary:hover {
+  color: var(--color-ink);
+  background: var(--color-paper);
+}
 
 .nav-link.active,
 .nav-group.active > summary {
   color: var(--color-screen-soft);
 }
 
+.nav-icon {
+  padding-inline: var(--space-xs);
+  font-size: 1.15rem;
+}
+
+.nav-icon-heart {
+  display: inline-block;
+  line-height: 1;
+  transition: transform var(--dur-short) var(--ease-out);
+}
+
+.nav-icon:hover .nav-icon-heart {
+  transform: scale(1.12);
+}
+
+.nav-icon:hover,
+.nav-icon.active {
+  background: transparent;
+  color: var(--color-on-dark);
+}
 
 .nav-link.active::after,
 .nav-group.active > summary::after {
@@ -498,24 +522,99 @@ p {
   background: var(--color-paper);
 }
 
-/* Projection texture is deliberately contained inside .screen-canvas. */
+/* Projection texture is deliberately contained inside .screen-canvas. Its
+   low-opacity layers give every cinema screen a tangible film surface while
+   leaving navigation, the room frame, footer, and fixed seats untouched. */
 .cinema-atmosphere,
-.cinema-atmosphere > i { position: absolute; inset: 0; pointer-events: none; }
-.cinema-atmosphere { z-index: 0; overflow: hidden; }
-.cinema-grain { inset: -50% !important; width: 200%; height: 200%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.78'/%3E%3C/svg%3E"); background-repeat: repeat; mix-blend-mode: soft-light; opacity: .07; animation: cinema-grain-shift 1.2s steps(4) infinite; }
-.cinema-scratch { inset-block: -10% !important; inset-inline-start: auto !important; width: 1px; height: 120%; background: color-mix(in oklch, var(--color-on-screen) 58%, transparent); mix-blend-mode: screen; opacity: 0; animation: cinema-scratch-flash 8s linear infinite; }
-.cinema-scratch--one { inset-inline-end: 18% !important; animation-delay: .7s; }
-.cinema-scratch--two { inset-inline-end: 51% !important; width: 2px; animation-delay: 3.1s; }
-.cinema-scratch--three { inset-inline-end: 83% !important; animation-delay: 5.6s; }
-.cinema-dust { inset: auto !important; width: 2px; height: 2px; border-radius: 50%; background: var(--color-on-screen); opacity: 0; animation: cinema-dust-pop 6s var(--ease-in-out) infinite; }
+.cinema-atmosphere > i {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.cinema-atmosphere {
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cinema-grain {
+  inset: -50% !important;
+  width: 200%;
+  height: 200%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.78'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  mix-blend-mode: overlay;
+  opacity: 0.18;
+  animation: cinema-grain-shift 0.6s steps(4) infinite;
+}
+
+.cinema-scratch {
+  inset-block: -10% !important;
+  inset-inline-start: auto !important;
+  width: 1px;
+  height: 120%;
+  background: color-mix(in oklch, var(--color-on-screen) 58%, transparent);
+  mix-blend-mode: screen;
+  opacity: 0;
+  animation: cinema-scratch-flash 8s linear infinite;
+}
+
+.cinema-scratch--one { inset-inline-end: 12% !important; animation-delay: 0.2s; }
+.cinema-scratch--two { inset-inline-end: 34% !important; width: 2px; animation-delay: 2.4s; }
+.cinema-scratch--three { inset-inline-end: 58% !important; animation-delay: 4.1s; }
+.cinema-scratch--four { inset-inline-end: 77% !important; animation-delay: 1.3s; }
+.cinema-scratch--five { inset-inline-end: 90% !important; width: 2px; animation-delay: 3.6s; }
+
+.cinema-dust {
+  inset: auto !important;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: var(--color-on-screen);
+  opacity: 0;
+  animation: cinema-dust-pop 6s var(--ease-in-out) infinite;
+}
+
 .cinema-dust--one { inset-block-start: 22% !important; inset-inline-start: 18% !important; animation-delay: 1s; }
 .cinema-dust--two { inset-block-start: 64% !important; inset-inline-start: 72% !important; animation-delay: 3.4s; }
 .cinema-dust--three { inset-block-start: 42% !important; inset-inline-start: 46% !important; animation-delay: 5.1s; }
-.cinema-flicker { background: var(--color-room); mix-blend-mode: multiply; opacity: 0; animation: cinema-flicker-pulse 4.8s steps(2) infinite; }
-.cinema-vignette { background: radial-gradient(ellipse at center, transparent 40%, color-mix(in oklch, var(--color-room) 60%, transparent) 100%); opacity: .24; }
-.cinema-sprocket { inset-block: 0 !important; inset-inline: auto !important; width: clamp(.8rem, 2vw, 1.5rem); background: radial-gradient(ellipse at center, var(--color-room) 0 34%, transparent 38%) center / 100% 1.65rem repeat-y; opacity: .12; }
-.cinema-sprocket--left { inset-inline-start: 0 !important; }
-.cinema-sprocket--right { inset-inline-end: 0 !important; }
+
+.cinema-flicker {
+  background: var(--color-room);
+  mix-blend-mode: multiply;
+  opacity: 0;
+  animation: cinema-flicker-pulse 0.15s steps(2) infinite;
+}
+
+/* The supplied warm-film tint is translated to a restrained BFF-blue projector tint. */
+.cinema-tint {
+  background: rgba(0, 74, 128, 0.16);
+  mix-blend-mode: color;
+}
+
+.cinema-vignette {
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.75) 100%);
+  opacity: 0.48;
+}
+
+/* Perforations are intentionally paper-screen only. Blue and credits screens
+   stay clean at their side edges, while beige reading screens get film stock. */
+.cinema-sprocket { display: none; }
+.stage--paper .cinema-sprocket {
+  display: block;
+  inset-block: 0 !important;
+  inset-inline: auto !important;
+  width: clamp(0.8rem, 2vw, 1.5rem);
+  background: radial-gradient(ellipse at center, var(--color-room) 0 34%, transparent 38%) center / 100% 1.65rem repeat-y;
+  opacity: 0.2;
+}
+.stage--paper .cinema-sprocket--left { inset-inline-start: 0 !important; }
+.stage--paper .cinema-sprocket--right { inset-inline-end: 0 !important; }
+
+.inner {
+  position: relative;
+  z-index: var(--z-raised);
+}
 
 .stage--blue .screen-canvas {
   background-color: var(--color-screen);
@@ -533,8 +632,6 @@ p {
 }
 
 .inner {
-  position: relative;
-  z-index: var(--z-raised);
   width: min(100%, var(--content-max));
   margin-inline: auto;
   padding: clamp(var(--space-xl), 6vw, var(--space-3xl)) clamp(var(--space-md), 5vw, var(--space-2xl));
@@ -698,10 +795,32 @@ p {
   }
 }
 
-@keyframes cinema-grain-shift { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(-1.5%, 1%); } 50% { transform: translate(1%, -1.5%); } 75% { transform: translate(-1%, -.5%); } }
-@keyframes cinema-scratch-flash { 0%, 96%, 100% { opacity: 0; } 97% { opacity: .24; transform: translateX(0); } 97.5% { opacity: 0; } 98% { opacity: .34; transform: translateX(1px); } 98.5% { opacity: 0; } }
-@keyframes cinema-dust-pop { 0%, 91%, 100% { opacity: 0; transform: scale(1); } 93% { opacity: .48; transform: scale(1.45); } 96% { opacity: 0; transform: scale(1); } }
-@keyframes cinema-flicker-pulse { 0%, 52%, 100% { opacity: 0; } 53% { opacity: .035; } 54% { opacity: 0; } }
+@keyframes cinema-grain-shift {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-1.5%, 1%); }
+  50% { transform: translate(1%, -1.5%); }
+  75% { transform: translate(-1%, -0.5%); }
+}
+
+@keyframes cinema-scratch-flash {
+  0%, 96%, 100% { opacity: 0; }
+  97% { opacity: 0.24; transform: translateX(0); }
+  97.5% { opacity: 0; }
+  98% { opacity: 0.34; transform: translateX(1px); }
+  98.5% { opacity: 0; }
+}
+
+@keyframes cinema-dust-pop {
+  0%, 91%, 100% { opacity: 0; transform: scale(1); }
+  93% { opacity: 0.48; transform: scale(1.45); }
+  96% { opacity: 0; transform: scale(1); }
+}
+
+@keyframes cinema-flicker-pulse {
+  0% { opacity: 0; }
+  50% { opacity: 0.06; }
+  100% { opacity: 0; }
+}
 
 /* Edition screens */
 .edition-page {
@@ -1240,13 +1359,14 @@ form[data-subscribe] button:active {
 .social-icon {
   display: inline-grid;
   position: relative;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.7rem;
+  height: 2.7rem;
   place-items: center;
   overflow: hidden;
-  border: var(--rule-thin) solid color-mix(in oklch, var(--color-on-dark) 45%, transparent);
+  border: var(--rule-thin) solid color-mix(in oklch, var(--color-on-dark) 62%, transparent);
   border-radius: var(--radius-control);
-  background: color-mix(in oklch, var(--color-room) 68%, var(--color-room-raised));
+  background: color-mix(in oklch, var(--color-room) 72%, var(--color-room-raised));
+  box-shadow: inset 0 0 0 0.16rem color-mix(in oklch, var(--color-room) 80%, transparent), inset 0 0 0 0.22rem color-mix(in oklch, var(--color-on-dark) 16%, transparent);
   color: color-mix(in oklch, var(--color-on-dark) 72%, transparent) !important;
   font-family: var(--font-display) !important;
   font-size: var(--text-sm) !important;
@@ -1259,18 +1379,29 @@ form[data-subscribe] button:active {
 .social-icon::before,
 .social-icon::after {
   position: absolute;
-  inset-inline: var(--space-2xs);
-  height: var(--space-3xs);
-  background: repeating-linear-gradient(90deg, var(--color-room) 0, var(--color-room) var(--space-3xs), transparent var(--space-3xs), transparent calc(var(--space-3xs) * 2));
+  inset-inline: 0.28rem;
+  height: 0.32rem;
+  border-inline: var(--rule-thin) solid color-mix(in oklch, var(--color-on-dark) 18%, transparent);
+  background: repeating-linear-gradient(90deg, var(--color-room) 0 0.18rem, transparent 0.18rem 0.43rem);
   content: "";
-  opacity: 0.92;
+  opacity: 1;
 }
 
 .social-icon::before { inset-block-start: var(--space-2xs); }
 .social-icon::after { inset-block-end: var(--space-2xs); }
 
-.social-icon-mark { position: relative; z-index: var(--z-raised); width: 1.15rem; height: 1.15rem; overflow: visible; }
-.social-icon--instagram .social-icon-mark { width: 1.2rem; height: 1.2rem; }
+.social-icon-mark {
+  position: relative;
+  z-index: var(--z-raised);
+  width: 1.15rem;
+  height: 1.15rem;
+  overflow: visible;
+}
+
+.social-icon--instagram .social-icon-mark {
+  width: 1.2rem;
+  height: 1.2rem;
+}
 
 .social-icon:hover,
 .social-icon:focus-visible {
@@ -1430,15 +1561,19 @@ body.is-navigating {
 
   .nav-current {
     display: inline-flex;
+    margin-inline-end: 0;
   }
 
+  /* The navigation owns the remaining full-width bar, rather than clustering
+     at the right edge. This keeps every destination deliberately spaced. */
   .nav-menu {
     position: static;
     display: flex;
     flex: 1 1 auto;
     align-items: center;
-    justify-content: flex-end;
-    gap: clamp(var(--space-md), 2.5vw, var(--space-xl));
+    justify-content: space-between;
+    gap: var(--space-md);
+    margin-inline-start: clamp(var(--space-lg), 4vw, var(--space-4xl));
     min-height: 0;
     max-height: none;
     padding: 0;

@@ -46,7 +46,13 @@ them after progressive page swaps.
           {% assign item_active = false %}
           {% if current_url == item.url %}{% assign item_active = true %}{% endif %}
           {% if item.url != '/' and current_url contains item.url %}{% assign item_active = true %}{% endif %}
-          <a href="{{ item.url | relative_url }}" data-route="{{ item.url }}" class="nav-link{% if item.cta %} nav-cta{% endif %}{% if item_active %} active{% endif %}"{% if item_active %} aria-current="page"{% endif %}>{{ item.label }}</a>
+          {% if item.icon == "heart" %}
+            <a href="{{ item.url | relative_url }}" data-route="{{ item.url }}" class="nav-link nav-icon{% if item.cta %} nav-cta{% endif %}{% if item_active %} active{% endif %}"{% if item_active %} aria-current="page"{% endif %} aria-label="{{ item.label }}" title="{{ item.label }}">
+              <span class="nav-icon-heart" aria-hidden="true">🧡</span>
+            </a>
+          {% else %}
+            <a href="{{ item.url | relative_url }}" data-route="{{ item.url }}" class="nav-link{% if item.cta %} nav-cta{% endif %}{% if item_active %} active{% endif %}"{% if item_active %} aria-current="page"{% endif %}>{{ item.label }}</a>
+          {% endif %}
         {% endif %}
       {% endfor %}
     </div>
