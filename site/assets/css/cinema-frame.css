@@ -184,17 +184,19 @@ p {
   pointer-events: none;
 }
 
-/* Fixed foreground seats: a physical cinema edge, not a background decoration. */
+/* Fixed foreground seats. The source is a wide 11.5:1 strip, so the image
+   must retain its natural ratio. A constrained height had been shrinking and
+   vertically clipping it; width-driven sizing preserves the full silhouette. */
 .cinema-seats {
   position: fixed;
-  inset-inline: 0;
+  inset-inline-start: 50%;
   inset-block-end: 0;
   z-index: var(--z-seats);
-  width: 100%;
-  height: calc(var(--frame-bottom) + var(--space-md));
-  object-fit: cover;
-  object-position: center bottom;
+  width: max(100vw, 46rem);
+  max-width: none;
+  height: auto;
   pointer-events: none;
+  transform: translateX(-50%);
   transform-origin: center bottom;
 }
 
@@ -210,8 +212,8 @@ p {
 }
 
 @keyframes seats-scroll-zoom {
-  from { transform: scale(1); }
-  to { transform: scale(1.055); }
+  from { transform: translateX(-50%) scale(1); }
+  to { transform: translateX(-50%) scale(1.055); }
 }
 
 /* Shared navigation */
@@ -488,10 +490,32 @@ p {
 }
 
 .screen-canvas {
+  position: relative;
+  isolation: isolate;
   min-height: calc(100dvh - var(--nav-height) - var(--frame-bottom));
   margin-inline: var(--frame-side);
+  overflow: hidden;
   background: var(--color-paper);
 }
+
+/* Projection texture is deliberately contained inside .screen-canvas. */
+.cinema-atmosphere,
+.cinema-atmosphere > i { position: absolute; inset: 0; pointer-events: none; }
+.cinema-atmosphere { z-index: 0; overflow: hidden; }
+.cinema-grain { inset: -50% !important; width: 200%; height: 200%; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.78'/%3E%3C/svg%3E"); background-repeat: repeat; mix-blend-mode: soft-light; opacity: .07; animation: cinema-grain-shift 1.2s steps(4) infinite; }
+.cinema-scratch { inset-block: -10% !important; inset-inline-start: auto !important; width: 1px; height: 120%; background: color-mix(in oklch, var(--color-on-screen) 58%, transparent); mix-blend-mode: screen; opacity: 0; animation: cinema-scratch-flash 8s linear infinite; }
+.cinema-scratch--one { inset-inline-end: 18% !important; animation-delay: .7s; }
+.cinema-scratch--two { inset-inline-end: 51% !important; width: 2px; animation-delay: 3.1s; }
+.cinema-scratch--three { inset-inline-end: 83% !important; animation-delay: 5.6s; }
+.cinema-dust { inset: auto !important; width: 2px; height: 2px; border-radius: 50%; background: var(--color-on-screen); opacity: 0; animation: cinema-dust-pop 6s var(--ease-in-out) infinite; }
+.cinema-dust--one { inset-block-start: 22% !important; inset-inline-start: 18% !important; animation-delay: 1s; }
+.cinema-dust--two { inset-block-start: 64% !important; inset-inline-start: 72% !important; animation-delay: 3.4s; }
+.cinema-dust--three { inset-block-start: 42% !important; inset-inline-start: 46% !important; animation-delay: 5.1s; }
+.cinema-flicker { background: var(--color-room); mix-blend-mode: multiply; opacity: 0; animation: cinema-flicker-pulse 4.8s steps(2) infinite; }
+.cinema-vignette { background: radial-gradient(ellipse at center, transparent 40%, color-mix(in oklch, var(--color-room) 60%, transparent) 100%); opacity: .24; }
+.cinema-sprocket { inset-block: 0 !important; inset-inline: auto !important; width: clamp(.8rem, 2vw, 1.5rem); background: radial-gradient(ellipse at center, var(--color-room) 0 34%, transparent 38%) center / 100% 1.65rem repeat-y; opacity: .12; }
+.cinema-sprocket--left { inset-inline-start: 0 !important; }
+.cinema-sprocket--right { inset-inline-end: 0 !important; }
 
 .stage--blue .screen-canvas {
   background-color: var(--color-screen);
@@ -509,6 +533,8 @@ p {
 }
 
 .inner {
+  position: relative;
+  z-index: var(--z-raised);
   width: min(100%, var(--content-max));
   margin-inline: auto;
   padding: clamp(var(--space-xl), 6vw, var(--space-3xl)) clamp(var(--space-md), 5vw, var(--space-2xl));
@@ -518,23 +544,23 @@ p {
   min-height: inherit;
 }
 
-/* Homepage — the earlier blue rabbit-led composition */
+/* Homepage: the first cinematic beat intentionally occupies most of the viewport. */
 .home-hero {
   position: relative;
   display: grid;
-  min-height: calc(100dvh - var(--nav-height) - var(--frame-bottom));
+  min-height: 90dvh;
   align-items: center;
   gap: var(--space-xl);
 }
 
 .home-rabbit {
-  /* Keep the mascot tucked into the lower-right screen corner. */
   position: absolute;
-  inset-inline-end: clamp(-1.25rem, -2vw, -0.5rem);
-  inset-block-end: calc(var(--space-xl) * -1);
+  /* Deliberately oversized and offset: Mr. Rabbit feels seated at screen-right. */
+  inset-inline-end: clamp(-6rem, -7vw, -1.5rem);
+  inset-block-end: calc(var(--space-xl) * -0.65);
   z-index: var(--z-raised);
   order: 0;
-  width: min(42vw, 14rem);
+  width: clamp(12rem, 37vw, 23rem);
   margin: 0;
   pointer-events: none;
 }
@@ -671,6 +697,11 @@ p {
     transform: none;
   }
 }
+
+@keyframes cinema-grain-shift { 0%, 100% { transform: translate(0, 0); } 25% { transform: translate(-1.5%, 1%); } 50% { transform: translate(1%, -1.5%); } 75% { transform: translate(-1%, -.5%); } }
+@keyframes cinema-scratch-flash { 0%, 96%, 100% { opacity: 0; } 97% { opacity: .24; transform: translateX(0); } 97.5% { opacity: 0; } 98% { opacity: .34; transform: translateX(1px); } 98.5% { opacity: 0; } }
+@keyframes cinema-dust-pop { 0%, 91%, 100% { opacity: 0; transform: scale(1); } 93% { opacity: .48; transform: scale(1.45); } 96% { opacity: 0; transform: scale(1); } }
+@keyframes cinema-flicker-pulse { 0%, 52%, 100% { opacity: 0; } 53% { opacity: .035; } 54% { opacity: 0; } }
 
 /* Edition screens */
 .edition-page {
@@ -1076,14 +1107,14 @@ article img,
   padding-inline-start: var(--space-lg);
 }
 
-/* Shared footer close: a lifted charcoal screen inside the outer room frame. */
+/* Shared footer close: a distinct lifted grey auditorium screen, never a thin strip. */
 .site-footer {
   position: relative;
   z-index: var(--z-base);
   margin-inline: var(--frame-side);
-  min-height: calc(var(--frame-bottom) + 22rem);
+  min-height: max(60dvh, calc(var(--frame-bottom) + 22rem));
   padding: clamp(var(--space-2xl), 8vw, var(--space-4xl)) clamp(var(--space-xl), 6vw, var(--space-3xl)) calc(var(--frame-bottom) + var(--space-3xl));
-  background: var(--color-room-raised);
+  background: var(--color-footer);
   color: var(--color-on-dark);
 }
 
@@ -1238,7 +1269,8 @@ form[data-subscribe] button:active {
 .social-icon::before { inset-block-start: var(--space-2xs); }
 .social-icon::after { inset-block-end: var(--space-2xs); }
 
-.social-icon > span[aria-hidden="true"] { position: relative; z-index: var(--z-raised); }
+.social-icon-mark { position: relative; z-index: var(--z-raised); width: 1.15rem; height: 1.15rem; overflow: visible; }
+.social-icon--instagram .social-icon-mark { width: 1.2rem; height: 1.2rem; }
 
 .social-icon:hover,
 .social-icon:focus-visible {
@@ -1248,10 +1280,6 @@ form[data-subscribe] button:active {
 }
 
 .social-icon:active { transform: scale(0.94); }
-.social-icon--instagram { font-size: 1.25rem !important; }
-.social-icon--telegram { font-family: var(--font-body) !important; font-size: 1.1rem !important; }
-.social-icon--linkedin { font-family: var(--font-body) !important; font-size: var(--text-xs) !important; }
-.social-icon--github { font-size: 0.65rem !important; letter-spacing: -0.08em; }
 
 .footer-meta {
   display: grid;
@@ -1323,7 +1351,7 @@ body.is-navigating {
   }
 
   .home-rabbit {
-    width: min(30vw, 15rem);
+    width: clamp(15rem, 34vw, 23rem);
   }
 
   .home-copy {

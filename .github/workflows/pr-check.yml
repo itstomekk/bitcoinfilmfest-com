@@ -1,0 +1,61 @@
+name: Pull request safety and preview build
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# PRs receive no repository secrets and cannot deploy production.
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-check-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Public-safe Pages preview build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out pull request
+        uses: actions/checkout@v4
+
+      - name: Check public repository boundaries
+        run: python3 scripts/check-public-repo.py
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: false
+          working-directory: site
+
+      - name: Install Ruby dependencies outside the source tree
+        working-directory: site
+        run: |
+          bundle config set --local path "$RUNNER_TEMP/bff-bundle"
+          bundle install
+
+      - name: Build the GitHub Pages-equivalent preview
+        working-directory: site
+        run: bundle exec jekyll build --trace --config _config.yml,_config.github-pages.yml
+
+      - name: Check generated crawler and identity files
+        working-directory: site
+        run: |
+          test -f _site/robots.txt
+          test -f _site/sitemap.xml
+          test -f _site/site.webmanifest
+          test -f _site/assets/images/favicon.ico
+          test -f _site/assets/images/social/bff-social-default.jpg
+
+      # A reviewer can download this artifact directly from the PR's Checks tab.
+      # It is never deployed, so an unreviewed branch cannot replace production.
+      - name: Upload downloadable preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bff-preview-pr-${{ github.event.pull_request.number || github.run_number }}
+          path: site/_site
+          if-no-files-found: error
+          retention-days: 7

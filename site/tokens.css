@@ -3,6 +3,8 @@
   --color-room: oklch(7% 0.005 245);
   --color-room-raised: oklch(11% 0.007 245);
   --color-room-rule: oklch(27% 0.012 245);
+  /* A visibly lifted neutral-grey final screen, lighter than the auditorium frame. */
+  --color-footer: oklch(20% 0.006 245);
   --color-paper: oklch(95.472% 0.02182 92.508);
   --color-paper-2: oklch(91.984% 0.02798 88.756);
   --color-ink: oklch(20.394% 0.00253 247.951);

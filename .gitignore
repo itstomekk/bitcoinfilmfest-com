@@ -6,6 +6,20 @@ site/.bundle/
 site/vendor/
 site/.sass-cache/
 
+# Local-only data and credentials (never commit)
+.env
+.env.*
+!.env.example
+.secrets/
+private/
+local/
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+
 # OS cruft
 .DS_Store
 Thumbs.db
