@@ -3,6 +3,8 @@ layout: default
 title: "Bitcoin FilmFest"
 nav_label: "Home"
 description: "Orange-pill cinema, unfiat the culture. BFF'27 — June 24–27, 2027, Warsaw."
+seo_title: "Bitcoin FilmFest - Bitcoin cinema in Warsaw"
+image_alt: "Blue Bitcoin FilmFest cinema scene with the festival rabbit"
 screen: blue
 ---
 

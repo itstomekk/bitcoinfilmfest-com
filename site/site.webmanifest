@@ -1,0 +1,26 @@
+---
+layout: null
+---
+{
+  "name": "Bitcoin FilmFest",
+  "short_name": "BFF",
+  "description": "Bitcoin cinema and the annual Bitcoin FilmFest in Warsaw.",
+  "start_url": "{{ '/' | relative_url }}",
+  "display": "standalone",
+  "background_color": "#08090a",
+  "theme_color": "#0090dc",
+  "icons": [
+    {
+      "src": "{{ '/assets/images/favicon-192.png' | relative_url }}",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "{{ '/assets/images/favicon-512.png' | relative_url }}",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

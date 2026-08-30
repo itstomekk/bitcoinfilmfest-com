@@ -7,6 +7,12 @@ version: "0.4.0"
 description: "Orange-pill cinema, unfiat the culture. BFF'27 — June 24–27, 2027, Warsaw."
 url: "https://bitcoinfilmfest.com"
 baseurl: ""
+lang: "en"
+locale: "en_US"
+social_image: "/assets/images/social/bff-social-default.jpg"
+logo: "/assets/images/brand/bff-logo-mark-white.png"
+twitter:
+  username: "bitcoinfilmfest"
 
 contact_email: "hello@bitcoinfilmfest.com"
 
@@ -38,6 +44,7 @@ defaults:
       type: "pages"
     values:
       layout: "default"
+      image: "/assets/images/social/bff-social-default.jpg"
   - scope:
       path: ""
       type: "newsletters"
@@ -45,6 +52,7 @@ defaults:
       layout: "newsletter"
       nav_label: "Reel"
       screen: "paper"
+      image: "/assets/images/social/bff-social-default.jpg"
 
 markdown: kramdown
 kramdown:
@@ -52,8 +60,8 @@ kramdown:
 
 plugins:
   - jekyll-feed
-
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - README.md

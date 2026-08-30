@@ -86,7 +86,31 @@
 
   function syncHead(nextDocument) {
     document.title = nextDocument.title;
-    ['meta[name="description"]', 'meta[name="theme-color"]', 'link[rel="canonical"]'].forEach(function (selector) {
+    [
+      'meta[name="description"]',
+      'meta[name="robots"]',
+      'meta[name="theme-color"]',
+      'meta[name="twitter:card"]',
+      'meta[name="twitter:site"]',
+      'meta[name="twitter:title"]',
+      'meta[name="twitter:description"]',
+      'meta[name="twitter:image"]',
+      'meta[name="twitter:image:alt"]',
+      'meta[property="og:locale"]',
+      'meta[property="og:title"]',
+      'meta[property="og:description"]',
+      'meta[property="og:type"]',
+      'meta[property="og:url"]',
+      'meta[property="og:site_name"]',
+      'meta[property="og:image"]',
+      'meta[property="og:image:secure_url"]',
+      'meta[property="og:image:type"]',
+      'meta[property="og:image:width"]',
+      'meta[property="og:image:height"]',
+      'meta[property="og:image:alt"]',
+      'link[rel="canonical"]',
+      'script[type="application/ld+json"]'
+    ].forEach(function (selector) {
       var current = document.head.querySelector(selector);
       var next = nextDocument.head.querySelector(selector);
       if (!next) return;
