@@ -14,14 +14,14 @@
   var navigating = false;
 
   // Chromium scroll-timelines handle the preferred seat zoom in CSS. This
-  // compact fallback gives older browsers the same restrained projector push.
+  // compact fallback gives older browsers the same 11% projector push.
   var seats = document.querySelector('.cinema-seats');
   if (seats && !prefersReduced.matches && !(window.CSS && CSS.supports('animation-timeline: scroll()'))) {
     var seatTicking = false;
     var updateSeats = function () {
       var maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
       var progress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
-      seats.style.setProperty('--seat-scroll-scale', String(1 + (progress * 0.055)));
+      seats.style.setProperty('--seat-scroll-scale', String(1 + (progress * 0.11)));
       seatTicking = false;
     };
     window.addEventListener('scroll', function () {
