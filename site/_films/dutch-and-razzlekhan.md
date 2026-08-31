@@ -3,6 +3,7 @@ title: "Dutch & Razzlekhan"
 year: 2026
 type: Feature
 status: in-production
+essential_rank: 3
 director: "Jon S. Baird"
 cast:
   - "Chloë Grace Moretz"
@@ -34,4 +35,5 @@ sources:
     url: "https://www.cnbc.com/2023/08/03/new-york-man-admits-being-original-bitfinex-hacker-during-guilty-plea-in-dc-to-bitcoin-money-laundering.html"
   - label: IMDB
     url: "https://www.imdb.com/title/tt32102801/"
+featured: true
 ---

@@ -3,6 +3,7 @@ title: "Money Electric: The Bitcoin Mystery"
 year: 2024
 type: Documentary
 status: released
+essential_rank: 1
 director: "Cullen Hoback"
 studio: "HBO"
 company: null
@@ -24,4 +25,5 @@ sources:
     url: "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"
   - label: HBO Max
     url: "https://www.hbomax.com/movies/money-electric-the-bitcoin-mystery/90e45730-bcb5-4525-aaea-44425a77c531"
+featured: true
 ---

@@ -3,6 +3,7 @@ title: "Cold Wallet"
 year: 2024
 type: Feature
 status: released
+essential_rank: 10
 director: "Cutter Hodierne"
 cast:
   - "Raúl Castillo"
@@ -29,4 +30,5 @@ sources:
     url: "https://www.hollywoodreporter.com/movies/movie-reviews/cold-wallet-review-raul-castillo-1235847098/"
   - label: Well Go USA
     url: "https://wellgousa.com/films/cold-wallet"
+featured: true
 ---

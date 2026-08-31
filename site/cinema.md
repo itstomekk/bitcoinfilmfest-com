@@ -40,11 +40,12 @@ screen: paper
     <a href="{{ '/cinema/companies/' | relative_url }}">Browse companies →</a>
   </nav>
 
-  {% assign featured_films = site.films | where: "featured", true %}
+  {% assign featured_films = site.films | where: "featured", true | sort: "essential_rank" %}
   {% if featured_films.size > 0 %}
     <section class="reel-section">
-      <p class="section-label">On our radar</p>
-      <h2>Films worth knowing about</h2>
+      <p class="section-label">The essential ten</p>
+      <h2>Films that define Bitcoin cinema</h2>
+      <p>Our editorial starting point: the titles with the strongest mix of Bitcoin importance, cultural reach, BFF relevance, and public documentation.</p>
       <ul class="cinema-index">
         {% for film in featured_films %}
           {% include cinema-row.html entry=film kind="film" %}

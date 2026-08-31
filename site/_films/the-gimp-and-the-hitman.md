@@ -3,6 +3,7 @@ title: "The Gimp and the Hitman"
 year: 2024
 type: Feature
 status: released
+essential_rank: 9
 director: "Dimitri Raft"
 cast:
   - "Jon-Paul Gates"

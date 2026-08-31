@@ -12,6 +12,7 @@ Both collections are plain Jekyll collections: one Markdown file per entry, fron
 | `year` | number | yes | Release year, or expected year for unreleased titles. |
 | `type` | string | yes | One of: `Feature`, `Documentary`, `Short`, `TV`, `Stage`. |
 | `status` | string | yes | One of: `released`, `in-production`, `upcoming`, `development`. |
+| `essential_rank` | number | no | Editorial rank for the Cinema hub's curated Top 10. Lower numbers appear first. |
 | `director` | string or `null` | no | Omit or `null` if unconfirmed. |
 | `cast` | list of strings | no | Notable cast only, not a full call sheet. |
 | `studio` | string | no | Studio/network/production company name, as public sources credit it. |
@@ -24,7 +25,7 @@ Both collections are plain Jekyll collections: one Markdown file per entry, fron
 | `trailer` | URL or `null` | no | YouTube link preferred. |
 | `sources` | list of `{label, url}` | yes | 1–3 credible public sources. Never link BFF-internal files. |
 | `bff_screening` | string or `null` | no | e.g. `"BFF26 Official Selection"` — only when true; ties the database back to the festival. |
-| `featured` | boolean | no | Surfaces the entry in the `/cinema/` hub highlights block. Keep this to a small, deliberately curated set. |
+| `featured` | boolean | no | Surfaces the entry in the `/cinema/` hub's curated highlights. Keep this to a small, deliberately curated set. |
 
 ## Company entry (`site/_companies/*.md`)
 
