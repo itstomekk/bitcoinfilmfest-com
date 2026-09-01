@@ -1,0 +1,11 @@
+# Public positioning claims supplied by the project owner.
+# These are intentionally separate from automated collection counts.
+# Rebuild and replace with KB-derived metrics at the end of the database phase.
+- value: "5 years"
+  label: "building the industry"
+- value: "4"
+  label: "annual festivals"
+- value: "10"
+  label: "Mini filmfests & conference presences"
+- value: "1,000+"
+  label: "people in the community"
