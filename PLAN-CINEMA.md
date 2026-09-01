@@ -1,6 +1,6 @@
 # /cinema/ — Bitcoin Cinema Ecosystem — phased build plan
 
-**Status:** proposed, not yet built. Supersedes `PLAN-CINEMA-HUB.md` (2026-08-29 v1, single-page scope) — kept in the repo as a dated record, not deleted. Extends `REBUILD-PHASES.md` Phase 4.
+**Status:** Phase 0 foundations, Phase 1 seed content, the essential-ten curation, the industry-footprint strip, the private database map, and the first Minis/Roadshows structure are implemented and deployed on `main` at commit `517c87f`. The current direction is a single public Cinema page: overview, browsable films, companies, industry context, and historical festival stories. Detail routes remain available behind the rows. A real Windows Jekyll build and HTTP deployment checks have passed; visual review remains optional and was intentionally skipped in the last release. Supersedes `PLAN-CINEMA-HUB.md` (2026-08-29 v1, single-page scope) — kept in the repo as a dated record, not deleted. Extends `REBUILD-PHASES.md` Phase 4.
 
 **Slug:** `/cinema/` for the whole section. Sub-routes TBD per phase (`/cinema/films/`, `/cinema/films/:slug/`, `/cinema/companies/`, `/cinema/companies/:slug/`, `/cinema/news/`).
 
@@ -8,12 +8,11 @@
 
 `about.md` already claims BFF runs a "Cinema Hub... extensive network of films and people." `/cinema/` is the public proof: an IMDb-style destination showing that Bitcoin cinema is a real, active industry — films with real studios attached, real production companies, real ongoing news — built from the private research KB (`Claude news/bitcoin-cinema-kb.md`, 157 entries) without exposing its private sourcing plumbing.
 
-This is now explicitly a **multi-page ecosystem**, not one showcase page:
+The public experience is now explicitly **one Cinema page**, with optional detail routes behind individual entries:
 
-1. **`/cinema/`** — ecosystem hub / landing. Stat strip, curated highlights, entry points into the other sub-sections.
-2. **`/cinema/films/`** — browsable film database (index + filters) with **per-title profile pages** (`/cinema/films/:slug/`) — director, cast, country, runtime, synopsis, Bitcoin angle, platform/where-to-watch, trailer embed, sources.
-3. **`/cinema/companies/`** — the ecosystem side: production companies, studios, distribution/funding platforms, physical venues (Angel Studios, Bitfilm Production, Whitepaper Studio, Geyser Fund, Custos, Cine Multi, etc.) with their own profile pages.
-4. **News** — folded into `/cinema/` and/or a `/cinema/news/` feed, sourced from `bitcoin-cinema-news.md`.
+1. **`/cinema/`** — the single public destination: ecosystem overview, essential titles, searchable/filterable film catalogue, and companies/platforms.
+2. **Detail routes** — individual film/company profiles remain available from catalogue rows for people who want the full record.
+3. **News** — folded into `/cinema/` and/or a `/cinema/news/` feed, sourced from `bitcoin-cinema-news.md`.
 
 This plan explicitly **uses the whole KB** over time rather than hand-picking ~10 titles once — the 157 entries, 73 news items, and 48-entry upcoming-films tracker are the actual content reservoir, released in curated batches per phase.
 
@@ -54,21 +53,39 @@ Both get built once in Phase 1 and reused for every subsequent entry — one Liq
 
 **Checkpoint 0 done when:** one real film and one real company render correctly end-to-end (index row → profile page → back), using the shared frame, on desktop and mobile, via a real local Jekyll build. **Structurally verified** (Liquid tag balance, YAML front-matter parse, schema field/enum validation, banned-internal-tag scan, permalink-collision check, cross-check of every `page.*` field referenced in the layouts against what the seed files actually provide — all clean). **Not yet verified via a real `jekyll build`** — this sandbox has no ruby-dev headers/sudo (same documented gap as prior sessions) and cannot install the `jekyll` gem. First real visual check needs Tomek's machine or a GitHub Actions run.
 
-### Phase 1 — Seed content (prove the pattern with real, strong entries)
-- [ ] Migrate 8-12 strongest films from the KB (major-studio/network attached, clean public sourcing) as the first real `_films/` entries — candidates already surfaced: *One Attempt Remaining* (Netflix), *Dutch & Razzlekhan* (Amazon MGM), *Money Electric: The Bitcoin Mystery* (HBO), *Hotel Bitcoin* (Netflix), *The Satoshi Affair* (David O. Sacks Productions), *Cold Wallet* (SXSW/Amazon), *Sovereign* (Tribeca/Offerman) `[adjacent — needs Tomek's call, see below]`, *The Gimp and the Hitman* (BFF26 official selection — ties the database back to BFF itself).
-- [ ] Migrate 6-8 strongest companies: Angel Studios, Bitfilm Production, New Roots Films, Whitepaper Studio/Forager, Geyser Fund, Ordain, Custos Media Technologies.
-- [ ] Write the `/cinema/` hub page itself: stat strip (auto-counted from collection size via Liquid `site.films.size`, not hand-typed — stays accurate as the collections grow), a features/highlights block pulling a few `featured: true` entries, links into `/cinema/films/` and `/cinema/companies/`.
+-### Phase 1 — Seed content (prove the pattern with real, strong entries) — ✅ content implemented, verification pending
+- [x] Migrate the first strong public batch: the current checkout contains 14 `_films/` entries, including the essential-ten curation and BFF-linked titles.
+- [x] Migrate the first company/platform batch: the current checkout contains 7 `_companies/` entries.
+- [x] Write the `/cinema/` hub page with auto-counted stats, curated highlights, and links into `/cinema/films/` and `/cinema/companies/`.
 - [ ] Anchor story block on the hub page — one title told in full prose (*The Six Billion Dollar Man* is the standing candidate: Bitcoin-only global release, Dorsey-backed, Snowden panel).
 
-**Checkpoint 1 done when:** `/cinema/` is a real, presentable page; `/cinema/films/` and `/cinema/companies/` list real entries; every entry has a working profile page; nav updated; PR merged and live on the GitHub Pages preview URL.
+**Checkpoint 1 content and release bar:** met. The public Cinema update is deployed at `517c87f`; Windows Jekyll build, generated routes, HTTP smoke tests, and GitHub Actions deployment verification passed. Visual review was intentionally skipped by owner decision and remains optional.
 
-### Phase 2 — Fill out the film database (this is the "use the whole KB" phase)
-- [ ] Batch-migrate the rest of the KB's Feature Films and Documentaries sections (largest sections: 30 features, 67 docs) in reviewed batches of ~15-20 — small enough for one PR + one review pass each, per `about.md`'s "migrate real historic content, do not invent" principle carried over from `REBUILD-PHASES.md`.
-- [ ] Shorts, TV, and Stage sections follow once Features/Docs are through — same batch size.
-- [ ] Open call for **Phase 2 decision**: does `[adjacent]` content (Sovereign, Jones Plantation, StartUp) get its own visible tag/filter on the public site ("Bitcoin-adjacent") or get held back entirely? The KB itself flags these as a real editorial grey zone (`UNCERTAINTY.md`) — needs Tomek's call once, then applied consistently, not re-litigated per entry.
-- [ ] Add simple filtering/sorting to `/cinema/films/` once there are enough entries to need it (by type, by status: released/in-production/upcoming).
+### Phase 2 — Historical festival intelligence + film expansion (active)
 
-**Checkpoint 2 done when:** every KB entry with clean public sourcing has a corresponding profile page (unsourced/`[unverifiable]`/`[sourcing-pending]` entries stay out until they clear that bar), filtering works, and the total count roughly matches the KB's own released-title count.
+This phase has two parallel tracks, with the historical festival track first because it gives the film catalogue meaning.
+
+#### Phase 2A — Extract and write the festival history
+
+- [ ] Build a private fact ledger from the Notion extraction and post-festival source files.
+- [ ] Cover BFF23 Warsaw, BFF24 Warsaw, BFF25 Warsaw, BFF26 Warsaw, Lugano, Lisbon 2023, Madeira/Funchal 2024, Cape Town/South Africa, El Salvador, and other verified conference appearances.
+- [ ] For every event, separate: confirmed fact, draft/uncertain fact, owner question, public media lead, and publication status.
+- [ ] Turn the best material into stories rather than schedule dumps: the travelling Cinema Room model, the evolution from Warsaw festival to international roadshow, the African/community strand, the creator and audience stories, the Golden Rabbits, and the BFF/MoneroKon cultural intersection.
+- [ ] Use photos, video, quotes, award artefacts, posters, programmes and attendee anecdotes only after checking ownership/permission and identifying the edition.
+- [ ] Ask Tomek a concise brain-dump question set at the end of every iteration; do not silently fill missing attendance, winners, dates or names.
+
+#### Phase 2B — Grow the film database
+
+- [ ] Add the next 10–20 strongest public film records from the private KB in small batches.
+- [ ] Prioritize BFF-screened titles, Golden Rabbit winners/nominees, films with complete public sourcing, and titles that represent distinct Bitcoin Cinema modes: documentary, fiction, short, animation, art, adoption stories, monetary history, sovereignty and community.
+- [ ] Prefer a smaller number of rich, accurate records over a bulk import. Keep unsourced, disputed and internal-only records private.
+- [ ] Record each candidate in `CINEMA-DATABASE-MAP.md` before publication and link its private provenance in the local map only.
+- [ ] Keep stable slugs and add one entry per entity; cross-link companies only when the matching public record exists.
+- [ ] Apply a consistent policy to Bitcoin-adjacent titles; until Tomek decides otherwise, do not feature them as core Bitcoin Cinema.
+
+- [ ] Add simple filtering/sorting to `/cinema/films/` once the expanded catalogue needs it (by type, status, year, BFF appearance and essential/editorial tier).
+
+**Checkpoint 2 done when:** the historical archive has a reliable event ledger and at least one strong public story, the next film batch is live with complete profile pages and sources, owner questions are resolved or clearly labelled, and the handoff explains exactly what a new agent should do next.
 
 ### Phase 3 — Fill out companies + add live "in production" + news feed
 - [ ] Migrate the rest of Studios/Production Companies and Distribution/Platforms/Funding sections.
@@ -120,11 +137,10 @@ This is deliberately close to editing `_data/credits.json` or adding a `_newslet
 
 ## Open items needing Tomek's call
 
-- Collections vs. YAML-array decision (Phase 0) — plan recommends collections; confirm before building.
 - `[adjacent]` visibility policy (Phase 2) — show with a tag, or hold back entirely.
 - Exact nav labels ("Films" / "Titles" / "Catalogue"? "Companies" / "Industry" / "Ecosystem"?).
 - Whether `/cinema/companies/` should also surface un-tiered mentions like physical Bitcoin-accepting cinemas (Cine Multi) as their own type, or a "Venues" sub-filter within Companies.
-- First-batch film list for Phase 1 (candidates above) — confirm or swap.
+- Whether the Six Billion Dollar Man should be the first long-form anchor story on the Cinema hub.
 
 ---
-*Created 2026-08-29 (v2 — supersedes the single-page v1 plan after Tomek's steer: ecosystem section, film + company profile pages, global reusable frame, phased/checkpointed for other agents to pick up incrementally). Not yet approved for build.*
+*Created 2026-08-29 (v2 — supersedes the single-page v1 plan after Tomek's steer: ecosystem section, film + company profile pages, global reusable frame, phased/checkpointed for other agents to pick up incrementally). Phase 0 and the Phase 1 content batch were implemented afterward; the real-build/release gate remains open.*
