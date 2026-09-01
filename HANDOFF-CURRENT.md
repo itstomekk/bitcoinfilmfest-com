@@ -79,6 +79,7 @@ The private source material remains outside the Jekyll build:
 - `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\Claude news\bitcoin-cinema-kb.md`
 - `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\Claude news\BFF-NOTION-KNOWLEDGE.md`
 - `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\website\rebuild-jekyll\docs\context\NOTION-EXTRACTION-LEDGER.md`
+- `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\website\rebuild-jekyll\docs\context\FESTIVAL-HISTORY-RESEARCH.md`
 - `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\BFF26-guest-page\press\BFF26-POST-FESTIVAL-SOURCE.md`
 - `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\BFF26-guest-page\BFF26-AGENDA-confirmed.md`
 
@@ -103,4 +104,4 @@ For tiny urgent fixes a trusted maintainer may push straight to `main`, but a ch
 
 Paste this to start the next session:
 
-> Read `HANDOFF-CURRENT.md`, `PLAN-WEBSITE-ROADMAP.md`, `PLAN-CINEMA.md`, and `docs/context/NOTION-EXTRACTION-LEDGER.md` first. Confirm `git status --short --branch` and the current public routes. Do not repeat Phase 0. Start Phase 2 with a private source scan of the historical Notion material and BFF post-festival records. Build a fact ledger for BFF23/BFF24/BFF25 Warsaw, Lugano, Lisbon, Madeira/Funchal, Cape Town/South Africa, El Salvador, and BFF26. Separate confirmed facts from draft programme material and owner questions. Then propose a public story batch and a film batch of 10–20 strongest records from the private cinema KB. End the iteration with concise questions for Tomek about missing attendance, winners, guests, photos, videos, dates, permissions, and anecdotes. Never invent facts or expose private CRM/research notes. Implement only after the source and owner questions are clear; run build/routes checks and update this handoff when finished.
+> Read `HANDOFF-CURRENT.md`, `PLAN-WEBSITE-ROADMAP.md`, `PLAN-CINEMA.md`, `docs/context/NOTION-EXTRACTION-LEDGER.md`, and `docs/context/FESTIVAL-HISTORY-RESEARCH.md` first. Confirm `git status --short --branch` and the current public routes. Do not repeat Phase 0. Start Phase 2 with a private source scan of the historical Notion material and BFF post-festival records. Build a fact ledger for BFF23/BFF24/BFF25 Warsaw, Lugano, Lisbon, Madeira/Funchal, Cape Town/South Africa, El Salvador, and BFF26. Separate confirmed facts from draft programme material and owner questions. Then propose a public story batch and a film batch of 10–20 strongest records from the private cinema KB. End the iteration with concise questions for Tomek about missing attendance, winners, guests, photos, videos, dates, permissions, and anecdotes. Never invent facts or expose private CRM/research notes. Implement only after the source and owner questions are clear; run build/routes checks and update this handoff when finished.
