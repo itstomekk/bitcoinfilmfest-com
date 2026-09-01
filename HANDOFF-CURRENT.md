@@ -31,7 +31,7 @@ The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the exis
 - [verified] Two new Jekyll collections registered in `site/_config.yml`: `films` and `companies`, with permalinks `/cinema/films/:name/` and `/cinema/companies/:name/`, plus `defaults:` blocks that auto-assign the right layout.
 - [verified] `site/_layouts/film.html` and `site/_layouts/company.html` built — real field rendering (director, cast, studio, sources, etc.), not placeholder content.
 - [verified] `site/_includes/cinema-row.html` — shared list-row component, extends the site's existing `.showtime` row style rather than introducing generic cards (per `site/design.md`'s explicit rule against that).
-- [verified] The current checkout contains 14 film entries and 7 company entries. The first curated cinema batch is committed in `0e98c97` and `866f4b8`, including BFF-linked titles and the essential-ten curation.
+- [verified] The current checkout contains 20 film entries and 7 company entries. The first curated cinema batch is committed in `0e98c97` and `866f4b8`, the ecosystem update in `517c87f`, and the first festival-history handoff in `8c1d3ee`, with this film batch following it.
 - [verified] `site/_cinema-schema.md` written — the field-by-field reference for adding new entries, plus a restated "never publish" list (banned internal research tags, no partner-sponsor entries here).
 - [verified] `site/_data/navigation.yml` has a new "Cinema" dropdown (Overview / Films / Companies).
 - [verified] `PLAN-CINEMA.md` (repo root) — the full phased plan (Phase 0 foundation and Phase 1 content implemented; Phase 2-4 remain scoped).
@@ -39,7 +39,7 @@ The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the exis
 - [verified] `site/_chronicle/` collection — 10 short dated news items feeding a new Chronicle block on `/reel/`, modeled on thebitcoindistrict.com/press. `site/reel.md` rewritten to include it.
 - [verified] Earlier UI fixes from a prior session (seats clipping, nav logo, heart icon, hover color, footer brightness) all confirmed intact — they were separately committed and pushed already (commits through `2d0dcef`), and one regression found in that batch (nav logo icon shrunk to near-invisible) was already fixed and is part of that separate, already-pushed history.
 - [verified] A real local `jekyll build --trace` now passes on Windows with `C:/Ruby33-x64/bin/bundle.bat exec jekyll build --trace`. The only output is the known non-blocking `faraday-retry` notice.
-- [verified] Local browser smoke test covered `/cinema/` and `/festivals/roadshows/`: the Cinema page renders 14 film items and 7 company entries, the filters/search controls are present, the direct Cinema nav link is active, and the roadshow page renders five researched places. Private/internal tags are absent from the generated public pages.
+- [verified] Local browser smoke test covered `/cinema/` and `/festivals/roadshows/`: the Cinema page renders 20 film items and 7 company entries, the filters/search controls are present, the direct Cinema nav link is active, and the roadshow page renders five researched places. Private/internal tags are absent from the generated public pages.
 
 ## Open — next up: Phase 2 content programme
 

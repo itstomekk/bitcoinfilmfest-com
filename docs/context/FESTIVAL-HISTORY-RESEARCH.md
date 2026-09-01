@@ -17,24 +17,26 @@ The owner supplied this sequence for the four main Warsaw editions:
 
 | Edition | Owner figure | Counting definition | Public treatment |
 |---|---:|---|---|
-| BFF’23 | 120 | to confirm | use as an owner-reported figure once labelled |
-| BFF’24 | 240 | to confirm | use as an owner-reported figure once labelled |
-| BFF’25 | 150 | to confirm | use as an owner-reported figure once labelled |
-| BFF’26 | 400 | to confirm | do not present as BFF-only until reconciled with the post-festival source |
+| BFF’23 | 120 | owner’s best overall estimate; counting method not defined | publish only as “estimated attendance” |
+| BFF’24 | 240 | owner’s best overall estimate; counting method not defined | publish only as “estimated attendance” |
+| BFF’25 | 150 | owner’s best overall estimate; counting method not defined | publish only as “estimated attendance” |
+| BFF’26 | 400 | owner’s best overall estimate for BFF + MoneroKon combined | publish as “estimated combined attendance” |
 
-**Important reconciliation:** the BFF’26 post-festival source reports **400+ across BFF and MoneroKon combined** and separately reports **150+ Bitcoin FilmFest**. The owner’s 400 may represent a different counting method. Keep both facts in the research record; do not silently merge them.
+These are not audited unique-attendee, ticket, or visit counts. The public site should use language such as **“owner-estimated attendance”** and avoid implying a precise methodology.
 
 ## Award framework from owner brain-dump
 
 The award history should be reconstructed edition by edition with a dedicated Golden Rabbits archive.
 
-- **Best Movie** — category used across the award history; winners still need to be identified for BFF’23–BFF’25.
-- **Best Short** — not awarded/used at BFF’23; winner history from BFF’24 onward needs extraction.
-- **Best Story** — category used at BFF’24 and BFF’25; winners need extraction.
-- **Audience Choice** — category used in the award history; winners need extraction.
+- **Best Movie** — category used across the award history. The KB confirms *No More Inflation* for BFF’25. A separate private contacts record says *Dirty Coin* won BFF’24 Best Movie, but the current cinema KB only confirms its BFF’24 world premiere; treat the BFF’24 award as unresolved until reconciled.
+- **Best Short** — not awarded/used at BFF’23. The KB confirms *Satoshi, the Creation of Bitcoin* for BFF’25; BFF’24 still needs recovery.
+- **Best Story** — category used at BFF’24 and BFF’25. The KB confirms *Hotel Bitcoin* for BFF’25; BFF’24 still needs recovery.
+- **Audience Choice** — the KB confirms *Human B* for BFF’23, *Revolución Bitcoin* for BFF’25, and *Bitcoin Castle* for BFF’26. BFF’24 still needs recovery.
+- **BFF’23 additional distinction:** *The Satoshi Mystery* won the Community Vote Award.
+- **BFF’25 additional distinction:** *No More Inflation* also won Best Advertisement for the Start9 campaign.
 - **BFF’26 confirmed from the post-festival source:** *Bitcoin Castle* won Best Movie and Audience Choice; *MaxisClub* won Best Short; Best Story was not awarded.
 
-Do not infer winners from nominees, programme pages, or press mentions. A missing winner becomes an owner question.
+This is the best current KB-backed reconstruction, not the final award archive. Social-media scraping can later confirm spellings, ceremony images and the unresolved BFF’24 claim.
 
 ## Event and roadshow inventory
 
@@ -77,10 +79,7 @@ The post-festival material supports a rich recap: films, AI contest, art, privac
 
 ## Media plan
 
-Use clearly marked temporary generated placeholders in the next design iteration so the page structure can be tested. Replace them later with owner-supplied images.
-
-Potential slots:
-
+The archive root is the source for future media curation. Current scan found substantial BFF’26 attendee photography and video, BFF’26 film/trailer media, BFF’23 photography, BFF’24 poster material, and Lugano photos. Do not copy the archive wholesale. First create a media ledger with edition, event moment, creator/photographer if known, likely use, permission status, and alt-text draft. Temporary generated placeholders can be used while the page structure is built; real photos will replace them later.
 - edition hero image;
 - Cinema Room / audience image;
 - roadshow map or travel image;
@@ -101,7 +100,7 @@ The next catalogue scan should include every title that meets one or more of the
 - present in the curated Notion programme/archive material;
 - directly connected to a BFF award, creator, panel or public story.
 
-That is a **discovery rule**, not automatic publication. Each candidate still needs a public-safe synopsis, Bitcoin angle, source URLs, stable identity, status, and a map entry showing why it is included. Prioritize the next 10–20 films by richness and BFF relevance, not only by database order.
+The public outcome is **one unified film marketplace/archive**, not separate “good” and “poor” databases. Each film gets as much useful information as the sources support: synopsis, Bitcoin angle, links, where to watch, creator, year, type, BFF connection, awards, media and related context. Missing fields stay visibly missing rather than being invented. Each candidate still needs a public-safe identity, source URLs and a map entry showing why it is included.
 
 ## Standing questions for future iterations
 
