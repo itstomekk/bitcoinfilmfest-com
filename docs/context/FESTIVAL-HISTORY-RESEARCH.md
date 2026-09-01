@@ -80,6 +80,16 @@ The post-festival material supports a rich recap: films, AI contest, art, privac
 ## Media plan
 
 The archive root is the source for future media curation. Current scan found substantial BFF’26 attendee photography and video, BFF’26 film/trailer media, BFF’23 photography, BFF’24 poster material, and Lugano photos. Do not copy the archive wholesale. First create a media ledger with edition, event moment, creator/photographer if known, likely use, permission status, and alt-text draft. Temporary generated placeholders can be used while the page structure is built; real photos will replace them later.
+### Asset tagging workflow
+
+1. Inventory filenames, folders, file type, dimensions, capture date and hashes without changing the originals.
+2. Use a free/local multimodal model for first-pass suggestions only: scene, edition, event moment, visible text, likely duplicate, orientation, crop suitability and a draft caption.
+3. Do not use the model to identify unknown people, infer consent, determine ownership, or decide whether an image is safe to publish.
+4. Human-review each shortlisted asset, correct the edition/moment, record photographer or source when known, and mark permission as `unknown`, `owner-cleared`, or `public-source-cleared`.
+5. Copy only approved selections into the website asset area, create descriptive alt text, and keep generated placeholders visibly distinct from documentary photographs.
+
+Potential slots:
+
 - edition hero image;
 - Cinema Room / audience image;
 - roadshow map or travel image;
