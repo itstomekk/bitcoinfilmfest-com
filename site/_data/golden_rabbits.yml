@@ -1,0 +1,93 @@
+- label: "BFF’23"
+  year: 2023
+  summary: "The first Warsaw edition used community-vote language in its contemporaneous public coverage. The organiser’s mapping is shown here, with that context preserved."
+  awards:
+    - category: "Best Movie"
+      film: "The Satoshi Mystery"
+      alias: "Le Mystère Satoshi"
+      director: "Rémi Forte"
+      film_url: "/cinema/films/the-satoshi-mystery/"
+    - category: "Best Short"
+      film: "Not awarded — category not used"
+      director: null
+    - category: "Best Story"
+      film: "Not awarded — category not used"
+      director: null
+    - category: "Audience Choice"
+      film: "Human B"
+      director: "Aaron Mucke and Eva Mühlenbäumer"
+      film_url: "/cinema/films/human-b/"
+  sources:
+    - label: "Bitcoin.fr recap"
+      url: "https://bitcoin.fr/le-mystere-satoshi-au-bitcoin-filmfest/"
+    - label: "Geyser announcement"
+      url: "https://x.com/geyserfund/status/1640073697292865536"
+
+- label: "BFF’24"
+  year: 2024
+  summary: "The second edition joined the European Halving Party in Warsaw. Four Golden Rabbits categories are recorded in the official BFF newsletter."
+  awards:
+    - category: "Best Movie"
+      film: "Dirty Coin"
+      director: "Alana Mediavilla Díaz"
+      film_url: "/cinema/films/dirty-coin/"
+    - category: "Best Short"
+      film: "HODL"
+      director: "The Garcia Brothers — Drew Garcia and Nate Garcia"
+    - category: "Best Story"
+      film: "Searching for Satoshi"
+      director: "Paul Kemp"
+    - category: "Audience Choice"
+      film: "My Trust in You Is Broken"
+      director: "Parker Worthington"
+  sources:
+    - label: "Bitcoin FilmFest May 2024 newsletter"
+      url: "https://bitcoinfilmfest.com/may-2024-newsletter"
+
+- label: "BFF’25"
+  year: 2025
+  summary: "The third edition brought the awards into a four-day programme of screenings, workshops, pitches, art and community stages in Warsaw."
+  awards:
+    - category: "Best Movie"
+      film: "No More Inflation"
+      director: "Bitcoin Shooter"
+      film_url: "/cinema/films/no-more-inflation/"
+    - category: "Best Short"
+      film: "Satoshi, the Creation of Bitcoin"
+      director: "Artur Machado"
+      film_url: "/cinema/films/satoshi-the-creation-of-bitcoin/"
+    - category: "Best Story"
+      film: "Hotel Bitcoin"
+      director: "Manuel Sanabria and Carlos “Pocho” Villaverde"
+      film_url: "/cinema/films/hotel-bitcoin/"
+    - category: "Audience Choice"
+      film: "Revolución Bitcoin"
+      director: "Juan Pablo Mejía"
+      film_url: "/cinema/films/revolucion-bitcoin/"
+  sources:
+    - label: "Bitcoin News BFF’25 recap"
+      url: "https://bitcoinnews.com/p/bitcoin-filmfest-bff25-event-recap"
+    - label: "TheCryptoRadio BFF’25 coverage"
+      url: "https://thecryptoradio.com/Bitcoin-FilmFest-2025-Stories-no-one-else-is-telling"
+
+- label: "BFF’26"
+  year: 2026
+  summary: "The post-festival record confirms two awards for Bitcoin Castle, one for MaxisClub, and no Best Story award in this edition."
+  awards:
+    - category: "Best Movie"
+      film: "Bitcoin Castle / Bitcoin Schloss"
+      director: "Bruno Schiebel"
+    - category: "Best Short"
+      film: "MaxisClub — episode 3, “Fiat-Backed Things”"
+      director: "Redy"
+    - category: "Best Story"
+      film: "Not awarded"
+      director: null
+    - category: "Audience Choice"
+      film: "Bitcoin Castle / Bitcoin Schloss"
+      director: "Bruno Schiebel"
+  sources:
+    - label: "BFF’26 Bitcoin Castle award announcement"
+      url: "https://bitcoinfilmfest.com/26/press/bff26-bitcoin-castle.html"
+    - label: "BFF’26 press archive"
+      url: "https://bitcoinfilmfest.com/26/press/bff26-prasa.html"
