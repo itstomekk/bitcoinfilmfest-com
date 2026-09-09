@@ -1,8 +1,8 @@
 /* Bitcoin FilmFest — end-credits auto-scroll.
-   On the Credits page the roll drifts upward like a film's closing credits.
-   Any user scroll, wheel, touch, or keyboard input pauses it permanently for
-   that visit — it never fights the reader. Respects prefers-reduced-motion.
-   Re-arms after a soft page navigation (see assets/js/main.js bff:pagechange). */
+   On the Credits page the roll moves steadily from the opening title through
+   the full list like a film's closing credits. Any user scroll, wheel, touch,
+   or keyboard input pauses it permanently for that visit — it never fights
+   the reader. Respects prefers-reduced-motion and re-arms after soft navigation. */
 
 (function () {
   'use strict';
@@ -39,7 +39,8 @@
     var deltaSeconds = (timestamp - lastTimestamp) / 1000;
     lastTimestamp = timestamp;
 
-    var atBottom = Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight - 4;
+    var scrollRoot = document.scrollingElement || document.documentElement;
+    var atBottom = Math.ceil(window.scrollY + window.innerHeight) >= scrollRoot.scrollHeight - 4;
     if (atBottom) {
       stop(roll);
       return;
@@ -53,6 +54,9 @@
 
   function start(roll) {
     if (playing) return;
+
+    // Always begin the credits from the top, including after browser scroll restoration.
+    window.scrollTo(0, 0);
     playing = true;
     roll.classList.add('is-autoplaying');
     lastTimestamp = null;

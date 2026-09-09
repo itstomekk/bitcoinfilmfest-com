@@ -7,6 +7,13 @@
 <html lang="en">
 <head>
 {% include head-meta.html %}
+<style>
+  /* The footer persists across soft navigation, so hide it by the current route
+     rather than by the server-rendered page front matter. */
+  body[data-current-route="/credits/"] [data-site-footer] {
+    display: none;
+  }
+</style>
 </head>
 <body data-nostr-npub="{{ site.nostr_npub }}" data-current-route="{{ page.url | default: '/' }}">
 
@@ -41,7 +48,7 @@
   </div>
 </main>
 
-<!-- Footer is separate from page-swapped content, but visually remains inside the cinema screen. -->
+<!-- Footer is shared across the site and remains mounted during soft navigation. -->
 {% include footer.html %}
 
 <img class="cinema-seats" src="{{ '/assets/images/cinema-seats.png' | relative_url }}" width="2322" height="202" alt="" aria-hidden="true">
