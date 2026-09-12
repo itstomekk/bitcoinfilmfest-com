@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 320" role="img" aria-label="bitblik">
+  <rect width="520" height="320" fill="none"/>
+  <g font-family="'Trebuchet MS', 'Segoe UI', Arial, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="260" y="190" font-size="104" letter-spacing="-2">
+      <tspan fill="#161718">bit</tspan><tspan fill="#f7931a">blik</tspan>
+    </text>
+    <text x="260" y="238" font-size="26" letter-spacing="3" fill="#6b6b6b" font-weight="400">BLIK &#8646; BITCOIN</text>
+  </g>
+</svg>
