@@ -9,7 +9,8 @@
 <meta name="robots" content="{{ page.robots | default: 'index, follow, max-image-preview:large' }}">
 <meta name="theme-color" content="{% if page.screen == 'blue' %}#0090dc{% else %}#08090a{% endif %}">
 <meta name="view-transition" content="same-origin">
-<link rel="canonical" href="{{ page.url | absolute_url }}">
+<link rel="canonical" href="{% if page.redirect_to %}{{ page.redirect_to | absolute_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
+{% if page.redirect_to %}<meta http-equiv="refresh" content="0; url={{ page.redirect_to | relative_url }}">{% endif %}
 
 <meta property="og:locale" content="{{ site.locale }}">
 <meta property="og:title" content="{{ seo_title }}">

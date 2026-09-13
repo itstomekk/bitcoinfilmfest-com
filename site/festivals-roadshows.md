@@ -64,6 +64,6 @@ screen: paper
 
   <section class="reel-section">
     <p class="section-label">Back to the archive</p>
-    <p><a href="{{ '/24/' | relative_url }}">BFF’24 →</a> &nbsp; <a href="{{ '/bff25/' | relative_url }}">BFF’25 →</a> &nbsp; <a href="{{ '/26/' | relative_url }}">BFF’26 →</a></p>
+    <p><a href="{{ '/23/' | relative_url }}">BFF’23 →</a> &nbsp; <a href="{{ '/24/' | relative_url }}">BFF’24 →</a> &nbsp; <a href="{{ '/25/' | relative_url }}">BFF’25 →</a> &nbsp; <a href="{{ '/26/' | relative_url }}">BFF’26 →</a></p>
   </section>
 </article>

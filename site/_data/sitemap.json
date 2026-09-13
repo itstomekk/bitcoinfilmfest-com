@@ -1,9 +1,9 @@
 {
   "generated": "2026-08-28",
   "summary": {
-    "discovered_routes": 64,
-    "public_or_planned_routes": 60,
-    "implemented_now": 10,
+    "discovered_routes": 66,
+    "public_or_planned_routes": 62,
+    "implemented_now": 12,
     "planned": 48,
     "redirect_candidates": 2,
     "excluded_or_separate": 4
@@ -21,12 +21,36 @@
           "note": ""
         },
         {
-          "route": "/bff25/",
+          "route": "/23/",
+          "title": "BFF’23",
+          "category": "Festival & editions",
+          "source": "site/23.md",
+          "status": "implemented",
+          "note": "Shared-shell archive page; unsupported historical details are intentionally omitted."
+        },
+        {
+          "route": "/24/",
+          "title": "BFF’24",
+          "category": "Festival & editions",
+          "source": "site/24.md",
+          "status": "implemented",
+          "note": "Shared-shell archive page for BFF24 and the European Halving Party."
+        },
+        {
+          "route": "/25/",
           "title": "BFF’25",
           "category": "Festival & editions",
-          "source": "website/static-site/bff25/index.php",
+          "source": "site/bff25.md",
           "status": "implemented",
-          "note": "Local shared-shell edition landing; full programme migration remains later."
+          "note": "Canonical shared-shell edition route; /bff25/ remains a compatibility redirect."
+        },
+        {
+          "route": "/bff25/",
+          "title": "BFF’25 archive route moved",
+          "category": "Festival & editions",
+          "source": "site/bff25-legacy.md",
+          "status": "redirect",
+          "note": "Compatibility route redirects to /25/."
         },
         {
           "route": "/26/",
