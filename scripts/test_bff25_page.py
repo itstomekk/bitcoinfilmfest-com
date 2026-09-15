@@ -32,6 +32,11 @@ class Bff25PageContractTests(unittest.TestCase):
             "Audience Choice",
             "Bitcoin Cinema Digest",
             "bff25-photo-rail",
+            "Results &amp; press",
+            "No More Inflation",
+            "Mempool",
+            "Network Effect",
+            "200+ attendees",
         )
         for marker in required:
             with self.subTest(marker=marker):

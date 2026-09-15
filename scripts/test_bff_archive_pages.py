@@ -14,7 +14,8 @@ class ArchivePageContractTests(unittest.TestCase):
                 "BFF’24", "European Halving Party", "19–21 April 2024", "Kinoteka",
                 "block 840,000", "Official selection", "Menger. Notes on the Margin",
                 "My Trust in You Is Broken", "Dirty Coin", "Death Athletic", "Bitcoiners",
-                "HODL", "Golden Rabbits", "Best Movie", "Best Story", "Best Short",
+                "HODL", "Peru", "Adventures of Jonathan", "Public trailer record",
+                "Golden Rabbits", "Best Movie", "Best Story", "Best Short",
                 "Audience Choice", "reported metrics", "Archive sources",
             ),
         },
@@ -27,7 +28,7 @@ class ArchivePageContractTests(unittest.TestCase):
                 "The Satoshi Mystery", "HUMAN B", "The Bitcoin Farmer",
                 "The Great Reset and the Rise of Bitcoin", "Bond to Unbind",
                 "A Sly Roundabout Way", "Open Bitcoin Workshops", "Golden Rabbits",
-                "Best Movie", "Audience Choice", "Archive sources",
+                "Best Movie", "Audience Choice", "Rémi Forte", "Archive sources",
             ),
         },
     }

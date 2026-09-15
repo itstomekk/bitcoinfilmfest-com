@@ -32,6 +32,7 @@ image_alt: "Bitcoin FilmFest 2025 poster: Beyond the Frame, 22–25 May, Kinotek
     <li><a href="#gallery"><span>04</span> Photo record</a></li>
     <li><a href="#context"><span>05</span> Historical context</a></li>
     <li><a href="#friends"><span>06</span> Patrons &amp; friends</a></li>
+    <li><a href="#recap"><span>07</span> Results &amp; press</a></li>
   </ul>
 
   <section class="bff25-band bff25-band--dark" id="programme">
@@ -487,6 +488,41 @@ image_alt: "Bitcoin FilmFest 2025 poster: Beyond the Frame, 22–25 May, Kinotek
         <h3>Useful historical links</h3>
         <p><a href="https://t.me/bitcoinfilmfest" target="_blank" rel="noopener">Bitcoin FilmFest community chat on Telegram</a> · <a href="https://www.notion.so/bitcoinfilmfest/Bitcoin-FilmFest-Infoboard-14916b48229280bea3d6fb2d9cf0bdbc" target="_blank" rel="noopener">BFF25 Infoboard</a> · <a href="https://www.youtube.com/playlist?list=PLN05RiEf5H1Tu5Pb7rA01TYogrSPmSJFu" target="_blank" rel="noopener">available trailers on YouTube</a></p>
         <p class="bff25-archive-note">The public source also described a Bitcoin Cinema Digest newsletter and an external infopage. Those historical calls to action are retained as context only, not as active sales or registration paths.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bff25-band bff25-band--paper" id="recap">
+    <div class="bff25-band-inner">
+      <p class="bff25-section-label">07 · results &amp; press</p>
+      <h2>What the record says after the lights.</h2>
+      <p class="bff25-band-lede">The festival is over, but the public record continues through awards, recaps and the people who wrote about being there.</p>
+
+      <div class="bff25-event-list">
+        <article>
+          <h3>Golden Rabbits</h3>
+          <ul class="bff25-name-list">
+            <li><strong>Best Movie</strong><span><em>No More Inflation</em> · Maiku Tsukai / Bitcoin Shooter</span></li>
+            <li><strong>Best Story</strong><span><em>Hotel Bitcoin</em> · Manuel Sanabria and Carlos “Pocho” Villaverde</span></li>
+            <li><strong>Best Short</strong><span><em>Satoshi: The Creation of Bitcoin</em> · Artur Machado</span></li>
+            <li><strong>Audience Choice</strong><span><em>Revolución Bitcoin</em> · Juan Pablo Mejía</span></li>
+          </ul>
+        </article>
+        <article>
+          <h3>PoWies &amp; Pitching Rabbits</h3>
+          <p><strong>PoWies:</strong> Mempool took Grand Prix and Visual; StreetCyber took Identity.</p>
+          <p><strong>Pitching Rabbits:</strong> Jenna Reid’s documentary series <em>Network Effect</em> won the pitch, supported by Bitrefill and Angor.</p>
+        </article>
+        <article>
+          <h3>Reported recap</h3>
+          <p>The published post-event recap reported <strong>200+ attendees from 20+ countries</strong>. Poland, Czech Republic, the UK and Germany made up roughly 70% of the audience in that account, with further representation from Spain, Italy, the USA, Turkey, Thailand, Israel, Dubai and Latin America. These are reported event metrics, not an independently audited census.</p>
+        </article>
+      </div>
+
+      <div class="bff25-info-line">
+        <h3>Press &amp; participant voices</h3>
+        <p><a href="https://bitcoinnews.com/press-release/bitcoin-filmfest-bff25-event-recap/" target="_blank" rel="noopener">Bitcoin News · BFF25 Event Recap</a> · <a href="https://bitcoinfilmfest.com/press-and-media/" target="_blank" rel="noopener">BFF press and media archive</a> · <a href="https://www.youtube.com/watch?v=RbLK91j3FdQ" target="_blank" rel="noopener">Furious BTC public recap</a></p>
+        <p class="bff25-archive-note">The press archive also links participant and media accounts from Philip Charter, Bitpopart, Aaron Koenig, Bitvocation, Lightning News and The Crypto Radio. They remain external historical references, not current festival endorsements.</p>
       </div>
     </div>
   </section>

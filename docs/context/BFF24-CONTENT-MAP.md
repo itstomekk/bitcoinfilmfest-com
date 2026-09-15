@@ -8,7 +8,8 @@ Status: local archive page assembled for review; no deploy or commit.
 - It was the film-festival component of the wider European Halving Party, whose public programme ran 18–21 April, with the fourth Bitcoin halving / block 840,000 as the historical frame.
 - Public selection copy documents Menger. Notes on the Margin, My Trust in You Is Broken, Dirty Coin, Gods of Their Own Religion, Searching for Satoshi, Death Athletic, Bitcoiners and HODL. The canonical screening record also lists After Its Said and The Lekker Feeling.
 - Public award record: Dirty Coin — Best Movie; Searching for Satoshi — Best Story; HODL — Best Short; My Trust in You Is Broken — Audience Choice.
-- Public programme context: Community Stage (19–20 April), Amondo Breakfast and Workshops (19–20 April), ShortFest (20 April), Kids Cinema / CartoonFest (21 April), closing ceremony and after-after party context.
+- Public programme context: Community Stage (19–20 April), Amondo Breakfast and Workshops (19–20 April), ShortFest (20 April, including Bitcoiners, HODL, The Lekker Feeling and Peru), Kids Cinema / CartoonFest (21 April, including Adventures of Jonathan, The Maxis Club Show and Bitcoin & Friends), closing ceremony and after-after party context.
+- Public trailer record: checked YouTube links for Dirty Coin, HODL, Searching for Satoshi, My Trust in You Is Broken, Menger, Gods of Their Own Religion, Death Athletic and Bitcoiners.
 - Reported post-event metrics are labelled as reported: 389 registrations, 300 festival guests, 79% attendance rate and 50 external cinema-screening registrations. Category overlap is unresolved.
 
 ## Exact local manifest
@@ -45,6 +46,7 @@ No PSD, OTF/TTF, ZIP, MP4/MOV, presentation, private chat or source design file 
 - Guest coverage: <https://bitcoinfilmfest.com/bff24-event-coverage-bitesize-media-may-2024/>
 - Recovered advertised programme: <https://bitcoinfilmfest.com/europeanhalvingparty/>
 - Award announcement thread: <https://x.com/bitcoinfilmfest/status/1782046601152016648>
+- Public trailer record: <https://www.youtube.com/watch?v=G3Xz32exVSE>, <https://www.youtube.com/watch?v=dktBrlikweo>, <https://www.youtube.com/watch?v=227Kw0Ave4o>, <https://www.youtube.com/watch?v=CjpfAZdFbOw>, <https://www.youtube.com/watch?v=9_1Y0SxqeKA>, <https://youtu.be/o5a_azPGI7k>, <https://www.youtube.com/watch?v=3AXuNaT6-Jk>, <https://www.youtube.com/watch?v=OLi0gLiRoQw>
 - Wildcard Wayback index for the official selection: <https://web.archive.org/web/*/https://bitcoinfilmfest.com/bff24-official-selection-freedom-themed-films/>
 - Wildcard Wayback index for the event page: <https://web.archive.org/web/*/https://bitcoinfilmfest.com/europeanhalvingparty/>
 

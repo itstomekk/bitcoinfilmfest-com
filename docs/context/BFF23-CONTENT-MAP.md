@@ -8,7 +8,7 @@ Status: local archive page assembled for review; no deploy or commit.
 - Contemporaneous first-party promotion used the wording “the world’s first Bitcoin FilmFest”. The page preserves it as historical wording, not as an independently ranked industry claim.
 - Six linked screening records are used: Human B; The Great Reset and the Rise of Bitcoin; Bond to Unbind — Bitcoin and El Salvador; The Satoshi Mystery / Le Mystère Satoshi; The Bitcoin Farmer; and A Sly Roundabout Way.
 - Public evidence documents Open Bitcoin Workshops, film-linked filmmaker/mining panels, and a closing winners ceremony.
-- Canonical award mapping: The Satoshi Mystery / Le Mystère Satoshi — Best Movie; HUMAN B — Audience Choice. Best Short and Best Story were not used.
+- Canonical award mapping: The Satoshi Mystery / Le Mystère Satoshi — Best Movie (Rémi Forte); HUMAN B — Audience Choice (Aaron Mucke and Eva Mühlenbäumer). Best Short and Best Story were not used.
 
 ## Exact local manifest
 
@@ -32,6 +32,7 @@ No ZIP, PSD, MOV/MP4, HEIC, spreadsheet, private chat, guest list or source desi
 - Great Reset screening/panel: <https://x.com/bitcoinfilmfest/status/1639332128105037826>
 - Bond to Unbind screening: <https://x.com/bitcoinfilmfest/status/1640000631384547330>
 - Winners ceremony: <https://x.com/bitcoinfilmfest/status/1640059830357434368>
+- Award context and credits: <https://bitcoin.fr/le-mystere-satoshi-au-bitcoin-filmfest/>
 - Public flashback page: <https://geyser.fund/entry/2825>
 - Wildcard Wayback index for the festival site: <https://web.archive.org/web/*/https://bitcoinfilmfest.com/bff23/>
 - Evidence register: `Claude news/source-staging/twitter-2026-09-08/chronicle-review/bff23-bff26-all-facts-register.jsonl` and `bff23-bff26-evidence-review.jsonl`.

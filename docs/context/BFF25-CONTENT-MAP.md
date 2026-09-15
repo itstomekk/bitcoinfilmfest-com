@@ -99,6 +99,8 @@ The supplied audit baseline found approximately **45 images and 13.8k normalized
 - Archive-only ticket tiers: General Admission €100, 2x General Admission €150, Remote Supporter €25 and Producer’s Cut €250.
 - Historical public orientation: Why Bitcoin FilmFest?, Why Warsaw?, Travel & Commute, Bitcoin in Warsaw, Why sponsor?, How to submit my film?, Bitcoin Cinema Digest/newsletter context, the BFF25 Infoboard/infopage and the Bitcoin FilmFest community chat.
 - Public sponsor, friend, venue and media-partner names and links. Local logo artwork is included only for the eight partners available in the selected public offline logo source.
+- Phase 3A additions: Golden Rabbits winners (No More Inflation, Satoshi: The Creation of Bitcoin, Hotel Bitcoin, Revolución Bitcoin); PoWies winners (Mempool: Grand Prix and Visual; StreetCyber: Identity); Pitching Rabbits winner Jenna Reid’s Network Effect; and a reported Bitcoin News recap of 200+ attendees from 20+ countries.
+- Phase 3A press references: Bitcoin News recap, the public BFF press archive, and Furious BTC’s public video recap.
 
 ### Intentionally excluded surfaces
 
