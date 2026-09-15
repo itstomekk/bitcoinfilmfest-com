@@ -30,7 +30,7 @@ Included only in the deployable bundle:
 
 Explicitly excluded:
 
-- `BFF25/BFF 25 fotki.zip` and the uncurated full-resolution photo folder.
+- `BFF25/BFF 25 fotki.zip` and the uncurated full-resolution source files. The MVP publishes only resized derivatives from the event-photo folder.
 - `BFF25/Beyond the frame bff25.psd` and `BFF25/PoWIes 2025/*.psd` source files.
 - `BFF25/PoWIes 2025/*.otf` and font ZIP archives.
 - `BFF25/BFF 25 fotki.zip` and all other ZIP archives.
@@ -43,7 +43,7 @@ Explicitly excluded:
 
 Destination: `site/25/25-assets/`
 
-The bundle contains **42 files / 17,540,385 bytes**: one poster, two PoWies artworks, eight partner logos, nine previously curated website photos, and **22 newly added event photographs** from the large `BFF 25 fotki/BFF25/` folder. The event-photo addition stays within the requested 12–24 representative-photo range. The 22 event files are resized JPEG derivatives, normally 2200 px on the long edge, to keep the preview practical while retaining usable quality. The two previously oversized 7008 px PNG photo derivatives were also re-encoded as 2400 px JPEGs.
+The bundle contains **194 files / 46,470,987 bytes**: the original 42-file public bundle plus **152 resized gallery derivatives** from the full `BFF 25 fotki/BFF25/` event-photo folder. The original source delivery archive remains outside Git. Gallery derivatives are JPEGs capped at 1600 px on the long edge and lazy-loaded in the full album.
 
 The exact byte total is verified by `scripts/check_bff25_page.py`; do not hand-edit this total without rerunning the validator.
 
@@ -107,7 +107,7 @@ The supplied audit baseline found approximately **45 images and 13.8k normalized
 - Standalone old `<html>`, `<head>`, `<body>`, navigation, footer, inline CSS, countdown scripts and random-image scripts. The page uses the shared default layout, menu, bezel, atmosphere and seats.
 - Stale active-sales and intake surfaces: ticket purchase links, active VOD or merchandise sales, countdown labels, live “sign up” language, Google submission forms and any implication that PoWies or film submissions are currently open. Historical price/context text is explicitly archive-only.
 - Private or unsuitable source material: ZIP archives, PSD files, OTF/font archives, MOV video, private chat screenshot, PDFs/source documents, credentials, private databases, contact lists and internal notes.
-- The uncurated full-resolution photo folder as a wholesale copy. Only the 22 selected, resized event-photo derivatives are bundled.
+- The uncurated full-resolution photo folder as a wholesale copy. The MVP includes all 152 event photos as resized derivatives, not the originals.
 
 ### Still-missing public assets
 
@@ -115,6 +115,6 @@ The page preserves corresponding text where safe, but these public source images
 
 ### New asset delta
 
-- Added **22** curated event photographs from `BFF25/BFF 25 fotki/BFF25/` as resized JPEGs.
-- Bundle increased from the earlier 20 files / 21,426,351 bytes to **42 files / 17,540,385 bytes**: a net **+22 files / −3,885,966 bytes** because the two oversized existing PNG photos were re-encoded while the new event photographs were added.
+- Added **152** event photographs from `BFF25/BFF 25 fotki/BFF25/` as resized JPEG derivatives.
+- Bundle increased from **42 files / 17,540,385 bytes** to **194 files / 46,470,987 bytes**. Original source files remain outside Git.
 - The new photos are used in a true frame-width rail (`width: calc(100vw - 2 * var(--frame-side))`, centered with `left: 50%` and `translateX(-50%)`) plus the readable photo record. The rail collapses to two columns on mobile and remains clipped to the page viewport.

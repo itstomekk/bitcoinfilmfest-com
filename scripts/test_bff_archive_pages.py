@@ -29,6 +29,7 @@ class ArchivePageContractTests(unittest.TestCase):
                 "The Great Reset and the Rise of Bitcoin", "Bond to Unbind",
                 "A Sly Roundabout Way", "Open Bitcoin Workshops", "Golden Rabbits",
                 "Best Movie", "Audience Choice", "Rémi Forte", "Archive sources",
+                "bff23_gallery",
             ),
         },
     }

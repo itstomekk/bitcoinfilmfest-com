@@ -37,6 +37,8 @@ class Bff25PageContractTests(unittest.TestCase):
             "Mempool",
             "Network Effect",
             "200+ attendees",
+            "Full event album",
+            "bff25_gallery",
         )
         for marker in required:
             with self.subTest(marker=marker):

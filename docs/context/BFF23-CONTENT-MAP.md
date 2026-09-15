@@ -13,8 +13,8 @@ Status: local archive page assembled for review; no deploy or commit.
 ## Exact local manifest
 
 Directory: `site/23/23-assets/`
-Count: 8 files
-Bytes: 4,858,658
+Count: 562 files: 8 curated archive assets + 554 MVP gallery derivatives
+Bytes: 111,214,833 total; gallery derivatives: 106,356,175
 
 | File | Origin | Use |
 |---|---|---|
@@ -42,5 +42,5 @@ No ZIP, PSD, MOV/MP4, HEIC, spreadsheet, private chat, guest list or source desi
 - The surviving source does not establish a complete public running order, exact screening times or a final public guest roster; these are omitted.
 - An internal attendance estimate exists in the research record but is not published as a public total.
 - The page does not infer a filmmaker’s full name from the Human B evidence.
-- Rights / photographer credit for local images are not fully resolved; owner confirmation is required before deployment.
+- The owner approved publishing the MVP derivative album. Photographer credit for the inherited source folders is still not identified; the page uses neutral archive captions until a credit is supplied.
 - The six-title list is the linked screening record, not a claim that no other work appeared at the event.

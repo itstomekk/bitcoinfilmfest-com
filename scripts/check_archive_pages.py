@@ -77,7 +77,7 @@ def main() -> int:
         refs = LOCAL_REF.findall(source)
         if not assets:
             failures.append(f"{edition}: missing asset bundle")
-        if len(refs) < 4:
+        if len(refs) < 4 and f"site.data.bff{edition}_gallery" not in source:
             failures.append(f"{edition}: too few local asset references ({len(refs)})")
         for ref_edition, asset_edition, name in refs:
             if ref_edition != edition or asset_edition != edition or name not in names:
