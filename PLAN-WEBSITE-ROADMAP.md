@@ -1,8 +1,9 @@
 # Bitcoin FilmFest website roadmap
 
 **Written:** 2026-08-31
-**Status:** agreed direction, Phase 0/1 foundation and the first Cinema ecosystem release verified on `main` at `517c87f`; Phase 2 content work is now active. The next iteration starts with historical festival extraction from the curated Notion material and then expands the film catalogue in small, source-backed batches. Owner brain-dump questions are part of every iteration.
-**Website:** `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\website\rebuild-jekyll\`
+**Status:** agreed direction, Phase 0/1 foundation and the first Cinema ecosystem release verified on `main`; the historical edition set `/23/`–`/26/` and canonical `/25/` route are now deployed at version `0.6.0`. Phase 2 cinema work and Phase 3 historical enrichment are active. The next iteration mines the private knowledge base and edition photo folders for public-safe additions, then builds out the BFF’27 current-event page in small, source-backed batches. Owner brain-dump questions are part of every iteration.
+**Website:** `C:/Users/Lenovo/OneDrive/Bitcoin FilmFest/website/rebuild-jekyll-bff26/`
+
 **Private source:** `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\Claude news\`
 
 ## 1. Product boundary
@@ -121,6 +122,99 @@ For each story, verify:
 - why the event mattered to the development of Bitcoin Cinema.
 
 Do not publish draft Notion running orders as final attendance or screening records.
+
+### Phase 3A - Enrich the deployed BFF’23–’25 archive pages
+
+**Status:** next implementation batch. The archive pages are live, but the research pass found additional verified public facts that should be added without changing the shared design language.
+
+Goal: make `/23/`, `/24/` and `/25/` useful historical records rather than minimal festival summaries, while keeping uncertain material explicitly labelled or private.
+
+Workstreams:
+
+- **BFF’25 results and recap:** add the Golden Rabbits winners (No More Inflation, Satoshi: The Creation of Bitcoin, Hotel Bitcoin and Revolución Bitcoin), PoWies winners (Mempool: Grand Prix/Visual; StreetCyber: Identity), Pitching Rabbits winner Jenna Reid / *Network Effect*, and the public Bitcoin News recap metrics (200+ attendees, 20+ countries) with source links and reported-metric wording.
+- **BFF’25 voices and press:** add a compact press/voices section linking the published Bitcoin News, Lightning News, The Crypto Radio, Bitvocation, Philip Charter, Bitpopart and Aaron Koenig coverage. Add the public Furious BTC recap only after verifying its title/date and keeping it as an external link.
+- **BFF’24 programme detail:** add full director credits where confirmed, public trailer links, *Peru* to the ShortFest context, and the CartoonFest titles *Adventures of Jonathan*, *The Maxis Club Show* and *Bitcoin & Friends*. Add one short Sean McNamara pull quote only if the citation and wording are preserved.
+- **BFF’23 credit and source recovery:** add Rémi Forte and Aaron Mucke / Eva Mühlenbäumer to the award records, extract the Polish brochure for possible programme facts, and publish only claims supported by the brochure or first-party evidence.
+
+Rules:
+
+- Do not reconstruct exact historical timetables from campaign drafts.
+- Do not turn reported attendance figures into a single total when categories overlap.
+- Keep expired ticketing, submission, signup, sponsor-referral and VOD CTAs archive-only or omitted.
+- Every addition gets a public source URL or a private provenance note in the edition content map.
+
+Acceptance criteria:
+
+- Each edition page has a tested results/recap section where evidence exists.
+- New external links are checked, labelled as historical where appropriate, and open in a new tab with `rel="noopener"`.
+- Existing `/23/`, `/24/`, `/25/`, `/26/` routes and shared shell remain regression-safe.
+- No private contacts, internal statuses or unresolved research notes enter `site/`.
+
+### Phase 3B - Build the BFF photo and media curation pipeline
+
+**Status:** source discovery active; implementation follows Phase 3A content review.
+
+Goal: use the substantial local BFF photo archive without dumping private, uncredited or unnecessarily large source folders into the public repository.
+
+Source roots to inventory:
+
+- `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\BFF23\WK23 zdjęcia od fotografa\`
+- `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\BFF24\` and its EHP / film / partner subfolders
+- `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\BFF25\BFF 25 fotki\BFF25\` and `Photos for website\`
+- existing public BFF26 photo bundles and any explicitly public BFF27 material
+
+Tasks:
+
+- Create a private inventory for every candidate image: edition, source path, filename, dimensions, checksum, photographer/credit if known, publication permission status, intended crop and alt text.
+- Separate public/owner-approved images from private event folders, photographer delivery archives, PSD/source files, screenshots, chat captures and ZIPs.
+- Produce resized derivatives for the website, normally 1600–2400 px on the long edge, while preserving the original source outside Git.
+- Curate a representative gallery and at least one full-bleed/viewport-width band per edition where the image rights are clear.
+- Record uncertain rights and photographer credits in the private review queue; do not publish them merely because they are stored locally.
+- Add a validator that checks asset existence, local-only references, image dimensions, byte totals and the source-to-destination manifest.
+
+Acceptance criteria:
+
+- Every published image has a known source path, safe-to-publish status, useful alt text and a documented crop/derivative.
+- No full photographer ZIP or unreviewed source archive is copied into the site.
+- Desktop and mobile screenshots confirm that photo bands stay full-width inside the cinema viewport without horizontal overflow.
+- The asset manifest is small enough for GitHub Pages and reproducible from the source inventory.
+
+### Phase 3C - Build the BFF’27 current-event page
+
+**Status:** `/27/` exists as a skeleton; the public content build is not complete.
+
+Goal: turn `/27/` into the current festival landing page using the shared cinema shell, while keeping private candidate research and operational data out of the public site.
+
+Confirmed public anchor:
+
+- BFF’27 runs **24–27 June 2027 in Warsaw**. Kinoteka / exact companion venues, ticketing, submission window and programme are not to be inferred until confirmed by the owner or a public first-party page.
+
+Tasks:
+
+- Replace the current 28-line skeleton in `site/27.md` with a proper current-edition structure: save-the-date hero, what the festival is, participation paths, current status, film call/programme status, and a clearly labelled updates/press area.
+- Create `docs/context/BFF27-CONTENT-MAP.md` and an asset manifest before adding claims or images.
+- Keep `Claude news/BFF27-ai-upcomingfilms.md` and the BFF27 crosswalk review private. Promote only films with a public source and an explicit editorial reason to appear on the page.
+- Start with the confirmed BFF27 candidate pipeline: *Network Effect*, *This Time Is Different*, *What the F*ck Is My Password?!*, *The Buried Bitcoin*, *The Satoshi Affair*, *The Invisible Hand*, *Build on Bitcoin* and other candidates only after status/source review. Candidate status must be labelled as watchlist/editorial context, not selection or commitment.
+- Reuse the photo/rights pipeline from Phase 3B and establish a born-in-`BFF27/` asset convention so future campaign images do not become loose root files.
+- Add `scripts/check_bff27_page.py` and route/asset tests before any deployment.
+
+Acceptance criteria:
+
+- `/27/` is a useful current page with no stale ticket or submission mechanics presented as live.
+- Every public date, venue, film, partner and programme claim has a source and status label.
+- No private contacts, warm-lead details, internal candidate scores or campaign operations are published.
+- The page passes the shared navigation/footer, asset, mobile overflow, accessibility and Jekyll build checks.
+
+### Phase 3D - Knowledge-base discovery backlog
+
+Run this short scan before each archive or BFF27 batch. The database contains more than the current pages, but it is not a public source by default.
+
+- Search the canonical/evidence registers, Notion exports, legacy page captures, edition folders and public press links for new facts, quotes, trailers and photographs.
+- Compare every candidate against the current content map before adding it, so repeated research does not create duplicated or conflicting copy.
+- Classify each candidate as `publish`, `publish-with-source`, `owner-review`, `private-only` or `discarded/unsupported`.
+- Keep a concise list of unresolved questions in the edition content map or private uncertainty log rather than burying them in page copy.
+
+This backlog is deliberately separate from automatic Notion import. The curator remains the publication gate.
 
 ### Phase 4 - Current activity
 
