@@ -188,6 +188,7 @@ Goal: turn `/27/` into the current festival landing page using the shared cinema
 Confirmed public anchor:
 
 - BFF’27 runs **24–27 June 2027 in Warsaw**. Kinoteka / exact companion venues, ticketing, submission window and programme are not to be inferred until confirmed by the owner or a public first-party page.
+- `Claude news/BFF27-opis-kinoteka-format.md` is a stale/misnamed BFF’26 description and is not a BFF’27 source. Treat it as historical BFF’26 research until explicitly replaced.
 
 Tasks:
 
