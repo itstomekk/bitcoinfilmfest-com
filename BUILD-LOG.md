@@ -102,3 +102,18 @@ Before the repository was made public, GitHub returned HTTP 422 because private 
 - Credits auto-scroll needs a final visual check in a normal browser where reduced motion is not active.
 - The rabbit slightly overlaps one BFF'26 showtime label; minor visual polish only.
 - Final custom-domain configuration will require a separate small commit and DNS changes when the owner is ready.
+
+## 2026-09-16 - Next ten public BFF Cinema film profiles
+
+### Verified
+
+- Added ten new public film profiles to `site/_films/`: Aimy in a Cage, New Money, What the F*ck Is My Password?!, LifeHack, Bitcoin Heist, Immutable Democracy, Unbankable, Death Athletic: A Dissident Architecture, The 1Up Fever, and God Bless Bitcoin.
+- Windows Jekyll build passed from `site/` using `C:/Ruby33-x64/bin/bundle.bat exec jekyll build --trace --config _config.yml,_config.github-pages.yml`.
+- Public-repository safety check passed: `python3 scripts/check-public-repo.py` — 145 tracked files scanned, no forbidden paths or credentials.
+- All ten profile routes verified under `site/_site/cinema/films/`.
+- Dated CHANGELOG.md entry covers all ten film additions.
+- GitHub Actions run 35175347569 (workflow_dispatch, head 4467028) completed successfully: safety check, Jekyll build, crawler/identity file checks, and preview artifact upload all passed.
+
+### Known follow-up
+
+- The PR-triggered workflow run on the original head `bbf59b1` failed only because the dated CHANGELOG entry was added in a later commit. The current head has the changelog entry and a successful workflow_dispatch run; a fresh PR-triggered run is pending.
