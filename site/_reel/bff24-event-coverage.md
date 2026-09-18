@@ -3,7 +3,8 @@ title: "BFF24 in a guest post by Sean McNamara"
 date: 2024-05-01
 published_label: "May 2024"
 date_precision: month
-category: "Event report"
+category: articles
+archived: true
 author: "Sean McNamara"
 description: "Sean McNamara reports from Bitcoin FilmFest 2024 in Warsaw, from the Kinoteka screenings to the conversations around Bitcoin cinema."
 source_url: "https://bitcoinfilmfest.com/bff24-event-coverage-bitesize-media-may-2024/"

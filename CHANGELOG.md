@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Unified Reel editorial collection
+
+- Moved the Summer 2024 Bitcoin Cinema Digest into `site/_reel/` at `/reel/bitcoin-cinema-digest-summer-2024/`.
+- Removed the separate newsletters collection. Reel entries now use `category: newsletters`, `interviews`, or `articles`; the migrated archive entries also carry `archived: true`.
+- Updated the Reel Newsletter section to read newsletter entries from the unified Reel collection.
+
 ## 2026-09-18 — Custom domain cutover to bitcoinfilmfest.com
 
 - Set `bitcoinfilmfest.com` as the GitHub Pages custom domain and added the repository `CNAME` file.

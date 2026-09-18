@@ -14,6 +14,8 @@ The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the exis
 ### 2026-09-16 Reel migration integration
 
 - The unified Reel archive now contains exactly 10 migrated public-safe legacy pieces under `site/_reel/`, all rendered at `/reel/<slug>/` with 10 noindex compatibility redirects under `site/legacy-redirects/`.
+- The Reel archive is now the single editorial collection for interviews, newsletters, and articles. The migrated Summer 2024 Digest lives at `/reel/bitcoin-cinema-digest-summer-2024/`; editorial kind is metadata only via `category: interviews`, `category: newsletters`, or `category: articles`.
+- All 11 entries migrated in this batch carry `archived: true`, which distinguishes them from future Reel posts. The `/reel/` Newsletter section filters `site.reel` by `category: newsletters`.
 - `/25/` remains the only canonical BFF’25 route. `/bff25/` is redirect-only, and migrated Reel links use `/25/` rather than the legacy alias.
 - The 10 entries contain text and verified external source links only. Unverified WordPress `/wp-content/uploads/` and `/media/` image hotlinks were removed from front matter and bodies; no private contact, CRM, KB, Notion, Drive, licensing, or internal review material was copied into the public entries.
 - The FormSubmit AJAX success path reads the footer form’s configured `_next` value, preserving the shared `/thanks/` destination without hardcoding it in JavaScript.
@@ -74,7 +76,8 @@ The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the exis
 
 ## Decisions and why
 
-- **Jekyll collections, not a YAML array**, for films/companies. Each entry is one Markdown file with front matter. Chosen because it mirrors the existing `_newsletters/` pattern already in this repo, gives free per-entry URLs, and is far easier for a small delegated agent (or a non-technical collaborator) to add one file correctly than to hand-edit a growing array without breaking YAML syntax elsewhere in the file.
+- **Jekyll collections, not a YAML array**, for films/companies and Reel editorial entries. Each entry is one Markdown file with front matter, gives free per-entry URLs, and is far easier for a small delegated agent (or a non-technical collaborator) to add one file correctly than to hand-edit a growing array without breaking YAML syntax elsewhere in the file.
+- **One Reel collection for editorial writing.** Interviews, newsletters, guest posts, features, and event reports all render under `/reel/<slug>/`; `category` is metadata with only `interviews`, `newsletters`, or `articles` allowed. `archived: true` marks the 11 entries migrated in the first archive/schema batch and is reserved for explicitly migrated legacy content.
 - **Row list, not cards**, for film/company indexes. `site/design.md` explicitly rules out generic rounded cards for this site's visual language ("look like programme/showtime rows"). `cinema-row.html` extends the existing `.showtime` pattern instead of inventing a new component.
 - **Private KB stays private.** Every entry is hand-curated from `Claude news/bitcoin-cinema-kb.md` (157 entries, sourcing caveats, internal tags) into clean public Markdown — never a build-time import. `_cinema-schema.md` has the exact list of tags/notes that must never reach a public file. Revisit only if Tomek explicitly wants a faster, less-curated pipeline.
 - **BFF-PARTNERS-DATABASE.md (89 event sponsors) is explicitly excluded from `/cinema/companies/`.** Sponsors are not the same thing as Bitcoin-cinema production/distribution companies — don't merge the two lists later.

@@ -2,7 +2,8 @@
 title: "Luke Willms on UNBANKABLE"
 date: 2025-05-09
 published_label: "May 9, 2025"
-category: "Interview"
+category: interviews
+archived: true
 author: "Bitcoin FilmFest"
 description: "Luke Willms discusses UNBANKABLE, African economic innovations, community resilience, and the seven-year road to his directorial debut."
 source_url: "https://bitcoinfilmfest.com/luke-willms-unbankable-may-2025/"

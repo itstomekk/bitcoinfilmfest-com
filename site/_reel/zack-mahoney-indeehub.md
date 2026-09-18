@@ -2,7 +2,8 @@
 title: "Zack Mahoney on IndeeHub Studio"
 date: 2024-09-23
 published_label: "September 23, 2024"
-category: "Interview"
+category: interviews
+archived: true
 author: "Bitcoin FilmFest"
 description: "Zack Mahoney explains IndeeHub Studio, streaming sats, and a different relationship between filmmakers, audiences, and payment."
 source_url: "https://bitcoinfilmfest.com/zack-mahoney-and-indeehub-sep-2024/"

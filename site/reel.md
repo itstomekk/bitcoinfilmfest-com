@@ -70,7 +70,7 @@ screen: paper
     <p class="section-label">Bitcoin Cinema Digest</p>
     <h2>Newsletter</h2>
     <p class="reel-lede">Monthly updates from the heart of Bitcoin cinema, sent straight from set.</p>
-    {% assign newsletter_posts = site.newsletters %}
+    {% assign newsletter_posts = site.reel | where: "category", "newsletters" | sort: 'date' | reverse %}
     {% if newsletter_posts.size > 0 %}
       <ul class="reel-list">
         {% for post in newsletter_posts %}

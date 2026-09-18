@@ -2,7 +2,8 @@
 title: "Jessica Solce on DEATH ATHLETIC"
 date: 2024-02-17
 published_label: "February 17, 2024"
-category: "Interview"
+category: interviews
+archived: true
 author: "Bitcoin FilmFest"
 description: "Jessica Solce discusses DEATH ATHLETIC, independent filmmaking, cypherpunk history, and building parallel systems for film."
 source_url: "https://bitcoinfilmfest.com/jessica-solce-feb-2024/"

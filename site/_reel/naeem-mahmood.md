@@ -2,7 +2,8 @@
 title: "Naeem Mahmood on GODS OF THEIR OWN RELIGION"
 date: 2024-04-12
 published_label: "April 12, 2024"
-category: "Interview"
+category: interviews
+archived: true
 author: "Bitcoin FilmFest"
 description: "Naeem Mahmood explores the making of GODS OF THEIR OWN RELIGION, creative freedom, technology, and independent film outside the rule book."
 source_url: "https://bitcoinfilmfest.com/naeem-mahmood-april-2024/"
