@@ -1,5 +1,6 @@
 ---
 title: "The Satoshi Mystery"
+description: "A six-part documentary web series investigating the origins of Bitcoin and the identity of Satoshi Nakamoto. Animation, interviews and archival material…"
 year: 2021
 type: Documentary
 status: released

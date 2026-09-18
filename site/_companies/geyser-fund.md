@@ -1,5 +1,6 @@
 ---
 title: "Geyser Fund"
+description: "A Bitcoin-native, non-custodial crowdfunding platform that lets projects raise contributions directly from the community, including over the Lightning…"
 type: Funding Platform
 established: 2021
 status: active

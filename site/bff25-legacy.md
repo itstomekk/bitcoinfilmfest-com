@@ -5,6 +5,7 @@ description: "The BFF’25 archive now lives at /25/."
 permalink: /bff25/
 redirect_to: /25/
 robots: noindex, follow
+sitemap: false
 screen: blue
 ---
 

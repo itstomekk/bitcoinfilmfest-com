@@ -1,5 +1,6 @@
 ---
 title: "Bitcoin Season"
+description: "This documentary follows Swan Bitcoin and its attempt to bring a Bitcoin-only sponsorship model into professional basketball. It captures the people and…"
 year: 2026
 type: Documentary
 status: released

@@ -1,5 +1,6 @@
 ---
 title: "Bitfilm Production"
+description: "A commercial video-production company focused exclusively on Bitcoin and blockchain clients. Founded as a digital-cinema festival organization in 2000, it…"
 type: Production Company
 established: "2000 (Bitcoin pivot 2014)"
 status: active

@@ -1,5 +1,6 @@
 ---
 title: "Aimy in a Cage"
+description: "Aimy is an eccentric young artist trapped inside a surreal family compound while an apocalyptic illness and an authoritarian home close in around her…"
 year: 2015
 type: Feature
 status: released

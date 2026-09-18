@@ -1,5 +1,6 @@
 ---
 title: "New Money"
+description: "Teacher Liisa and IT specialist Taavi agree to a tabloid interview after a sudden fortune changes their lives. The attention brings insults, unwanted…"
 year: 2025
 type: Feature
 status: released

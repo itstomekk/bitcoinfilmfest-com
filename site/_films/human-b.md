@@ -1,5 +1,6 @@
 ---
 title: "Human B"
+description: "A German-language journey through the Bitcoin rabbit hole, following a personal change of perspective across Europe, Mexico and the United States. The…"
 year: 2021
 type: Documentary
 status: released

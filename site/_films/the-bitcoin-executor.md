@@ -1,5 +1,6 @@
 ---
 title: "The Bitcoin Executor"
+description: "An economics professor receives instructions from a dead man's switch and must deliver Bitcoin hardware wallets to the chosen heirs of a missing…"
 year: null
 type: Feature
 status: upcoming

@@ -1,5 +1,6 @@
 ---
 title: "New Roots Films"
+description: "An award-winning documentary company whose productions place Bitcoin at the center of their subject matter. Its work is focused on Bitcoin rather than…"
 type: Production Company
 established: "est. ~2018"
 status: active

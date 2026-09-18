@@ -1,5 +1,6 @@
 ---
 title: "One Attempt Remaining"
+description: "A divorced couple must recover a forgotten cryptocurrency wallet password worth $35 million within a 3-day deadline before it locks permanently. The…"
 year: 2027
 type: Feature
 status: in-production

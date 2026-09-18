@@ -1,5 +1,6 @@
 ---
 title: "Hotel Bitcoin"
+description: "Four friends discover that a laptop holds 4,000 bitcoins and retreat to a hotel to protect their windfall until Monday. Their plan collapses into a comic…"
 year: 2024
 type: Feature
 status: released

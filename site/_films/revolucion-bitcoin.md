@@ -1,5 +1,6 @@
 ---
 title: "Revolución Bitcoin"
+description: "A Spanish-language documentary travelling through Spain and Latin America to meet people using, studying and arguing about Bitcoin. It follows the social…"
 year: 2024
 type: Documentary
 status: released

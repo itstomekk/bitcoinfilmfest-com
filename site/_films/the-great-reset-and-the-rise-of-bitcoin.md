@@ -1,5 +1,6 @@
 ---
 title: "The Great Reset and the Rise of Bitcoin"
+description: "A documentary examining the global monetary system, central banking, and the case for Bitcoin through interviews and a critique of the proposed Great…"
 year: 2022
 type: Documentary
 status: released
