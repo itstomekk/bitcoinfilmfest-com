@@ -17,15 +17,14 @@ An independent project dedicated to film and culture that in addition to various
 
 Thanks to the small yet dynamic team, along with the support of partners and friends, the journey has thrived for nearly three years. BFF's goal is to promote sound money and independent art while connecting, educating, and entertaining people. Serving as a networking hub, a series of events, and potentially providing direct support for funding and distribution, Bitcoin FilmFest aims to become the core of cinematic transformation — guided by the motto *"Unfiat the Culture."*
 
+<p class="section-label">Press &amp; brand assets</p>
+
+For journalists, filmmakers and partners: [open the Bitcoin FilmFest press kit]({{ '/presskit/' | relative_url }}) for the official logos, rabbit mark, posters, laurels, colours and type specimens.
+
 - Three years of industry research and networking
 - Eight events (main editions and roadshows)
 - Cinema hub with extensive network of films and people
 - Support for independent creators and inspiration for movie buffs
-
-<!-- TODO(asset-migration): images below still point at the old WordPress
-     CDN (bitcoinfilmfest.com/wp-content/uploads/...). Swap for
-     /assets/images/... once the image migration step runs
-     (see PLAN.md — source: bff-site-mirror-2026-07-16-parts). -->
 
 ## ⭐ Bitcoin Film First
 

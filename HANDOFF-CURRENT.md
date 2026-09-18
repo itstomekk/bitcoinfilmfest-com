@@ -1,5 +1,5 @@
 # Handoff — Bitcoin FilmFest Jekyll rebuild
-Updated: 2026-09-16
+Updated: 2026-09-18
 
 ## Cross-project architecture
 
@@ -11,14 +11,22 @@ The Git state and cinema status below were reconciled against the live checkout 
 
 The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the existing site (homepage, festival editions, Reel, Credits), the `/cinema/` section now contains the film database and company directory foundations, the essential-ten curation, the industry-footprint strip, and the first roadshow structure. The coherent Cinema ecosystem update was originally committed at `517c87f` and is included in the current `main`; the archive/current-edition visual pass landed in merge commit `4635bce`. Build and HTTP deployment verification passed.
 
-### 2026-09-16 Reel migration integration
+### 2026-09-18 Reel/newsletter migration integration
 
-- The unified Reel archive now contains exactly 10 migrated public-safe legacy pieces under `site/_reel/`, all rendered at `/reel/<slug>/` with 10 noindex compatibility redirects under `site/legacy-redirects/`.
-- The Reel archive is now the single editorial collection for interviews, newsletters, and articles. The migrated Summer 2024 Digest lives at `/reel/bitcoin-cinema-digest-summer-2024/`; editorial kind is metadata only via `category: interviews`, `category: newsletters`, or `category: articles`.
-- All 11 entries migrated in this batch carry `archived: true`, which distinguishes them from future Reel posts. The `/reel/` Newsletter section filters `site.reel` by `category: newsletters`.
-- `/25/` remains the only canonical BFF’25 route. `/bff25/` is redirect-only, and migrated Reel links use `/25/` rather than the legacy alias.
-- The 10 entries contain text and verified external source links only. Unverified WordPress `/wp-content/uploads/` and `/media/` image hotlinks were removed from front matter and bodies; no private contact, CRM, KB, Notion, Drive, licensing, or internal review material was copied into the public entries.
+- The Reel archive is now the single editorial collection for interviews, articles, and newsletters. The former `_newsletters` collection is gone; all entries live under `site/_reel/` with `category: interviews`, `category: articles`, or `category: newsletters`.
+- The collection contains 23 public entries: 10 prior interviews/articles plus 13 Bitcoin Cinema Digest issues, including the previously migrated Summer 2024 issue. Every migrated entry carries `archived: true`; future writing can use the Posts view without entering the archive.
+- `/reel/` now renders Chronicle, Posts, then Archive. Posts has a deliberate empty state, while Archive is a single newest-first list with visible category labels. All 23 detail routes render real body content.
+- The migration build passed with the Windows Ruby toolchain. Source and generated Reel output contain no WordPress `/wp-content/uploads/` or raw `bitcoinfilmfest.com/media` references; `/25/` remains the canonical BFF’25 route.
+- The entries contain text and verified external source links only. No private contact, CRM, KB, Notion, Drive, licensing, or internal review material was copied into the public entries.
 - The FormSubmit AJAX success path reads the footer form’s configured `_next` value, preserving the shared `/thanks/` destination without hardcoding it in JavaScript.
+
+### 2026-09-18 press kit and BFF’26 press room
+
+- `/presskit/` now preserves the local branding book: BFF logos, rabbit mark, posters, laurels, SVG/PDF vectors, colours and Syne Mono/Courier Prime specimens. The source was `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\logos-page\`; only its public HTML and 14 prepared assets were copied.
+- Storyboard links to `/presskit/`, and the BFF’26 Press Kit section links to `/26/press/`, `/presskit/`, and the existing `/25/#gallery` archive.
+- `/26/press/` restores 34 local static EN/PL pages from `BFF26-guest-page\press\`: hub, info-base, recaps, previews, interviews, evergreen articles and shared CSS. Private source notes, FTP scripts and archive backups were excluded.
+- Restored press pages use the current `/presskit/` and local project-relative paths rather than the old `/26/laurels/`, `/logos`, and `/gallery/` destinations.
+- Route inventory is now 101 generated / 89 public-indexable outputs.
 
 ### Current implementation after 2026-08-31 owner steer
 
@@ -77,7 +85,7 @@ The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the exis
 ## Decisions and why
 
 - **Jekyll collections, not a YAML array**, for films/companies and Reel editorial entries. Each entry is one Markdown file with front matter, gives free per-entry URLs, and is far easier for a small delegated agent (or a non-technical collaborator) to add one file correctly than to hand-edit a growing array without breaking YAML syntax elsewhere in the file.
-- **One Reel collection for editorial writing.** Interviews, newsletters, guest posts, features, and event reports all render under `/reel/<slug>/`; `category` is metadata with only `interviews`, `newsletters`, or `articles` allowed. `archived: true` marks the 11 entries migrated in the first archive/schema batch and is reserved for explicitly migrated legacy content.
+- **One Reel collection for editorial writing.** Interviews, newsletters, guest posts, features, and event reports all render under `/reel/<slug>/`; `category` is metadata with only `interviews`, `newsletters`, or `articles` allowed. `archived: true` marks the 23 explicitly migrated legacy entries and is reserved for archived content.
 - **Row list, not cards**, for film/company indexes. `site/design.md` explicitly rules out generic rounded cards for this site's visual language ("look like programme/showtime rows"). `cinema-row.html` extends the existing `.showtime` pattern instead of inventing a new component.
 - **Private KB stays private.** Every entry is hand-curated from `Claude news/bitcoin-cinema-kb.md` (157 entries, sourcing caveats, internal tags) into clean public Markdown — never a build-time import. `_cinema-schema.md` has the exact list of tags/notes that must never reach a public file. Revisit only if Tomek explicitly wants a faster, less-curated pipeline.
 - **BFF-PARTNERS-DATABASE.md (89 event sponsors) is explicitly excluded from `/cinema/companies/`.** Sponsors are not the same thing as Bitcoin-cinema production/distribution companies — don't merge the two lists later.

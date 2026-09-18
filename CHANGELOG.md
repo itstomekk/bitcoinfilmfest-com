@@ -8,6 +8,13 @@ Short, human-readable record of public website changes. One dated entry is requi
 - Split fresh Reel entries from archived entries and added a clean empty state for Posts until new writing is published.
 - Combined interviews, articles, and newsletters into one newest-first Archive list with visible category labels; newsletters no longer have a separate section.
 
+## 2026-09-18 — Reel/newsletter migration finalized
+
+- Completed the unified Reel migration: 10 prior interviews/articles and 13 Bitcoin Cinema Digest issues now live in `site/_reel/`, for 23 archived entries and 23 detail routes.
+- Removed the separate `_newsletters` collection. Editorial type is carried by the shared `category` taxonomy, and the former Summer 2024 issue is included with the 12 remaining migrated newsletters.
+- Verified the Windows Jekyll build, real body content on representative newsletter and interview/article routes, and the Chronicle → Posts → Archive order on `/reel/`.
+- Removed a stale WordPress CDN migration note from the About source so the clean generated output contains no old upload-path markers.
+
 ## 2026-09-18 — Press kit and BFF’26 press room restored
 
 - Added `/presskit/`, preserving the verified local branding book with BFF logos, rabbit mark, posters, laurels, SVG/PDF vector assets, colour palette, and Syne Mono/Courier Prime specimens.
