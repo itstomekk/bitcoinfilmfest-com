@@ -46,7 +46,7 @@ jobs:
 
       - name: Build Jekyll site
         working-directory: site
-        run: bundle exec jekyll build --trace --config _config.yml,_config.github-pages.yml
+        run: bundle exec jekyll build --trace --config _config.yml
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

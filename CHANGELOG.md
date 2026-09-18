@@ -2,6 +2,13 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Custom domain cutover to bitcoinfilmfest.com
+
+- Set `bitcoinfilmfest.com` as the GitHub Pages custom domain and added the repository `CNAME` file.
+- Switched DNS: apex `A`/`AAAA` records now point at GitHub Pages; the previous website IP moved to `mail.bitcoinfilmfest.com`, and `MX`/`ftp` were repointed accordingly so mail and FTP keep working. Full pre-change zone backed up locally before any edit.
+- Switched the deploy workflow to build with only `_config.yml`, so canonical/OG/sitemap URLs now render as `https://bitcoinfilmfest.com` instead of the temporary Pages preview.
+- Next: wait for DNS propagation and GitHub's certificate, then enable Enforce HTTPS and verify the live domain per `DOMAIN-SEO-CUTOVER.md`.
+
 ## 2026-09-16 — Reel archive migration and public-media boundary
 
 - Added exactly 10 public-safe legacy interviews, guest posts, and an event report to the unified `/reel/` archive, with the original routes retained as noindex compatibility redirects.
