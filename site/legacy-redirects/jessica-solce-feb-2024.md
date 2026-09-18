@@ -4,6 +4,7 @@ title: "Jessica Solce on DEATH ATHLETIC"
 permalink: /jessica-solce-feb-2024/
 redirect_to: /reel/jessica-solce-death-athletic/
 robots: noindex, follow
+sitemap: false
 screen: paper
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "God Bless Bitcoin"
+description: "Religious leaders, financial voices and Bitcoin advocates ask how a broken monetary system might be repaired. The documentary connects inflation…"
 year: 2024
 type: Documentary
 status: released

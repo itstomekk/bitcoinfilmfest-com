@@ -1,5 +1,6 @@
 ---
 title: "Ordain"
+description: "A Bitcoin Lightning-native film commission platform that reverses the usual crowdfunding model: commissioners publish creative briefs with Bitcoin…"
 type: Funding Platform
 status: active
 website: "https://ordain.art/"

@@ -1,5 +1,6 @@
 ---
 title: "Money Electric: The Bitcoin Mystery"
+description: "This documentary follows a journalist's investigation into the mystery of Bitcoin's creator and the identity behind the name Satoshi Nakamoto. It builds…"
 year: 2024
 type: Documentary
 status: released

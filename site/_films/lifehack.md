@@ -1,5 +1,6 @@
 ---
 title: "LifeHack"
+description: "Four teenagers hack a crypto billionaire and steal millions, only to find their bedroom-sized operation pulled into the darkest corners of the internet…"
 year: 2026
 type: Feature
 status: released

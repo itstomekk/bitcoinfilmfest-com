@@ -1,5 +1,6 @@
 ---
 title: "Death Athletic: A Dissident Architecture"
+description: "Over seven years, Jessica Solce follows Cody Wilson through legal battles, personal setbacks and the growing community around 3D-printed firearms. The…"
 year: 2023
 type: Documentary
 status: released

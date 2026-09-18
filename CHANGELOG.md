@@ -2,6 +2,19 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — SEO and AI-discovery audit fixes
+
+- Excluded the 11 legacy redirect stub pages (old interview/newsletter URLs, `/bff25/`) from `sitemap.xml` via `sitemap: false`, matching their existing `robots: noindex`. They no longer appear in the public sitemap.
+- Added a unique `description` front-matter field to all 30 film pages and 7 company pages (derived from each entry's `synopsis`/`bitcoin_angle`), so search results and social previews no longer show the same site-wide description on every film/company page.
+- Added `site/llms.txt`, a plain-language site summary and key-page index for AI agents and LLM crawlers, alongside the existing `robots.txt` and `sitemap.xml`.
+- Verified via a local Jekyll build: sitemap entry count dropped as expected, film/company meta descriptions are now unique, `/llms.txt` renders correctly.
+
+## 2026-09-18 — Unified Reel editorial collection
+
+- Moved the Summer 2024 Bitcoin Cinema Digest into `site/_reel/` at `/reel/bitcoin-cinema-digest-summer-2024/`.
+- Removed the separate newsletters collection. Reel entries now use `category: newsletters`, `interviews`, or `articles`; the migrated archive entries also carry `archived: true`.
+- Updated the Reel Newsletter section to read newsletter entries from the unified Reel collection.
+
 ## 2026-09-18 — Custom domain cutover to bitcoinfilmfest.com
 
 - Set `bitcoinfilmfest.com` as the GitHub Pages custom domain and added the repository `CNAME` file.

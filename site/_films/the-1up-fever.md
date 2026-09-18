@@ -1,5 +1,6 @@
 ---
 title: "The 1Up Fever"
+description: "Berlin goes wild for an augmented-reality street game that lets players win Bitcoins. Silvia Dal Dosso's mockumentary mixes a fictional app, a real city…"
 year: 2013
 type: Short
 status: released

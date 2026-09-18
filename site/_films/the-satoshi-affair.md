@@ -1,5 +1,6 @@
 ---
 title: "The Satoshi Affair"
+description: "A dramatization of Andrew O'Hagan's investigation into the identity of Bitcoin's creator, including his dealings with Craig Wright. The project combines…"
 year: null
 type: Feature
 status: development
