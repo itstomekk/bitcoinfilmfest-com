@@ -2,6 +2,20 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Reel Chronicle, Posts, and Archive structure
+
+- Reordered `/reel/` into Chronicle, Posts, and Archive sections, with in-page navigation matching the new anchors.
+- Split fresh Reel entries from archived entries and added a clean empty state for Posts until new writing is published.
+- Combined interviews, articles, and newsletters into one newest-first Archive list with visible category labels; newsletters no longer have a separate section.
+
+## 2026-09-18 — Press kit and BFF’26 press room restored
+
+- Added `/presskit/`, preserving the verified local branding book with BFF logos, rabbit mark, posters, laurels, SVG/PDF vector assets, colour palette, and Syne Mono/Courier Prime specimens.
+- Linked the press kit from Storyboard, the BFF’26 Press Kit section, and the restored press-room pages.
+- Reconstructed `/26/press/` from the local BFF26 guest-page source: 34 static EN/PL hub, info-base and article pages, with local project-relative asset links and the current presskit destination.
+- Replaced the old BFF’26 press/gallery/laurels links with local routes or the existing BFF’25 photo archive; no private source notes or FTP tooling were copied.
+- Updated the route map and sitemap inventory to 101 generated / 89 public-indexable routes.
+
 ## 2026-09-18 — SEO and AI-discovery audit fixes
 
 - Excluded the 11 legacy redirect stub pages (old interview/newsletter URLs, `/bff25/`) from `sitemap.xml` via `sitemap: false`, matching their existing `robots: noindex`. They no longer appear in the public sitemap.

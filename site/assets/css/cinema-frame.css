@@ -1704,7 +1704,7 @@ body.is-navigating {
   font-style: italic;
 }
 
-/* Newsletter issues: reuse the showtime-row rhythm on a paper ground. */
+/* Reel posts and archive entries reuse the showtime-row rhythm on a paper ground. */
 .reel-list {
   display: grid;
   gap: 0;

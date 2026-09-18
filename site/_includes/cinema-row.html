@@ -4,7 +4,7 @@
   generic rounded cards) rather than introducing a new card idiom.
 
   Usage: {% include cinema-row.html entry=film kind="film" %}
-  kind is "film" or "company" — only changes which meta fields print.
+  kind is "film", "company", or "reel" — only changes which meta fields print.
 {% endcomment %}
 {% assign row = include.entry %}
 {% assign kind = include.kind %}
@@ -17,9 +17,24 @@
         {% if row.type %}<span>{{ row.type }}</span>{% endif %}
         {% if row.status %}<span class="cinema-status cinema-status--{{ row.status }}">{{ row.status | replace: '-', ' ' }}</span>{% endif %}
       {% else %}
-        {% if row.type %}<span>{{ row.type }}</span>{% endif %}
-        {% if row.established %}<span>est. {{ row.established }}</span>{% endif %}
-        {% if row.status %}<span class="cinema-status cinema-status--{{ row.status }}">{{ row.status | replace: '-', ' ' }}</span>{% endif %}
+        {% if kind == "company" %}
+          {% if row.type %}<span>{{ row.type }}</span>{% endif %}
+          {% if row.established %}<span>est. {{ row.established }}</span>{% endif %}
+          {% if row.status %}<span class="cinema-status cinema-status--{{ row.status }}">{{ row.status | replace: '-', ' ' }}</span>{% endif %}
+        {% else %}
+          {% case row.category %}
+            {% when "interviews" %}{% assign category_label = "Interview" %}
+            {% when "articles" %}{% assign category_label = "Article" %}
+            {% when "newsletters" %}{% assign category_label = "Newsletter" %}
+            {% else %}{% assign category_label = row.category | replace: '-', ' ' | capitalize %}
+          {% endcase %}
+          {% if category_label %}<span class="cinema-category">{{ category_label }}</span>{% endif %}
+          {% if row.date_precision == 'month' %}
+            <time datetime="{{ row.date | date: '%Y-%m' }}">{% if row.published_label %}{{ row.published_label }}{% else %}{{ row.date | date: '%B %Y' }}{% endif %}</time>
+          {% else %}
+            <time datetime="{{ row.date | date_to_xmlschema }}">{% if row.published_label %}{{ row.published_label }}{% else %}{{ row.date | date: '%B %Y' }}{% endif %}</time>
+          {% endif %}
+        {% endif %}
       {% endif %}
     </span>
   </a>
