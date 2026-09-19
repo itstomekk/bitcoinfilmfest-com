@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-19 — Correct BFF23 dates, attendance, and contact email
+
+- Corrected the BFF23 retrospective to 24–25 March 2023, eight screenings, and approximately 120 BFF23 viewers; the roughly 300-person figure is now explicitly scoped to BFF23 together with Weekend Kapitalizmu.
+- Updated the public contact email from `hello@bitcoinfilmfest.com` to `info@bitcoinfilmfest.com`.
+
 ## 2026-09-18 — Two new Reel posts: 2023 history and BFF25 cinema retrospective
 
 - Published "Our History Begins in 2023" at `/reel/our-history-begins-2023/`, a fact-checked retrospective on BFF23 Warsaw and the BFF Mini Lisboa activation, rewritten from a private source with owner-authorized reuse and no unsupported attendance/programme claims.

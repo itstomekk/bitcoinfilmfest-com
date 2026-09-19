@@ -9,7 +9,7 @@ description: "The story of Bitcoin FilmFest's first main edition in Warsaw and t
 
 Bitcoin FilmFest began its main festival story in Warsaw in March 2023.
 
-From 24 to 26 March, the first main edition took place at Kinoteka in Warsaw's Palace of Culture and Science. In its own contemporaneous communication, BFF described the event as the world's first Bitcoin film festival. That phrase belongs to the festival's historical language. The more lasting point is simpler: filmmakers, Bitcoiners and audiences gathered around a programme built for cinema, discussion and education.
+On 24 and 25 March, the first main edition took place at Kinoteka in Warsaw's Palace of Culture and Science. Eight screenings formed the film programme, attended by approximately 120 viewers. The wider Weekend Kapitalizmu context brought the combined audience to roughly 300 people, but that figure was not the attendance of BFF23 alone. In its own contemporaneous communication, BFF described the event as the world's first Bitcoin film festival. That phrase belongs to the festival's historical language. The more lasting point is simpler: filmmakers, Bitcoiners and audiences gathered around a programme built for cinema, discussion and education.
 
 One of the defining moments was the world premiere of *The Bitcoin Farmer*. The programme also brought film and conversation together. *The Great Reset and the Rise of Bitcoin* was followed by a mining-film panel. *Human B* was followed by a filmmaker panel. The final programme included a discussion around *The Satoshi Mystery*.
 

@@ -14,7 +14,7 @@ logo: "/assets/images/brand/bff-logo-mark-white.png"
 twitter:
   username: "bitcoinfilmfest"
 
-contact_email: "hello@bitcoinfilmfest.com"
+contact_email: "info@bitcoinfilmfest.com"
 
 # Shared menu and footer links live in _data/navigation.yml so collaborators
 # can edit structure without touching layout markup or site metadata.
