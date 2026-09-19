@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — README rewritten as marketing-first project intro
+
+- Rewrote the root `README.md`: opens with the "heart of the Bitcoin Cinema industry" / unfiat-the-culture mission instead of a plain code description, then keeps the practical content-editing table and technical/build documentation below it.
+- No website source, layout, or data changes — documentation only.
+
 ## 2026-09-18 — Custom domain cutover to bitcoinfilmfest.com
 
 - Set `bitcoinfilmfest.com` as the GitHub Pages custom domain and added the repository `CNAME` file.
