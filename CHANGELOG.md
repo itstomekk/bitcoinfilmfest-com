@@ -2,6 +2,16 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Fixed 6 small dead internal links
+
+- `_films/bitcoiners.md`: corrected the BFF'24 source URL from `/bff2024/` to the real `/24/` page.
+- `_companies/ordain.md`: corrected the BFF'26 source URL from `/bff26/` to the real `/26/` page.
+- `24.md`: removed the dead "BFF24 Official Selection" archive-source link (`/bff24-official-selection-freedom-themed-films/`) — no equivalent page exists anywhere on the site; the `<li>` was removed cleanly, surrounding sources kept intact.
+- `24.md`: removed the dead "European Halving Party programme" archive-source link (`/europeanhalvingparty/`) — no recovered page or Reel/Chronicle entry exists for it; the `<li>` was removed cleanly.
+- `26.md`: repointed the "BFF Cinema Digest" past-coverage link from the dead `/cinema-digest/` to the site's unified `/reel/#newsletter` section, which lists the actual newsletter archive.
+- `26/press/infobase.html`: repointed the "Logos & laurels" contact fact from the dead `/26/laurels/` to the existing `/presskit/` page.
+- All fixes verified with a Jekyll build; new targets confirmed present in the build output.
+
 ## 2026-09-18 — Press kit and BFF’26 press room restored
 
 - Added `/presskit/`, preserving the verified local branding book with BFF logos, rabbit mark, posters, laurels, SVG/PDF vector assets, colour palette, and Syne Mono/Courier Prime specimens.

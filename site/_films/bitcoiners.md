@@ -22,7 +22,7 @@ sources:
   - label: "Bitcoiners official site"
     url: "https://bitcoinersmovie.com/"
   - label: "Bitcoin FilmFest BFF24"
-    url: "https://bitcoinfilmfest.com/bff2024/"
+    url: "https://bitcoinfilmfest.com/24/"
   - label: "BTC Times review"
     url: "https://btctimes.com/bitcoiners-film-review"
 bff_screening: "BFF'24 Official Selection (April 2024, Warsaw)"
