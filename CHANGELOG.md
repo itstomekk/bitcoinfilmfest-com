@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-19 — Integrated the 30-film cinema catalogue
+
+- Added verified poster/still metadata and 30 local cinema image assets across all 30 film records, with poster/stills rendering in the cinema row and film detail layout.
+- Kept uncleared IMDb/TMDB/broadcaster imagery in owner-review notes rather than publishing it as cleared media; no private research data was added.
+- Merged PR #19 after resolving the current-main conflict in the Bitcoiners BFF'24 source link.
+
 ## 2026-09-18 — Fixed 6 small dead internal links
 
 - Corrected stale BFF edition links to `/24/` and `/26/`, removed two source links with no real target, and redirected the cinema-digest and laurels references to existing routes.

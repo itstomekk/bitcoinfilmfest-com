@@ -2,6 +2,21 @@
 
 This is a short operational record for builders. It records verified facts and active blockers. For implementation details, use `BUILDER-GUIDE.md` and `site/README.md`.
 
+## 2026-09-19 — 30-film cinema catalogue merged
+
+### Implemented
+
+- Merged PR #19 (`16690f3d8f22bf81296b443b5ebf98b2d7d1451c`) after incorporating current `main` and preserving the verified BFF'24 source URL for Bitcoiners.
+- Integrated 30 film front-matter records, 30 local cinema image assets, and the poster/stills rendering changes in `cinema-row.html`, `film.html`, and `cinema-frame.css`.
+- Kept rights-uncertain IMDb/TMDB/broadcaster media documented as owner-review rather than embedding it as cleared public media.
+
+### Verification
+
+- Windows Jekyll production build: PASS (`C:/Ruby33-x64/bin/bundle.bat exec jekyll build --trace`, 8.1 seconds).
+- Source film records: 30; generated film routes: 30; source and generated cinema assets: 30 each.
+- `git diff --check`: PASS.
+- Public-boundary GitHub Actions check: PASS before the changelog requirement stopped the first post-conflict run; the required dated changelog entry is included in this commit.
+
 ## 2026-09-19 — Dead-route repairs merged and deployed
 
 ### Implemented
