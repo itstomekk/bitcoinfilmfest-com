@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Fixed dead /sponsor/ link with a Friends-of-BFF stub page
+
+- Added `site/sponsor.md` (`/sponsor/`, `screen: paper`, `join.md`-style layout) explaining what becoming a Friend of BFF means, the Featured Friend / Friend / in-kind partner tiers seen on `/26/`, and a `hello@bitcoinfilmfest.com` contact path.
+- No nav or homepage links added; the two existing `/sponsor/` CTAs on `/26/` now resolve instead of 404ing.
+- Added the route to `_data/sitemap.json`'s builder-only inventory.
+
 ## 2026-09-18 — Press kit and BFF’26 press room restored
 
 - Added `/presskit/`, preserving the verified local branding book with BFF logos, rabbit mark, posters, laurels, SVG/PDF vector assets, colour palette, and Syne Mono/Courier Prime specimens.
