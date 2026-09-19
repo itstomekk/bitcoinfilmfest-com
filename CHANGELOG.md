@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Two new Reel posts: 2023 history and BFF25 cinema retrospective
+
+- Published "Our History Begins in 2023" at `/reel/our-history-begins-2023/`, a fact-checked retrospective on BFF23 Warsaw and the BFF Mini Lisboa activation, rewritten from a private source with owner-authorized reuse and no unsupported attendance/programme claims.
+- Published "Bitcoin FilmFest 2025: Kino Poza Schematami" (Polish) at `/reel/bff25-kino-poza-schematami/`, a retrospective on the BFF25 cinema programme (generative-cinema block, upcoming-productions block, The PoWies, the pitching contest, and the Revolución Bitcoin / Unbankable / Hotel Bitcoin screenings), reframed in past tense with the canonical `/25/` link and current social URLs.
+- Both entries carry `category: articles` with no `archived` flag, so they render under the Reel page's Posts section as the first new writing since the archive migration.
+
 ## 2026-09-18 — Reel Chronicle, Posts, and Archive structure
 
 - Reordered `/reel/` into Chronicle, Posts, and Archive sections, with in-page navigation matching the new anchors.
