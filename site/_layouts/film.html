@@ -7,6 +7,9 @@ layout: default
   <header class="page-masthead">
     <p class="page-context">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
     <h1>{{ page.title }}</h1>
+    {% if page.poster %}
+      <img class="cinema-poster" src="{{ page.poster | relative_url }}" alt="{{ page.title }} poster{% if page.poster_credit %} — {{ page.poster_credit }}{% endif %}" loading="lazy">
+    {% endif %}
     {% if page.synopsis %}<p>{{ page.synopsis }}</p>{% endif %}
   </header>
 
@@ -51,5 +54,9 @@ layout: default
     <p class="cinema-sources">
       {% for source in page.sources %}<a href="{{ source.url }}" target="_blank" rel="noopener noreferrer">{{ source.label }}</a>{% endfor %}
     </p>
+  {% endif %}
+
+  {% if page.poster and page.poster_credit %}
+    <p class="cinema-poster-credit">Poster: {{ page.poster_credit }}{% if page.poster_source_url %} — <a href="{{ page.poster_source_url }}" target="_blank" rel="noopener noreferrer">source</a>{% endif %}</p>
   {% endif %}
 </article>

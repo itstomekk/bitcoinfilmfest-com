@@ -23,6 +23,9 @@ Both collections are plain Jekyll collections: one Markdown file per entry, fron
 | `bitcoin_angle` | string (block) | yes | What makes this Bitcoin cinema, in public voice. This is the field most likely to carry KB researcher phrasing by accident — always rewrite. |
 | `platform` | string or `null` | no | Where to watch, if known (e.g. "Netflix", "Amazon Prime Video"). |
 | `trailer` | URL or `null` | no | YouTube link preferred. |
+| `poster` | path or `null` | no | Local path under `assets/images/cinema/films/{slug}.jpg` (or `.png`/`.webp`). Only ever a poster/key-art image pulled fresh from the film's own official site, press kit, or studio/distributor page — never copied from the private Notion media cache, even if that cache already has a matching image, without first re-fetching or re-clearing the image from a public source. See "Adding poster/still art" below. |
+| `poster_credit` | string or `null` | no, required if `poster` is set | Rights holder / where it's from, in public-facing text, e.g. `"Official poster, Tucker Tooley Entertainment"`. |
+| `poster_source_url` | URL or `null` | no, required if `poster` is set | The exact public page the image was fetched from — provenance for future audits. |
 | `sources` | list of `{label, url}` | yes | 1–3 credible public sources. Never link BFF-internal files. |
 | `bff_screening` | string or `null` | no | e.g. `"BFF26 Official Selection"` — only when true; ties the database back to the festival. |
 | `featured` | boolean | no | Surfaces the entry in the `/cinema/` hub's curated highlights. Keep this to a small, deliberately curated set. |
@@ -59,3 +62,16 @@ Per `PLAN-CINEMA.md`'s data-source boundary — copied here so it's visible righ
 3. Save as `site/_films/{slug}.md` or `site/_companies/{slug}.md`.
 4. Build locally, check the profile page renders and the entry appears on the matching index page.
 5. PR as usual per `HANDOFF-CURRENT.md`'s workflow.
+
+## Adding poster/still art
+
+The private canonical KB has an internal asset index (`Claude news/canonical-kb/assets.jsonl`, ~650 images) pulled from the old Notion export. Every one of those is stamped `"publication_status": "approved_private_only"`, `"website_eligible": false`, `"permission_scope": "BFF use only"` — it is a **lead list** (which films likely have known art, which folder it lived in) and nothing in it may be copied straight onto the public site.
+
+For every poster/still added to a film entry:
+
+1. Check the KB asset index for a lead (a film-name-matching sub-folder) — this only tells you art probably exists, not that you may publish it.
+2. Re-source the actual image from a public channel: the film's own official site, its official press kit, the studio/distributor's press page, or a platform listing (Apple TV/Amazon/IMDb) that explicitly hosts official art. A screenshot of someone else's private Notion board is never a source.
+3. Save it under `site/assets/images/cinema/films/{slug}.{ext}` — reuse the film's own `_films/{slug}.md` slug so the two stay obviously paired.
+4. Fill `poster`, `poster_credit` and `poster_source_url` together — never set `poster` without the other two.
+5. Prefer official key art / one-sheet posters over random stills; a good still is acceptable only when no poster exists publicly.
+6. Keep file sizes reasonable (a few hundred KB, not a multi-MB press-kit original) — resize before committing if needed.
