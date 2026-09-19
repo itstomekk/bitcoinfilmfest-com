@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BFF'26 — Press Kit · Laurels & Logos</title>
+    <meta name="description" content="Bitcoin Film Fest 2026 — official laurels, logos and posters for press, partners and filmmakers. View and download.">
+    <meta name="robots" content="index,follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-dark: #161718;
+            --bg-dark-alt: #1a1b1d;
+            --bg-card: #1e2022;
+            --bg-card-light: #f0f0f0;
+            --bg-outer: #000000;
+            --blue: #0892d8;
+            --blue-light: #33b9fd;
+            --blue-dim: rgba(8, 146, 216, 0.15);
+            --blue-glow: rgba(8, 146, 216, 0.25);
+            --orange: #f8931a;
+            --red: #dd4a3c;
+            --text-white: #ffffff;
+            --text-grey: #999;
+            --text-dim: #666;
+            --border-subtle: rgba(255,255,255,0.08);
+            --border-blue: rgba(8, 146, 216, 0.35);
+
+            --font-display: 'Syne Mono', monospace;
+            --font-body: 'Courier Prime', 'Courier New', monospace;
+
+            --title-size: clamp(2rem, 6vw, 4.5rem);
+            --h2-size: clamp(1.4rem, 3.5vw, 2.5rem);
+            --h3-size: clamp(1rem, 1.6vw, 1.25rem);
+            --body-size: clamp(0.78rem, 1.05vw, 0.95rem);
+            --small-size: clamp(0.65rem, 0.85vw, 0.78rem);
+            --label-size: clamp(0.6rem, 0.8vw, 0.72rem);
+
+            --page-pad: clamp(1.5rem, 4vw, 4rem);
+            --frame-h: 5vh;
+            --frame-w: 3vw;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background: var(--bg-outer);
+            font-family: var(--font-body);
+            color: var(--text-white);
+            font-size: var(--body-size);
+            line-height: 1.55;
+            letter-spacing: 0.01em;
+            -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Cinema frame */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            border-left: var(--frame-w) solid var(--bg-outer);
+            border-right: var(--frame-w) solid var(--bg-outer);
+            border-top: var(--frame-h) solid var(--bg-outer);
+            border-bottom: var(--frame-h) solid var(--bg-outer);
+            z-index: 9995;
+            pointer-events: none;
+        }
+
+        main {
+            background: var(--bg-dark);
+            min-height: 100vh;
+            padding: calc(var(--frame-h) + var(--page-pad)) calc(var(--frame-w) + var(--page-pad)) calc(var(--frame-h) + var(--page-pad) + 8vh);
+        }
+
+        /* === CINEMA SEATS — fixed at bottom, signature visual === */
+        .cinema-seats {
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: auto;
+            z-index: 9996;          /* above the frame */
+            pointer-events: none;
+            display: block;
+        }
+
+        /* Halftone texture overlay (decorative) */
+        main::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle, var(--blue-dim) 1px, transparent 1px);
+            background-size: 14px 14px;
+            opacity: 0.4;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Headings */
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            text-transform: uppercase;
+            line-height: 1.05;
+            letter-spacing: 0.02em;
+        }
+
+        h1 {
+            font-size: var(--title-size);
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: var(--h2-size);
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: var(--h3-size);
+            margin-bottom: 0.25rem;
+        }
+
+        .bff-name {
+            color: var(--text-white);
+            text-shadow:
+                -1px -1px 0 var(--bg-outer),
+                 1px -1px 0 var(--bg-outer),
+                -1px  1px 0 var(--bg-outer),
+                 1px  1px 0 var(--bg-outer);
+        }
+
+        .section-label {
+            font-family: var(--font-body);
+            font-size: var(--label-size);
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--blue);
+            margin-bottom: 0.75rem;
+        }
+
+        /* Hero */
+        .hero {
+            padding: clamp(2rem, 6vw, 5rem) 0 clamp(2rem, 4vw, 3.5rem);
+            border-bottom: 1px solid var(--border-subtle);
+            margin-bottom: clamp(2rem, 4vw, 3.5rem);
+            position: relative;
+        }
+
+        .hero-tagline {
+            color: var(--text-grey);
+            max-width: 56ch;
+            margin-top: 1.25rem;
+            font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+        }
+
+        .hero-meta {
+            display: flex;
+            gap: 1.5rem 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            font-size: var(--small-size);
+            color: var(--text-grey);
+        }
+
+        .hero-meta a {
+            color: var(--blue-light);
+            text-decoration: none;
+            border-bottom: 1px dotted currentColor;
+        }
+        .hero-meta a:hover { color: var(--text-white); }
+
+        /* Top nav */
+        .topnav {
+            display: flex;
+            gap: 1rem 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+            font-size: var(--small-size);
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .topnav a {
+            color: var(--text-grey);
+            text-decoration: none;
+            transition: color 0.15s;
+        }
+        .topnav a:hover { color: var(--blue-light); }
+        .topnav .sep { color: var(--text-dim); }
+        .topnav .home {
+            color: var(--blue);
+            border: 1px solid var(--border-blue);
+            padding: 0.4rem 0.9rem;
+        }
+        .topnav .home:hover {
+            background: var(--blue);
+            color: var(--bg-dark);
+        }
+
+        /* Section */
+        .section {
+            padding: clamp(2rem, 4vw, 3.5rem) 0;
+        }
+
+        /* Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+            gap: clamp(1rem, 2vw, 1.75rem);
+        }
+
+        /* Card */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+        .card:hover {
+            border-color: var(--border-blue);
+            transform: translateY(-2px);
+        }
+
+        .preview {
+            aspect-ratio: 4 / 3;
+            background: var(--bg-dark-alt);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .preview.light { background: var(--bg-card-light); }
+        .preview.checker {
+            background:
+              linear-gradient(45deg, #222 25%, transparent 25%),
+              linear-gradient(-45deg, #222 25%, transparent 25%),
+              linear-gradient(45deg, transparent 75%, #222 75%),
+              linear-gradient(-45deg, transparent 75%, #222 75%);
+            background-size: 16px 16px;
+            background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+            background-color: #2a2a2a;
+        }
+
+        .preview img {
+            max-width: 84%;
+            max-height: 84%;
+            object-fit: contain;
+        }
+
+        .preview .format-tag {
+            position: absolute;
+            top: 0.6rem;
+            right: 0.6rem;
+            background: var(--bg-outer);
+            color: var(--blue);
+            font-family: var(--font-body);
+            font-size: var(--label-size);
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            padding: 0.25rem 0.55rem;
+            border: 1px solid var(--border-blue);
+        }
+
+        /* PDF / non-image placeholder */
+        .pdf-icon {
+            width: 50%;
+            max-width: 130px;
+            opacity: 0.85;
+        }
+
+        .card-body {
+            padding: 1rem 1.1rem 1.15rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            flex: 1;
+        }
+
+        .card-title {
+            font-family: var(--font-display);
+            font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+            color: var(--text-white);
+            letter-spacing: 0.02em;
+            line-height: 1.2;
+        }
+
+        .card-filename {
+            font-size: var(--small-size);
+            color: var(--text-grey);
+            word-break: break-all;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: auto;
+            padding-top: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .card-actions .btn { min-width: 5rem; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            font-family: var(--font-body);
+            font-size: var(--small-size);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            padding: 0.55rem 0.85rem;
+            text-decoration: none;
+            transition: background 0.15s, color 0.15s, border-color 0.15s;
+            cursor: pointer;
+            border: 1px solid var(--blue);
+            color: var(--blue);
+            background: transparent;
+            flex: 1;
+            text-align: center;
+        }
+        .btn:hover {
+            background: var(--blue);
+            color: var(--bg-dark);
+        }
+
+        .btn-primary {
+            background: var(--blue);
+            color: var(--bg-dark);
+        }
+        .btn-primary:hover {
+            background: var(--blue-light);
+            border-color: var(--blue-light);
+        }
+
+        /* Section header */
+        .section-head {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 0.5rem;
+        }
+        .section-head .note {
+            font-size: var(--small-size);
+            color: var(--text-grey);
+        }
+
+        /* Usage note */
+        .usage {
+            background: rgba(8,146,216,0.06);
+            border-left: 3px solid var(--blue);
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0 2rem;
+            font-size: var(--small-size);
+            color: var(--text-grey);
+            line-height: 1.6;
+        }
+        .usage strong { color: var(--text-white); }
+
+        /* Footer */
+        footer {
+            margin-top: clamp(3rem, 6vw, 5rem);
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-subtle);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            font-size: var(--small-size);
+            color: var(--text-grey);
+        }
+
+        footer h4 {
+            font-family: var(--font-display);
+            font-size: var(--h3-size);
+            color: var(--text-white);
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.05em;
+        }
+
+        footer a {
+            color: var(--blue-light);
+            text-decoration: none;
+        }
+        footer a:hover { color: var(--text-white); }
+
+        .footer-bottom {
+            grid-column: 1 / -1;
+            border-top: 1px solid var(--border-subtle);
+            padding-top: 1rem;
+            margin-top: 0.5rem;
+            color: var(--text-dim);
+            font-size: var(--label-size);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        @media (max-width: 600px) {
+            .hero-meta { gap: 0.75rem 1.25rem; }
+            .topnav .home { padding: 0.35rem 0.7rem; }
+        }
+    
+/* ===== CANONICAL HEADER + FOOTER (shared across /26 subpages) ===== */
+.topnav {
+  position: fixed; top: 0; left: 0; right: 0;
+  height: var(--frame-h, 5vh); min-height: 44px;
+  background: #000; color: #f5f0e0; z-index: 9997;
+  display: flex; align-items: center;
+  border-bottom: 1px solid rgba(245,240,224,0.15);
+}
+.topnav-inner {
+  width: 100%; max-width: 1200px; margin: 0 auto;
+  padding: 0 calc(var(--frame-w, 3vw) + 0.5rem);
+  display: flex; gap: 0.4rem 1.6rem; align-items: center;
+  overflow-x: auto; white-space: nowrap;
+}
+.topnav a {
+  font-family: 'Syne Mono', monospace;
+  font-size: clamp(0.78rem, 1.05vw, 0.95rem);
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: rgba(245,240,224,0.65); text-decoration: none;
+  padding: 0.3rem 0; border-bottom: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+.topnav a:hover { color: #f5f0e0; }
+.topnav a.active { color: #33b9fd; border-bottom-color: #33b9fd; }
+.topnav .brand { color: #f5f0e0; font-weight: 700; letter-spacing: 0.08em; }
+.topnav .brand:hover { color: #33b9fd; }
+.topnav .nav-cta {
+  margin-left: auto; background: #0892d8; color: #f5f0e0;
+  padding: 0.35rem 0.85rem; border-bottom: 0;
+  font-weight: 700; letter-spacing: 0.12em;
+  font-size: clamp(0.7rem, 0.95vw, 0.85rem);
+}
+.topnav .nav-cta:hover { background: #33b9fd; color: #f5f0e0; }
+@media (max-width: 700px) { .topnav .nav-cta { margin-left: 0; } }
+
+.footer-band { background: #000; }
+.footer-band .footer-inner {
+  max-width: 980px; margin: 0 auto;
+  padding: 1.75rem calc(var(--frame-w, 3vw) + clamp(1rem, 3vw, 3rem));
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem; font-family: 'Courier Prime','Courier New',monospace;
+  font-size: clamp(0.72rem, 0.85vw, 0.82rem);
+  color: rgba(245,240,224,0.7);
+}
+.footer-band h4 {
+  color: #f5f0e0; font-family: 'Syne Mono', monospace; font-weight: 400;
+  text-transform: uppercase; margin-bottom: 0.5rem;
+  font-size: clamp(0.85rem, 1.2vw, 1rem); letter-spacing: 0.08em;
+}
+.footer-band a { color: #33b9fd; text-decoration: underline; text-underline-offset: 2px; }
+.footer-band a:hover { color: #f5f0e0; }
+.footer-band .footer-logo { height: clamp(30px, 4vw, 42px); width: auto; margin-bottom: 0.6rem; opacity: 0.9; display: block; }
+.footer-band .footer-bottom {
+  grid-column: 1 / -1; border-top: 1px solid rgba(245,240,224,0.15); padding-top: 1rem;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem;
+  font-size: clamp(0.62rem, 0.78vw, 0.74rem); letter-spacing: 0.12em;
+  text-transform: uppercase; color: rgba(245,240,224,0.45);
+}
+/* ===== END CANONICAL HEADER + FOOTER ===== */
+
+/* ===== COLORS & TYPE ===== */
+.swatch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 160px), 1fr));
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  margin-bottom: 2rem;
+}
+.swatch {
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  overflow: hidden;
+}
+.swatch .chip {
+  height: 96px;
+  display: block;
+}
+.swatch .chip.bordered { box-shadow: inset 0 0 0 1px var(--border-subtle); }
+.swatch .meta {
+  padding: 0.7rem 0.85rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.swatch .name {
+  font-family: var(--font-display);
+  font-size: clamp(0.85rem, 1.1vw, 0.98rem);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.swatch .hex {
+  font-family: var(--font-body);
+  font-size: var(--small-size);
+  color: var(--blue-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.swatch .role {
+  font-size: var(--label-size);
+  color: var(--text-grey);
+}
+
+/* Typography specimens */
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: clamp(1rem, 2vw, 1.75rem);
+}
+.type-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+}
+.type-card .specimen-display {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  text-transform: uppercase;
+  line-height: 1.05;
+  color: var(--text-white);
+  margin-bottom: 0.75rem;
+}
+.type-card .specimen-body {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
+  color: var(--text-white);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+.type-card .type-name {
+  font-family: var(--font-display);
+  font-size: var(--h3-size);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.type-card .type-role {
+  font-size: var(--small-size);
+  color: var(--text-grey);
+  margin: 0.15rem 0 0.9rem;
+}
+.type-card .type-meta {
+  font-size: var(--small-size);
+  color: var(--text-grey);
+  margin-bottom: 0.9rem;
+}
+.type-card .type-meta a { color: var(--blue-light); text-decoration: none; border-bottom: 1px dotted currentColor; }
+.type-card .type-meta a:hover { color: var(--text-white); }
+.type-card .charset {
+  font-family: var(--font-body);
+  font-size: var(--small-size);
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 0.75rem;
+}
+
+    </style>
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://bitcoinfilmfest.com/presskit/">
+<meta property="og:title" content="BFF'26 — Press Kit · Laurels & Logos">
+<meta property="og:description" content="Bitcoin Film Fest 2026 — official laurels, logos and posters for press, partners and filmmakers. View and download.">
+<meta property="og:image" content="https://bitcoinfilmfest.com/26/26-assets/og-poster.jpg">
+<meta property="og:url" content="https://bitcoinfilmfest.com/presskit/">
+<meta property="og:type" content="website">
+</head>
+<body>
+
+<main>
+  <div class="wrap">
+
+    <!-- TOP NAV -->
+    <nav class="topnav" aria-label="Sections">
+  <div class="topnav-inner">
+    <a href="../26/" class="brand">BFF'26</a>
+    <a href="../26/#agenda">Agenda</a>
+    <a href="../26/#tickets">Tickets</a>
+    <a href="../26/#warsaw">Warsaw Travel</a>
+    <a href="../26/#bff-friends">BFF &amp; Friends</a>
+    <a href="../26/" class="nav-cta">Get a ticket</a>
+  </div>
+</nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="section-label">Press Kit · 2026</div>
+      <h1><span class="bff-name">Bitcoin&nbsp;FilmFest</span><br>Laurels &amp; Logos</h1>
+      <p class="hero-tagline">
+        Official BFF'26 graphics for press, partners and filmmakers.
+        View, download, share. Free to use in line with our usage note below.
+      </p>
+      <div class="hero-meta">
+        <span>June 4–7, 2026 · Warsaw · Kinoteka</span>
+        <a href="mailto:hello@bitcoinfilmfest.com">hello@bitcoinfilmfest.com</a>
+        <a href="../" target="_blank" rel="noopener">bitcoinfilmfest.com</a>
+      </div>
+    </header>
+
+    <!-- LOGOS -->
+    <section class="section" id="logos">
+      <div class="section-head">
+        <div>
+          <div class="section-label">01 · Logos</div>
+          <h2>BFF Logos</h2>
+        </div>
+        <div class="note">PNG · event &amp; organization marks</div>
+      </div>
+
+      <div class="grid">
+
+        <!-- Mini logo -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff26-minilogo.png" alt="BFF'26 mini logo" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF'26 Mini Logo</h3>
+            <div class="card-filename">bff26-minilogo.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff26-minilogo.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff26-minilogo.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Horizontal lockup -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff26-poster-horizontal.png" alt="BFF'26 horizontal lockup" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF'26 Horizontal Lockup</h3>
+            <div class="card-filename">bff26-poster-horizontal.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff26-poster-horizontal.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff26-poster-horizontal.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Official poster (vertical) -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff26-poster-vertical.png" alt="BFF'26 official poster — vertical" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF'26 Official Poster</h3>
+            <div class="card-filename">bff26-poster-vertical.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff26-poster-vertical.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff26-poster-vertical.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BFF organization wordmark — flat -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff-logo-flat.png" alt="BFF logo — flat" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF Logo — Flat</h3>
+            <div class="card-filename">bff-logo-flat.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff-logo-flat.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff-logo-flat.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BFF organization wordmark — outline -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff-logo-outline.png" alt="BFF logo — outline" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF Logo — Outline</h3>
+            <div class="card-filename">bff-logo-outline.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff-logo-outline.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff-logo-outline.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BFF organization wordmark — white (for dark backgrounds) -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff-logo-white.png" alt="BFF logo — white" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF Logo — White</h3>
+            <div class="card-filename">bff-logo-white.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff-logo-white.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff-logo-white.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BFF mark only (symbol) — white -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff-mark-white.png" alt="BFF symbol mark — white" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF Mark — White</h3>
+            <div class="card-filename">bff-mark-white.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff-mark-white.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff-mark-white.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- BFF Rabbit mascot -->
+        <article class="card">
+          <div class="preview light">
+            <img src="laurels-assets/bff-rabbit.png" alt="BFF Rabbit mascot" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF Rabbit Mascot</h3>
+            <div class="card-filename">bff-rabbit.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff-rabbit.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff-rabbit.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- LAURELS -->
+    <section class="section" id="laurels">
+      <div class="section-head">
+        <div>
+          <div class="section-label">02 · Laurels</div>
+          <h2>BFF Laurels</h2>
+        </div>
+        <div class="note">PNG &amp; vector · for filmmakers</div>
+      </div>
+
+      <div class="grid">
+
+        <!-- Official Selection laurels white -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff26-official-selection-laurels-white.png" alt="BFF'26 Official Selection laurels — white" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Official Selection 2026 — White</h3>
+            <div class="card-filename">bff26-official-selection-laurels-white.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff26-official-selection-laurels-white.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff26-official-selection-laurels-white.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Event laurels white -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff26-event-laurels-white.png" alt="BFF'26 event laurels — white" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Event Laurels 2026 — White</h3>
+            <div class="card-filename">bff26-event-laurels-white.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff26-event-laurels-white.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff26-event-laurels-white.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Event laurels black -->
+        <article class="card">
+          <div class="preview light">
+            <img src="laurels-assets/bff26-event-laurels-black.png" alt="BFF'26 event laurels — black" loading="lazy">
+            <span class="format-tag">PNG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Event Laurels 2026 — Black</h3>
+            <div class="card-filename">bff26-event-laurels-black.png</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff26-event-laurels-black.png" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff26-event-laurels-black.png" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- General laurels — SVG -->
+        <article class="card">
+          <div class="preview">
+            <img src="laurels-assets/bff-laurels-vector.svg" alt="BFF laurels — vector SVG" loading="lazy">
+            <span class="format-tag">SVG</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF Laurels — Vector</h3>
+            <div class="card-filename">bff-laurels-vector.svg</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff-laurels-vector.svg" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff-laurels-vector.svg" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- General laurels — PDF -->
+        <article class="card">
+          <div class="preview checker">
+            <svg class="pdf-icon" viewBox="0 0 64 80" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path fill="#0892d8" d="M8 0h36l16 16v60a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" opacity="0.18"/>
+              <path fill="none" stroke="#0892d8" stroke-width="2.5" d="M8 1h36l15 15v60a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3z"/>
+              <path fill="none" stroke="#0892d8" stroke-width="2.5" d="M44 1v15h15"/>
+              <text x="32" y="55" font-family="Courier Prime, monospace" font-size="14" font-weight="700" fill="#0892d8" text-anchor="middle">PDF</text>
+            </svg>
+            <span class="format-tag">PDF</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">BFF Laurels — Vector (Print)</h3>
+            <div class="card-filename">bff-laurels-vector.pdf</div>
+            <div class="card-actions">
+              <a class="btn" href="laurels-assets/bff-laurels-vector.pdf" target="_blank" rel="noopener">View</a>
+              <a class="btn btn-primary" href="laurels-assets/bff-laurels-vector.pdf" download>Download</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- COLORS & TYPE -->
+    <section class="section" id="colors">
+      <div class="section-head">
+        <div>
+          <div class="section-label">03 · Colors &amp; Type</div>
+          <h2>Colors &amp; Type</h2>
+        </div>
+        <div class="note">Brand palette &amp; fonts</div>
+      </div>
+
+      <h3 style="margin-bottom:1rem;">Palette</h3>
+      <div class="swatch-grid">
+
+        <div class="swatch">
+          <span class="chip bordered" style="background:#000000;"></span>
+          <div class="meta">
+            <span class="name">Black</span>
+            <span class="hex">#000000</span>
+            <span class="role">Backgrounds, frame</span>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <span class="chip bordered" style="background:#F0F0F0;"></span>
+          <div class="meta">
+            <span class="name">Off-White</span>
+            <span class="hex">#F0F0F0</span>
+            <span class="role">Light surfaces, text on dark</span>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <span class="chip" style="background:#33B9FD;"></span>
+          <div class="meta">
+            <span class="name">Blue — Light</span>
+            <span class="hex">#33B9FD</span>
+            <span class="role">Highlights, links, hover</span>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <span class="chip" style="background:#0892D8;"></span>
+          <div class="meta">
+            <span class="name">Blue — Deep</span>
+            <span class="hex">#0892D8</span>
+            <span class="role">Primary accent, buttons</span>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <span class="chip" style="background:linear-gradient(135deg,#33B9FD 0%,#0892D8 100%);"></span>
+          <div class="meta">
+            <span class="name">Blue Gradient</span>
+            <span class="hex">#33B9FD → #0892D8</span>
+            <span class="role">Heroes, large fills</span>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <span class="chip" style="background:#F8931A;"></span>
+          <div class="meta">
+            <span class="name">Orange</span>
+            <span class="hex">#F8931A</span>
+            <span class="role">Accent / highlight</span>
+          </div>
+        </div>
+
+        <div class="swatch">
+          <span class="chip" style="background:#DD4A3C;"></span>
+          <div class="meta">
+            <span class="name">Red</span>
+            <span class="hex">#DD4A3C</span>
+            <span class="role">Accent / alert</span>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 style="margin:0.5rem 0 1rem;">Typefaces</h3>
+      <div class="type-grid">
+
+        <div class="type-card">
+          <div class="specimen-display">Fix the money, fix the culture</div>
+          <div class="type-name">Syne Mono</div>
+          <div class="type-role">Headers &amp; display</div>
+          <div class="type-meta">Free · Open Font License · <a href="https://fonts.google.com/specimen/Syne+Mono" target="_blank" rel="noopener">Get it on Google Fonts</a></div>
+          <div class="charset">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789</div>
+        </div>
+
+        <div class="type-card">
+          <div class="specimen-body">Quick frames flicker; bold zaps jump the lazy box office. ₿123456789</div>
+          <div class="type-name">Courier Prime</div>
+          <div class="type-role">Body &amp; UI text</div>
+          <div class="type-meta">Free · Open Font License · <a href="https://fonts.google.com/specimen/Courier+Prime" target="_blank" rel="noopener">Get it on Google Fonts</a></div>
+          <div class="charset">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- USAGE -->
+    <section class="section" id="usage">
+      <div class="section-label">04 · Usage</div>
+      <h2>How to Use These</h2>
+      <div class="usage">
+        <p><strong>Filmmakers, press &amp; partners:</strong> free to use on your festival page, posters, trailers, social and print. Please do not modify the colours or proportions of the laurels and logos. The black version of the laurels is for light backgrounds; the white version is for dark backgrounds.</p>
+        <p style="margin-top:0.75rem;"><strong>Need a different format, size or colour?</strong> Drop us a note at <a href="mailto:hello@bitcoinfilmfest.com" style="color:var(--blue-light);">hello@bitcoinfilmfest.com</a> and we'll send it.</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer-band">
+  <div class="footer-inner">
+    <div>
+      <img class="footer-logo" src="../26/26-assets/bff-logo.png" alt="Bitcoin FilmFest" loading="lazy">
+      <h4>BFF'26</h4>
+      <p>June 4–7, 2026<br><a href="https://maps.app.goo.gl/iwwB4VpW1vzLYGZZ8" target="_blank" rel="noopener">Kinoteka</a> · Warsaw</p>
+    </div>
+    <div>
+      <h4>Do</h4>
+      <p>
+        <a href="../26/">Get a ticket</a><br>
+        <a href="https://forms.gle/Atsj6bsyP7twyBxX8" target="_blank" rel="noopener">Volunteer</a><br>
+        <a href="https://forms.gle/zXjGdzRDQQS84pPW8" target="_blank" rel="noopener">Submit a film</a><br>
+        <a href="https://bitcoinfilmfest.com/sponsor/">Become a Friend</a>
+      </p>
+    </div>
+    <div>
+      <h4>Read</h4>
+      <p>
+        <a href="../about/" target="_blank" rel="noopener">About / Story</a><br>
+        <a href="../26/press/" target="_blank" rel="noopener">Press room</a><br>
+        <a href="../credits/" target="_blank" rel="noopener">Credits</a><br>
+        <a href="../presskit/">Press kit assets</a>
+      </p>
+    </div>
+    <div>
+      <h4>Talk</h4>
+      <p>
+        <a href="mailto:hello@bitcoinfilmfest.com">hello@bitcoinfilmfest.com</a><br>
+        <a href="https://t.me/+_fTPO9H0SS0yMTQ0" target="_blank" rel="noopener">Telegram (BFF'26)</a><br>
+        <a href="https://t.me/+yfXLveSIRsw3YTJk" target="_blank" rel="noopener">Community Telegram</a><br>
+        <a href="https://x.com/bitcoinfilmfest" target="_blank" rel="noopener">X</a> ·
+        <a href="https://njump.me/npub1rjtrs7xqdvj3588r9njrexh2n750j7jdwx9qs543nutmdsj6ljaqpfmp8a" target="_blank" rel="noopener">Nostr</a> ·
+        <a href="https://www.linkedin.com/company/bitcoin-filmfest" target="_blank" rel="noopener">LinkedIn</a>
+      </p>
+    </div>
+    <div class="footer-bottom">
+      <span>© Bitcoin FilmFest 2026 · Fix the Money, Fix the Culture</span>
+      <span>/logos · v1.3</span>
+    </div>
+  </div>
+</div>
+
+  </div>
+</main>
+
+<!-- Cinema seats — fixed at the bottom, full width, above the frame. Signature BFF visual. -->
+<img class="cinema-seats" src="laurels-assets/seats.png" alt="" aria-hidden="true" loading="lazy">
+
+</body>
+</html>

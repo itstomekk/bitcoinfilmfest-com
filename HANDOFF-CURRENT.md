@@ -1,5 +1,5 @@
 # Handoff — Bitcoin FilmFest Jekyll rebuild
-Updated: 2026-09-16
+Updated: 2026-09-18
 
 ## Cross-project architecture
 
@@ -17,6 +17,14 @@ The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the exis
 - `/25/` remains the only canonical BFF’25 route. `/bff25/` is redirect-only, and migrated Reel links use `/25/` rather than the legacy alias.
 - The 10 entries contain text and verified external source links only. Unverified WordPress `/wp-content/uploads/` and `/media/` image hotlinks were removed from front matter and bodies; no private contact, CRM, KB, Notion, Drive, licensing, or internal review material was copied into the public entries.
 - The FormSubmit AJAX success path reads the footer form’s configured `_next` value, preserving the shared `/thanks/` destination without hardcoding it in JavaScript.
+
+### 2026-09-18 press kit and BFF’26 press room
+
+- `/presskit/` now preserves the local branding book: BFF logos, rabbit mark, posters, laurels, SVG/PDF vectors, colours and Syne Mono/Courier Prime specimens. The source was `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\logos-page\`; only its public HTML and 14 prepared assets were copied.
+- Storyboard links to `/presskit/`, and the BFF’26 Press Kit section links to `/26/press/`, `/presskit/`, and the existing `/25/#gallery` archive.
+- `/26/press/` restores 34 local static EN/PL pages from `BFF26-guest-page\press\`: hub, info-base, recaps, previews, interviews, evergreen articles and shared CSS. Private source notes, FTP scripts and archive backups were excluded.
+- Restored press pages use the current `/presskit/` and local project-relative paths rather than the old `/26/laurels/`, `/logos`, and `/gallery/` destinations.
+- Route inventory is now 101 generated / 89 public-indexable outputs.
 
 ### Current implementation after 2026-08-31 owner steer
 
