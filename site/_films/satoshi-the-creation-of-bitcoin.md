@@ -1,5 +1,6 @@
 ---
 title: "Satoshi, the Creation of Bitcoin"
+description: "A poetic short drama that imagines the emotional and historical forces behind Bitcoin’s creation. It begins with a young character witnessing the seizure…"
 year: 2025
 type: Short
 status: released

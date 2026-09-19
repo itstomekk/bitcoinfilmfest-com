@@ -1,5 +1,6 @@
 ---
 title: "Immutable Democracy"
+description: "This documentary follows the use of Bitcoin-based timestamping to preserve Guatemala's 2023 election records. It presents a practical story about keeping…"
 year: 2023
 type: Documentary
 status: released

@@ -4,6 +4,7 @@ title: "IndeeHub Studio"
 permalink: /indeehub-bitcoin-friendly-vod-platform/
 redirect_to: /reel/indeehub-bitcoin-friendly-streaming/
 robots: noindex, follow
+sitemap: false
 screen: paper
 ---
 

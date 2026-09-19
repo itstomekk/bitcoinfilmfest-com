@@ -1,5 +1,6 @@
 ---
 title: "No More Inflation"
+description: "A one-person documentary project filmed across countries experiencing inflation and monetary instability. Bitcoin Shooter combines field stories with…"
 year: 2025
 type: Documentary
 status: released

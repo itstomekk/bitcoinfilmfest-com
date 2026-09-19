@@ -4,6 +4,7 @@ title: "Alana Mediavilla on DIRTY COIN"
 permalink: /alana-mediavilla-dec-2023/
 redirect_to: /reel/alana-mediavilla-dirty-coin/
 robots: noindex, follow
+sitemap: false
 screen: paper
 ---
 

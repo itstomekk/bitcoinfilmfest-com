@@ -4,6 +4,7 @@ title: "Naeem Mahmood"
 permalink: /naeem-mahmood-april-2024/
 redirect_to: /reel/naeem-mahmood/
 robots: noindex, follow
+sitemap: false
 screen: paper
 ---
 

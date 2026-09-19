@@ -1,5 +1,6 @@
 ---
 title: "What the F*ck Is My Password?!"
+description: "A self-described failure discovers that a drunken Bitcoin investment from more than a decade earlier is now worth 200 million dollars. He has four…"
 year: null
 type: Feature
 status: in-production

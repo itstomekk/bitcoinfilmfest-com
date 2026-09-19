@@ -3,7 +3,8 @@ title: "The Earliest Movie Ever Produced"
 date: 2024-04-01
 published_label: "April 2024"
 date_precision: month
-category: "Guest post"
+category: articles
+archived: true
 author: "Daniel Prince"
 description: "Daniel Prince follows the history of moving pictures from Louis Le Prince and Muybridge to the flickering light of prehistoric cave art."
 source_url: "https://bitcoinfilmfest.com/guest-post-bff-magazine-daniel-prince-2024/"

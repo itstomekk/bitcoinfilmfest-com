@@ -1,5 +1,6 @@
 ---
 title: "Bitcoiners"
+description: "A grassroots portrait of people building their lives and communities around Bitcoin in Texas. The film listens to why they believe Bitcoin can change the…"
 year: 2024
 type: Documentary
 status: released

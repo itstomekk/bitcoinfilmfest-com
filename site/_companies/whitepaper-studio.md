@@ -1,5 +1,6 @@
 ---
 title: "Whitepaper Studio"
+description: "A Bitcoin-backed film-financing company launched by the founders of the related post-production studio Forager. Whitepaper Studio raises dollars for…"
 type: Funding Platform
 established: "est. June 2025"
 status: active

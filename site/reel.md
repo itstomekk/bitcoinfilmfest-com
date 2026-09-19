@@ -15,30 +15,10 @@ screen: paper
   </header>
 
   <nav class="reel-nav" aria-label="Reel sections">
-    <a href="#archive">Archive</a>
     <a href="#chronicle">Chronicle</a>
-    <a href="#newsletter">Newsletter</a>
+    <a href="#posts">Posts</a>
+    <a href="#archive">Archive</a>
   </nav>
-
-  <section id="archive" class="reel-section">
-    <p class="section-label">The Reel archive</p>
-    <h2>Stories from Bitcoin cinema</h2>
-    <p class="reel-lede">Interviews, guest posts, and features from the people making, screening, and supporting independent cinema.</p>
-
-    {% assign reel_entries = site.reel | sort: 'date' | reverse %}
-    {% if reel_entries.size > 0 %}
-      <ul class="reel-list">
-        {% for entry in reel_entries %}
-          <li>
-            <a href="{{ entry.url | relative_url }}">{{ entry.title }}</a>
-            <time datetime="{% if entry.date_precision == 'month' %}{{ entry.date | date: "%Y-%m" }}{% else %}{{ entry.date | date_to_xmlschema }}{% endif %}">{% if entry.published_label %}{{ entry.published_label }}{% else %}{{ entry.date | date: "%B %Y" }}{% endif %}</time>
-          </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <p class="reel-empty">The Reel archive is being assembled. Check back soon for the first entries.</p>
-    {% endif %}
-  </section>
 
   <section id="chronicle" class="reel-section">
     <p class="section-label">Bitcoin Cinema Chronicle</p>
@@ -66,19 +46,37 @@ screen: paper
     {% endif %}
   </section>
 
-  <section id="newsletter" class="reel-section">
-    <p class="section-label">Bitcoin Cinema Digest</p>
-    <h2>Newsletter</h2>
-    <p class="reel-lede">Monthly updates from the heart of Bitcoin cinema, sent straight from set.</p>
-    {% assign newsletter_posts = site.newsletters %}
-    {% if newsletter_posts.size > 0 %}
-      <ul class="reel-list">
-        {% for post in newsletter_posts %}
-          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %Y" }}</time></li>
+  <section id="posts" class="reel-section">
+    <p class="section-label">Fresh from the edit</p>
+    <h2>Posts</h2>
+    <p class="reel-lede">New writing and reporting from Bitcoin cinema lands here first.</p>
+
+    {% assign reel_posts = site.reel | where_exp: "entry", "entry.archived != true" | sort: 'date' | reverse %}
+    {% if reel_posts.size > 0 %}
+      <ul class="cinema-index reel-list">
+        {% for entry in reel_posts %}
+          {% include cinema-row.html entry=entry kind="reel" %}
         {% endfor %}
       </ul>
     {% else %}
-      <p class="reel-empty">No issues published yet.</p>
+      <p class="reel-empty">New Bitcoin Cinema writing lands here first.</p>
+    {% endif %}
+  </section>
+
+  <section id="archive" class="reel-section">
+    <p class="section-label">The Reel archive</p>
+    <h2>Stories from Bitcoin cinema</h2>
+    <p class="reel-lede">Interviews, guest posts, features, and newsletters from the people making, screening, and supporting independent cinema.</p>
+
+    {% assign reel_archive = site.reel | where_exp: "entry", "entry.archived == true" | sort: 'date' | reverse %}
+    {% if reel_archive.size > 0 %}
+      <ul class="cinema-index reel-list">
+        {% for entry in reel_archive %}
+          {% include cinema-row.html entry=entry kind="reel" %}
+        {% endfor %}
+      </ul>
+    {% else %}
+      <p class="reel-empty">The Reel archive is being assembled. Check back soon for the first entries.</p>
     {% endif %}
   </section>
 

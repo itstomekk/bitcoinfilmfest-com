@@ -1,5 +1,6 @@
 ---
 title: "Custos Media Technologies"
+description: "A film-rights protection company that embeds a Bitcoin private key inside each protected copy as an invisible forensic watermark. If a leaked screener is…"
 type: Distribution
 established: 2014
 status: status-uncertain

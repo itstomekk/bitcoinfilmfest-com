@@ -2,6 +2,8 @@
 layout: newsletter
 title: "Bitcoin Cinema Digest: Summer 2024"
 date: 2024-06-19
+category: newsletters
+archived: true
 description: "June 2024 Bitcoin Cinema Digest — DIRTY COIN screenings, Lightning Luminary contest winners, upcoming premieres."
 ---
 

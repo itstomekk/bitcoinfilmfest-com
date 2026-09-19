@@ -1,5 +1,6 @@
 ---
 title: "The New Radical"
+description: "This documentary follows activists and technologists working at the edges of government, privacy, and digital freedom. Its central story follows the…"
 year: 2017
 type: Documentary
 status: released

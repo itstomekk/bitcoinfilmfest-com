@@ -26,11 +26,6 @@ For journalists, filmmakers and partners: [open the Bitcoin FilmFest press kit](
 - Cinema hub with extensive network of films and people
 - Support for independent creators and inspiration for movie buffs
 
-<!-- TODO(asset-migration): images below still point at the old WordPress
-     CDN (bitcoinfilmfest.com/wp-content/uploads/...). Swap for
-     /assets/images/... once the image migration step runs
-     (see PLAN.md — source: bff-site-mirror-2026-07-16-parts). -->
-
 ## ⭐ Bitcoin Film First
 
 The project made its debut in March 2023 by running the world's first large-scale Bitcoin Film Festival (aka BFF) in Warsaw, the capital of Poland. Its [success led to more events](/press-and-media/), known as 'BFF minis', held in Lisbon, Lugano, San Salvador, Cape Town, Funchal, and Maribor, bringing a cinematic touch to renowned conferences. The [second annual edition](/festival-flashbacks/), linked to the halving celebrations, took place in April 2024, combining screenings with numerous side events and transforming Warsaw into the capital of Bitcoin culture.

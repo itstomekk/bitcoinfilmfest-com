@@ -30,8 +30,8 @@ social:
 # as text and forwards it through FormSubmit; no private signing key is present).
 nostr_npub: "npub1rjtrs7xqdvj3588r9njrexh2n750j7jdwx9qs543nutmdsj6ljaqpfmp8a"
 
-# Jekyll's native blog engine — used for newsletters/digest posts
-# films/companies: the /cinema/ ecosystem section (see PLAN-CINEMA.md). Each
+# Jekyll collections power the unified Reel archive and the /cinema/ ecosystem
+# section (see PLAN-CINEMA.md). Each
 # entry is one Markdown file with front matter — no build-time importer from
 # the private research KB; a curator hand-writes/reviews every file that lands
 # here, per the plan's data-source boundary.
@@ -40,9 +40,7 @@ collections:
     output: true
     permalink: /reel/:name/
     sort_by: date
-  newsletters:
-    output: true
-    permalink: /:collection/:name/
+
   chronicle:
     output: false
     sort_by: date
@@ -70,14 +68,7 @@ defaults:
       nav_label: "Reel"
       screen: "paper"
       image: "/assets/images/social/bff-social-default.jpg"
-  - scope:
-      path: ""
-      type: "newsletters"
-    values:
-      layout: "newsletter"
-      nav_label: "Reel"
-      screen: "paper"
-      image: "/assets/images/social/bff-social-default.jpg"
+
   - scope:
       path: ""
       type: "films"

@@ -1,5 +1,6 @@
 ---
 title: "Angel Studios"
+description: "A publicly traded film studio (NYSE: ANGX) holding Bitcoin as a strategic treasury reserve — describing it as 'a for-profit endowment for the arts based…"
 type: Studio
 established: 2013
 status: active

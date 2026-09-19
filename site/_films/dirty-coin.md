@@ -1,5 +1,6 @@
 ---
 title: "Dirty Coin: The Bitcoin Mining Documentary"
+description: "A documentary journey through Bitcoin mining operations in Texas, Malawi and Finland. The film meets miners and researchers working in different energy…"
 year: 2024
 type: Documentary
 status: released

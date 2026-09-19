@@ -1,5 +1,6 @@
 ---
 title: "The Gimp and the Hitman"
+description: "A scheming couple try to embezzle the Bitcoin fortune of a wealthy professor who has put his entire net worth into Bitcoin. A dark comedy-thriller of…"
 year: 2024
 type: Feature
 status: released

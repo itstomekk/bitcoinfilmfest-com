@@ -2,7 +2,8 @@
 title: "Graham Rittener on DARE TO DREAM"
 date: 2024-01-15
 published_label: "January 15, 2024"
-category: "Interview"
+category: interviews
+archived: true
 author: "Bitcoin FilmFest"
 description: "Graham Rittener talks about making DARE TO DREAM, Bitcoin Beach, independent distribution, and the human stories behind Bitcoin."
 source_url: "https://bitcoinfilmfest.com/graham-rittener-jan-2024/"

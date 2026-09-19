@@ -2,7 +2,8 @@
 title: "Alana Mediavilla on DIRTY COIN and energy"
 date: 2023-12-15
 published_label: "December 15, 2023"
-category: "Interview"
+category: interviews
+archived: true
 author: "Bitcoin FilmFest"
 description: "Alana Mediavilla discusses DIRTY COIN, STRANDED, Bitcoin mining, energy access, and making films on a negative budget"
 source_url: "https://bitcoinfilmfest.com/alana-mediavilla-dec-2023/"

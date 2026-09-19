@@ -1,5 +1,6 @@
 ---
 title: "Sovereign"
+description: "A father draws his teenage son into the sovereign citizen movement, with their anti-government beliefs eventually leading to a violent confrontation with…"
 year: 2025
 type: Feature
 status: released

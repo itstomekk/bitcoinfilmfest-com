@@ -1,5 +1,6 @@
 ---
 title: "Cold Wallet"
+description: "After losing everything in a cryptocurrency scam, a group of Reddit vigilantes kidnap the crypto kingpin they blame and demand access to his cold wallets…"
 year: 2024
 type: Feature
 status: released

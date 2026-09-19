@@ -2,7 +2,8 @@
 title: "IndeeHub and Bitcoin-friendly film distribution"
 date: 2024-03-29
 published_label: "March 29, 2024"
-category: "Interview and platform feature"
+category: interviews
+archived: true
 author: "Bitcoin FilmFest"
 description: "An introduction to IndeeHub Studio, a cinema-centric streaming platform built to connect independent filmmakers, audiences, and Bitcoin payments."
 source_url: "https://bitcoinfilmfest.com/indeehub-bitcoin-friendly-vod-platform/"

@@ -4,6 +4,7 @@ title: "Luke Willms on UNBANKABLE"
 permalink: /luke-willms-unbankable-may-2025/
 redirect_to: /reel/luke-willms-unbankable/
 robots: noindex, follow
+sitemap: false
 screen: paper
 ---
 

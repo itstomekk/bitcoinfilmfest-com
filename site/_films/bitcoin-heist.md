@@ -1,5 +1,6 @@
 ---
 title: "Bitcoin Heist"
+description: "An Interpol agent assembles a team of unlikely specialists to capture The Ghost, a Bitcoin-laundering mobster, before a massive robbery can be carried…"
 year: 2016
 type: Feature
 status: released

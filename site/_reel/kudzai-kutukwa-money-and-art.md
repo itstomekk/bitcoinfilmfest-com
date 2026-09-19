@@ -3,7 +3,8 @@ title: "Money's Grip on Culture: The Intersection of Money and Artistic Expressi
 date: 2024-04-01
 published_label: "April 2024"
 date_precision: month
-category: "Guest post"
+category: articles
+archived: true
 author: "Kudzai Kutukwa"
 description: "Kudzai Kutukwa examines the relationship between money, culture, art, beauty, and the incentives that shape creative work."
 source_url: "https://bitcoinfilmfest.com/bff-magazine-2024-kudzai-kutukwa/"

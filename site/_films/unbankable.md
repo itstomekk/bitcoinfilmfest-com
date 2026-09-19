@@ -1,5 +1,6 @@
 ---
 title: "Unbankable"
+description: "Over seven years and seven countries, Luke Willms investigates whether Africa's traditions, experiments and financial innovations can offer lessons to a…"
 year: 2024
 type: Documentary
 status: released
