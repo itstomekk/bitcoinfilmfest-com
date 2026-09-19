@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Fixed the dead `/press-and-media/` link
+
+- Added `site/press-and-media.md` (`/press-and-media/`) — a general press contact/hub page linking to the BFF'26 press room, the `/presskit/` branding assets, and past media coverage — resolving the 404 hit by 35 existing links (footer of every `/26/press/*` article, `about.md`, `bff25.md`, `_data/sitemap.json`) since the permalink matches exactly what they already point to.
+- No inbound links added from the homepage or `_data/navigation.yml`; reachable only via the existing footer/`about.md` links, per scope.
+
 ## 2026-09-18 — Press kit and BFF’26 press room restored
 
 - Added `/presskit/`, preserving the verified local branding book with BFF logos, rabbit mark, posters, laurels, SVG/PDF vector assets, colour palette, and Syne Mono/Courier Prime specimens.
