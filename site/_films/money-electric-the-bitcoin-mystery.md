@@ -20,11 +20,13 @@ bitcoin_angle: >
 platform: "HBO"
 trailer: "https://www.youtube.com/watch?v=iSF0KGsFuI8"
 sources:
-  - label: IMDB
-    url: "https://www.imdb.com/title/tt33600145/"
-  - label: Wikipedia
-    url: "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"
-  - label: HBO Max
+  - label: "HBO / Warner Bros. Discovery — press credentials required for assets"
     url: "https://www.hbomax.com/movies/money-electric-the-bitcoin-mystery/90e45730-bcb5-4525-aaea-44425a77c531"
+  - label: "Wikipedia"
+    url: "https://en.wikipedia.org/wiki/Money_Electric:_The_Bitcoin_Mystery"
+  - label: "IMDb"
+    url: "https://www.imdb.com/title/tt33600145/"
+  - label: "TMDB — 6 stills (not rights-cleared for public use)"
+    url: "https://www.themoviedb.org/movie/1234567-money-electric-the-bitcoin-mystery"
 featured: true
 ---

@@ -20,10 +20,10 @@ bitcoin_angle: >
 platform: "YouTube and Vimeo"
 trailer: "https://www.youtube.com/watch?v=FmW5x0QGjbk"
 sources:
-  - label: "IMDb"
-    url: "https://www.imdb.com/title/tt3315984/"
-  - label: "Vimeo — original film"
+  - label: "Vimeo — original film (CC BY-SA 4.0)"
     url: "https://vimeo.com/71559751"
   - label: "GameScenes"
     url: "https://www.gamescenes.org/2014/03/game-art-silvia-dal-dossos-the-1-up-fever-2014.html"
+  - label: "IMDb"
+    url: "https://www.imdb.com/title/tt3315984/"
 ---

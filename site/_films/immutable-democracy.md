@@ -22,10 +22,10 @@ bitcoin_angle: >
 platform: "Simple Proof"
 trailer: "https://www.youtube.com/watch?v=PFKfnQXqmIE"
 sources:
-  - label: "Simple Proof — Our Films"
+  - label: "Simple Proof — Our Films (official card images available)"
     url: "https://www.simpleproof.com/our-films"
   - label: "IMDb — Javier Borrayo"
     url: "https://www.imdb.com/name/nm10122033/"
-  - label: "Full film"
+  - label: "Full film on YouTube"
     url: "https://www.youtube.com/watch?v=g0nnM5_Z90E"
 ---

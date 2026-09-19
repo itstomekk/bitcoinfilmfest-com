@@ -23,11 +23,15 @@ bitcoin_angle: >
 platform: "Amazon Prime Video; Tubi (free); Plex (free)"
 trailer: "https://www.youtube.com/watch?v=F-Us3DeNZLM"
 sources:
-  - label: "IMDB"
-    url: "https://www.imdb.com/title/tt6333062/"
+  - label: "Adam Bhala Lough — director (official poster reference on site, clearance needed)"
+    url: "https://adambhalalough.com/"
   - label: "The Hollywood Reporter review"
     url: "https://www.hollywoodreporter.com/movies/movie-reviews/new-radical-review-967893/"
   - label: "IndieWire review"
     url: "https://www.indiewire.com/features/general/the-new-radical-review-sundance-2017-mr-robot-1201773820/"
+  - label: "IMDb"
+    url: "https://www.imdb.com/title/tt6333062/"
+  - label: "IMDb — 9 production stills (not rights-cleared for public use)"
+    url: "https://www.imdb.com/title/tt6333062/mediaindex"
 featured: true
 ---

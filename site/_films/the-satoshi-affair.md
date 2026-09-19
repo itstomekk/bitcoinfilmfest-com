@@ -18,10 +18,12 @@ bitcoin_angle: >
   search for answers through the Craig Wright controversy.
 platform: null
 sources:
-  - label: Deadline
+  - label: "Deadline (Nov 2024 — Sophia Banks to direct)"
     url: "https://deadline.com/2024/11/sophia-banks-bitcoin-founder-satoshi-nakamoto-1236186968/"
-  - label: IMDB
+  - label: "IMDb"
     url: "https://www.imdb.com/title/tt34755455/"
-  - label: Getaway Entertainment
+  - label: "Getaway Entertainment"
     url: "https://www.getawayentertainment.com/news/sophia-banks-to-direct-film-on-bitcoin-founder-satoshi-nakamoto-deadline-hhzb5-g7tt6-ahawg-tkeyt-jsw2c"
+  - label: "No assets — film in development (Sophia Banks, David O. Sacks / Sacks Productions)"
+    url: "https://www.imdb.com/title/tt34755455/"
 ---

@@ -31,5 +31,7 @@ sources:
     url: "https://www.filmaffinity.com/us/film848711.html"
   - label: "Bitcoin FilmFest BFF'25 recap"
     url: "https://bitcoinnews.com/press-release/bitcoin-filmfest-bff25-event-recap/"
+  - label: "Owner-review/no-publish for images (assets likely via BFF team, clearance needed)"
+    url: "https://www.revolucionconb.com/en/about-us/"
 bff_screening: "BFF'25 — Audience Choice Award (May 2025, Warsaw)"
 ---

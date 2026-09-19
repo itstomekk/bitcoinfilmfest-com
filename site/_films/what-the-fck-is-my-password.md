@@ -25,10 +25,12 @@ bitcoin_angle: >
 platform: null
 trailer: null
 sources:
-  - label: "Deadline"
+  - label: "Deadline (Jul 2025 — Stephen Dorff, Kate Walsh cast)"
     url: "https://deadline.com/2025/07/stephen-dorff-kate-walsh-steve-pink-what-the-fuck-is-my-password-1236473729/"
   - label: "IMDb"
     url: "https://www.imdb.com/title/tt36270672/"
   - label: "Letterboxd"
     url: "https://letterboxd.com/film/what-the-fck-is-my-password/"
+  - label: "Owner-review/no-publish for images (in production, no public key art)"
+    url: "https://www.imdb.com/title/tt36270672/"
 ---
