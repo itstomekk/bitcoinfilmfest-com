@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Fixed dead /sponsor/ link with a Friends-of-BFF stub page
+
+- Added `site/sponsor.md` (`/sponsor/`, `screen: paper`, `join.md`-style layout) explaining the Friends-of-BFF tiers and contact path; added the route to `_data/sitemap.json`'s builder-only inventory.
+- No nav or homepage links added; the existing `/sponsor/` CTAs on `/26/` now resolve instead of 404ing.
+
 ## 2026-09-19 — Correct BFF23 dates, attendance, and contact email
 
 - Corrected the BFF23 retrospective to 24–25 March 2023, eight screenings, and approximately 120 BFF23 viewers; the roughly 300-person figure is now explicitly scoped to BFF23 together with Weekend Kapitalizmu.
