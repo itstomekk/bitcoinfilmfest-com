@@ -1,15 +1,23 @@
 # Handoff — Bitcoin FilmFest Jekyll rebuild
-Updated: 2026-09-18
+Updated: 2026-09-19
 
 ## Cross-project architecture
 
 The website is a curated public projection of the wider private project knowledge base in `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\Claude news\`. The CRM remains split across its existing local files and spreadsheets for now. Do not import the private KB or CRM into the Jekyll build. Read `PLAN-WEBSITE-ROADMAP.md` and `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\Claude news\HANDOFF-TO-VERIFIER-2026-08-31.md` before reorganizing or adding broad content.
 
-The Git state and cinema status below were reconciled against the live checkout after the 2026-09-16 visual pass. PR #12 was merged into `main` at `4635bce`, and the corresponding GitHub Pages build/deploy completed successfully.
+The Git state and cinema status below were reconciled against the live checkout after the 2026-09-19 dead-route integration. The four focused repair branches were merged into `main` at `e35e159`, and GitHub Actions run `35417053924` completed its build and Pages deploy successfully.
 
 ## Where this stands
 
-The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the existing site (homepage, festival editions, Reel, Credits), the `/cinema/` section now contains the film database and company directory foundations, the essential-ten curation, the industry-footprint strip, and the first roadshow structure. The coherent Cinema ecosystem update was originally committed at `517c87f` and is included in the current `main`; the archive/current-edition visual pass landed in merge commit `4635bce`. Build and HTTP deployment verification passed.
+The Jekyll rebuild is live through GitHub Pages and the configured custom domain. On top of the existing site (homepage, festival editions, Reel, Credits), the `/cinema/` section now contains the film database and company directory foundations, the essential-ten curation, the industry-footprint strip, and the first roadshow structure. The coherent Cinema ecosystem update was originally committed at `517c87f` and is included in the current `main`; the archive/current-edition visual pass landed in merge commit `4635bce`. The latest build and Pages deployment passed.
+
+### 2026-09-19 dead-route repair integration
+
+- Merged `fix/sponsor-page-stub`, `fix/press-and-media-page`, `fix/gallery-page`, and `fix/small-dead-links` into `main` at `e35e159` using a clean worktree; unrelated local changes in the primary checkout were left untouched.
+- Added working `/sponsor/`, `/press-and-media/`, and `/gallery/` routes. The gallery renders all 51 existing photos with non-empty content alt text; no primary navigation or homepage link was added.
+- Repaired the six small dead internal links without inventing replacement destinations where no real target existed.
+- Local safety scan, Jekyll build, generated-route checks, gallery asset checks, and `git diff --check` passed. The Actions build and Pages deploy passed in run `35417053924`.
+- The deployed route content is reachable, but normal HTTPS verification for `bitcoinfilmfest.com` is still pending: GitHub Pages reports `https_enforced: false` and the current certificate fails hostname verification. Do not call the custom domain TLS-ready until the certificate is corrected and HTTPS enforcement is enabled.
 
 ### 2026-09-18 Reel/newsletter migration integration
 
@@ -46,7 +54,8 @@ The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the exis
 - PR #12 was merged into `main` at `4635bce`; its GitHub Pages workflow build and deploy both passed. HTTPS verification confirmed the updated `/23/`, `/24/`, `/25/`, `/26/`, and `/27/` routes live.
 
 **Repository:** https://github.com/itstomekk/bitcoinfilmfest-com
-**Temporary live site:** https://itstomekk.github.io/bitcoinfilmfest-com/
+**GitHub Pages preview:** https://itstomekk.github.io/bitcoinfilmfest-com/
+**Configured custom domain:** https://bitcoinfilmfest.com (content deployed; TLS/enforcement pending verification above)
 **Local checkout:** `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\website\rebuild-jekyll-bff26`
 **Deployment:** GitHub Actions builds and deploys `main` to GitHub Pages.
 
@@ -99,7 +108,7 @@ The Jekyll rebuild is live at the temporary GitHub Pages URL. On top of the exis
 
 ## Git state note
 
-The review branch has been merged; `main` includes merge commit `4635bce` plus the follow-up handoff/build-log synchronization. Inspect `git status --short` before staging anything else.
+The four dead-route repair branches have been merged; `main` includes the integration result at `e35e159`. Inspect `git status --short` before staging anything else.
 
 The private source material remains outside the Jekyll build:
 - `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\Claude news\bitcoin-cinema-kb.md`

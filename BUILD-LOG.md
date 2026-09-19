@@ -2,6 +2,27 @@
 
 This is a short operational record for builders. It records verified facts and active blockers. For implementation details, use `BUILDER-GUIDE.md` and `site/README.md`.
 
+## 2026-09-19 — Dead-route repairs merged and deployed
+
+### Implemented
+
+- Merged `fix/sponsor-page-stub`, `fix/press-and-media-page`, `fix/gallery-page`, and `fix/small-dead-links` into `main`; the resulting remote head is `e35e159`.
+- Added `/sponsor/`, `/press-and-media/`, and `/gallery/` without adding any homepage or primary-navigation links. The gallery uses 51 existing photo assets directly and gives each content image a non-empty alt description.
+- Repaired six smaller dead internal links, preserving real targets and removing only source references with no verified destination.
+
+### Verification
+
+- `python scripts/check-public-repo.py`: PASS (1,157 tracked files, no forbidden paths or common credentials).
+- Windows Jekyll production build: PASS; all six representative generated routes exist.
+- Gallery audit: PASS (51 unique source assets exist; 51 content images render; 0 empty content alts).
+- `git diff --check`: PASS; primary navigation unchanged.
+- GitHub Actions run `35417053924`: PASS — build and deploy jobs completed successfully.
+- Deployed content checks: `/sponsor/`, `/press-and-media/`, and `/gallery/` return the expected page content after deployment.
+
+### Remaining
+
+- GitHub Pages currently reports `https_enforced: false`, and normal TLS verification for `bitcoinfilmfest.com` fails with a hostname mismatch. Content is reachable diagnostically, but custom-domain HTTPS is not yet verified safe; correct the certificate/provisioning and enable HTTPS enforcement before treating the domain cutover as fully complete.
+
 ## 2026-09-18 — Press kit and BFF’26 press room
 
 ### Implemented
