@@ -9,6 +9,10 @@ Short, human-readable record of public website changes. One dated entry is requi
 - Reconstructed `/26/press/` from the local BFF26 guest-page source: 34 static EN/PL hub, info-base and article pages, with local project-relative asset links and the current presskit destination.
 - Replaced the old BFF’26 press/gallery/laurels links with local routes or the existing BFF’25 photo archive; no private source notes or FTP tooling were copied.
 - Updated the route map and sitemap inventory to 101 generated / 89 public-indexable routes.
+## 2026-09-18 — README rewritten as marketing-first project intro
+
+- Rewrote the root `README.md`: opens with the "heart of the Bitcoin Cinema industry" / unfiat-the-culture mission instead of a plain code description, then keeps the practical content-editing table and technical/build documentation below it.
+- No website source, layout, or data changes — documentation only.
 
 ## 2026-09-18 — Custom domain cutover to bitcoinfilmfest.com
 
