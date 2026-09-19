@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Fixed 6 small dead internal links
+
+- Corrected stale BFF edition links to `/24/` and `/26/`, removed two source links with no real target, and redirected the cinema-digest and laurels references to existing routes.
+- Kept the fixes scoped to existing content; no new navigation or homepage links added.
+
 ## 2026-09-18 — Real `/gallery/` page fixes the BFF’26 dead link
 
 - Added `site/gallery.md` (`/gallery/`), a photo grid grouped by BFF’23/’24/’25 using the existing `.photo-row` component and specific alt descriptions for all 51 photos.
