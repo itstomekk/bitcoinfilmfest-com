@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Real `/gallery/` page fixes the BFF’26 dead link
+
+- Added `site/gallery.md` (`/gallery/`), a photo grid grouped by BFF’23/’24/’25 using the existing `.photo-row` component and specific alt descriptions for all 51 photos.
+- Reuses the existing `26/26-assets/photos/` files directly; the pre-existing `/gallery/` links on `26.md` now resolve. No homepage or primary-navigation link added.
+
 ## 2026-09-18 — Fixed the dead `/press-and-media/` link
 
 - Added `site/press-and-media.md` (`/press-and-media/`) as a press contact and coverage hub linking to the BFF'26 press room, `/presskit/`, and verified past media coverage.
