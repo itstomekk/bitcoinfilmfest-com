@@ -30,11 +30,13 @@ bitcoin_angle: >
 platform: null
 trailer: null
 sources:
-  - label: Deadline (Nov 2024 — cast update)
+  - label: "Deadline (Nov 2024 — cast update)"
     url: "https://deadline.com/2024/11/dutch-razzlekhan-movie-adds-gabriel-labelle-isabela-merced-1236166933/"
-  - label: CNBC (Aug 2023 — Lichtenstein/Morgan guilty pleas)
+  - label: "CNBC (Aug 2023 — Lichtenstein/Morgan guilty pleas)"
     url: "https://www.cnbc.com/2023/08/03/new-york-man-admits-being-original-bitfinex-hacker-during-guilty-plea-in-dc-to-bitcoin-money-laundering.html"
-  - label: IMDB
+  - label: "IMDb"
+    url: "https://www.imdb.com/title/tt32102801/"
+  - label: "No public assets — film in development (Cannes 2024, production 2024)"
     url: "https://www.imdb.com/title/tt32102801/"
 featured: true
 ---

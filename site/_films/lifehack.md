@@ -31,4 +31,6 @@ sources:
     url: "https://www.indiewire.com/criticism/movies/lifehack-review-1235102201/"
   - label: "IMDb"
     url: "https://www.imdb.com/title/tt32135632/"
+  - label: "Director's site — film stills (Wix, owner confirmation needed)"
+    url: "https://ronancorrigan.com/lifehack"
 ---

@@ -28,11 +28,13 @@ bitcoin_angle: >
 platform: "Netflix"
 trailer: "https://www.youtube.com/watch?v=mgtjYmiTdxo"
 sources:
-  - label: IMDB
-    url: "https://www.imdb.com/title/tt31308426/"
-  - label: Netflix
-    url: "https://www.netflix.com/title/81680262"
-  - label: Variety — Filmax deal
+  - label: "Filmax / DeAPlaneta — distributor (3 press stills available)"
+    url: "https://www.filmax.com/films/hotel-bitcoin"
+  - label: "Variety — Filmax deal"
     url: "https://variety.com/2024/film/global/filmax-spanish-comedy-hotel-bitcoin-1236152462/"
-bff_screening: "BFF25 — Best Story Award (May 2025, Warsaw)"
+  - label: "Netflix"
+    url: "https://www.netflix.com/title/81680262"
+  - label: "IMDb"
+    url: "https://www.imdb.com/title/tt31308426/"
+bff_screening: "BFF'25 — Best Story Award (May 2025, Warsaw)"
 ---

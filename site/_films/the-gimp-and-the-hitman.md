@@ -26,9 +26,11 @@ bitcoin_angle: >
 platform: null
 trailer: "https://www.youtube.com/watch?v=YH6zkQTu1DA"
 sources:
-  - label: IMDB
+  - label: "IMDb"
     url: "https://www.imdb.com/title/tt19799572/"
-  - label: Baby D Productions
+  - label: "Baby D Productions"
+    url: "https://www.babydproductions.com/post/new-trailer-gimp-and-the-hitman"
+  - label: "Owner-review/no-publish for images (no cleared public assets)"
     url: "https://www.babydproductions.com/post/new-trailer-gimp-and-the-hitman"
 bff_screening: "BFF'26 Official Selection"
 featured: true

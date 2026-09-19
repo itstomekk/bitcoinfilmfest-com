@@ -2145,6 +2145,67 @@ body.is-navigating {
 }
 
 /* Film / company profile pages */
+.cinema-poster {
+  margin-block: var(--space-lg) var(--space-xl);
+  text-align: center;
+}
+
+.cinema-poster img {
+  max-width: 100%;
+  height: auto;
+  max-height: 60vh;
+  object-fit: contain;
+  background: var(--color-paper-2);
+}
+
+.cinema-poster figcaption {
+  margin-block-start: var(--space-xs);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.cinema-stills {
+  margin-block: var(--space-xl) var(--space-2xl);
+}
+
+.cinema-stills .section-label {
+  margin-block-end: var(--space-md);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cinema-stills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--space-md);
+}
+
+.cinema-still {
+  margin: 0;
+}
+
+.cinema-still img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  background: var(--color-paper-2);
+  border-radius: var(--radius-sm);
+}
+
+.cinema-still figcaption {
+  margin-block-start: var(--space-xs);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .cinema-profile-meta {
   display: grid;
   grid-template-columns: minmax(0, 1fr);

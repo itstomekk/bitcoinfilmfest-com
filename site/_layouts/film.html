@@ -4,6 +4,27 @@ layout: default
 <article class="cinema-profile">
   <a class="cinema-back" href="{{ '/cinema/films/' | relative_url }}">← All films</a>
 
+  {% if page.poster %}
+    <figure class="cinema-poster">
+      <img src="{{ page.poster | relative_url }}" alt="{{ page.title }} poster" loading="eager">
+      {% if page.poster_credit %}<figcaption>{{ page.poster_credit }}</figcaption>{% endif %}
+    </figure>
+  {% endif %}
+
+  {% if page.stills and page.stills.size > 0 %}
+    <section class="cinema-stills">
+      <p class="section-label">Stills</p>
+      <div class="cinema-stills-grid">
+        {% for still in page.stills %}
+          <figure class="cinema-still">
+            <img src="{{ still.path | relative_url }}" alt="{{ page.title }} still" loading="lazy">
+            {% if still.credit %}<figcaption>{{ still.credit }}</figcaption>{% endif %}
+          </figure>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
   <header class="page-masthead">
     <p class="page-context">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
     <h1>{{ page.title }}</h1>

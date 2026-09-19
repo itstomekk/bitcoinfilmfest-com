@@ -30,4 +30,6 @@ sources:
     url: "https://poff.ee/en/film/new-money/"
   - label: "IMDb"
     url: "https://www.imdb.com/title/tt37923632/"
+  - label: "Owner-review/no-publish for images (no cleared public assets)"
+    url: "https://poff.ee/en/film/new-money/"
 ---

@@ -26,11 +26,15 @@ bitcoin_angle: >
 platform: "Amazon Prime Video; Apple TV; Fandango at Home; Plex"
 trailer: "https://www.youtube.com/watch?v=LBOBuqBzn7w"
 sources:
-  - label: "IMDB"
-    url: "https://www.imdb.com/title/tt7937254/"
+  - label: "Lionsgate — official distributor (press kit clearance needed for assets)"
+    url: "https://www.lionsgate.com/"
   - label: "Rolling Stone"
     url: "https://www.rollingstone.com/tv-movies/tv-movie-news/silk-road-movie-trailer-1118926/"
   - label: "Amazon Prime Video"
     url: "https://www.primevideo.com/detail/Silk-Road/0LCTVSOM2SSPD06VHYCLIGU6TF"
+  - label: "IMDb"
+    url: "https://www.imdb.com/title/tt7937254/"
+  - label: "OneSheet.org / TMDB archive — poster only (not Lionsgate press, owner-review)"
+    url: "https://posters.onesheet.org/posters/current/2021/silk-road-2021-us-theatrical.jpg"
 featured: true
 ---

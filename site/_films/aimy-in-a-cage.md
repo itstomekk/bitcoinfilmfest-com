@@ -26,7 +26,7 @@ bitcoin_angle: >
 platform: "Blu-ray"
 trailer: "https://www.youtube.com/watch?v=HEOC_tSLlL0"
 sources:
-  - label: "Hooroo Jackson — official film page"
+  - label: "Hooroo Jackson — official film page (press/director-site poster candidates)"
     url: "https://hooroojackson.com/portfolio-item/aimy-in-a-cage/"
   - label: "Collider"
     url: "https://collider.com/bitcoin-movie-aimy-in-a-cage-horror/"

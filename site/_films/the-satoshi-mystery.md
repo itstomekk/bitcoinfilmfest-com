@@ -16,7 +16,7 @@ runtime: 60
 synopsis: >
   A six-part documentary web series investigating the origins of Bitcoin and
   the identity of Satoshi Nakamoto. Animation, interviews and archival material
-  trace the cypherpunk ideas that led to Bitcoin and the creator’s disappearance.
+  trace the cypherpunk ideas that led to Bitcoin and the creator's disappearance.
 bitcoin_angle: >
   The series places Bitcoin inside a longer history of privacy, cryptography and
   autonomous digital money. Its public reach shows that Bitcoin Cinema can be
@@ -24,9 +24,9 @@ bitcoin_angle: >
 platform: "ARTE YouTube, Amazon Prime Video and ARTE Campus"
 trailer: "https://www.youtube.com/watch?v=qkNhjVJZ4N0"
 sources:
-  - label: "ARTE / The Satoshi Mystery"
+  - label: "ARTE / The Satoshi Mystery (official poster + 6+ IKO press stills — broadcaster clearance needed)"
     url: "https://www.arte-campus.fr/serie/satoshi-mystery"
-  - label: "IMDB"
+  - label: "IMDb"
     url: "https://www.imdb.com/title/tt23777706/"
   - label: "Bitcoin.fr BFF'23 recap"
     url: "https://bitcoin.fr/le-mystere-satoshi-au-bitcoin-filmfest/"

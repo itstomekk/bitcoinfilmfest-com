@@ -20,6 +20,8 @@ bitcoin_angle: >
 platform: "Amazon Prime Video; YouTube (free)"
 trailer: "https://www.youtube.com/watch?v=dUIWK0sMJDA"
 sources:
+  - label: "Bitcoin Season official site (Squarespace — official poster/cover art)"
+    url: "https://www.bitcoinseasonfilm.com/"
   - label: "Bitcoin Magazine"
     url: "https://bitcoinmagazine.com/news/bitcoin-season-charts-bitcoins-in-the-nba"
   - label: "SIFF Cinema"

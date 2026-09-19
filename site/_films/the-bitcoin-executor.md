@@ -10,6 +10,9 @@ cast:
   - "Isabella Santos"
   - "Mike Rudko"
 country: "USA"
+poster: "/assets/images/cinema/films/bitcoin-executor-poster-final.jpg"
+poster_credit: "Christopher Arcella / The Bitcoin Executor"
+poster_source_url: "https://thebitcoinexecutor.com/"
 synopsis: >
   An economics professor receives instructions from a dead man's switch and must
   deliver Bitcoin hardware wallets to the chosen heirs of a missing colleague.
