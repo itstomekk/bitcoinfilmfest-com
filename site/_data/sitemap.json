@@ -41,6 +41,7 @@
         {"route": "/festivals/roadshows/", "title": "Minis and roadshows", "source": "site/festivals-roadshows.md", "status": "implemented"},
         {"route": "/join/", "title": "Contribute", "source": "site/join.md", "status": "implemented"},
         {"route": "/reel/", "title": "Reel", "source": "site/reel.md", "status": "implemented"},
+        {"route": "/sponsor/", "title": "Become a Friend", "source": "site/sponsor.md", "status": "implemented", "note": "Stub page; linked only from existing /26/ Friends CTAs, not from primary nav."},
         {"route": "/thanks/", "title": "Thanks", "source": "site/thanks.md", "status": "implemented"}
       ]
     },
