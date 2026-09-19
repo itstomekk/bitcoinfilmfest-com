@@ -3,7 +3,7 @@ title: "Self Custody"
 year: 2026
 type: Short
 status: released
-director: "Garrett Patten"
+director: "Garrett Patten, Fernando Ferro"
 cast:
   - "Garrett Patten"
   - "Adrian Grenier"

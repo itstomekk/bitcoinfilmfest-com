@@ -29,6 +29,6 @@ sources:
     url: "https://www.imdb.com/title/tt31329590/"
   - label: "Apple TV"
     url: "https://tv.apple.com/us/movie/unbanked/umc.cmc.354360j3eki3y034p3d5w6mkv"
-bff_screening: null
+bff_screening: "BFF'26 (June 2026, Warsaw)"
 featured: true
 ---

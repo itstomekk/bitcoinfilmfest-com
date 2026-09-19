@@ -32,5 +32,5 @@ sources:
     url: "https://indeehub.studio/film/hummingbird"
   - label: "Becoming Sovereign podcast — director interview"
     url: "https://www.podscan.fm/podcasts/the-becoming-sovereign-podcast/episodes/inside-costa-ricas-bitcoin-jungle"
-bff_screening: "BFF'26 Official Selection (June 2026, Warsaw)"
+bff_screening: "BFF'26 world premiere (June 2026, Warsaw — Official Selection)"
 ---

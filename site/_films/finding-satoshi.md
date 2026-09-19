@@ -7,6 +7,13 @@ director: "Matthew Miele"
 cast:
   - "William D. Cohan"
   - "Tyler Maroney"
+  - "Michael Saylor"
+  - "Fred Ehrsam"
+  - "Joseph Lubin"
+  - "Bill Gates"
+  - "Phil Zimmermann"
+  - "Bram Cohen"
+  - "Kara Swisher"
 studio: "Tucker Tooley Entertainment"
 company: null
 country: "USA"
@@ -24,7 +31,7 @@ bitcoin_angle: >
   personal history before settling on its two-person theory. Both widows,
   Coinbase CEO Brian Armstrong and security researcher Jameson Lopp appear
   on camera discussing the case.
-platform: "Rent/own via digital video services (direct release at findingsatoshi.com has closed)"
+platform: "Direct VOD release at findingsatoshi.com has closed; available to rent or own through digital video services"
 trailer: null
 sources:
   - label: "Official site — Tucker Tooley Entertainment"
@@ -33,6 +40,6 @@ sources:
     url: "https://www.theblock.co/post/398423/finding-satoshi-documentary-makes-case-hal-finney-len-sassaman-bitcoins-co-creators"
   - label: "IMDB"
     url: "https://www.imdb.com/title/tt40548010/"
-bff_screening: "BFF'26 Official Selection — trailer screened, film featured in program (June 2026, Warsaw)"
+bff_screening: "BFF'26 — June 5, 2026 (Kinoteka, Warsaw): 'who is Satoshi' overview block, screening plus producer Q&A"
 featured: true
 ---
