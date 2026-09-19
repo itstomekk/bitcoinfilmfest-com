@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Fixed the dead `/press-and-media/` link
+
+- Added `site/press-and-media.md` (`/press-and-media/`) as a press contact and coverage hub linking to the BFF'26 press room, `/presskit/`, and verified past media coverage.
+- No homepage or primary-navigation link added; the existing references now resolve instead of returning 404.
+
 ## 2026-09-18 — Fixed dead /sponsor/ link with a Friends-of-BFF stub page
 
 - Added `site/sponsor.md` (`/sponsor/`, `screen: paper`, `join.md`-style layout) explaining the Friends-of-BFF tiers and contact path; added the route to `_data/sitemap.json`'s builder-only inventory.
