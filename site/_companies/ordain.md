@@ -17,5 +17,5 @@ sources:
   - label: Hacker News — Ordain launch discussion
     url: "https://news.ycombinator.com/item?id=47175726"
   - label: Bitcoin FilmFest BFF26
-    url: "https://bitcoinfilmfest.com/bff26/"
+    url: "https://bitcoinfilmfest.com/26/"
 ---
