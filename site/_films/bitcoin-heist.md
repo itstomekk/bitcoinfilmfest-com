@@ -9,10 +9,18 @@ cast:
   - "Kate Nhung"
   - "Suboi"
   - "Petey Majik Nguyen"
-studio: null
+studio: "Old Photo Films"
 company: null
 country: "Vietnam"
 runtime: 110
+poster: "/assets/images/cinema/films/bitcoin-heist-poster.jpg"
+poster_credit: "Well Go USA / Old Photo Films"
+poster_source_url: "https://wellgousa.com/films/bitcoin-heist"
+stills:
+  - path: "/assets/images/cinema/films/bitcoin-heist-still1.jpg"
+    credit: "Well Go USA / Old Photo Films"
+    source_url: "https://wellgousa.com/films/bitcoin-heist"
+    kind: "promo"
 synopsis: >
   An Interpol agent assembles a team of unlikely specialists to capture The
   Ghost, a Bitcoin-laundering mobster, before a massive robbery can be carried
@@ -25,6 +33,8 @@ bitcoin_angle: >
 platform: "Plex, Hoopla, Pluto TV and AsianCrush"
 trailer: "https://www.youtube.com/watch?v=uqYPZi1u-XM"
 sources:
+  - label: "Well Go USA — official US distributor"
+    url: "https://wellgousa.com/films/bitcoin-heist"
   - label: "San Diego Asian Film Festival"
     url: "http://festival.sdaff.org/2016/films/bitcoin-heist/"
   - label: "Cinema Escapist"

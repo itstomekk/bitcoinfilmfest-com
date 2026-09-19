@@ -9,6 +9,9 @@ studio: null
 company: null
 country: "Puerto Rico and international"
 runtime: 70
+poster: "/assets/images/cinema/films/dirty-coin-poster-final.jpg"
+poster_credit: "Campo Libre / Dirty Coin"
+poster_source_url: "https://www.dirtycointhemovie.com/"
 synopsis: >
   A documentary journey through Bitcoin mining operations in Texas, Malawi and
   Finland. The film meets miners and researchers working in different energy

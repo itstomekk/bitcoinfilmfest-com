@@ -12,6 +12,7 @@ cast:
   - "Thomas Mann"
   - "Nancy Travis"
   - "Martha Plimpton"
+studio: "Sovereign Truth Media"
 company: null
 country: "USA"
 runtime: 100
@@ -28,10 +29,12 @@ bitcoin_angle: >
 platform: "Theatrical (Briarcliff Entertainment); VOD platforms"
 trailer: "https://www.youtube.com/watch?v=_T4JHPowGbg"
 sources:
-  - label: IMDB
-    url: "https://www.imdb.com/title/tt26843513/"
-  - label: Variety
+  - label: "Sovereign Truth Media / James Notaris — official site (dynamic gallery, asset request needed)"
+    url: "https://sovereigntruthmedia.com/"
+  - label: "Variety"
     url: "https://variety.com/2025/film/reviews/sovereign-review-nick-offerman-jacob-tremblay-1236450661/"
-  - label: Tribeca Film Festival
+  - label: "Tribeca Film Festival"
     url: "https://tribecafilm.com/films/sovereign-2025"
+  - label: "IMDb"
+    url: "https://www.imdb.com/title/tt26843513/"
 ---

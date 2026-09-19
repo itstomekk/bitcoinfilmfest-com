@@ -10,7 +10,10 @@
 {% assign kind = include.kind %}
 <li class="cinema-row">
   <a class="cinema-row-link" href="{{ row.url | relative_url }}">
-    <span class="cinema-row-title">{{ row.title }}</span>
+      {% if kind == "film" and row.poster %}
+        <img class="cinema-row-thumb" src="{{ row.poster | relative_url }}" alt="" loading="lazy">
+      {% endif %}
+      <span class="cinema-row-title">{{ row.title }}</span>
     <span class="cinema-row-meta">
       {% if kind == "film" %}
         {% if row.year %}<span>{{ row.year }}</span>{% endif %}

@@ -15,6 +15,9 @@ studio: null
 company: null
 country: "International"
 runtime: null
+poster: "/assets/images/cinema/films/no-more-inflation-poster-final.jpg"
+poster_credit: "Bitcoin Shooter / No More Inflation"
+poster_source_url: "https://nomoreinflation.com/"
 synopsis: >
   A one-person documentary project filmed across countries experiencing
   inflation and monetary instability. Bitcoin Shooter combines field stories

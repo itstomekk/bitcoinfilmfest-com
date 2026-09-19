@@ -26,7 +26,7 @@ bitcoin_angle: >
 platform: "Amazon Prime Video and direct from the filmmakers"
 trailer: "https://www.youtube.com/watch?v=3AXuNaT6-Jk"
 sources:
-  - label: "Encode Productions — official film page"
+  - label: "Encode Productions — official film page (3 official poster variants on storefront)"
     url: "https://www.encodeproductions.com/deathathletic"
   - label: "CoinDesk"
     url: "https://www.coindesk.com/business/2023/10/13/bitcoin-wallet-maker-finances-3d-printed-gun-documentary"

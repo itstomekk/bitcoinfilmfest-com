@@ -22,7 +22,7 @@ bitcoin_angle: >
 platform: "GodBlessBitcoin.com, Plex and Roku Channel"
 trailer: "https://www.youtube.com/watch?v=iEvSScm3BmE"
 sources:
-  - label: "God Bless Bitcoin — official site"
+  - label: "God Bless Bitcoin — official site (explicit free-use license for assets)"
     url: "https://www.godblessbitcoin.com/watch/"
   - label: "New Roots Films"
     url: "https://www.newrootsfilms.com/godblessbitcoin"

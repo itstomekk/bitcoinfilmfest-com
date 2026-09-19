@@ -17,10 +17,10 @@ runtime: 112
 synopsis: >
   A German-language journey through the Bitcoin rabbit hole, following a
   personal change of perspective across Europe, Mexico and the United States.
-  The film combines one person’s story with conversations about money, freedom
+  The film combines one person's story with conversations about money, freedom
   and self-sovereignty.
 bitcoin_angle: >
-  Bitcoin is the film’s subject and the force that changes the protagonist’s
+  Bitcoin is the film's subject and the force that changes the protagonist's
   understanding of the world. It also connects personal adoption with broader
   community and monetary stories.
 platform: "humanb-film.com and YouTube (free)"
@@ -28,9 +28,11 @@ trailer: "https://www.youtube.com/watch?v=RFSBWrAllzw"
 sources:
   - label: "Human B official site"
     url: "https://humanb-film.com/"
-  - label: "IMDB"
+  - label: "IMDb"
     url: "https://www.imdb.com/title/tt19373464/"
   - label: "CoinTelegraph review"
     url: "https://cointelegraph.com/features/film-review-human-b-shows-a-personal-journey-with-bitcoin"
+  - label: "Cinemuck — press kit required for assets (no public assets found)"
+    url: "https://cinemuck.com/"
 bff_screening: "BFF'23 — Audience Award (March 2023, Warsaw)"
 ---

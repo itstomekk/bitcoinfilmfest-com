@@ -19,12 +19,14 @@ bitcoin_angle: >
 platform: "YouTube (free to watch)"
 trailer: "https://www.youtube.com/watch?v=PwUpIufKqys"
 sources:
-  - label: "IMDB"
-    url: "https://www.imdb.com/title/tt17999542/"
+  - label: "Pierre Corbin — director (BFF co-founder, approval needed for assets)"
+    url: "https://www.youtube.com/@PierreCorbin"
   - label: "Bitcoin News review"
     url: "https://bitcoinnews.com/opinion/bitcoin-documentary-the-great-reset/"
-  - label: "CoinTelegraph — BFF23"
+  - label: "CoinTelegraph — BFF'23"
     url: "https://cointelegraph.com/news/bear-markets-are-for-filming-the-bitcoin-film-festival-in-warsaw"
+  - label: "IMDb"
+    url: "https://www.imdb.com/title/tt17999542/"
 bff_screening: "BFF'23 — first edition (March 2023, Warsaw)"
 featured: true
 ---

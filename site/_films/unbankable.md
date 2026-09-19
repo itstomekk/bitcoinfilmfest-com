@@ -28,5 +28,7 @@ sources:
     url: "https://tv.apple.com/ca/movie/unbankable/umc.cmc.2b51h3w0b2lbdrvt0af8vklx2"
   - label: "Bitcoin FilmFest interview"
     url: "https://bitcoinfilmfest.com/luke-willms-unbankable-may-2025/"
+  - label: "GlobeNewswire press attachment + IMP Awards poster reference (verification needed)"
+    url: "https://www.globenewswire.com/"
 bff_screening: "BFF'25 (May 2025, Warsaw)"
 ---
