@@ -3,7 +3,7 @@ title: "Hummingbird: The Bitcoin Jungle Story"
 year: 2026
 type: Documentary
 status: released
-director: "DirectorHodl (Matthew)"
+director: "Matthew Hornick"
 cast:
   - "Paul Keating (\"Paul in the Jungle\")"
 studio: null
