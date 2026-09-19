@@ -2,6 +2,13 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-18 — Press kit and BFF’26 press room restored
+
+- Added `/presskit/`, preserving the verified local branding book with BFF logos, rabbit mark, posters, laurels, SVG/PDF vector assets, colour palette, and Syne Mono/Courier Prime specimens.
+- Linked the press kit from Storyboard, the BFF’26 Press Kit section, and the restored press-room pages.
+- Reconstructed `/26/press/` from the local BFF26 guest-page source: 34 static EN/PL hub, info-base and article pages, with local project-relative asset links and the current presskit destination.
+- Replaced the old BFF’26 press/gallery/laurels links with local routes or the existing BFF’25 photo archive; no private source notes or FTP tooling were copied.
+- Updated the route map and sitemap inventory to 101 generated / 89 public-indexable routes.
 ## 2026-09-18 — README rewritten as marketing-first project intro
 
 - Rewrote the root `README.md`: opens with the "heart of the Bitcoin Cinema industry" / unfiat-the-culture mission instead of a plain code description, then keeps the practical content-editing table and technical/build documentation below it.

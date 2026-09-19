@@ -2,6 +2,25 @@
 
 This is a short operational record for builders. It records verified facts and active blockers. For implementation details, use `BUILDER-GUIDE.md` and `site/README.md`.
 
+## 2026-09-18 — Press kit and BFF’26 press room
+
+### Implemented
+
+- Preserved the existing local `logos-page` branding book at the Jekyll route `/presskit/` with 14 public download assets: logos, rabbit, posters, laurels, SVG/PDF vectors and the documented colour/type specimens.
+- Added the `/presskit/` link to Storyboard and the BFF’26 Press Kit section.
+- Restored 34 local static pages under `/26/press/` from `BFF26-guest-page/press/`: EN/PL hub pages, info-base, post-festival recaps, previews, interviews, evergreen articles and the shared article stylesheet.
+- Rewrote legacy `/26/laurels/`, `/logos`, and `/gallery/` references inside the restored room to the local presskit or existing BFF’25 photo archive; no FTP scripts, archives, private KB exports or source-only files were copied.
+- Updated `SITEMAP-PLAN.md` and `site/_data/sitemap.json` to 101 generated / 89 public-indexable routes.
+
+### Verification
+
+- Windows Jekyll build: PASS.
+- `python -m json.tool site/_data/sitemap.json`: PASS.
+- `scripts/check-public-repo.py`: PASS.
+- `git diff --check`: PASS.
+- Local HTTP smoke: `/presskit/`, selected presskit assets, `/26/press/`, EN/PL press pages, article CSS and `/26/` all returned 200.
+- Relative-link scan across all 34 press pages plus presskit: 35 files checked, 0 missing local targets.
+
 ## 2026-09-16 — Reel migration integration and media safety
 
 ### Implemented

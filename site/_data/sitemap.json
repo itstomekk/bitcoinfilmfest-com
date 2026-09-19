@@ -1,13 +1,15 @@
 {
   "generated": "2026-09-16",
   "summary": {
-    "generated_routes": 66,
-    "public_indexable_routes": 54,
+    "generated_routes": 101,
+    "public_indexable_routes": 89,
     "shared_core_pages": 16,
     "film_profiles": 20,
     "company_profiles": 7,
     "newsletter_pages": 1,
     "reel_pages": 10,
+    "press_room_pages": 34,
+    "presskit_pages": 1,
     "compatibility_redirects": 11,
     "builder_only_routes": 1,
     "legacy_planned_rows": 48,
@@ -15,8 +17,8 @@
     "excluded_or_separate": 4
   },
   "count_notes": [
-    "Generated routes = 16 shared core pages + 11 compatibility redirects + 20 film profiles + 7 company profiles + 1 newsletter + 10 Reel entries + 1 builder-only effect lab.",
-    "Public/indexable routes exclude all 11 compatibility redirects and /effect-lab/, so 16 + 20 + 7 + 1 + 10 = 54.",
+    "Generated routes = 16 shared core pages + 11 compatibility redirects + 20 film profiles + 7 company profiles + 1 newsletter + 10 Reel entries + 34 BFF’26 press-room pages + 1 presskit + 1 builder-only effect lab.",
+    "Public/indexable routes exclude all 11 compatibility redirects and /effect-lab/, so 16 + 20 + 7 + 1 + 10 + 34 + 1 = 89.",
     "The 10 _chronicle files have output: false and create no routes."
   ],
   "categories": [
@@ -67,6 +69,14 @@
       ]
     },
     {
+      "name": "Press and brand",
+      "status": "current",
+      "pages": [
+        {"route": "/presskit/", "title": "Bitcoin FilmFest press kit and branding book", "source": "site/presskit/index.html", "status": "implemented", "asset_count": 14},
+        {"route": "/26/press/", "title": "BFF’26 press room", "source": "site/26/press/", "status": "implemented", "page_count": 34, "note": "Restored from the local BFF26 guest-page press room; includes EN/PL hub, info-base and article pages."}
+      ]
+    },
+    {
       "name": "Builder-only",
       "status": "private",
       "pages": [
@@ -78,8 +88,8 @@
     "planned_rows": 48,
     "fold_into_existing_hubs_or_editions": [
       {"routes": ["/bff24-event-coverage-bitesize-media-may-2024/", "/bff24-official-selection-freedom-themed-films/"], "destination": "/24/ or /reel/<slug>/", "action": "fold or migrate as a Reel entry"},
-      {"routes": ["/26/laurels/"], "destination": "/26/", "action": "fold"},
-      {"routes": ["/festival-flashbacks/", "/bff-rabits/", "/press-and-media/"], "destination": "/about/ or /reel/", "action": "fold after public-copy review"},
+      {"routes": ["/26/laurels/"], "destination": "/presskit/", "action": "fold"},
+      {"routes": ["/festival-flashbacks/", "/bff-rabits/", "/press-and-media/"], "destination": "/26/press/ and /presskit/", "action": "restored press room and branding book"},
       {"routes": ["/cinema-digest-monthly-content/", "/cinematic-hub/", "/blog/", "/cinema-digest/", "/bff-interviews/"], "destination": "/cinema/ and /reel/", "action": "hub concepts, not duplicate collections"},
       {"routes": ["/part-one-official-selection-feature-films-at-bff25/", "/part-two-official-selection-experimental-shorts-at-bff25/"], "destination": "/25/", "action": "fold"},
       {"routes": ["/wall/", "/qr/", "/linktree/", "/bitcoin-filmfest-2024-european-halving-party-🐇/", "/european-halving-party-thankyou/", "/europeanhalvingparty/"], "destination": "/24/", "action": "fold or redirect"},
