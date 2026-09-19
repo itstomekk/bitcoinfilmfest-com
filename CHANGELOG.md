@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-19 — Restore two public-safe old-export Reel articles
+
+- Added the archived Bitcoin News / Mr. Rabbit interview announcement at `/reel/bitcoin-news-chatting-with-mr-rabbit/`.
+- Added the archived `Unique Bitcoin Ads` editorial at `/reel/unique-bitcoin-video-ads/`, removing the expired submission CTA.
+- Held the BFF24/BFF25 official-selection pieces because they duplicate the edition pages and their poster imagery needs per-title rights review.
+
 ## 2026-09-19 — Integrated the 30-film cinema catalogue
 
 - Added verified poster/still metadata and 30 local cinema image assets across all 30 film records, with poster/stills rendering in the cinema row and film detail layout.
@@ -26,7 +32,7 @@ Short, human-readable record of public website changes. One dated entry is requi
 ## 2026-09-18 — Fixed dead /sponsor/ link with a Friends-of-BFF stub page
 
 - Added `site/sponsor.md` (`/sponsor/`, `screen: paper`, `join.md`-style layout) explaining the Friends-of-BFF tiers and contact path; added the route to `_data/sitemap.json`'s builder-only inventory.
-- No nav or homepage links added; the existing `/sponsor/` CTAs on `/26/` now resolve instead of 404ing.
+- No nav or homepage links added; the existing `/sponsor/` CTAs on `/26/` now resolve instead of returning 404.
 
 ## 2026-09-19 — Correct BFF23 dates, attendance, and contact email
 
