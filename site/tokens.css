@@ -59,8 +59,8 @@
   /* Extra 1vh keeps the lower cinema screen breathing above the seat foreground. */
   --frame-bottom: clamp(5.5rem, 12vh, 8.5rem);
   --nav-height: clamp(2.75rem, 5.5vh, 3.375rem);
-  --content-max: 74rem;
-  --prose-max: 68ch;
+  --content-max: 90vw;
+    --prose-max: 68ch;
 
   --z-base: 1;
   --z-raised: 10;
