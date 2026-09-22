@@ -1,42 +1,40 @@
 ---
 title: "Dutch & Razzlekhan"
-description: "A dramatisation of the 2016 Bitfinex exchange hack and the years-long laundering of 119,754 stolen Bitcoin by lovers Heather 'Razzlekhan' Morgan and Ilya…"
+description: "A true-crime feature about the Bitfinex hack, the stolen Bitcoin and the couple whose attempt to launder it became one of the largest cryptocurrency cases on record."
 year: 2026
 type: Feature
 status: in-production
 essential_rank: 3
 director: "Jon S. Baird"
+writer: "Logan Miller and Noah Miller"
+producer: "Andrew Lazar"
+executive_producer: "Michael Rothstein and Samuel Hall"
 cast:
   - "Chloë Grace Moretz"
   - "Gabriel LaBelle"
   - "Isabela Merced"
-studio: "Amazon MGM Studios"
+studio: "Amazon MGM Studios / Mad Chance Productions"
 company: null
 country: "USA"
 runtime: null
 synopsis: >
-  A dramatisation of the 2016 Bitfinex exchange hack and the years-long
-  laundering of 119,754 stolen Bitcoin by lovers Heather "Razzlekhan" Morgan
-  and Ilya "Dutch" Lichtenstein. The story tracks how the millennial couple
-  hid billions in stolen crypto while presenting themselves as hip New York
-  entrepreneurs — Morgan also moonlighting as a self-styled rapper — until
-  their 2022 arrest by the US Department of Justice.
+  A dramatisation of the 2016 Bitfinex hack and the years-long effort to launder
+  the stolen Bitcoin by Heather "Razzlekhan" Morgan and Ilya "Dutch"
+  Lichtenstein. The story follows the couple's relationship, their public
+  personas and the FBI pursuit that led to their 2022 arrest.
 bitcoin_angle: >
-  Bitcoin is at the heart of both the crime and the chase: 119,754 BTC were
-  siphoned from Bitfinex in 2016, and the laundered proceeds were worth
-  roughly $4.5 billion at the time of the couple's arrest. The film turns
-  the gap between Morgan's flamboyant public persona and the multibillion-
-  dollar Bitcoin theft she was sitting on into its central dramatic tension.
+  Bitcoin is both the object of the crime and the source of the film's scale:
+  119,754 BTC were stolen from Bitfinex, with the proceeds later valued at more
+  than $4 billion. The film turns the distance between online money, public
+  identity and real-world consequences into its central tension.
 platform: null
 trailer: null
 sources:
-  - label: "Deadline (Nov 2024 — cast update)"
-    url: "https://deadline.com/2024/11/dutch-razzlekhan-movie-adds-gabriel-labelle-isabela-merced-1236166933/"
-  - label: "CNBC (Aug 2023 — Lichtenstein/Morgan guilty pleas)"
-    url: "https://www.cnbc.com/2023/08/03/new-york-man-admits-being-original-bitfinex-hacker-during-guilty-plea-in-dc-to-bitcoin-money-laundering.html"
-  - label: "IMDb"
-    url: "https://www.imdb.com/title/tt32102801/"
-  - label: "No public assets — film in development (Cannes 2024, production 2024)"
-    url: "https://www.imdb.com/title/tt32102801/"
+  - label: "Deadline — international sales and original cast announcement"
+    url: "https://deadline.com/2024/05/dutch-razzlekhan-north-five-six-introducing-film-to-buyers-cannes-1235905537"
+  - label: "Deadline — Gabriel LaBelle and Isabela Merced join the cast"
+    url: "https://deadline.com/2024/11/dutch-razzlekhan-movie-adds-gabriel-labelle-isabela-merced-1236166933"
+  - label: "Production List — current production record"
+    url: "https://www.productionlist.com/production/dutch-and-razzlekhan"
 featured: true
 ---

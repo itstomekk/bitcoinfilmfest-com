@@ -1,31 +1,44 @@
 ---
 title: "Immutable Democracy"
-description: "This documentary follows the use of Bitcoin-based timestamping to preserve Guatemala's 2023 election records. It presents a practical story about keeping…"
+description: "A short documentary about using Bitcoin-based timestamping to preserve Guatemala's 2023 election records and make the evidence easier for citizens to verify."
 year: 2023
 type: Documentary
 status: released
 director: "Javier Borrayo"
 cast:
   - "Peter Todd"
+  - "Rafael Cordón"
 studio: "Simple Proof"
 company: null
 country: "Guatemala"
 runtime: 17
+stills:
+  - path: "/assets/images/cinema/films/immutable-democracy-still1.jpg"
+    credit: "Simple Proof"
+    source_url: "https://www.simpleproof.com/our-films"
+    alt: "Promotional image for Immutable Democracy"
 synopsis: >
-  This documentary follows the use of Bitcoin-based timestamping to preserve
-  Guatemala's 2023 election records. It presents a practical story about
-  keeping public evidence verifiable when trust in institutions is under strain.
+  The film follows Simple Proof's implementation of an immutable backup for
+  Guatemala's 2023 presidential election. It shows how election documents were
+  hashed and timestamped so that the public could check when records existed and
+  whether they had been altered.
 bitcoin_angle: >
-  Bitcoin appears here as public-record infrastructure rather than an asset or
-  character. The film gives the blockchain's immutability a civic application:
-  making an election record easier to verify after the fact.
-platform: "Simple Proof"
+  Bitcoin is used here as public-record infrastructure. Through OpenTimestamps,
+  documents are anchored to the Bitcoin blockchain, giving citizens an
+  independently verifiable time record without asking them to trust a single
+  institution or server.
+platform: "Simple Proof and YouTube (free)"
 trailer: "https://www.youtube.com/watch?v=PFKfnQXqmIE"
-sources:
-  - label: "Simple Proof — Our Films (official card images available)"
+official_links:
+  - label: "Simple Proof — Our Films"
     url: "https://www.simpleproof.com/our-films"
-  - label: "IMDb — Javier Borrayo"
-    url: "https://www.imdb.com/name/nm10122033/"
   - label: "Full film on YouTube"
+    url: "https://www.youtube.com/watch?v=g0nnM5_Z90E"
+sources:
+  - label: "Simple Proof — official film page"
+    url: "https://www.simpleproof.com/our-films"
+  - label: "Bitcoin Magazine — Guatemala election documentary"
+    url: "https://bitcoinmagazine.com/culture/documentary-bitcoin-guatemalas-presidential-elections"
+  - label: "YouTube — full film and runtime"
     url: "https://www.youtube.com/watch?v=g0nnM5_Z90E"
 ---
