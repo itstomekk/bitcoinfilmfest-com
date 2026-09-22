@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-22 — Embed film trailers on cinema profiles
+
+- Replaced the plain YouTube trailer link on film profiles with a responsive, lazy-loaded privacy-enhanced YouTube embed.
+- Supports both `youtube.com/watch?v=` and `youtu.be/` trailer URLs, with an accessible iframe title and a fallback link for visitors who cannot load the embed.
+
 ## 2026-09-19 — Restore two public-safe old-export Reel articles
 
 - Added the archived Bitcoin News / Mr. Rabbit interview announcement at `/reel/bitcoin-news-chatting-with-mr-rabbit/`.
