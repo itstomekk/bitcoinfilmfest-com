@@ -916,6 +916,106 @@ article,
   padding-block-end: var(--space-2xl);
 }
 
+/* Long-document content grid (Reel articles, newsletters, generic content
+   pages — design.md's "Long Document" family). Body text stays in a
+   readable center column via --prose-max; the freed-up side space is not
+   just padding: .breakout lets media/tables/quotes span the full screen
+   width as a section break, and .rail-note puts margin content (a table
+   of contents, a pull quote, a callout) in the side column instead of
+   leaving it empty. Collapses to a single column below 64rem. */
+.reel-entry,
+.newsletter,
+.page-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) min(var(--prose-max), 100%) minmax(0, 1fr);
+  column-gap: clamp(var(--space-lg), 4vw, var(--space-2xl));
+}
+
+.reel-entry > *,
+.newsletter > *,
+.page-content > * {
+  grid-column: 2;
+}
+
+.reel-entry .breakout,
+.newsletter .breakout,
+.page-content .breakout {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
+}
+
+.reel-entry .rail-note,
+.newsletter .rail-note,
+.page-content .rail-note {
+  grid-column: 3;
+  align-self: start;
+  max-width: none;
+  padding-inline-start: var(--space-md);
+  border-inline-start: var(--rule-thin) solid var(--color-ink);
+  font-size: var(--text-sm);
+  line-height: 1.5;
+}
+
+.reel-entry .rail-note--left,
+.newsletter .rail-note--left,
+.page-content .rail-note--left {
+  grid-column: 1;
+  padding-inline-start: 0;
+  padding-inline-end: var(--space-md);
+  border-inline-start: 0;
+  border-inline-end: var(--rule-thin) solid var(--color-ink);
+}
+
+.rail-note.toc {
+  position: sticky;
+  top: calc(var(--nav-height) + var(--space-lg));
+}
+
+.rail-note.toc p {
+  max-width: none;
+}
+
+.rail-note.toc ol,
+.rail-note.toc ul {
+  max-width: none;
+  margin: 0;
+  padding-inline-start: var(--space-md);
+}
+
+.rail-note.toc a {
+  color: inherit;
+}
+
+@media (max-width: 64rem) {
+  .reel-entry,
+  .newsletter,
+  .page-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .reel-entry > *,
+  .newsletter > *,
+  .page-content > * {
+    grid-column: 1;
+  }
+
+  .reel-entry .rail-note,
+  .newsletter .rail-note,
+  .page-content .rail-note,
+  .reel-entry .rail-note--left,
+  .newsletter .rail-note--left,
+  .page-content .rail-note--left {
+    grid-column: 1;
+    margin-block: var(--space-lg);
+    padding-inline: var(--space-md);
+    border-inline: 0;
+    border-block-start: var(--rule-thin) solid var(--color-ink);
+    position: static;
+  }
+}
+
 .page-masthead {
   max-width: 54rem;
   margin-block-end: clamp(var(--space-2xl), 8vw, var(--space-4xl));
@@ -2266,6 +2366,11 @@ body.is-navigating {
   max-width: 48rem;
   aspect-ratio: 16 / 9;
   background: var(--color-ink);
+}
+
+.breakout .cinema-trailer-embed {
+  max-width: 64rem;
+  margin-inline: auto;
 }
 
 .cinema-trailer-embed iframe {

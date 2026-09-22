@@ -19,7 +19,7 @@ The primary action on the homepage is to enter an edition; the secondary action 
 
 - Marketing/home pages: **Marquee Hero / cinema poster** — blue screen, rabbit-led asymmetric composition, edition listings as showtimes rather than cards.
 - Edition pages: **Programme board** — date/place masthead, films/events in typographic rows, restrained imagery.
-- Content/newsletter pages: **Long Document** — warm paper screen, readable measure, no decorative section cards.
+- Content/newsletter pages: **Long Document** — warm paper screen, readable measure, no decorative section cards. The center column stays at reading width (`--prose-max`); the side space is not bare padding. Media, tables, and quotes meant as section breaks use `.breakout` to span the full screen width; a table of contents, pull quote, or short callout uses `.rail-note` (or `.rail-note--left`) to sit in the freed-up margin instead. Both collapse to a single stacked column below 64rem.
 - Utility/index pages: **Index-first** — categorized route or credit lists, visible status, minimal containment.
 
 ## Theme

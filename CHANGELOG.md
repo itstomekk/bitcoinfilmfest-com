@@ -2,6 +2,15 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-22 — Long Document layout: breakout media + side-rail notes
+
+- Extended `.reel-entry`, `.newsletter`, and `.page-content` (the "Long Document" page family per `design.md`) into a three-column grid: a centered reading column at `--prose-max`, with real side columns instead of bare padding.
+- Added `.breakout` — lets embeds, images, tables, or quotes span the full screen width as a section break.
+- Added `.rail-note` (and `.rail-note--left`) — puts a table of contents, pull quote, or short callout in the freed-up side margin. `.rail-note.toc` is sticky.
+- Collapses to a single stacked column below 64rem; unaffected page families (cinema hub, edition pages, homepage) are untouched.
+- Retrofitted the podcast/interview Reel article to use a sticky `.rail-note.toc` table of contents and `.breakout` on all six video embeds; also corrected its publish date, which had been set a year ahead.
+- Verified with a local Jekyll build (100 pages, no errors) and manual inspection of generated output for the reel article, `_layouts/reel.html`, and an unrelated `page-content` page (`thanks.md`) to confirm no regression.
+
 ## 2026-09-22 — Add podcast/interview roundup to Reel
 
 - Added `site/_reel/bitcoin-cinema-podcast-conversations.md`, a Reel article rounding up podcast and interview appearances by Bitcoin cinema filmmakers.

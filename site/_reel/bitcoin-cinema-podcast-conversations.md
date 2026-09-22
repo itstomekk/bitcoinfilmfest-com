@@ -1,89 +1,109 @@
 ---
 title: "Hear From the Filmmakers: Bitcoin Cinema on Podcasts"
-date: 2026-09-22
-published_label: "September 22, 2026"
+date: 2025-09-22
+published_label: "September 22, 2025"
 category: articles
 author: "Bitcoin FilmFest"
 description: "A roundup of podcast and interview appearances by the people making Bitcoin cinema — Dare to Dream, Stranded, Cryptopia, A Sly Roundabout Way, Bitcoin and Friends, Death Athletic and more."
 ---
 
+<aside class="rail-note toc">
+  <p class="section-label">In this piece</p>
+  <ol>
+    <li><a href="#watch-these">Watch these</a></li>
+    <li><a href="#more-conversations">More conversations worth your time</a></li>
+  </ol>
+</aside>
+
 Bitcoin cinema doesn't only live on screen. A lot of the best context — why a film got made, what it took to finish it, what the filmmaker actually believes — comes out in conversation. Here's a roundup of podcast and interview appearances by directors, producers and creators behind Bitcoin films, some embedded below, the rest linked so you can go straight to the source.
 
-## Watch these
+## Watch these {#watch-these}
 
 **Graham Rittener on *Dare to Dream*** — the director talks through filming in El Zonte, El Salvador, and turning Bitcoin Beach into a documentary, on *Once BITten*.
 
-<div class="cinema-trailer-embed">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/lCP6LTgqFUE"
-    title="Graham Rittener on Once BITten"
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allow="fullscreen; picture-in-picture"
-    allowfullscreen></iframe>
+<div class="breakout">
+  <div class="cinema-trailer-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/lCP6LTgqFUE"
+      title="Graham Rittener on Once BITten"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="fullscreen; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 </div>
 
 **Alana Mediavilla on *Stranded* and *Dirty Coin*** — the filmmaker on *Digital Wildcatters Podcasts*, covering two very different angles on Bitcoin and energy.
 
-<div class="cinema-trailer-embed">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/eW-M6iuq7VQ"
-    title="Alana Mediavilla on Digital Wildcatters Podcasts"
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allow="fullscreen; picture-in-picture"
-    allowfullscreen></iframe>
+<div class="breakout">
+  <div class="cinema-trailer-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/eW-M6iuq7VQ"
+      title="Alana Mediavilla on Digital Wildcatters Podcasts"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="fullscreen; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 </div>
 
 **Torsten Hoffmann on *Cryptopia*** — director and producer on *Bitcoin Takeover*, discussing the film's look at crypto culture and its excesses.
 
-<div class="cinema-trailer-embed">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/xfH378wuNNM"
-    title="Torsten Hoffmann on Bitcoin Takeover"
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allow="fullscreen; picture-in-picture"
-    allowfullscreen></iframe>
+<div class="breakout">
+  <div class="cinema-trailer-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/xfH378wuNNM"
+      title="Torsten Hoffmann on Bitcoin Takeover"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="fullscreen; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 </div>
 
 **Javier Borrayo and Daniel Toledo on *A Sly Roundabout Way*** — filmmaker and producer, on *Powered by IBEX*.
 
-<div class="cinema-trailer-embed">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/Ucq2Sa5pFmM"
-    title="Javier Borrayo and Daniel Toledo on Powered by IBEX"
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allow="fullscreen; picture-in-picture"
-    allowfullscreen></iframe>
+<div class="breakout">
+  <div class="cinema-trailer-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/Ucq2Sa5pFmM"
+      title="Javier Borrayo and Daniel Toledo on Powered by IBEX"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="fullscreen; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 </div>
 
 **Robert Allen on *Bitcoin and Friends*** — the creator on *The Bitcoin Source*.
 
-<div class="cinema-trailer-embed">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/CqhY0VXNGkw"
-    title="Robert Allen on The Bitcoin Source"
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allow="fullscreen; picture-in-picture"
-    allowfullscreen></iframe>
+<div class="breakout">
+  <div class="cinema-trailer-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/CqhY0VXNGkw"
+      title="Robert Allen on The Bitcoin Source"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="fullscreen; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 </div>
 
 **Jessica Solce on *Death Athletic*** — the director on *TFTC*.
 
-<div class="cinema-trailer-embed">
-  <iframe
-    src="https://www.youtube-nocookie.com/embed/2Ya0uSB3wLI"
-    title="Jessica Solce on TFTC"
-    loading="lazy"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allow="fullscreen; picture-in-picture"
-    allowfullscreen></iframe>
+<div class="breakout">
+  <div class="cinema-trailer-embed">
+    <iframe
+      src="https://www.youtube-nocookie.com/embed/2Ya0uSB3wLI"
+      title="Jessica Solce on TFTC"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allow="fullscreen; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
 </div>
 
-## More conversations worth your time
+## More conversations worth your time {#more-conversations}
 
 A few of these creators sat down more than once, and a few more didn't make the embed list above but are worth the click:
 
