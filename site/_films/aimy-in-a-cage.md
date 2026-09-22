@@ -1,35 +1,48 @@
 ---
 title: "Aimy in a Cage"
-description: "Aimy is an eccentric young artist trapped inside a surreal family compound while an apocalyptic illness and an authoritarian home close in around her…"
+description: "A teenage orphan rebels against her family during a global virus outbreak in Hooroo Jackson's surreal fantasy debut."
 year: 2015
 type: Feature
 status: released
 director: "Hooroo Jackson"
+writer: "Hooroo Jackson"
+producer: "Hooroo Jackson"
 cast:
   - "Allisyn Ashley Arm"
   - "Crispin Glover"
   - "Paz de la Huerta"
   - "Terry Moore"
-studio: null
+studio: "Ankaboot Productions"
 company: null
 country: "USA"
 runtime: 79
 synopsis: >
-  Aimy is an eccentric young artist trapped inside a surreal family compound
-  while an apocalyptic illness and an authoritarian home close in around her.
-  Hooroo Jackson adapts his graphic novel into a loud, dark fantasy about
-  conformity, family and the cost of being different.
+  During a global virus outbreak, teenage orphan Aimy Micry is locked inside
+  her family's apartment and threatened with a mind-altering procedure meant to
+  make her obedient. Her rebellion turns the enclosed family home into a surreal,
+  increasingly violent fantasy world.
 bitcoin_angle: >
-  The film is a landmark in Bitcoin cinema because Jackson financed the feature
-  with Bitcoin profits and retained an unusually independent production model.
-  Bitcoin sits behind the film's making rather than inside its plot.
+  Jackson financed the film with profits from Bitcoin, making Bitcoin part of
+  the film's production story rather than its plot. That self-financed model is
+  central to the film's place in Bitcoin cinema.
 platform: "Blu-ray"
 trailer: "https://www.youtube.com/watch?v=HEOC_tSLlL0"
-sources:
-  - label: "Hooroo Jackson — official film page (press/director-site poster candidates)"
+awards:
+  - "Director's Prize — Portland Film Festival (2015)"
+screenings:
+  - "Portland Film Festival — September 8, 2015"
+official_links:
+  - label: "Hooroo Jackson — official film page"
     url: "https://hooroojackson.com/portfolio-item/aimy-in-a-cage/"
-  - label: "Collider"
+  - label: "Official Blu-ray"
+    url: "https://www.amazon.com/Aimy-Cage-Blu-ray-Allisyn-Snyder/dp/B0DFFZDQ5Z"
+sources:
+  - label: "Hooroo Jackson — official film page"
+    url: "https://hooroojackson.com/portfolio-item/aimy-in-a-cage/"
+  - label: "Collider — Bitcoin financing and film background"
     url: "https://collider.com/bitcoin-movie-aimy-in-a-cage-horror/"
-  - label: "IMDb"
-    url: "https://www.imdb.com/title/tt3550078/"
+  - label: "Rotten Tomatoes — credits and release information"
+    url: "https://www.rottentomatoes.com/m/aimy_in_a_cage"
+  - label: "Wikipedia — festival premiere and award history"
+    url: "https://en.wikipedia.org/wiki/Aimy_in_a_Cage"
 ---

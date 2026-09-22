@@ -17,7 +17,7 @@ layout: default
       <div class="cinema-stills-grid">
         {% for still in page.stills %}
           <figure class="cinema-still">
-            <img src="{{ still.path | relative_url }}" alt="{{ page.title }} still" loading="lazy">
+            <img src="{{ still.path | relative_url }}" alt="{% if still.alt %}{{ still.alt | escape }}{% else %}{{ page.title | escape }} still{% endif %}" loading="lazy">
             {% if still.credit %}<figcaption>{{ still.credit }}</figcaption>{% endif %}
           </figure>
         {% endfor %}
@@ -33,6 +33,9 @@ layout: default
 
   <dl class="cinema-profile-meta">
     {% if page.director %}<dt>Director</dt><dd>{{ page.director }}</dd>{% endif %}
+    {% if page.writer %}<dt>Writer</dt><dd>{{ page.writer }}</dd>{% endif %}
+    {% if page.producer %}<dt>Producer</dt><dd>{{ page.producer }}</dd>{% endif %}
+    {% if page.executive_producer %}<dt>Executive producer</dt><dd>{{ page.executive_producer }}</dd>{% endif %}
     {% if page.cast and page.cast.size > 0 %}<dt>Cast</dt><dd>{{ page.cast | join: ", " }}</dd>{% endif %}
     {% if page.studio %}<dt>Studio</dt><dd>{{ page.studio }}</dd>{% endif %}
     {% if page.country %}<dt>Country</dt><dd>{{ page.country }}</dd>{% endif %}
@@ -45,6 +48,24 @@ layout: default
     <section>
       <p class="section-label">The Bitcoin angle</p>
       <p>{{ page.bitcoin_angle }}</p>
+    </section>
+  {% endif %}
+
+  {% if page.awards and page.awards.size > 0 %}
+    <section class="cinema-profile-section">
+      <p class="section-label">Awards and recognition</p>
+      <ul class="cinema-profile-list">
+        {% for award in page.awards %}<li>{{ award }}</li>{% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+  {% if page.screenings and page.screenings.size > 0 %}
+    <section class="cinema-profile-section">
+      <p class="section-label">Screenings and festivals</p>
+      <ul class="cinema-profile-list">
+        {% for screening in page.screenings %}<li>{{ screening }}</li>{% endfor %}
+      </ul>
     </section>
   {% endif %}
 
@@ -89,6 +110,15 @@ layout: default
         <p><a href="{{ linked_company.url | relative_url }}">{{ linked_company.title }} →</a></p>
       </section>
     {% endif %}
+  {% endif %}
+
+  {% if page.official_links and page.official_links.size > 0 %}
+    <section class="cinema-profile-section">
+      <p class="section-label">Official links</p>
+      <ul class="cinema-profile-list cinema-link-list">
+        {% for link in page.official_links %}<li><a href="{{ link.url | escape }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a></li>{% endfor %}
+      </ul>
+    </section>
   {% endif %}
 
   {{ content }}

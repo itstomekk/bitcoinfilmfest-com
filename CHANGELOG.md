@@ -2,6 +2,15 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-22 — Enrich all 30 cinema catalogue profiles
+
+- Expanded every film profile in `site/_films/` (all 30 records, including Dirty Coin) with fresh public research: complete writer/producer/executive-producer credits, verified cast and interview participants, production company/country/runtime, distribution and watch availability, awards, and festival/screening history.
+- Added new optional front-matter fields — `writer`, `producer`, `executive_producer`, `awards`, `screenings`, `official_links`, and `stills[].alt` — and rendered them on the film layout (`site/_layouts/film.html`) with matching styling in `cinema-frame.css`. All fields are optional and backward-compatible with existing records.
+- Corrected the Dirty Coin runtime from 70 to 69 minutes against the official film site and IMDb, and added an official poster and promotional still with source credit.
+- Added one new official poster for God Bless Bitcoin with source credit.
+- Preserved The Bitcoin Executor's director-authoritative corrections (Amari Cheatom as lead, exact logline/synopsis, no BFF'26 reference, no implied premiere) and every film's existing `trailer`/`bff_screening` values.
+- Verified with a local Jekyll build (both default and GitHub Pages configs), a front-matter YAML parse across all 30 files, and the public-repository safety scan.
+
 ## 2026-09-22 — Correct The Bitcoin Executor profile
 
 - Replaced the cinema profile poster with the director-supplied artwork and corrected the lead actor to Amari Cheatom.

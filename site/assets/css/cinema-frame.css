@@ -2232,6 +2232,31 @@ body.is-navigating {
   margin-block-end: 0;
 }
 
+.cinema-profile-section {
+  max-width: 48rem;
+  margin-block: var(--space-xl) var(--space-2xl);
+}
+
+.cinema-profile-list {
+  margin-block: var(--space-md) 0;
+  padding-inline-start: 1.25rem;
+}
+
+.cinema-profile-list li + li {
+  margin-block-start: var(--space-sm);
+}
+
+.cinema-link-list {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+.cinema-link-list a {
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-underline-offset: 0.25em;
+}
+
 .cinema-trailer {
   margin-block: var(--space-xl) var(--space-2xl);
 }
