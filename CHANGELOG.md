@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-22 — Correct The Bitcoin Executor profile
+
+- Replaced the cinema profile poster with the director-supplied artwork and corrected the lead actor to Amari Cheatom.
+- Added the director-supplied logline and short synopsis.
+- Removed the BFF'26 field from the individual film page so the public profile does not imply that the film has already premiered.
+
 ## 2026-09-19 — Restore two public-safe old-export Reel articles
 
 - Added the archived Bitcoin News / Mr. Rabbit interview announcement at `/reel/bitcoin-news-chatting-with-mr-rabbit/`.
