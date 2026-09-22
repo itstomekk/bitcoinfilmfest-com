@@ -49,9 +49,35 @@ layout: default
   {% endif %}
 
   {% if page.trailer %}
-    <section>
+    {% assign trailer_url = page.trailer | strip %}
+    {% assign youtube_id = '' %}
+    {% if trailer_url contains 'youtube.com/watch' %}
+      {% assign trailer_query = trailer_url | split: '?' | last %}
+      {% assign trailer_params = trailer_query | split: '&' %}
+      {% for trailer_param in trailer_params %}
+        {% assign trailer_pair = trailer_param | split: '=' %}
+        {% if trailer_pair[0] == 'v' and trailer_pair[1] %}
+          {% assign youtube_id = trailer_pair[1] | split: '#' | first | strip %}
+        {% endif %}
+      {% endfor %}
+    {% elsif trailer_url contains 'youtu.be/' %}
+      {% assign youtube_id = trailer_url | split: 'youtu.be/' | last | split: '?' | first | split: '#' | first | strip %}
+    {% endif %}
+
+    <section class="cinema-trailer">
       <p class="section-label">Trailer</p>
-      <p><a href="{{ page.trailer }}" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></p>
+      {% if youtube_id != '' %}
+        <div class="cinema-trailer-embed">
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/{{ youtube_id | escape }}"
+            title="{{ page.title | escape }} trailer"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="fullscreen; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      {% endif %}
+      <p class="cinema-trailer-fallback">If the embedded trailer does not load, <a href="{{ trailer_url | escape }}" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></p>
     </section>
   {% endif %}
 
