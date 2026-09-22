@@ -4,11 +4,51 @@ layout: default
 <article class="cinema-profile">
   <a class="cinema-back" href="{{ '/cinema/films/' | relative_url }}">← All films</a>
 
-  {% if page.poster %}
-    <figure class="cinema-poster">
-      <img src="{{ page.poster | relative_url }}" alt="{{ page.title }} poster" loading="eager">
-      {% if page.poster_credit %}<figcaption>{{ page.poster_credit }}</figcaption>{% endif %}
-    </figure>
+  {% if page.poster or page.stills %}
+    {% assign hero_image = page.poster %}
+    {% if page.stills and page.stills.size > 0 %}
+      {% assign hero_image = page.stills[0].path %}
+    {% endif %}
+    <header class="cinema-hero" style="{% if hero_image %}background-image: url('{{ hero_image | relative_url }}');{% endif %}">
+      <div class="cinema-hero-gradient"></div>
+      <div class="cinema-hero-inner">
+        {% if page.poster %}
+          <figure class="cinema-hero-poster">
+            <img src="{{ page.poster | relative_url }}" alt="{{ page.title }} poster" loading="eager">
+            {% if page.poster_credit %}<figcaption>{{ page.poster_credit }}</figcaption>{% endif %}
+          </figure>
+        {% endif %}
+        <div class="cinema-hero-meta">
+          <p class="cinema-hero-type">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
+          <h1 class="cinema-hero-title">{{ page.title }}</h1>
+          <div class="cinema-hero-chips">
+            {% if page.runtime %}<span class="chip chip--runtime">{{ page.runtime }} min</span>{% endif %}
+            {% if page.country %}<span class="chip chip--country">{{ page.country }}</span>{% endif %}
+            {% if page.platform %}<span class="chip chip--platform">{{ page.platform }}</span>{% endif %}
+          </div>
+          {% if page.synopsis %}
+            <p class="cinema-hero-synopsis">{{ page.synopsis }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </header>
+  {% else %}
+    <header class="page-masthead">
+      <p class="page-context">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.synopsis %}<p>{{ page.synopsis }}</p>{% endif %}
+    </header>
+  {% endif %}
+
+  {% if page.cast and page.cast.size > 0 %}
+    <section class="cinema-cast">
+      <p class="section-label">Cast</p>
+      <div class="cinema-cast-list" role="list">
+        {% for actor in page.cast %}
+          <span class="cinema-cast-item" role="listitem">{{ actor }}</span>
+        {% endfor %}
+      </div>
+    </section>
   {% endif %}
 
   {% if page.stills and page.stills.size > 0 %}
@@ -25,12 +65,6 @@ layout: default
     </section>
   {% endif %}
 
-  <header class="page-masthead">
-    <p class="page-context">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
-    <h1>{{ page.title }}</h1>
-    {% if page.synopsis %}<p>{{ page.synopsis }}</p>{% endif %}
-  </header>
-
   <dl class="cinema-profile-meta">
     {% if page.director %}<dt>Director</dt><dd>{{ page.director }}</dd>{% endif %}
     {% if page.writer %}<dt>Writer</dt><dd>{{ page.writer }}</dd>{% endif %}
@@ -38,14 +72,16 @@ layout: default
     {% if page.executive_producer %}<dt>Executive producer</dt><dd>{{ page.executive_producer }}</dd>{% endif %}
     {% if page.cast and page.cast.size > 0 %}<dt>Cast</dt><dd>{{ page.cast | join: ", " }}</dd>{% endif %}
     {% if page.studio %}<dt>Studio</dt><dd>{{ page.studio }}</dd>{% endif %}
+    {% if page.company %}<dt>Production company</dt><dd>{{ page.company }}</dd>{% endif %}
     {% if page.country %}<dt>Country</dt><dd>{{ page.country }}</dd>{% endif %}
+    {% if page.filming_locations and page.filming_locations.size > 0 %}<dt>Filmed in</dt><dd>{{ page.filming_locations | join: ", " }}</dd>{% endif %}
     {% if page.runtime %}<dt>Runtime</dt><dd>{{ page.runtime }} min</dd>{% endif %}
     {% if page.platform %}<dt>Where to watch</dt><dd>{{ page.platform }}</dd>{% endif %}
     {% if page.bff_screening %}<dt>Bitcoin FilmFest</dt><dd>{{ page.bff_screening }}</dd>{% endif %}
   </dl>
 
   {% if page.bitcoin_angle %}
-    <section>
+    <section class="cinema-profile-section">
       <p class="section-label">The Bitcoin angle</p>
       <p>{{ page.bitcoin_angle }}</p>
     </section>
@@ -105,7 +141,7 @@ layout: default
   {% if page.company %}
     {% assign linked_company = site.companies | where: "slug", page.company | first %}
     {% if linked_company %}
-      <section>
+      <section class="cinema-profile-section">
         <p class="section-label">Production company</p>
         <p><a href="{{ linked_company.url | relative_url }}">{{ linked_company.title }} →</a></p>
       </section>

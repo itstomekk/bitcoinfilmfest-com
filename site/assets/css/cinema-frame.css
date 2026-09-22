@@ -2425,6 +2425,215 @@ body.is-navigating {
   }
 }
 
+/* Netflix/IMDb-style film hero */
+.cinema-hero {
+  position: relative;
+  min-height: 55vh;
+  max-height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-block: calc(var(--nav-height) * -1) var(--space-3xl);
+  padding-block-start: var(--nav-height);
+  border-radius: 0 0 var(--radius-panel) var(--radius-panel);
+  overflow: hidden;
+}
+
+.cinema-hero-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 30%,
+    color-mix(in oklch, var(--color-room) 60%, transparent) 55%,
+    var(--color-room) 95%
+  );
+  pointer-events: none;
+}
+
+.cinema-hero-inner {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding: var(--space-xl) var(--frame-side) var(--space-3xl);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-xl);
+  align-items: end;
+}
+
+.cinema-hero-poster {
+  flex: 0 0 auto;
+  margin: 0;
+}
+
+.cinema-hero-poster img {
+  width: clamp(120px, 18vw, 200px);
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: var(--radius-panel);
+  box-shadow: 0 24px 48px -12px color-mix(in oklch, var(--color-room) 80%, transparent);
+  background: var(--color-paper-2);
+}
+
+.cinema-hero-poster figcaption {
+  margin-block-start: var(--space-xs);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.cinema-hero-meta {
+  min-width: 0;
+}
+
+.cinema-hero-type {
+  margin: 0 0 var(--space-xs);
+  color: var(--color-screen-soft);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.cinema-hero-title {
+  margin: 0 0 var(--space-md);
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--color-on-dark);
+  max-width: 50ch;
+}
+
+.cinema-hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-block-end: var(--space-md);
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2xs) var(--space-sm);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: color-mix(in oklch, var(--color-room) 85%, transparent);
+  border: var(--rule-thin) solid var(--color-rule);
+  border-radius: var(--radius-control);
+  color: var(--color-on-dark);
+  white-space: nowrap;
+}
+
+.chip--runtime { border-color: var(--color-accent); }
+.chip--country { border-color: var(--color-screen); }
+.chip--platform { border-color: var(--color-muted); }
+
+.cinema-hero-synopsis {
+  margin: 0;
+  max-width: 60ch;
+  color: var(--color-on-dark);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Cast rail — horizontal scroll like Netflix/IMDb */
+.cinema-cast {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--frame-side);
+  margin-block-end: var(--space-2xl);
+}
+
+.cinema-cast .section-label {
+  margin-block-end: var(--space-md);
+  color: var(--color-muted);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cinema-cast-list {
+  display: flex;
+  gap: var(--space-sm);
+  overflow-x: auto;
+  padding-block-end: var(--space-xs);
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-rule) transparent;
+}
+
+.cinema-cast-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.cinema-cast-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.cinema-cast-list::-webkit-scrollbar-thumb {
+  background: var(--color-rule);
+  border-radius: 3px;
+}
+
+.cinema-cast-item {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  padding: var(--space-2xs) var(--space-md);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  background: var(--color-paper-2);
+  border: var(--rule-thin) solid var(--color-rule);
+  border-radius: var(--radius-panel);
+  white-space: nowrap;
+  transition: border-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out);
+}
+
+.cinema-cast-item:hover {
+  border-color: var(--color-screen);
+  color: var(--color-screen);
+}
+
+/* Adjustments when hero is present */
+.cinema-profile .cinema-stills,
+.cinema-profile .cinema-profile-meta,
+.cinema-profile .cinema-profile-section,
+.cinema-profile .cinema-trailer {
+  max-width: var(--content-max);
+  margin-inline: auto;
+  padding-inline: var(--frame-side);
+}
+
+.cinema-profile .cinema-stills .section-label,
+.cinema-profile .cinema-profile-section .section-label,
+.cinema-profile .cinema-trailer .section-label {
+  color: var(--color-muted);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Back link positioning inside hero */
+.cinema-hero + .cinema-back {
+  display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

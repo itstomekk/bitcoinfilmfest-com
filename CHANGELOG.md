@@ -2,6 +2,20 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-22 — Netflix/IMDb-style film profile redesign
+
+- Replaced the bare masthead + definition-list layout on film profiles with a dark cinema-lobby hero:
+  - Full-bleed backdrop from the film's poster or first still (CSS `background-image`)
+  - Poster inset (ticket stub style) when a poster exists
+  - Title + type/year/status line + "ticket chips" for runtime, country, platform
+  - Synopsis sits inside the hero for immediate context
+- Added a horizontal cast rail (Netflix/IMDb pattern) with scroll-snap, hover states, and custom scrollbar when `cast` data exists
+- All hero sections use the locked design system tokens (room/screen/ink/accent colors, Syne Mono/Courier Prime, spacing scale, easing)
+- Backward-compatible fallback: films without poster or stills render the original `page-masthead` layout unchanged
+- Section labels restyled with display font, uppercase, tracking — consistent with edition pages
+- Content sections (stills, meta, awards, screenings, trailer, links, sources) now centered at `--content-max` with `--frame-side` padding for consistent measure
+- Verified: Jekyll build (default + GitHub Pages configs), YAML parse across all 30 film files, public-repo safety scan, `git diff --check`
+
 ## 2026-09-22 — Widen Long Document content area to 90vw
 
 - Increased `--content-max` from `74rem` to `90vw` in `tokens.css`. The inner content area (`.inner` inside `.screen-canvas`) now spans ~80% of the viewport instead of capping at ~1184px.
