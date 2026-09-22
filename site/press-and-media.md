@@ -38,4 +38,8 @@ Independent coverage of Bitcoin FilmFest from past editions:
 
 Guest posts, interviews and an event report from past editions are collected in the [Reel archive]({{ '/reel/' | relative_url }}).
 
+<p class="section-label">BFF as a guest</p>
+
+Links to every podcast, YouTube show and X Space where the BFF team has appeared as a guest: [BFF as a Guest — Podcasts &amp; Interviews]({{ '/press-and-media/podcasts/' | relative_url }}).
+
 </article>
