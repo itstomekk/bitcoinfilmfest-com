@@ -6,6 +6,7 @@ Short, human-readable record of public website changes. One dated entry is requi
 
 - Replaced the plain YouTube trailer link on film profiles with a responsive, lazy-loaded privacy-enhanced YouTube embed.
 - Supports both `youtube.com/watch?v=` and `youtu.be/` trailer URLs, with an accessible iframe title and a fallback link for visitors who cannot load the embed.
+- Keeps trailer playback user-initiated and uses YouTube's privacy-enhanced embed domain.
 
 ## 2026-09-19 — Restore two public-safe old-export Reel articles
 
