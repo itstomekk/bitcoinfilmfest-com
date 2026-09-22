@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-22 — Add podcast/interview roundup to Reel
+
+- Added `site/_reel/bitcoin-cinema-podcast-conversations.md`, a Reel article rounding up podcast and interview appearances by Bitcoin cinema filmmakers.
+- Six embedded via the site's existing YouTube-nocookie iframe pattern (Dare to Dream, Stranded/Dirty Coin, Cryptopia, A Sly Roundabout Way, Bitcoin and Friends, Death Athletic); the rest linked out to the original episode.
+- Sourced from the private Notion research table "Episodes with creators, filmmakers, producers" (21 rows, 20 unique episode URLs); only public episode links and public guest/show names were used, no private notes.
+
 ## 2026-09-22 — Enrich all 30 cinema catalogue profiles
 
 - Expanded every film profile in `site/_films/` (all 30 records, including Dirty Coin) with fresh public research: complete writer/producer/executive-producer credits, verified cast and interview participants, production company/country/runtime, distribution and watch availability, awards, and festival/screening history.
