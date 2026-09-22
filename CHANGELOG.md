@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-22 — Widen Long Document content area to 90vw
+
+- Increased `--content-max` from `74rem` to `90vw` in `tokens.css`. The inner content area (`.inner` inside `.screen-canvas`) now spans ~80% of the viewport instead of capping at ~1184px.
+- Reading column still respects `--prose-max: 68ch` for legibility; the extra width flows into the side columns used by `.breakout` (full-width media/tables) and `.rail-note` (TOC, pull quotes, callouts).
+- Verified local build (100 pages, no errors).
+
 ## 2026-09-22 — Long Document layout: breakout media + side-rail notes
 
 - Extended `.reel-entry`, `.newsletter`, and `.page-content` (the "Long Document" page family per `design.md`) into a three-column grid: a centered reading column at `--prose-max`, with real side columns instead of bare padding.
