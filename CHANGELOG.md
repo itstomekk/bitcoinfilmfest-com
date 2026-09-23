@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-23 — Add Hummingbird official landscape key art
+
+- Added the official landscape key art for Hummingbird: The Bitcoin Jungle Story from the filmmaker's website.
+- Recorded the source URL, credit, asset type, and descriptive alt text.
+
 ## 2026-09-23 — Add Crypto Castle artwork from the Bitcoin FilmFest 2026 archive
 
 - Added the supplied Crypto Castle Ep. 02 official-selection artwork to The Crypto Castle profile.
