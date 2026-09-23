@@ -21,7 +21,15 @@ bitcoin_angle: >
   solution to inflation and financial control by central authorities.
 platform: "Apple TV, Amazon Prime Video, YouTube (streaming)"
 trailer: "https://www.youtube.com/watch?v=dUIWK0sMJDA"
+stills:
+  - path: "/assets/images/cinema/films/bitcoin-end-of-money-title-plate.jpg"
+    alt: "A large gold Bitcoin symbol fills the center of a dark circular field covered in dense white and pale-green binary digits, with black space surrounding the circle."
+    credit: "Courtesy of 3D Content Hub / Bitcoin: The End of Money as We Know It"
+    source_url: "https://endofmoneyfilm.com/"
+    asset_type: "Official title plate"
 sources:
+  - label: "Bitcoin: The End of Money as We Know It official site"
+    url: "https://endofmoneyfilm.com/"
   - label: "IMDb"
     url: "https://www.imdb.com/title/tt4654844"
   - label: "Apple TV+"

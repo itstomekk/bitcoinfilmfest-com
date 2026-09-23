@@ -25,7 +25,15 @@ bitcoin_angle: >
   living on the network—a foundational record of Bitcoin's early ecosystem.
 platform: "VidAngel; YouTube; iTunes; Amazon Prime Video; Apple TV"
 trailer: "https://www.youtube.com/watch?v=VmHqPP7c9Fw"
+poster: "/assets/images/cinema/films/life-on-bitcoin-poster.jpg"
+poster_alt: "Promotional artwork reading Life on Bitcoin above a seated man and a red-haired woman in a green field, with snow-capped mountains behind them and a large gold Bitcoin coin in the foreground."
+poster_credit: "Courtesy of SNS FiReFilms / Life on Bitcoin"
+poster_source: "Official Life on Bitcoin artwork"
+poster_source_url: "https://www.firefilms.org/life-on-bitcoin/"
+poster_asset_type: "Landscape promotional key art"
 sources:
+  - label: "Life on Bitcoin official film page"
+    url: "https://www.firefilms.org/life-on-bitcoin/"
   - label: "IMDb"
     url: "https://www.imdb.com/title/tt3910512/"
   - label: "Apple TV"

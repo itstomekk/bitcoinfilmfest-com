@@ -2,6 +2,13 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-23 — Add official assets for Cryptopia, The End of Money and Life on Bitcoin
+
+- Added the official Cryptopia theatrical poster from Cryptopia Film.
+- Added the official Bitcoin: The End of Money as We Know It title plate from the film's official site.
+- Added official Life on Bitcoin landscape promotional key art from SNS FiReFilms.
+- Recorded source URLs, credits, asset types, and descriptive alt text for each asset.
+
 ## 2026-09-23 — Add Everyone Is Lying to You for Money official poster
 
 - Added the official theatrical poster from the film's website.
