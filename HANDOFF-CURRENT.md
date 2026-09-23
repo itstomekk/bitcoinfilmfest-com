@@ -11,6 +11,12 @@ The Git state and cinema status below were reconciled against the live checkout 
 
 The Jekyll rebuild is live through GitHub Pages and the configured custom domain. On top of the existing site (homepage, festival editions, Reel, Credits), the `/cinema/` section now contains the film database and company directory foundations, the essential-ten curation, the industry-footprint strip, and the first roadshow structure. The coherent Cinema ecosystem update was originally committed at `517c87f` and is included in the current `main`; the archive/current-edition visual pass landed in merge commit `4635bce`. The latest build and Pages deployment passed.
 
+### 2026-09-23 webmail compatibility route
+
+- Added a source route at `/webmail/` that redirects to `https://webmail.bitcoinfilmfest.com/`, preserving the SmartHost mail service while the website stays on GitHub Pages.
+- Updated redirect metadata so external targets are emitted as real external URLs; existing internal legacy redirects still build correctly.
+- Local build and public-repository safety checks pass. The route is not live until this local change is published through the GitHub Pages workflow.
+
 ### 2026-09-19 dead-route repair integration
 
 - Merged `fix/sponsor-page-stub`, `fix/press-and-media-page`, `fix/gallery-page`, and `fix/small-dead-links` into `main` at `e35e159` using a clean worktree; unrelated local changes in the primary checkout were left untouched.
