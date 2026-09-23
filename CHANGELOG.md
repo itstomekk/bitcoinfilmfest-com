@@ -2,6 +2,26 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-23 — Add rights-cleared film visuals
+
+- Added the clean Encode Productions poster to Death Athletic.
+- Added official-trailer stills to Silk Road, Sovereign, The Gimp and the Hitman, and Money Electric: The Bitcoin Mystery.
+- Added two additional Simple Proof stills to Immutable Democracy.
+- Credits and source URLs are recorded in each film profile; all image files were validated as readable JPEGs before use.
+
+## 2026-09-23 — Published film audit follow-up
+
+- Added verified IMDb reference links to LifeHack, Money Electric: The Bitcoin Mystery, New Money, One Attempt Remaining, and The Great Reset and the Rise of Bitcoin.
+- Added Daphne Qin Wu's cinematography credit to Aimy in a Cage and rendered the optional credit on film profiles.
+- Rechecked the reported Death Athletic trailer mismatch against Encode Productions' YouTube oEmbed metadata; the existing trailer is the official Death Athletic trailer and was left unchanged.
+- Verified: YAML parse across all 30 film files, default and GitHub Pages Jekyll builds, generated profile output, `git diff --check`, and the public-repository safety scan.
+
+## 2026-09-23 — Restore the `/webmail/` compatibility route
+
+- Added `/webmail/` as a redirect to the SmartHost webmail service at `https://webmail.bitcoinfilmfest.com/`, so the GitHub Pages website can keep the main domain while mail stays on SmartHost.
+- Updated redirect metadata to support external destinations as well as internal legacy routes.
+- Added a visible fallback link for browsers that do not follow the redirect automatically.
+
 ## 2026-09-22 — Netflix/IMDb-style film profile redesign
 
 - Replaced the bare masthead + definition-list layout on film profiles with a dark cinema-lobby hero:

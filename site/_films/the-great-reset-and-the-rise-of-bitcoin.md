@@ -23,6 +23,8 @@ trailer: "https://www.youtube.com/watch?v=PwUpIufKqys"
 official_links:
   - label: "Pierre Corbin — official project page"
     url: "https://www.pierrecorbin.com/projects"
+  - label: "IMDb — The Great Reset and the Rise of Bitcoin"
+    url: "https://www.imdb.com/title/tt17999542/"
 sources:
   - label: "Pierre Corbin — official project page"
     url: "https://www.pierrecorbin.com/projects"

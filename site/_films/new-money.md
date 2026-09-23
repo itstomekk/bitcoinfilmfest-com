@@ -32,6 +32,8 @@ trailer: "https://www.youtube.com/watch?v=LDpcNASR_Wk"
 screenings:
   - "International premiere — 29th Tallinn Black Nights Film Festival (PÖFF), Baltic Competition, November 2025"
 official_links:
+  - label: "IMDb — New Money"
+    url: "https://www.imdb.com/title/tt37923632/"
   - label: "Tallinn Black Nights Film Festival"
     url: "https://poff.ee/en/film/new-money/"
   - label: "Tallifornia"
