@@ -9,6 +9,11 @@ director: "Cullen Hoback"
 writer: "Cullen Hoback"
 producer: "Cullen Hoback, Alina Solodnikova, Jessie Deeter, Scott Holroyd"
 executive_producer: "Adam McKay, Todd Schulman, Cullen Hoback, Taylor Jones, Nancy Abraham, Lisa Heller, Tina Nguyen"
+poster:
+  src: "/assets/images/cinema/films/money-electric-poster.jpg"
+  alt: "Money Electric: The Bitcoin Mystery — HBO documentary poster investigating Satoshi Nakamoto identity"
+  source: "HBO official press materials — https://press.wbd.com"
+  credit: "© HBO Documentary Films, Cullen Hoback"
 cast:
   - "Cullen Hoback"
   - "Samson Mow"

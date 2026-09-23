@@ -13,6 +13,21 @@ studio: Independent Production
 release_date: 2014-01-06
 featured: false
 essential_rank: 7
+poster:
+  src: "/assets/images/cinema/films/rise-and-rise-still-1.jpg"
+  alt: "Mark Karpeles at Mt. Gox server farm — The Rise and Rise of Bitcoin"
+  source: "Official film website — https://bitcoindoc.com/image-gallery"
+  credit: "© The Rise and Rise of Bitcoin, Nicholas Mross"
+stills:
+  - src: "/assets/images/cinema/films/rise-and-rise-still-2.jpg"
+    alt: "Daniel Mross checking Bitcoin price movement — The Rise and Rise of Bitcoin"
+    source: "Official film website — https://bitcoindoc.com/image-gallery"
+  - src: "/assets/images/cinema/films/rise-and-rise-still-3.jpg"
+    alt: "Roger Ver facilitating first Bitcoin transaction in Korean supermarket — The Rise and Rise of Bitcoin"
+    source: "Official film website — https://bitcoindoc.com/image-gallery"
+  - src: "/assets/images/cinema/films/rise-and-rise-still-4.jpg"
+    alt: "Winklevoss twins discussing Bitcoin — The Rise and Rise of Bitcoin"
+    source: "Official film website — https://bitcoindoc.com/image-gallery"
 
 synopsis: "Documentary chronicling Bitcoin's transformation from obscure technology to global financial phenomenon, tracking price rallies, crashes, and the culture of cryptocurrency mining."
 
