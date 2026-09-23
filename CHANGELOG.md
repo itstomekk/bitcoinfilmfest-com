@@ -2,6 +2,14 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-22 — Complete Hotel Bitcoin profile with official assets and IMDb
+
+- Added the official DeAPlaneta poster and three official production stills to `site/assets/images/cinema/films/`, with source credits and accessible alt text.
+- Added the IMDb link (`tt31308426`) to the film's official links and sources, plus the official DeAPlaneta distributor page.
+- Expanded the record with producer credits and the larger publicly listed cast, including Canco Rodríguez, Dani Muriel, and Sergio Bezos.
+- The profile now uses the new cinema hero automatically and no longer falls back to the text-only masthead.
+- Verified: both Jekyll build configurations, generated HTML asset/link checks, YAML parse, public-repository safety scan, and `git diff --check`.
+
 ## 2026-09-22 — Netflix/IMDb-style film profile redesign
 
 - Replaced the bare masthead + definition-list layout on film profiles with a dark cinema-lobby hero:
