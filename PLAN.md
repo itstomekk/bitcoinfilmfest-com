@@ -2,6 +2,10 @@
 
 Decided 2026-08-28. Supersedes the PHP-include plan in `static-site/` — kept as reference for content/design, not as the source of truth going forward.
 
+## 2026-09-23 operational note
+
+The website remains on GitHub Pages while mail remains on SmartHost. The source now includes a `/webmail/` compatibility route that redirects visitors to `https://webmail.bitcoinfilmfest.com/`; publish it through the normal GitHub Pages workflow before treating the route as live.
+
 ## Why this replaces the PHP plan
 
 `static-site/` (built 2026-07-16 to 2026-08-05) already solved "shared header/nav/footer, one file per page" using PHP includes. That works for FTP hosting but PHP doesn't execute on GitHub Pages — Pages only serves files as-is. A static site generator (SSG) does the same templating job but at *build time*, producing plain HTML files that run anywhere, including GitHub Pages. Jekyll is GitHub Pages' native SSG: push to a repo, Pages builds and deploys automatically, no separate CI config needed. Content stays in Markdown, matching the format the content archive is already in.
