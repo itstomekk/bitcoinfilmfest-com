@@ -5,6 +5,10 @@ year: 2023
 type: "Feature / Sci-Fi Thriller"
 status: released
 director: "Naeem Mahmood"
+poster: "/assets/images/cinema/films/gods-of-their-own-religion-poster.jpg"
+poster_alt: "Gods of Their Own Religion poster, showing a bloodied man in a suit and a figure in black against a yellow background"
+poster_credit: "Poster artwork: Naeem Mahmood / Zems Entertainment"
+poster_source: "Bitcoin FilmFest 2024 internal archive"
 cast:
   - "Christopher Chung"
   - "Kyd Nereida"
