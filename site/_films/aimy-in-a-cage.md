@@ -7,6 +7,7 @@ status: released
 director: "Hooroo Jackson"
 writer: "Hooroo Jackson"
 producer: "Hooroo Jackson"
+cinematographer: "Daphne Qin Wu"
 cast:
   - "Allisyn Ashley Arm"
   - "Crispin Glover"
@@ -36,6 +37,8 @@ official_links:
     url: "https://hooroojackson.com/portfolio-item/aimy-in-a-cage/"
   - label: "Official Blu-ray"
     url: "https://www.amazon.com/Aimy-Cage-Blu-ray-Allisyn-Snyder/dp/B0DFFZDQ5Z"
+  - label: "Daphne Qin Wu — cinematographer resume"
+    url: "https://www.daphnewu.com/resume"
 sources:
   - label: "Hooroo Jackson — official film page"
     url: "https://hooroojackson.com/portfolio-item/aimy-in-a-cage/"
@@ -45,4 +48,6 @@ sources:
     url: "https://www.rottentomatoes.com/m/aimy_in_a_cage"
   - label: "Wikipedia — festival premiere and award history"
     url: "https://en.wikipedia.org/wiki/Aimy_in_a_Cage"
+  - label: "Daphne Qin Wu — cinematographer resume"
+    url: "https://www.daphnewu.com/resume"
 ---

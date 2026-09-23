@@ -41,6 +41,8 @@ trailer: null
 official_links:
   - label: "Netflix Tudum — production announcement and cast"
     url: "https://www.netflix.com/tudum/articles/one-attempt-remaining-release-date-photos-news"
+  - label: "IMDb — One Attempt Remaining"
+    url: "https://www.imdb.com/title/tt38598335/"
 sources:
   - label: "Netflix Tudum — official production update, plot, cast and credits"
     url: "https://www.netflix.com/tudum/articles/one-attempt-remaining-release-date-photos-news"
