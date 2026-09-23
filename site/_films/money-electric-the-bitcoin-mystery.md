@@ -53,6 +53,8 @@ official_links:
     url: "https://www.hbomax.com/tc/en/movie/90e45730-bcb5-4525-aaea-44425a77c531"
   - label: "Official trailer"
     url: "https://www.youtube.com/watch?v=iSF0KGsFuI8"
+  - label: "IMDb — Money Electric: The Bitcoin Mystery"
+    url: "https://www.imdb.com/title/tt33600145/"
 sources:
   - label: "HBO / Warner Bros. Discovery — synopsis and production credits"
     url: "https://press.wbd.com/us/media-release/hbo-0/hbo-original-documentary-money-electric-bitcoin-mystery-debuts-october-8"

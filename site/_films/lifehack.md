@@ -40,6 +40,8 @@ awards:
 official_links:
   - label: "Ronan Corrigan — official film page"
     url: "https://www.ronancorrigan.co.uk/life-hack"
+  - label: "IMDb — LifeHack"
+    url: "https://www.imdb.com/title/tt32135632/"
   - label: "British Council UK Films Database"
     url: "https://filmsandfestivals.britishcouncil.org/projects/lifehack"
   - label: "SXSW 2025 film page"
