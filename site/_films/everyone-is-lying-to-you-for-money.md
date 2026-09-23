@@ -13,6 +13,11 @@ country: "USA"
 runtime: 90
 release_date: "2025-11-16"
 theatrical_release: "2026-04-17"
+poster: "/assets/images/cinema/films/everyone-is-lying-to-you-for-money-poster.webp"
+poster_alt: "Everyone Is Lying to You for Money poster, showing a neon-green collage of Bitcoin coins, dollar bills, a smartphone, financial charts, the U.S. Capitol and Ben McKenzie below the title"
+poster_credit: "Courtesy of The Forge / Everyone Is Lying to You for Money"
+poster_source_url: "https://www.everyoneislying.com/"
+poster_asset_type: "Theatrical poster"
 synopsis: >
   Actor and author Ben McKenzie turns investigator in his directorial debut,
   pulling back the curtain on cryptocurrency's explosive rise and the culture of
