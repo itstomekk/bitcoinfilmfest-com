@@ -30,6 +30,11 @@ bitcoin_angle: >
   part of the film's explicit subject.
 platform: "Theatrical (Briarcliff Entertainment); VOD platforms"
 trailer: "https://www.youtube.com/watch?v=_T4JHPowGbg"
+stills:
+  - path: "/assets/images/cinema/films/sovereign-official-trailer-still.jpg"
+    credit: "All Night Diner — official trailer"
+    source_url: "https://sovereignfilm.com/"
+    alt: "Official trailer frame from Sovereign"
 awards:
   - "Film Independent Spirit Awards — Best Screenplay nomination (Christian Swegal)"
   - "Film Independent Spirit Awards — Best Supporting Performance nomination (Jacob Tremblay)"

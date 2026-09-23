@@ -15,6 +15,8 @@ studio: "Encode Productions"
 company: null
 country: "USA"
 runtime: 102
+poster: "/assets/images/cinema/films/death-athletic-official-poster.jpg"
+poster_credit: "Encode Productions"
 synopsis: >
   Over seven years, Jessica Solce follows Cody Wilson through federal battles,
   personal struggles and the growth of the 3D-printed-gun community. The result
@@ -35,6 +37,8 @@ screenings:
   - "Ohm Film Festival"
 official_links:
   - label: "Encode Productions — official film page"
+    url: "https://www.encodeproductions.com/deathathletic"
+  - label: "Official poster — Encode Productions"
     url: "https://www.encodeproductions.com/deathathletic"
   - label: "Buy or rent from the filmmakers"
     url: "https://encode.vhx.tv/products"
