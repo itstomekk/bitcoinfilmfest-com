@@ -2,6 +2,14 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-23 — Add official film assets batch 1 (web research + archive)
+
+- Added official poster and 4 scene stills to The Rise and Rise of Bitcoin (from official bitcoindoc.com gallery).
+- Added official HBO documentary poster to Money Electric: The Bitcoin Mystery (official press materials).
+- Added official marketing poster to Finding Satoshi (Range Media Partners / Complex official source).
+- All source credits, attribution, and detailed alt text recorded in each film profile.
+- Assets sourced exclusively from official distributors, filmmaker websites, and verified press materials (no IMDb artwork, fan sites, or stock images).
+
 ## 2026-09-23 — Add Unbankable film poster from BFF25 archive
 
 - Added official Unbankable poster (3x4 aspect ratio) from Bitcoin FilmFest 2025 media archive (Notion, Google Drive).
