@@ -10,6 +10,10 @@ country: "Poland"
 language: "English"
 status: "released"
 release_date: "December 1, 2023"
+poster: "/assets/images/cinema/films/menger-notes-on-the-margin-poster.jpg"
+poster_alt: "Menger. Notes on the Margin poster, with a portrait of Carl Menger on a teal background and the title in red and black lettering"
+poster_credit: "Poster artwork: Tomasz Agencki / Instytut Misesa"
+poster_source: "Bitcoin FilmFest 2024 internal archive"
 
 synopsis: >
   A documentary celebrating Carl Menger's 150-year legacy since the publication of *Principles of Economics*. 

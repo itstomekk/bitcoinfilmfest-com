@@ -13,11 +13,10 @@ studio: "Finding Satoshi Productions"
 release_date: 2026-04-18
 featured: true
 essential_rank: 5
-poster:
-  src: "/assets/images/cinema/films/finding-satoshi-poster.jpg"
-  alt: "Finding Satoshi — investigative documentary into Bitcoin creator identity, featuring William D. Cohan and Tyler Maroney"
-  source: "Official film marketing materials via Complex — https://www.complex.com/pop-culture/a/andrew-white/finding-satoshi-investigation-bitcoin-creator"
-  credit: "© Finding Satoshi Productions, Range Media Partners"
+poster: "/assets/images/cinema/films/finding-satoshi-poster.jpg"
+poster_alt: "Finding Satoshi investigative documentary poster featuring William D. Cohan and Tyler Maroney"
+poster_credit: "© Finding Satoshi Productions, Range Media Partners"
+poster_source_url: "https://www.complex.com/pop-culture/a/andrew-white/finding-satoshi-investigation-bitcoin-creator"
 
 synopsis: "Investigative documentary revealing the four-year evidence-based investigation into Bitcoin's creator Satoshi Nakamoto, featuring William D. Cohan and Tyler Maroney tracing Bitcoin's origins through rare interviews with major crypto figures."
 

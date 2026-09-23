@@ -14,8 +14,9 @@ layout: default
       <div class="cinema-hero-inner">
         {% if page.poster %}
           <figure class="cinema-hero-poster">
-            <img src="{{ page.poster | relative_url }}" alt="{{ page.title }} poster" loading="eager">
+            <img src="{{ page.poster | relative_url }}" alt="{{ page.poster_alt | default: page.title | escape }}" loading="eager">
             {% if page.poster_credit %}<figcaption>{{ page.poster_credit }}</figcaption>{% endif %}
+            {% if page.poster_source_url %}<figcaption><a href="{{ page.poster_source_url | escape }}" target="_blank" rel="noopener noreferrer">Poster source</a></figcaption>{% elsif page.poster_source %}<figcaption>{{ page.poster_source }}</figcaption>{% endif %}
           </figure>
         {% endif %}
         <div class="cinema-hero-meta">

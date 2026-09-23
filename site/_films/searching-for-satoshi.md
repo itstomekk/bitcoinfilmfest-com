@@ -5,6 +5,10 @@ year: 2023
 type: Documentary
 status: released
 director: "Paul Kemp"
+poster: "/assets/images/cinema/films/searching-for-satoshi-poster.jpg"
+poster_alt: "Searching for Satoshi poster, showing Bitcoin coin imagery, a city skyline, and the title in yellow lettering"
+poster_credit: "Poster artwork: Paul Kemp Productions"
+poster_source: "Bitcoin FilmFest 2024 internal archive"
 cast:
   - "Paul Kemp"
 studio: "CBC"

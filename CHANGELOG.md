@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-23 — Add three posters from the Bitcoin FilmFest 2024 archive
+
+- Added rights-cleared, standalone posters for Menger. Notes on the Margin, Gods of Their Own Religion and Searching for Satoshi: The Mysterious Disappearance of the Bitcoin Creator.
+- Recorded poster credits from the supplied BFF24 archive material.
+- Corrected the film-image front-matter schema for four previously added records so posters and stills render through the existing film layout.
+
 ## 2026-09-23 — Add official film assets batch 1 (web research + archive)
 
 - Added official poster and 4 scene stills to The Rise and Rise of Bitcoin (from official bitcoindoc.com gallery).
