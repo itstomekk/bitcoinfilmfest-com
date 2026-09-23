@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-23 — Add Crypto Castle artwork from the Bitcoin FilmFest 2026 archive
+
+- Added the supplied Crypto Castle Ep. 02 official-selection artwork to The Crypto Castle profile.
+- Recorded descriptive alt text, credit, and archive source information.
+
 ## 2026-09-23 — Add three posters from the Bitcoin FilmFest 2024 archive
 
 - Added rights-cleared, standalone posters for Menger. Notes on the Margin, Gods of Their Own Religion and Searching for Satoshi: The Mysterious Disappearance of the Bitcoin Creator.

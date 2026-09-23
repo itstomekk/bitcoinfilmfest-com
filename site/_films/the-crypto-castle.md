@@ -13,6 +13,10 @@ studio: ZDF/Arte
 release_date: 2020-11-16
 featured: false
 essential_rank: 6
+poster: "/assets/images/cinema/films/the-crypto-castle-poster.jpg"
+poster_alt: "Crypto Castle Ep. 02 poster, showing a stylized group gathered around computers, pizza and drinks, with Bitcoin and Ethereum symbols behind them"
+poster_credit: "Bitcoin FilmFest 2026 official-selection artwork"
+poster_source: "Bitcoin FilmFest 2026 internal archive"
 
 synopsis: "Documentary series following the story of Rory Johnston and his attempt to establish a Bitcoin sanctuary and cryptocurrency hub in Germany, exploring the vision of digital freedom and the challenges of practical implementation."
 
