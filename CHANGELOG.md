@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-23 — Add Unbankable film poster from BFF25 archive
+
+- Added official Unbankable poster (3x4 aspect ratio) from Bitcoin FilmFest 2025 media archive (Notion, Google Drive).
+- Source credit and alt text recorded in the Unbankable film profile.
+
 ## 2026-09-23 — Add rights-cleared film visuals
 
 - Added the clean Encode Productions poster to Death Athletic.
