@@ -17,6 +17,14 @@ stills:
     credit: "Simple Proof"
     source_url: "https://www.simpleproof.com/our-films"
     alt: "Promotional image for Immutable Democracy"
+  - path: "/assets/images/cinema/films/immutable-democracy-still2.jpg"
+    credit: "Simple Proof"
+    source_url: "https://www.simpleproof.com/our-films"
+    alt: "Still from Immutable Democracy"
+  - path: "/assets/images/cinema/films/immutable-democracy-still3.jpg"
+    credit: "Simple Proof"
+    source_url: "https://www.simpleproof.com/our-films"
+    alt: "Still from Immutable Democracy"
 synopsis: >
   The film follows Simple Proof's implementation of an immutable backup for
   Guatemala's 2023 presidential election. It shows how election documents were

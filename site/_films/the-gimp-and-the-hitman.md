@@ -27,6 +27,11 @@ bitcoin_angle: >
   hands on.
 platform: "General release and festival screenings"
 trailer: "https://www.youtube.com/watch?v=YH6zkQTu1DA"
+stills:
+  - path: "/assets/images/cinema/films/the-gimp-and-the-hitman-official-trailer-still.jpg"
+    credit: "Baby D Productions — official trailer"
+    source_url: "https://www.babydproductions.com/post/new-trailer-gimp-and-the-hitman"
+    alt: "Official trailer frame from The Gimp and the Hitman"
 awards:
   - "L'HIFF Barcelona 2024 — Best Film nomination"
   - "L'HIFF Barcelona 2024 — Best Director nomination (Dimitri Raft)"

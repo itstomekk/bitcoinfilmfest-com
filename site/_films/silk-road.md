@@ -27,6 +27,11 @@ bitcoin_angle: >
   depictions of Bitcoin's early dark-web era.
 platform: "Amazon Prime Video; Apple TV; Fandango at Home; Plex"
 trailer: "https://www.youtube.com/watch?v=LBOBuqBzn7w"
+stills:
+  - path: "/assets/images/cinema/films/silk-road-official-trailer-still.jpg"
+    credit: "Lionsgate — official trailer"
+    source_url: "https://www.lionsgate.com/movies/silk-road"
+    alt: "Official trailer frame from Silk Road"
 official_links:
   - label: "Lionsgate — official film page"
     url: "https://www.lionsgate.com/movies/silk-road"

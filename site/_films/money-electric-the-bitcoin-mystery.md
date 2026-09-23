@@ -46,6 +46,11 @@ platform: "HBO / Max; availability varies by territory"
 trailer: "https://www.youtube.com/watch?v=iSF0KGsFuI8"
 screenings:
   - "HBO and Max release — October 8, 2024"
+stills:
+  - path: "/assets/images/cinema/films/money-electric-official-trailer-still.jpg"
+    credit: "HBO — official trailer"
+    source_url: "https://www.youtube.com/watch?v=iSF0KGsFuI8"
+    alt: "Official trailer frame from Money Electric: The Bitcoin Mystery"
 official_links:
   - label: "Warner Bros. Discovery pressroom"
     url: "https://press.wbd.com/na/property/money-electric-bitcoin-mystery"

@@ -2,6 +2,13 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-23 — Add rights-cleared film visuals
+
+- Added the clean Encode Productions poster to Death Athletic.
+- Added official-trailer stills to Silk Road, Sovereign, The Gimp and the Hitman, and Money Electric: The Bitcoin Mystery.
+- Added two additional Simple Proof stills to Immutable Democracy.
+- Credits and source URLs are recorded in each film profile; all image files were validated as readable JPEGs before use.
+
 ## 2026-09-23 — Published film audit follow-up
 
 - Added verified IMDb reference links to LifeHack, Money Electric: The Bitcoin Mystery, New Money, One Attempt Remaining, and The Great Reset and the Rise of Bitcoin.
