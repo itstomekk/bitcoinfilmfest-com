@@ -31,4 +31,10 @@ sources:
     url: "https://www.aljazeera.com/video/featured-documentaries/2021/5/28/cryptopia-bitcoin-blockchains-and-the-internet"
 bff_screening: null
 featured: true
+poster: "/assets/images/cinema/films/cryptopia-poster.jpg"
+poster_alt: "Portrait-format Cryptopia poster showing a hooded person with a Bitcoin symbol on their back, facing a glowing futuristic city framed by hanging chains and code-like markings."
+poster_credit: "Courtesy of Cryptopia Film / Torsten Hoffmann"
+poster_source: "Official Cryptopia poster"
+poster_source_url: "https://cryptopiafilm.com/"
+poster_asset_type: "Theatrical poster"
 ---
