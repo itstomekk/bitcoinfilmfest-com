@@ -5,6 +5,11 @@ year: 2024
 type: Documentary
 status: released
 director: "Luke Willms"
+poster:
+  src: "/assets/images/cinema/films/unbankable-poster.jpg"
+  alt: "Unbankable — Luke Willms documentary poster (3x4 aspect ratio, featuring glowing open chest and African rainforest setting with film title)"
+  source: "Bitcoin FilmFest 2025 archive (Notion BFF25 media library, Google Drive shared folder)"
+  credit: "© Unbankable / Filmhub"
 writer: "Luke Willms"
 producer: "Luke Willms"
 cast:
