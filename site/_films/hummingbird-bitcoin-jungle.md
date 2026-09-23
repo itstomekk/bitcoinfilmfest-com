@@ -9,6 +9,11 @@ producers:
   - "Paul Keating"
 country: "Costa Rica"
 runtime: 76
+poster: "/assets/images/cinema/films/hummingbird-bitcoin-jungle-key-art.jpg"
+poster_alt: "Hummingbird: The Bitcoin Jungle Story landscape key art, showing a hummingbird above a sunlit jungle, a weathered Bitcoin symbol, five people and an older woman in round sunglasses"
+poster_credit: "Courtesy of Hummingbird — The Bitcoin Jungle Story"
+poster_source_url: "https://hummingbirdfilm.com/"
+poster_asset_type: "Landscape key art"
 synopsis: >
   Hummingbird: The Bitcoin Jungle Story traces the origins of a Bitcoin-friendly organic farmer's market in Uvita, Costa Rica. The documentary weaves together themes of trust, spirituality, and economic innovation, exploring how a jungle community embraced Bitcoin as part of their commitment to decentralized, community-driven commerce. The film follows the people and principles behind Bitcoin Jungle, documenting how an ancient prophecy and modern technology converge in the heart of Central America.
 bitcoin_angle: >
