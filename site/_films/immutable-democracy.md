@@ -12,6 +12,12 @@ studio: "Simple Proof"
 company: null
 country: "Guatemala"
 runtime: 17
+poster: "/assets/images/cinema/films/immutable-democracy-key-art.jpg"
+poster_alt: "Wide dark key-art image with the white Spanish title Democracia Inalterable above a long blue-black platform supported by several irregular human-sized forms against a black background."
+poster_credit: "Courtesy of Simple Proof / Immutable Democracy"
+poster_source: "Official Simple Proof film key art"
+poster_source_url: "https://www.simpleproof.com/our-films"
+poster_asset_type: "Landscape title-card key art"
 stills:
   - path: "/assets/images/cinema/films/immutable-democracy-still1.jpg"
     credit: "Simple Proof"

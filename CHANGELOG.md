@@ -2,6 +2,16 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-23 — Add Seeding Bitcoin official documentary poster
+
+- Added standalone poster art published in Bitcoin FilmFest's official Seeding Bitcoin announcement.
+- Confirmed the documentary's Trezor Academy production credit and recorded source URL, asset type, and descriptive alt text.
+
+## 2026-09-23 — Add Immutable Democracy official key art
+
+- Added title-card key art directly mapped to Immutable Democracy on Simple Proof's official film page.
+- Recorded the source URL, credit, asset type, and descriptive alt text.
+
 ## 2026-09-23 — Add official assets for Cryptopia, The End of Money and Life on Bitcoin
 
 - Added the official Cryptopia theatrical poster from Cryptopia Film.
