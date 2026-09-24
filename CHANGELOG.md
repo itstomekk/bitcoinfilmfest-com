@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-24 — Add official Banking on Bitcoin and The New Radical posters
+
+- Added Banking on Bitcoin poster artwork from director Christopher Cannucciari's official portfolio.
+- Added The New Radical festival poster directly embedded on Istic Illic Pictures' official film page.
+- Recorded source URLs, credits, asset types, and descriptive alt text for both assets.
+
 ## 2026-09-23 — Add Seeding Bitcoin official documentary poster
 
 - Added standalone poster art published in Bitcoin FilmFest's official Seeding Bitcoin announcement.

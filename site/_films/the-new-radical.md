@@ -49,4 +49,10 @@ sources:
   - label: "Rotten Tomatoes — release and availability listing"
     url: "https://www.rottentomatoes.com/m/the_new_radical_2017"
 featured: true
+poster: "/assets/images/cinema/films/the-new-radical-festival-poster.webp"
+poster_alt: "Portrait film poster with a black background, glitching white, red, and blue typography, repeated The New Radical text, and credits for Adam Bhala Lough and Clint Mansell."
+poster_credit: "Courtesy of Istic Illic Pictures / Adam Bhala Lough"
+poster_source: "Official The New Radical festival poster"
+poster_source_url: "https://www.isticillic.com/films/the-new-radical1-2cpml"
+poster_asset_type: "Festival poster"
 ---
