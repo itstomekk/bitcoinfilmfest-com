@@ -5,7 +5,7 @@ slug: banking-on-bitcoin
 year: 2014
 type: Documentary
 status: released
-director: Keegan Hamilton
+director: Christopher Cannucciari
 runtime: 85 min
 country: USA
 language: English
@@ -13,6 +13,12 @@ studio: Gravitas Ventures
 release_date: 2015-02-12
 featured: false
 essential_rank: 7
+poster: "/assets/images/cinema/films/banking-on-bitcoin-poster.webp"
+poster_alt: "Landscape image with a centered Banking on Bitcoin poster on a white canvas, showing a gold Bitcoin piggy bank beneath the title Banking on Bitcoin and the tagline In Open-Source We Trust."
+poster_credit: "Courtesy of Christopher Cannucciari / Dynamic Range"
+poster_source: "Official poster from Christopher Cannucciari's filmmaker portfolio"
+poster_source_url: "https://images.squarespace-cdn.com/content/v1/52efa20ae4b05875be7f8b74/1491077544793-Z5XDWDIIHL94R23L6Y4Q/bankingonbitcoin-poster.jpg"
+poster_asset_type: "Official poster presentation"
 
 synopsis: "Explores the rise of Bitcoin and the personalities behind it, following early adopters and entrepreneurs navigating a financial revolution."
 
@@ -56,7 +62,7 @@ tags:
 
 ## Overview
 
-*Banking on Bitcoin* documents the early emergence of Bitcoin as a revolutionary financial technology, following the key personalities and entrepreneurs who helped launch this decentralized currency movement. Director Keegan Hamilton interviews Bitcoin pioneers, early investors, and developers navigating the challenges and opportunities of a technology that threatens traditional banking infrastructure.
+*Banking on Bitcoin* documents the early emergence of Bitcoin as a revolutionary financial technology, following the key personalities and entrepreneurs who helped launch this decentralized currency movement. Director Christopher Cannucciari interviews Bitcoin pioneers, early investors, and developers navigating the challenges and opportunities of a technology that threatens traditional banking infrastructure.
 
 ## Key Themes
 
