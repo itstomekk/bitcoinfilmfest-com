@@ -43,6 +43,12 @@ bitcoin_angle: >
   by real economic necessity, not speculation.
 platform: "YouTube (free)"
 trailer: "https://www.youtube.com/watch?v=1REqqazVMDY"
+poster: "/assets/images/cinema/films/seeding-bitcoin-poster.png"
+poster_alt: "Vertical Seeding Bitcoin documentary poster showing an aerial view of a densely built African settlement, with a large orange profile silhouette over the scene and white title text."
+poster_credit: "Courtesy of Trezor Academy / SatoshiLabs"
+poster_source: "Poster published in Bitcoin FilmFest's official Seeding Bitcoin announcement"
+poster_source_url: "https://nostr.at/nevent1qqsfhq4k7flc6ah70mc5pqjdhgjdeaw7yd8pnn3hs7atl8j99s8vwfczyqwfvwrccp4j2xsuuvkwg0y6a20637t6f4cc5zzjkx030dkztt7t527pqnu"
+poster_asset_type: "Documentary poster"
 bff_screening: null
 sources:
   - label: "Seeding Bitcoin — full documentary on YouTube"
