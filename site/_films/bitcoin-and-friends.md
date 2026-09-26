@@ -13,6 +13,12 @@ studio: Independent production
 release_date: 2021-03-15
 featured: false
 essential_rank: 4
+poster: "/assets/images/cinema/films/bitcoin-and-friends-key-art.png"
+poster_alt: "Landscape key art for Bitcoin and Friends, showing a large stern-faced orange Bitcoin character flanked by two grey characters against a dark blue background."
+poster_credit: "Bitcoin & Friends / Bitcoin FilmFest local archive"
+poster_source: "Local Bitcoin FilmFest archive, matched to the official Bitcoin & Friends website"
+poster_source_url: "https://www.btcandfriends.com/assets/img/GroupPhotoTransparent.png"
+poster_asset_type: "Official key art"
 
 synopsis: "Animated educational series introducing Bitcoin and cryptocurrency concepts to general audiences through accessible, character-driven storytelling and humor."
 

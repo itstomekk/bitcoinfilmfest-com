@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-24 — Add locally archived official film visuals
+
+- Added Bitcoin FilmFest-archived official poster/key art to Bitcoin and Friends, Dare to Dream: A Story From El Salvador, Revolución Bitcoin, and The Great Reset and the Rise of Bitcoin.
+- Recorded source attribution, source URLs, asset type, and accurate alt text in each film profile.
+
 ## 2026-09-24 — Add official Banking on Bitcoin and The New Radical posters
 
 - Added Banking on Bitcoin poster artwork from director Christopher Cannucciari's official portfolio.

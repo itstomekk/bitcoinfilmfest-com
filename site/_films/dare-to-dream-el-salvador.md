@@ -16,6 +16,12 @@ platforms:
   - apple_tv
   - amazon_prime
 rating: Unrated (18+)
+poster: "/assets/images/cinema/films/dare-to-dream-poster.jpg"
+poster_alt: "Portrait poster for Dare to Dream: A Story From El Salvador, showing a sepia-toned person in profile looking upward above a hazy coastal landscape."
+poster_credit: "Dare to Dream / Bitcoin FilmFest local archive"
+poster_source: "Official Dare to Dream poster archived by Bitcoin FilmFest"
+poster_source_url: "https://daretodream-film.com/"
+poster_asset_type: "Official poster"
 synopsis: "Two young Salvadoran dreamers dedicate themselves to bringing hope and change to their violence-stricken country. An anonymous Bitcoin donor's support catalyzes their mission, leading to historic global change through Bitcoin Beach and El Salvador's revolutionary adoption of Bitcoin as legal tender."
 category: Documentary
 tags:

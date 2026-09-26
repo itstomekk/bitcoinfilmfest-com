@@ -20,6 +20,12 @@ studio: "New Frequency"
 company: null
 country: "Spain"
 runtime: 80
+poster: "/assets/images/cinema/films/revolucion-bitcoin-poster.png"
+poster_alt: "Portrait poster on a black background for Revolución Bitcoin, with the title and the subtitle El Nuevo Paradigma in white text above a yellow-orange-red gradient circle."
+poster_credit: "New Frequency / Bitcoin FilmFest local archive"
+poster_source: "Official poster archived by Bitcoin FilmFest and verified against Cines Embajadores"
+poster_source_url: "https://cinesembajadores.es/pelicula/revolucion-bitcoin/"
+poster_asset_type: "Official poster"
 synopsis: >
   This Spanish-language documentary gives voice to prominent Bitcoin figures in
   the Spanish-speaking world and follows the impact and evolution of Bitcoin as

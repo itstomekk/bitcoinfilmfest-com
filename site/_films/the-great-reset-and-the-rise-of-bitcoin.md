@@ -10,6 +10,12 @@ writer: "Pierre Corbin"
 producer: "Pierre Corbin"
 country: "Poland"
 runtime: 78
+poster: "/assets/images/cinema/films/the-great-reset-and-the-rise-of-bitcoin-poster.jpg"
+poster_alt: "Portrait poster for The Great Reset and the Rise of Bitcoin, showing a suited man in a dollar-bill paper boat above U.S. currency beneath the title."
+poster_credit: "Pierre Corbin / Bitcoin FilmFest local archive"
+poster_source: "Official poster archived by Bitcoin FilmFest"
+poster_source_url: "https://www.pierrecorbin.com/projects"
+poster_asset_type: "Official poster"
 synopsis: >
   A documentary examining the global monetary system, central banking, and the
   case for Bitcoin through interviews and a critique of the proposed Great Reset.
