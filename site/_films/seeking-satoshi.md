@@ -11,6 +11,12 @@ studio: "Channel 4"
 company: null
 country: "United Kingdom"
 runtime: null
+poster: "/assets/images/cinema/films/seeking-satoshi-key-art.jpg"
+poster_alt: "Landscape documentary key art showing a man in blue glasses and a black T-shirt before a blurred urban backdrop, overlaid with the title Seeking Satoshi and subtitle The Mystery Bitcoin Creator."
+poster_credit: "Courtesy of KEO Films / Channel 4"
+poster_source: "Official promotional key art from KEO Films"
+poster_source_url: "https://www.keofilms.com/projects/seeking-satoshi-the-mystery-bitcoin-creator"
+poster_asset_type: "Landscape promotional key art"
 synopsis: >
   Journalist Gabriel Gatehouse sets out to solve the greatest mystery in tech:
   who is Satoshi Nakamoto, Bitcoin's elusive creator? His investigation reveals

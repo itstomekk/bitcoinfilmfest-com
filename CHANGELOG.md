@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-26 — Add official web-sourced film visual assets batch 1
+
+- Added Hooroo Jackson's official theatrical poster to Aimy in a Cage.
+- Added KEO Films' official landscape promotional key art to Seeking Satoshi: The Mystery Bitcoin Creator.
+- Recorded source attribution, source URLs, asset type, and accurate alt text in both film profiles.
+
 ## 2026-09-24 — Add locally archived official film visuals
 
 - Added Bitcoin FilmFest-archived official poster/key art to Bitcoin and Friends, Dare to Dream: A Story From El Salvador, Revolución Bitcoin, and The Great Reset and the Rise of Bitcoin.

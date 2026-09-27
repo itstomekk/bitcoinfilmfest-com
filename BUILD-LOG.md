@@ -2,6 +2,22 @@
 
 This is a short operational record for builders. It records verified facts and active blockers. For implementation details, use `BUILDER-GUIDE.md` and `site/README.md`.
 
+## 2026-09-26 — Official web-sourced cinema visual assets, batch 1
+
+### Implemented
+
+- Prepared Hooroo Jackson's official theatrical poster for *Aimy in a Cage* and KEO Films' official landscape key art for *Seeking Satoshi: The Mystery Bitcoin Creator*.
+- Confirmed that the catalogue holds publication rights for the posters and stills included in this visual audit; no private permission records or correspondence are published in the repository.
+- Recorded first-party source URLs, credits, asset type, and descriptive alt text. Removed nonessential embedded metadata from the Seeking Satoshi JPEG before staging it for public distribution.
+
+### Verification
+
+- First-party source mapping: PASS. The Aimy local PNG is byte-identical to an image embedded on Hooroo Jackson's official film page; KEO Films declares the exact Seeking Satoshi JPEG as the page's Open Graph image.
+- Windows Jekyll production build: PASS (`C:/Ruby33-x64/bin/bundle.bat exec jekyll build --trace`).
+- Generated pages reference both staged visual assets: PASS.
+- `python scripts/check-public-repo.py`: PASS (1,267 tracked files; no forbidden paths or common credentials).
+- `git diff --cached --check`: PASS.
+
 ## 2026-09-19 — 30-film cinema catalogue merged
 
 ### Implemented

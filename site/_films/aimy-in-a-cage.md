@@ -17,6 +17,12 @@ studio: "Ankaboot Productions"
 company: null
 country: "USA"
 runtime: 79
+poster: "/assets/images/cinema/films/aimy-in-a-cage-poster.png"
+poster_alt: "Portrait sepia film poster for Aimy in a Cage, showing a solemn young woman with tear-like black makeup within a circular textured frame, with cast credits above and the title below."
+poster_credit: "Courtesy of Hooroo Jackson"
+poster_source: "Official Aimy in a Cage poster embedded on Hooroo Jackson's filmmaker page"
+poster_source_url: "https://hooroojackson.com/wp-content/uploads/2015/09/Screenshot-2025-03-28-at-10.12.54%E2%80%AFPM-688x1024.png"
+poster_asset_type: "Official theatrical poster"
 synopsis: >
   During a global virus outbreak, teenage orphan Aimy Micry is locked inside
   her family's apartment and threatened with a mind-altering procedure meant to
