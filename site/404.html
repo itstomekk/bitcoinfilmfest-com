@@ -1,13 +1,22 @@
 ---
 layout: default
-title: "Not found"
-description: "This reel's missing a frame."
+title: "404 - Missing from the programme"
+description: "This reel's missing a frame. Find your way back to the Bitcoin FilmFest programme."
 robots: "noindex, nofollow"
 permalink: /404.html
+screen: paper
 ---
 
-<div data-reveal>
-  <h1>404</h1>
-  <p>This reel's missing a frame — the page you're looking for doesn't exist.</p>
-  <p><a href="{{ '/' | relative_url }}">Back to the lobby</a></p>
-</div>
+<article class="reel-page" aria-labelledby="not-found-title" data-reveal>
+  <header class="page-masthead">
+    <p class="page-context">404 · Out of frame</p>
+    <h1 id="not-found-title">This reel's missing a frame.</h1>
+    <p>That address isn't in the programme. The festival is still showing — choose another way in.</p>
+  </header>
+
+  <nav class="cinema-section-nav" aria-label="Find your way around">
+    <a href="{{ '/' | relative_url }}">Back to the lobby</a>
+    <a href="{{ '/cinema/' | relative_url }}">Explore the Cinema hub</a>
+    <a href="{{ '/27/' | relative_url }}">Enter BFF’27</a>
+  </nav>
+</article>
