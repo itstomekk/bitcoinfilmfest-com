@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-30 — Style the missing-page route
+
+- Replaced the bare 404 with a missing-frame page using the shared BFF cinema layout and paper-screen treatment.
+- Added links to the lobby, Cinema hub and BFF’27, and kept the error page out of search results.
+- Verified the generated page, Jekyll build, public-repository safety scan and Python tests.
+
 ## 2026-09-30 — Fix the newsletter redirect, 12 dead links and the unclickable "All films" link, add Movie structured data
 
 - The newsletter form no longer sends new subscribers to the temporary GitHub Pages preview. Its `_next` value now uses the site URL helper, so it resolves to `/thanks/` on whichever domain the build targets.
