@@ -27,3 +27,6 @@ Thumbs.db
 # Editor/tooling
 .vscode/
 .idea/
+
+# Cloudflare Wrangler local state
+.wrangler/

@@ -73,6 +73,13 @@ This is a short operational record for builders. It records verified facts and a
 - Local HTTP smoke: `/presskit/`, selected presskit assets, `/26/press/`, EN/PL press pages, article CSS and `/26/` all returned 200.
 - Relative-link scan across all 34 press pages plus presskit: 35 files checked, 0 missing local targets.
 
+## 2026-09-26 — Fork deploys verified (GitHub Pages + Cloudflare Workers)
+
+### Verified
+
+- `deploy-pages.yml` passes GitHub's detected Pages base path to `--baseurl`. On the fork (`/bitcoinfilmfest-com-fork/`) the local build and a Chromium screenshot showed the homepage fully styled with 0 local 404s. The empty-base-path (upstream) output is unchanged. The fork's Pages deploy after merge passed.
+- The Cloudflare Workers Builds deploy of the fork's `main` passed with `wrangler.jsonc` (static assets from `site/_site`) and `scripts/cloudflare-build.sh`: 1,162 assets uploaded, Worker deployed.
+
 ## 2026-09-16 — Reel migration integration and media safety
 
 ### Implemented

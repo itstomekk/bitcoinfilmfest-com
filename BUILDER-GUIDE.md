@@ -15,6 +15,7 @@ This is the current entry point for anyone extending the Bitcoin FilmFest site. 
 ## Read these in order
 
 1. `HANDOFF-CURRENT.md` - current deployment, Git workflow, and non-regression handoff.
+   Also read `CLAUDE.md` (agent rules) and the latest entries in `ORGANISATION-LOG.md`.
 2. `site/README.md` - practical editing, build, preview, and deployment instructions.
 3. `site/design.md` - the locked visual system and page-design rules.
 4. `site/_data/navigation.yml` - live menu data.

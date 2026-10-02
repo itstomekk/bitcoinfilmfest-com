@@ -2,6 +2,16 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-09-30 — Credits page without heading
+
+- Removed the visible "Credits" heading from the top of the `/credits/` page, so the credits roll starts straight away. The browser tab title and the "Credits" menu link stay the same.
+
+## 2026-09-30 — Fork deploys: styled GitHub Pages and Cloudflare preview links
+
+- The Pages deploy now asks GitHub for the repository's own Pages address before building. Forks such as `Nomishka/bitcoinfilmfest-com-fork` (served at `/bitcoinfilmfest-com-fork/`) load their styles, scripts, and images again instead of showing a plain unstyled page. The main site on `bitcoinfilmfest.com` builds exactly as before.
+- Added `wrangler.jsonc` and `scripts/cloudflare-build.sh` so Cloudflare Workers Builds can publish a preview link for every branch of the fork. GitHub Pages remains the production site.
+- Added agent rules (`CLAUDE.md`), an organisation log, and a GitHub guide for the fork workflow.
+
 ## 2026-09-30 — Style the missing-page route
 
 - Replaced the bare 404 with a missing-frame page using the shared BFF cinema layout and paper-screen treatment.

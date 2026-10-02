@@ -1,6 +1,10 @@
 # Handoff — Bitcoin FilmFest Jekyll rebuild
 Updated: 2026-09-19
 
+## Fork workflow (added 2026-09-23)
+
+Work also happens in the fork `Nomishka/bitcoinfilmfest-com-fork`. Agents follow `CLAUDE.md`: changes go through PRs into the fork's `main`, every session ends with an `ORGANISATION-LOG.md` entry and a handoff update, and Nomishka sends merged work upstream using `docs/GITHUB-GUIDE-NOMISHKA.md`.
+
 ## Cross-project architecture
 
 The website is a curated public projection of the wider private project knowledge base in `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\Claude news\`. The CRM remains split across its existing local files and spreadsheets for now. Do not import the private KB or CRM into the Jekyll build. Read `PLAN-WEBSITE-ROADMAP.md` and `C:\Users\Lenovo\OneDrive\Bitcoin FilmFest\Claude news\HANDOFF-TO-VERIFIER-2026-08-31.md` before reorganizing or adding broad content.
@@ -107,7 +111,9 @@ The Jekyll rebuild is live through GitHub Pages and the configured custom domain
 
 ## Gotchas
 
-- **This cloud sandbox cannot run `jekyll build`.** `gem install jekyll` fails on the `json` gem's native extension (no ruby-dev headers, no sudo). This has been true across multiple sessions — don't waste time retrying it here. Build and visually verify from Tomek's machine or via the GitHub Actions run itself.
+- **The cloud sandbox CAN run `jekyll build` now (checked 2026-09-26).** Run `bundle config set --local path /tmp/claude-0/bundle && bundle install`, then build with `LANG=C.UTF-8 LC_ALL=C.UTF-8 bundle exec jekyll build`. Without UTF-8 the Primer theme SCSS fails with "Invalid US-ASCII character". Chromium for screenshots is at `/opt/pw-browsers/chromium`.
+- **Cloudflare previews (fork).** `wrangler.jsonc` + `scripts/cloudflare-build.sh` let Cloudflare Workers Builds serve `site/_site` as a static-assets Worker for PR preview links. Dashboard settings: build command `bash scripts/cloudflare-build.sh`, deploy `npx wrangler deploy`, preview left at the default `npx wrangler preview` with non-production branch builds enabled. The Worker `name` must match the dashboard Worker, and `wrangler.jsonc` must keep its (empty) `previews` block or preview builds fail. Dashboard root directory must be `/`, not `site`. GitHub Pages remains production.
+- **Forks deploy under a subpath.** `deploy-pages.yml` passes GitHub's detected Pages base path to `--baseurl`. Never hard-code a base path; use `relative_url` for every internal link and asset.
 - **The "perforation pattern was removed" note from the previous handoff is now stale.** An `effect-lab` commit (already pushed, before this session) added a full `.cinema-atmosphere` texture layer to `_layouts/default.html` — grain, scratches, dust, flicker, vignette, and `.cinema-sprocket` holes — active site-wide on every paper-screen page via `.stage--paper .cinema-sprocket`. This is intentional and already live; do not remove it thinking it's leftover cruft.
 - **OneDrive sync in this environment sometimes locks empty folders** (`rmdir` can fail with "Operation not permitted" on an empty dir you just created) — harmless, doesn't affect the Jekyll build, just don't be alarmed by it.
 - Large private files (`bitcoin-cinema-kb.md`, `QUERIES-KNOWLEDGE.md`, `BFF27-CONTACTS.md`) exceed normal read windows — use grep/line-number jumps, not full reads. `HANDOFF-CINEMA-TASKS.md` already has the line numbers for the next batch of KB entries, so this shouldn't come up again soon.

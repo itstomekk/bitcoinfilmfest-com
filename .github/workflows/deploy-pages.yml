@@ -44,9 +44,17 @@ jobs:
           bundle config set --local path "$RUNNER_TEMP/bff-bundle"
           bundle install
 
+      # Ask GitHub where this repository's Pages site is served. Upstream uses
+      # the custom domain (empty base path); a fork is served from a subpath
+      # such as /bitcoinfilmfest-com-fork, and without it CSS, JS, and images
+      # 404 and the page renders unstyled.
+      - name: Detect this repository's Pages base path
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Build Jekyll site
         working-directory: site
-        run: bundle exec jekyll build --trace --config _config.yml
+        run: bundle exec jekyll build --trace --config _config.yml --baseurl "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
