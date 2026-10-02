@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-02 — Homepage hero text moves right, clear of the logo
+
+- On screens 1024px and wider, the homepage title, tagline and showtimes now sit on the right half of the blue screen. Before, they printed over the large BFF aperture logo in the background art on the left.
+- The block keeps a right margin so the showtimes stay clear of Mr. Rabbit's camera. Tablet portrait and phone layouts are unchanged.
+- Verified with a local Jekyll build and screenshots at 1919, 1366, 1024 and 390px wide.
+
 ## 2026-09-30 — Style the missing-page route
 
 - Replaced the bare 404 with a missing-frame page using the shared BFF cinema layout and paper-screen treatment.
