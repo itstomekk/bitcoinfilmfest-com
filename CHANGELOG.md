@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-04 — BFF’26 presented-title count (local draft)
+
+- Replaced the aggregate “16 films screened” claim on `/26/` and the BFF’26 recap statistics on `/27/` with “18 titles presented”. Clarified that the titles were at different stages of development, including concepts.
+- Preserved all 18 named recap titles. No individual title was assigned a completion stage or a new screening claim.
+- Added a regression test for the 18 unique titles and the distinction between presentations and finished-film screenings. These changes remain local; no publication is implied.
+
 ## 2026-10-04 — BFF’27 gallery caption containment and contrast
 
 - Constrained the photo rail to the cinema screen instead of the viewport. The old viewport-wide rail put caption letters outside `.screen-canvas` and they were clipped on phones and desktops.
