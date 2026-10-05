@@ -2,6 +2,16 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-04 — Homepage rabbit fix, BFF’27 landing page, mobile touch-target pass
+
+- Homepage: below 64rem Mr. Rabbit used to sit on top of the Enter / Rewind / Join rows. He is now smaller and tucked into the bottom corner of the hero, which has matching bottom padding. Verified with a bounding-box sweep from 320 to 1920 px: no overlap with any text, no horizontal scroll.
+- `/27/` rebuilt as a landing page in the BFF’26 / BFF’25 style: hero with a disabled “Tickets coming soon” button and a “Tell me first” email link, what is BFF, BFF’26 in numbers, what to expect, the four-day rhythm (Thursday opening party, Friday films and panels, Saturday films, workshops and side events, Sunday gala, awards and goodbye party), a tickets block, the film call, collaboration links, BFF’26 friends logos, photo rail and a FAQ. Venue reads “Kinoteka, Warsaw”. The page says plainly that the programme is not announced and the four days follow the BFF’26 rhythm.
+- The two ticket placeholders are marked in a comment at the top of `site/27.md`; swap them for a link when the ticket URL exists.
+- `check_bff27_page.py` and `test_bff27_page.py` now assert the landing-page contract (ticket placeholder, venue, day headings) instead of the old early-bird wording.
+- Mobile pass (≤ 40rem): standalone text links on the homepage, edition pages, Reel tabs, back links, sources, contact and sitemap now have a 44 px touch target; the smallest BFF’26 and BFF’25 labels are lifted to 12 px.
+- Press kit and `/26/press/` (36 pages, EN and PL): removed the stale “Tickets” and “Get a ticket” header and footer links; BFF’26 is over.
+- `/26/` is unchanged on purpose.
+
 ## 2026-09-30 — Style the missing-page route
 
 - Replaced the bare 404 with a missing-frame page using the shared BFF cinema layout and paper-screen treatment.
