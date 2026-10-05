@@ -5234,12 +5234,15 @@ body:has(.edition-page--bff26) .topnav .nav-link {
   margin: 0 auto;
   filter: drop-shadow(0 1rem 1.5rem color-mix(in oklch, var(--color-ink) 42%, transparent));
 }
-.bff27-hero-art figcaption,.bff27-photo-caption { margin-block-start:var(--space-sm); color:var(--color-muted); font-size:var(--text-xs); letter-spacing:.08em; text-transform:uppercase; }
+.bff27-hero-art figcaption,.bff27-photo-caption { margin-block-start:var(--space-sm); font-size:var(--text-xs); letter-spacing:.08em; text-transform:uppercase; }
+/* Muted ink is too faint on blue and on black; choose each surface's ink. */
+.bff27-hero-art figcaption { color:var(--color-ink); }
+.bff27-photo-caption { color:var(--color-paper); }
 .bff27-index { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); margin:0; padding:0; border-block:1px solid color-mix(in oklch,var(--color-ink) 22%,transparent); list-style:none; }
 .bff27-index a { display:block; min-width:0; padding:var(--space-md) var(--space-sm); border-inline-end:1px solid color-mix(in oklch,var(--color-ink) 18%,transparent); color:var(--color-ink); font-family:var(--font-display); font-size:var(--text-sm); text-decoration:none; }
 .bff27-index a:last-child { border-inline-end:0; }
 .bff27-index a:hover { color:var(--archive-blue); transform:translateX(var(--space-2xs)); }
-.bff27-index span { display:block; margin-block-end:var(--space-2xs); color:var(--archive-blue); font-size:var(--text-xs); }
+.bff27-index span { display:block; margin-block-end:var(--space-2xs); color:var(--color-ink); font-size:var(--text-xs); }
 .bff27-band,.bff27-photo-band { width:100%; scroll-margin-block-start:var(--nav-height); }
 .bff27-band--dark { background:var(--color-room-raised); color:var(--color-paper); }
 .bff27-band--paper { background:var(--color-paper); color:var(--color-ink); }
@@ -5262,7 +5265,9 @@ body:has(.edition-page--bff26) .topnav .nav-link {
 .bff27-cta--dark { border-color:color-mix(in oklch,var(--color-paper) 35%,transparent); color:var(--color-paper); }
 .bff27-small-note { margin-block-start:var(--space-lg); color:var(--color-muted); font-size:var(--text-xs); }
 .bff27-photo-band { background:var(--color-room); color:var(--color-paper); }
-.bff27-photo-rail { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2px; width:100vw; margin-inline:calc(50% - 50vw); }
+/* Bleed to the cinema screen, not the viewport: .screen-canvas clips at the
+   room frame, so viewport-wide figures lose their first caption letters. */
+.bff27-photo-rail { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2px; width:calc(100vw - var(--frame-side) * 2); margin-inline:calc(50% - 50vw + var(--frame-side)); }
 .bff27-photo-rail figure { min-width:0; margin:0; overflow:hidden; background:var(--color-ink); }
 .bff27-photo-rail img { display:block; width:100%; aspect-ratio:4 / 3; object-fit:cover; margin:0; opacity:.88; transition:opacity var(--dur-short) var(--ease-out), transform var(--dur-short) var(--ease-out); }
 .bff27-photo-rail figure:hover img { opacity:1; transform:scale(1.025); }

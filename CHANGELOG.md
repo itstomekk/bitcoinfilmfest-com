@@ -2,6 +2,13 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-04 — BFF’27 gallery caption containment and contrast
+
+- Constrained the photo rail to the cinema screen instead of the viewport. The old viewport-wide rail put caption letters outside `.screen-canvas` and they were clipped on phones and desktops.
+- Switched the hero caption and section numbers to dark ink on blue, and the archive explanation to paper on black. The targeted small-text checks now meet 4.5:1 contrast.
+- Added `scripts/check_bff27_readability_browser.py`: optional Playwright checks all caption characters against clipping ancestors, checks small-text contrast, and covers nine widths from 320 to 1920 px. Requires Playwright plus Chromium; accepts a generated site directory or HTTP origin.
+- Page content, festival facts, shared cinema framing, and other edition pages are unchanged.
+
 ## 2026-10-04 — Homepage rabbit fix, BFF’27 landing page, mobile touch-target pass
 
 - Homepage: below 64rem Mr. Rabbit used to sit on top of the Enter / Rewind / Join rows. He is now smaller and tucked into the bottom corner of the hero, which has matching bottom padding. Verified with a bounding-box sweep from 320 to 1920 px: no overlap with any text, no horizontal scroll.
