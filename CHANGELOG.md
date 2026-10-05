@@ -9,6 +9,7 @@ Short, human-readable record of public website changes. One dated entry is requi
 - The two ticket placeholders are marked in a comment at the top of `site/27.md`; swap them for a link when the ticket URL exists.
 - `check_bff27_page.py` and `test_bff27_page.py` now assert the landing-page contract (ticket placeholder, venue, day headings) instead of the old early-bird wording.
 - Mobile pass (≤ 40rem): standalone text links on the homepage, edition pages, Reel tabs, back links, sources, contact and sitemap now have a 44 px touch target; the smallest BFF’26 and BFF’25 labels are lifted to 12 px.
+- Press kit and `/26/press/` (36 pages, EN and PL): removed the stale “Tickets” and “Get a ticket” header and footer links; BFF’26 is over.
 - `/26/` is unchanged on purpose.
 
 ## 2026-09-30 — Style the missing-page route
