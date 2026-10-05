@@ -9,7 +9,7 @@ class Bff27PageContractTests(unittest.TestCase):
     def setUp(self):
         self.source = PAGE.read_text(encoding="utf-8")
 
-    def test_page_has_early_bird_contract(self):
+    def test_page_has_landing_page_contract(self):
         required = (
             "layout: default",
             "permalink: /27/",
@@ -18,12 +18,16 @@ class Bff27PageContractTests(unittest.TestCase):
             "The next frame",
             "24–27 June 2027",
             "Warsaw",
-            "Early-bird page",
-            "Early-bird access",
+            "Tickets coming soon",
+            "Kinoteka, Warsaw",
+            "bff27-btn--soon",
+            "BFF27%20tickets%20-%20tell%20me%20first",
+            "Opening party",
+            "Films &amp; panels",
+            "Gala, awards &amp; goodbye party",
             "BFF27%20film%20submission",
             "BFF27%20collaboration",
             "What is BFF?",
-            "The atmosphere",
         )
         for marker in required:
             with self.subTest(marker=marker):

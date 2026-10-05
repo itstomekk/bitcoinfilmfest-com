@@ -10,7 +10,10 @@ REQUIRED_MARKERS = (
     "permalink: /27/",
     "BFF’27",
     "24–27 June 2027",
-    "Early-bird page",
+    "Tickets coming soon",
+    "Kinoteka, Warsaw",
+    "bff27-btn--soon",
+    "BFF27%20tickets%20-%20tell%20me%20first",
     "BFF27%20film%20submission",
     "BFF27%20collaboration",
 )
