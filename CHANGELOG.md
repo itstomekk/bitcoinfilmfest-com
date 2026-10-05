@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-05 — GoatCounter analytics
+
+- Added the GoatCounter privacy-friendly analytics snippet to the shared cinema layout (`_layouts/default.html`), so every page reports to `bitcoinfilmfest.goatcounter.com`. Cookieless, ~3.5 KB, loads asynchronously before `</body>`.
+
 ## 2026-10-04 — BFF’26 presented-title count (local draft)
 
 - Replaced the aggregate “16 films screened” claim on `/26/` and the BFF’26 recap statistics on `/27/` with “18 titles presented”. Clarified that the titles were at different stages of development, including concepts.
