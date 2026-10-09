@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-09 — Press kit shortcuts and 404 redirect
+
+- Added `/logo/`, `/logos/`, `/laurels/`, `/26/logo/`, `/26/logos/` and `/26/laurels/` as noindex redirects to `/presskit/`. They are excluded from the sitemap.
+- The custom 404 page now shows a short countdown and sends visitors to the home page after 8 seconds. The link choices stay visible, and the script loads only on that page.
+
 ## 2026-10-05 — GoatCounter analytics
 
 - Added the GoatCounter privacy-friendly analytics snippet to the shared cinema layout (`_layouts/default.html`), so every page reports to `bitcoinfilmfest.goatcounter.com`. Cookieless, ~3.5 KB, loads asynchronously before `</body>`.

@@ -5,6 +5,7 @@ description: "This reel's missing a frame. Find your way back to the Bitcoin Fil
 robots: "noindex, nofollow"
 permalink: /404.html
 screen: paper
+extra_script: /assets/js/404-redirect.js
 ---
 
 <article class="reel-page" aria-labelledby="not-found-title" data-reveal>
@@ -12,6 +13,7 @@ screen: paper
     <p class="page-context">404 · Out of frame</p>
     <h1 id="not-found-title">This reel's missing a frame.</h1>
     <p>That address isn't in the programme. The festival is still showing — choose another way in.</p>
+    <p data-redirect-home="{{ '/' | relative_url }}" data-redirect-seconds="8">Taking you back to the lobby in <span data-redirect-count>8</span> seconds.</p>
   </header>
 
   <nav class="cinema-section-nav" aria-label="Find your way around">
