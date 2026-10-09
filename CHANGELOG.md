@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-09 — Press kit: logos, laurels, posters and rabbit
+
+- Reorganised `/presskit/` into Logos, Laurels, Posters, Rabbit, and Colors & Type, with a jump menu at the top.
+- Moved the blue BFF’26 square (`bff26-minilogo.png`, now `bff26-laurels-blue.png`) into Laurels. Posters and the rabbit mascot now have their own sections instead of sitting under Logos.
+- Added the gradient icon and wordmark logos and a vector icon (SVG), the general white laurels, the four BFF’26 award laurels (web size), the five BFF’24 archive laurels, a sponsor-free BFF’26 poster, the BFF’24 poster, and the rabbit mark, ears and roadshow-car artwork.
+
 ## 2026-10-09 — Press kit shortcuts and 404 redirect
 
 - Added `/logo/`, `/logos/`, `/laurels/`, `/26/logo/`, `/26/logos/` and `/26/laurels/` as noindex redirects to `/presskit/`. They are excluded from the sitemap.
