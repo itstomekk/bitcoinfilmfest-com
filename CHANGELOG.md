@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-09 — Press kit current-edition assets only
+
+- Replaced the visible BFF’26 blue laurel with a 2027 version and made 2027 award-laurel file names/card labels explicit. Added a sponsor-free vertical BFF’27 poster alongside the horizontal one.
+- Hid BFF’26 event/selection laurels and posters from the current `/presskit/` index; the original BFF’26 poster files remain available for existing BFF’26 press-room links. The current press kit brand heading stays year-neutral.
+
 ## 2026-10-09 — BFF'27 social artwork and press kit
 
 - Created BFF'27 poster artwork from the existing BFF'26 horizontal poster, changing the year and dates to June 24–27, 2027, and created a 1200×630 OG/social card. Updated the BFF'27 page, site-wide default social image and explicit BFF'26 preview image so edition shares use the correct edition.
