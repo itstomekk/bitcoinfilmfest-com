@@ -2,6 +2,13 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-09 — BFF'27 social artwork and press kit
+
+- Created BFF'27 poster artwork from the existing BFF'26 horizontal poster, changing the year and dates to June 24–27, 2027, and created a 1200×630 OG/social card. Updated the BFF'27 page, site-wide default social image and explicit BFF'26 preview image so edition shares use the correct edition.
+- Added matching 2027 event and Official Selection laurels, carrying forward the original laurel artwork with the year updated.
+- Expanded partner logo choices with the original wordmark PNG/SVG and blue-outline icon. Updated the press kit to make logos, laurels, posters and rabbit distinct, and explain that laurels are only for films selected or awarded at BFF; partners may choose the logo version that suits their layout.
+- Added BFF'27 poster and laurels cards, and updated the press-kit social preview, edition header and footer.
+
 ## 2026-10-09 — Press kit: logos, laurels, posters and rabbit
 
 - Reorganised `/presskit/` into Logos, Laurels, Posters, Rabbit, and Colors & Type, with a jump menu at the top.

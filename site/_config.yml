@@ -9,7 +9,7 @@ url: "https://bitcoinfilmfest.com"
 baseurl: ""
 lang: "en"
 locale: "en_US"
-social_image: "/assets/images/social/bff-social-default.jpg"
+social_image: "/assets/images/social/bff-social-2027.jpg"
 logo: "/assets/images/brand/bff-logo-mark-white.png"
 twitter:
   username: "bitcoinfilmfest"
@@ -59,7 +59,7 @@ defaults:
       type: "pages"
     values:
       layout: "default"
-      image: "/assets/images/social/bff-social-default.jpg"
+      image: "/assets/images/social/bff-social-2027.jpg"
   - scope:
       path: ""
       type: "reel"
@@ -67,7 +67,7 @@ defaults:
       layout: "reel"
       nav_label: "Reel"
       screen: "paper"
-      image: "/assets/images/social/bff-social-default.jpg"
+      image: "/assets/images/social/bff-social-2027.jpg"
 
   - scope:
       path: ""
@@ -76,7 +76,7 @@ defaults:
       layout: "film"
       nav_label: "Films"
       screen: "paper"
-      image: "/assets/images/social/bff-social-default.jpg"
+      image: "/assets/images/social/bff-social-2027.jpg"
   - scope:
       path: ""
       type: "companies"
@@ -84,7 +84,7 @@ defaults:
       layout: "company"
       nav_label: "Companies"
       screen: "paper"
-      image: "/assets/images/social/bff-social-default.jpg"
+      image: "/assets/images/social/bff-social-2027.jpg"
 
 markdown: kramdown
 kramdown:
