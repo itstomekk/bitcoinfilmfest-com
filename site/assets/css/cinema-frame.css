@@ -1755,6 +1755,17 @@ body.is-navigating {
   }
 }
 
+/* Wide screens: the parallax art puts the BFF aperture mark on the left third,
+   so the hero copy moves to the right half instead of printing over it. The end
+   margin keeps the showtimes clear of Mr. Rabbit's camera (23rem at this width). */
+@media (min-width: 64rem) {
+  .home-copy {
+    justify-self: end;
+    width: min(100%, 34rem);
+    margin-inline-end: 12rem;
+  }
+}
+
 @media (min-width: 60rem) and (hover: hover) and (pointer: fine) {
   /* main.js opens the hovered native details group and closes every sibling. */
   .showtime:hover {
