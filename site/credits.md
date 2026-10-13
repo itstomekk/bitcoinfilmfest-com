@@ -107,9 +107,7 @@ screen: credits
 </style>
 
 <article class="credits-page">
-  <header class="page-masthead">
-    <h1>Credits</h1>
-  </header>
+  <h1 class="sr-only">Credits</h1>
 
   <div class="credits-roll" data-credits-roll>
     {% for section in site.data.credits.sections %}

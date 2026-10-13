@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-13 — Credits page without visible heading
+
+- Removed the visible "Credits" heading from the top of the `/credits/` page, so the credits roll starts straight away. The page keeps a screen-reader-only "Credits" `<h1>` for accessibility; the browser tab title and the "Credits" menu link stay the same.
+
 ## 2026-10-11 — IndexNow key file
 
 - Added the IndexNow verification key file at the site root so new and updated pages can be submitted to Bing and other participating search engines. No visible page changes.
