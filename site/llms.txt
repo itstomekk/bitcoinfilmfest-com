@@ -6,7 +6,8 @@ sitemap: false
 # Bitcoin FilmFest
 
 > The heart of Bitcoin Cinema. Bitcoin FilmFest is an independent film festival
-> in Warsaw, Poland, running annually since 2023, dedicated to films,
+> in Warsaw, Poland. The project was founded in late 2022 and the first
+> festival took place in March 2023; it has run annually since. It is dedicated to films,
 > documentaries, and creators exploring Bitcoin and its culture. Also home to
 > a public database of Bitcoin-related films and production companies.
 
@@ -31,7 +32,7 @@ BFF'27 runs June 24–27, 2027 at Kinoteka, Warsaw.
 - [/sitemap.xml](https://bitcoinfilmfest.com/sitemap.xml): full XML sitemap of indexable pages.
 - [/feed.xml](https://bitcoinfilmfest.com/feed.xml): Atom feed for blog/newsletter posts.
 - Every film and company page carries Open Graph, Twitter Card, and JSON-LD
-  (Organization, WebSite) structured metadata for citation and preview use.
+  (Organization, WebSite) structured metadata; film pages also carry Movie markup for citation and preview use.
 
 ## Notes for AI agents and crawlers
 

@@ -2,7 +2,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 {% assign seo_title = page.seo_title | default: page.title | default: site.title %}
 {% if page.title == site.title %}{% assign seo_title = site.title | append: " - " | append: site.tagline %}{% elsif page.title %}{% assign seo_title = page.title | append: " - " | append: site.title %}{% endif %}
-{% assign seo_description = page.description | default: site.description %}
+{%- comment %}Films without a hand-written description use their own synopsis (trimmed for search snippets), never the generic site line.{% endcomment %}
+{%- if page.description %}{% assign seo_description = page.description %}{% elsif page.synopsis %}{% assign seo_description = page.synopsis | strip_newlines | remove: '*' | truncatewords: 20, '…' %}{% else %}{% assign seo_description = site.description %}{% endif %}
 {%- comment %}
   A fuller description for the Movie node than the search-snippet meta description:
   schema consumers want the synopsis, search engines want it under ~160 characters.
@@ -66,6 +67,7 @@
       "url": {{ '/' | absolute_url | jsonify }},
       "logo": {{ site.logo | absolute_url | jsonify }},
       "email": {{ site.contact_email | jsonify }},
+      "foundingDate": "2022",
       "sameAs": [{{ site.social.x | jsonify }}, {{ site.social.instagram | jsonify }}, {{ site.social.telegram | jsonify }}, {{ site.social.linkedin | jsonify }}]
     },
     {
@@ -93,16 +95,24 @@
     }{% endif %}{% if page.schema_type == 'Festival' %},
     {
       "@type": "Festival",
-      "name": {{ page.schema_name | default: page.title | append: ' - ' | append: site.title | jsonify }},
+      "name": {% if page.schema_name %}{{ page.schema_name | jsonify }}{% else %}{{ page.title | append: ' - ' | append: site.title | jsonify }}{% endif %},
       "description": {{ seo_description | jsonify }},
       "url": {{ page.url | absolute_url | jsonify }},
+      "image": {{ seo_image | absolute_url | jsonify }},
       "startDate": {{ page.start_date | jsonify }},
       "endDate": {{ page.end_date | jsonify }},
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "eventStatus": "https://schema.org/EventScheduled",
       "location": {
         "@type": "Place",
-        "name": {{ page.location_name | jsonify }}
+        "name": {{ page.location_name | jsonify }}{% if page.location_street %},
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": {{ page.location_street | jsonify }},
+          "postalCode": {{ page.location_postal | jsonify }},
+          "addressLocality": {{ page.location_city | jsonify }},
+          "addressCountry": {{ page.location_country | jsonify }}
+        }{% endif %}
       },
       "organizer": {
         "@type": "Organization",

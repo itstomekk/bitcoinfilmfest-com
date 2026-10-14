@@ -4,6 +4,7 @@ title: "Cinema effect lab"
 nav_label: "Effect lab"
 description: "Private comparison page for Bitcoin FilmFest cinema-screen effects."
 robots: "noindex, nofollow"
+sitemap: false
 screen: paper
 ---
 
