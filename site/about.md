@@ -2,7 +2,7 @@
 layout: default
 title: "Storyboard"
 nav_label: "Storyboard"
-description: "An independent project dedicated to Bitcoin film and culture, running the annual Bitcoin FilmFest in Warsaw since 2023."
+description: "An independent project dedicated to Bitcoin film and culture, founded in 2022, running the annual Bitcoin FilmFest in Warsaw since the first festival in March 2023."
 permalink: /about/
 screen: paper
 ---

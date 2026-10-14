@@ -2,6 +2,13 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-13 — SEO metadata fixes
+
+- Film pages without a hand-written description now use their own synopsis (trimmed) as the search snippet instead of the generic homepage line.
+- BFF'27 Festival structured data: added the Kinoteka street address and an image, and the festival name no longer repeats the site title.
+- Organization structured data now states the founding year (2022). `llms.txt` and `/about/` state the same story everywhere: project founded late 2022, first festival March 2023. `llms.txt` also mentions the film pages' Movie markup.
+- The private effect-lab page is no longer listed in the sitemap.
+
 ## 2026-10-11 — IndexNow key file
 
 - Added the IndexNow verification key file at the site root so new and updated pages can be submitted to Bing and other participating search engines. No visible page changes.
