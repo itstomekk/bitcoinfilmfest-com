@@ -34,6 +34,7 @@
     - category: "Best Short"
       film: "HODL"
       director: "The Garcia Brothers — Drew Garcia and Nate Garcia"
+      film_url: "/cinema/films/hodl/"
     - category: "Best Story"
       film: "Searching for Satoshi"
       director: "Paul Kemp"

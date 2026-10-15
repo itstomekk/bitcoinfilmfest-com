@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-15 — HodL film profile
+
+- Added a film profile for *HodL* (2020, 3-minute short by The Garcia Brothers, Ice Cream Entertainment) at `/cinema/films/hodl/`, with cast, credits, the Bitcoin angle, where to watch (YouTube, IndeeHub), its BFF'24 ShortFest screening and its Best Short Golden Rabbit.
+- The BFF'24 Best Short row on `/awards/` now links to the new profile.
+
 ## 2026-10-14 — Films hub title and intro
 
 - The `/cinema/films/` page now has the title "Bitcoin Movies & Documentaries: The Complete List", a matching heading and an answer-first intro that states what the list is, how many titles it holds and what qualifies. The counts are generated from the film files.
