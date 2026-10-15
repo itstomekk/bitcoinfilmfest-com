@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-14 — Films hub title and intro
+
+- The `/cinema/films/` page now has the title "Bitcoin Movies & Documentaries: The Complete List", a matching heading and an answer-first intro that states what the list is, how many titles it holds and what qualifies. The counts are generated from the film files.
+
 ## 2026-10-13 — SEO metadata fixes
 
 - Film pages without a hand-written description now use their own synopsis (trimmed) as the search snippet instead of the generic homepage line.
