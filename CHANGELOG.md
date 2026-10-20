@@ -2,10 +2,9 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
-## 2026-10-20 — Studio Gulch and two Bitcoin shorts
+## 2026-10-20 — Studio Gulch profiles removed
 
-- Added a company profile for Studio Gulch (El Salvador) at `/cinema/companies/studio-gulch/`.
-- Added two 2026 film profiles by Juan Galt for Studio Gulch: *Bitcoin is like a tidal wave...* at `/cinema/films/bitcoin-tidal-wave/` and *Not everyone is prepared to pay the Bitcoin Toll of Hormuz...* at `/cinema/films/bitcoin-toll-of-hormuz/`. Both link to the official posts on X and Instagram. No poster is used until image rights are cleared.
+- Removed the Studio Gulch company profile and its two short film profiles (*Bitcoin is like a tidal wave...*, *Not everyone is prepared to pay the Bitcoin Toll of Hormuz...*), added earlier the same day. They are too small for the Cinema database.
 
 ## 2026-10-15 — HodL film profile
 
