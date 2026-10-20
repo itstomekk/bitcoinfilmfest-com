@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-19 — BFF26 Future of Money AI Film Contest winner
+
+- Added the public Chronicle record for *The Agreement* by Nartamoto, chosen by live audience vote at BFF26 on 7 June 2026 and awarded 1,500,000 sats.
+
 ## 2026-10-15 — HodL film profile
 
 - Added a film profile for *HodL* (2020, 3-minute short by The Garcia Brothers, Ice Cream Entertainment) at `/cinema/films/hodl/`, with cast, credits, the Bitcoin angle, where to watch (YouTube, IndeeHub), its BFF'24 ShortFest screening and its Best Short Golden Rabbit.
