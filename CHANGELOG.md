@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-20 — Studio Gulch and two Bitcoin shorts
+
+- Added a company profile for Studio Gulch (El Salvador) at `/cinema/companies/studio-gulch/`.
+- Added two 2026 film profiles by Juan Galt for Studio Gulch: *Bitcoin is like a tidal wave...* at `/cinema/films/bitcoin-tidal-wave/` and *Not everyone is prepared to pay the Bitcoin Toll of Hormuz...* at `/cinema/films/bitcoin-toll-of-hormuz/`. Both link to the official posts on X and Instagram. No poster is used until image rights are cleared.
+
 ## 2026-10-15 — HodL film profile
 
 - Added a film profile for *HodL* (2020, 3-minute short by The Garcia Brothers, Ice Cream Entertainment) at `/cinema/films/hodl/`, with cast, credits, the Bitcoin angle, where to watch (YouTube, IndeeHub), its BFF'24 ShortFest screening and its Best Short Golden Rabbit.
