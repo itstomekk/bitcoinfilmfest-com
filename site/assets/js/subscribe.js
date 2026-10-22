@@ -18,6 +18,21 @@
       }
       if (status) status.textContent = 'Sending…';
 
+      var blocklist = form.querySelector('input[name="_blacklist"]');
+      var contact = form.querySelector('[name="contact"]');
+      var next = form.querySelector('input[name="_next"]');
+      if (blocklist && contact) {
+        var value = contact.value.toLowerCase();
+        var blocked = blocklist.value.split(',').some(function (phrase) {
+          phrase = phrase.trim().toLowerCase();
+          return phrase && value.indexOf(phrase) !== -1;
+        });
+        if (blocked) {
+          if (next && next.value) window.location.href = next.value;
+          return;
+        }
+      }
+
       fetch(form.action, {
         method: 'POST',
         body: new FormData(form),
@@ -32,7 +47,6 @@
           });
         })
         .then(function () {
-          var next = form.querySelector('input[name="_next"]');
           if (next && next.value) window.location.href = next.value;
         })
         .catch(function (error) {

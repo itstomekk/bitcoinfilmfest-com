@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-22 — Signup spam filter
+
+- The footer signup form now drops submissions from the `maxxspace` spam domain. FormSubmit discards them server-side through its `_blacklist` field, and the browser skips the request. Blocked phrases live in `subscribe_blocklist` in `site/_config.yml`.
+
 ## 2026-10-20 — Studio Gulch profiles removed
 
 - Removed the Studio Gulch company profile and its two short film profiles (*Bitcoin is like a tidal wave...*, *Not everyone is prepared to pay the Bitcoin Toll of Hormuz...*), added earlier the same day. They are too small for the Cinema database.

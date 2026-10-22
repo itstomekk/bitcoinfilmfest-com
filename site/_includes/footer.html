@@ -29,6 +29,7 @@ The form behavior lives in assets/js/subscribe.js. Keep this footer in the share
           subscribers to the staging preview. See AGENTS.md.
         {% endcomment %}
         <input type="hidden" name="_next" value="{{ '/thanks/' | absolute_url }}">
+        {% if site.subscribe_blocklist %}<input type="hidden" name="_blacklist" value="{{ site.subscribe_blocklist | join: ',' }}">{% endif %}
         <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="form-honeypot">
         <button type="submit">Subscribe</button>
         <p data-subscribe-status class="form-status" aria-live="polite"></p>
