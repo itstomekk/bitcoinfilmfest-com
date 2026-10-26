@@ -2,6 +2,10 @@
 
 This is a short operational record for builders. It records verified facts and active blockers. For implementation details, use `BUILDER-GUIDE.md` and `site/README.md`.
 
+## 2026-10-26 — GoatCounter on standalone press pages
+
+- Live sitemap scan found 36 pages without the GoatCounter snippet (`/26/press/*` x34, `/presskit/`, one PDF). The 35 HTML pages are hand-written static files outside the Jekyll layout, so the snippet was added directly before `</body>` in each. The PDF cannot carry it. `site/lab/seats/index.html` is not in the sitemap and was left unchanged.
+
 ## 2026-09-26 — Official web-sourced cinema visual assets, batch 1
 
 ### Implemented

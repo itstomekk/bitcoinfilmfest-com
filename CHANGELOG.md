@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-26 — Analytics on press pages
+
+- Added the GoatCounter snippet to the 34 hand-written pages under `/26/press/` and to `/presskit/`. They are standalone HTML and did not use the shared layout, so visits to them were not counted.
+
 ## 2026-10-22 — Signup spam filter
 
 - The footer signup form now drops submissions from the `maxxspace` spam domain. FormSubmit discards them server-side through its `_blacklist` field, and the browser skips the request. Blocked phrases live in `subscribe_blocklist` in `site/_config.yml`.
