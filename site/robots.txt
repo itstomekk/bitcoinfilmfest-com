@@ -3,6 +3,21 @@ layout: null
 permalink: /robots.txt
 ---
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
+
+# ai-doors:start (AI policy 2026-10-26: search yes, AI answers yes, AI training no)
+# Search crawlers and user-triggered fetchers (OAI-SearchBot, ChatGPT-User,
+# Claude-SearchBot, Claude-User, PerplexityBot, Google-Extended...) follow User-agent: *.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: CCBot
+User-agent: Applebot-Extended
+User-agent: Meta-ExternalAgent
+User-agent: Amazonbot
+User-agent: Bytespider
+User-agent: cohere-training-data-crawler
+Disallow: /
+# ai-doors:end
 
 Sitemap: {{ '/sitemap.xml' | absolute_url }}
