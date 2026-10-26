@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-26 — AI doors: Markdown copies and AI robots policy
+
+- Pages built from the shared layout now have a Markdown copy at the same path with `.md` added (`/about/` is `/about/index.md`, the homepage is `/index.md`). `scripts/build_markdown_copies.py` writes the copies after the Jekyll build in `deploy-pages.yml`, from the same HTML, and each page links its copy from `<head>` with `<link rel="alternate" type="text/markdown">`. Built pages are the only source, so the copies follow every content change. 123 pages have a copy. The standalone `/26/press/` pages and `/presskit/` do not use the shared head and have none yet.
+- `robots.txt` adds `Content-Signal: search=yes, ai-input=yes, ai-train=no` and disallows the training crawlers (GPTBot, ClaudeBot, CCBot, Applebot-Extended, Meta-ExternalAgent, Amazonbot, Bytespider, cohere-training-data-crawler). Search and user-triggered fetchers stay allowed.
+- `llms.txt` says where the Markdown copies are.
+
 ## 2026-10-26 — Analytics on press pages
 
 - Added the GoatCounter snippet to the 34 hand-written pages under `/26/press/` and to `/presskit/`. They are standalone HTML and did not use the shared layout, so visits to them were not counted.

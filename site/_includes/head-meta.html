@@ -35,6 +35,8 @@
   {% endif %}
 {% endif %}
 <link rel="canonical" href="{% if page.redirect_to %}{{ redirect_target }}{% else %}{{ page.url | absolute_url }}{% endif %}">
+{% comment %}Markdown copy link: scripts/build_markdown_copies.py writes the copy at build time, only for pages that get this line.{% endcomment %}{% assign md_ext = page.url | split: '.' | last | downcase %}{% assign md_noidx = page.robots | default: '' %}{% assign md_skip = false %}{% if page.sitemap == false or page.redirect_to or page.url == '/404.html' or md_noidx contains 'noindex' %}{% assign md_skip = true %}{% endif %}{% unless md_skip %}{% assign md_last = page.url | slice: -1 %}{% if md_last == '/' %}{% assign md_href = page.url | append: 'index.md' %}{% elsif md_ext == 'html' %}{% assign md_href = page.url | replace_last: '.html', '.md' %}{% else %}{% assign md_href = page.url | append: '.md' %}{% endif %}<link rel="alternate" type="text/markdown" href="{{ md_href | relative_url }}">
+{% endunless -%}
 {% if page.redirect_to %}<meta http-equiv="refresh" content="0; url={{ redirect_target }}">{% endif %}
 
 <meta property="og:locale" content="{{ site.locale }}">
