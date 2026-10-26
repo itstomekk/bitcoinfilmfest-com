@@ -1,154 +1,76 @@
-<p align="center">
-  <img src="site/assets/images/brand/bff-logo-white.png" alt="Bitcoin FilmFest" width="180">
-</p>
+<div align="center">
 
-<h1 align="center">Bitcoin FilmFest 🧡</h1>
+# Bitcoin FilmFest 🧡
 
-<p align="center">
-  <strong>The heart of the Bitcoin Cinema industry.</strong>
-</p>
+**The heart of Bitcoin cinema. Orange-pill cinema, unfiat the culture.**
 
-<p align="center">
-  <a href="https://bitcoinfilmfest.com">bitcoinfilmfest.com</a> ·
-  <a href="https://github.com/itstomekk/bitcoinfilmfest-com/actions">Build status</a>
-</p>
+An independent festival in Warsaw, a public database of Bitcoin films, and a community of people who make and love them.
+
+[🌐 bitcoinfilmfest.com](https://bitcoinfilmfest.com) · [🎞️ Film database](https://bitcoinfilmfest.com/cinema/films/) · [🐇 BFF'27](https://bitcoinfilmfest.com/27/) · [💬 Telegram](https://telegram.bitcoinfilmfest.com) · [𝕏 @bitcoinfilmfest](https://x.com/bitcoinfilmfest) · [📸 Instagram](https://instagram.com/bitcoin_filmfest) · [💼 LinkedIn](https://linkedin.com/company/bitcoin-filmfest) · [🟣 Nostr](https://primal.net/p/npub1rjtrs7xqdvj3588r9njrexh2n750j7jdwx9qs543nutmdsj6ljaqpfmp8a)
+
+<br>
+
+<a href="https://bitcoinfilmfest.com"><img src=".github/readme/home.jpg" alt="The bitcoinfilmfest.com homepage: the heart of bitcoin cinema, with BFF'27 and BFF'26 and the festival rabbit" width="820"></a>
+
+</div>
 
 ---
 
-## 🧡 What Bitcoin FilmFest is
+## 👋 Hi, we are Bitcoin FilmFest
 
-Bitcoin FilmFest is the center of the Bitcoin Cinema industry — the festival, the archive, and the publishing home for the films, filmmakers, and stories that are orange-pilling culture through cinema.
+We believe stories change culture. So we show Bitcoin films on a big screen, keep a public record of every Bitcoin movie and studio we can verify, and bring filmmakers, producers and cinema fans together in one place.
 
-We are not a side track at a finance conference. We run our own festival editions, we curate and champion the films that carry Bitcoin's ideas into culture, and we build the public record — the film database, the company and builder directory, the Chronicle, the newsletters — that ties the whole industry together in one place.
+Our motto is **Unfiat the Culture**. Every screening, every database entry and every conversation is a small push towards art and storytelling that runs on sound money.
 
-**Our mission is simple: unfiat the culture.** Every film we platform, every festival edition, every archive entry is another push to move storytelling, art, and culture away from the fiat mindset and toward a Bitcoin-standard world. This repository is how we build and publish that mission in public.
+This repository is the source code and content of [bitcoinfilmfest.com](https://bitcoinfilmfest.com). If you landed here by accident: **[open the site](https://bitcoinfilmfest.com)**, you do not need to read any code to enjoy it. 🍿
 
-This is the public source code for **[bitcoinfilmfest.com](https://bitcoinfilmfest.com)** — the Jekyll website, the editorial content, the film and company database, the design system, and the GitHub Actions pipeline that deploys it.
+## 🟢 Where things stand
 
-## 🎬 How the site is put together
+**The site is live** at [bitcoinfilmfest.com](https://bitcoinfilmfest.com), built from this repo and published with GitHub Pages every time `main` changes.
 
-The site is a static site: no server, no database at runtime — just files that get built once and served fast.
+- 🐇 **BFF'27** is next: **24 to 27 June 2027 at Kinoteka in Warsaw**. The edition page is up, tickets and the programme are still to come.
+- 🎬 **Four festivals so far in Warsaw:** BFF'23 (March 2023), BFF'24 (April 2024), BFF'25 (22 to 25 May 2025) and BFF'26 (4 to 7 June 2026). Each has an archive page.
+- 🏆 **Golden Rabbits:** the award winners from 2023 to 2026 live on the [awards page](https://bitcoinfilmfest.com/awards/).
+- 🎞️ **Bitcoin Cinema database:** 65 films, documentaries and series, plus a directory of production companies, all with sources. It keeps growing.
+- 🗺️ **BFF minis and roadshows:** screenings at conferences in Lisbon, Lugano, San Salvador, Cape Town, Funchal and Maribor.
+- 📰 **Reel and Chronicle:** interviews, articles, newsletters and news from the Bitcoin cinema world.
+- 🧰 **Press kit:** official logos, rabbit mark, posters and laurels at [/presskit/](https://bitcoinfilmfest.com/presskit/).
 
-```text
-Markdown + YAML content (films, companies, articles, newsletters)
-            ↓
-Jekyll layouts, includes, CSS, and JavaScript (the cinema design system)
-            ↓
-GitHub Actions builds the site
-            ↓
-GitHub Pages publishes bitcoinfilmfest.com
-```
+Still ahead: BFF'27 tickets and the programme, added when they exist.
 
-Push a change to `main` and, a couple of minutes later, it's live on the real domain. No FTP, no manual upload, no separate hosting panel.
+## 🤝 Come build it with us
 
-## 🧭 If you just want to edit content
+Bitcoin cinema is young and there is room for everybody. You can help even if you have never opened a code editor.
 
-You don't need to know how to code to do most of the everyday editing here. It's Markdown and YAML files — plain text with simple structure.
+- 🎥 **Have a film, or know one?** Tell us. Missing titles and wrong details in the database are the most useful reports we get. Open an [issue](https://github.com/itstomekk/bitcoinfilmfest-com/issues) or write to [info@bitcoinfilmfest.com](mailto:info@bitcoinfilmfest.com).
+- ✍️ **Spot a typo, a dead link or a wrong date?** Send a pull request. Most pages are plain Markdown, so a fix can be a few lines in one file.
+- 🙋 **Want to volunteer, show your work, or partner on an edition?** See the [Contribute page](https://bitcoinfilmfest.com/join/) or say hi on [Telegram](https://telegram.bitcoinfilmfest.com).
+- ⚡ **Want to support the festival with sats?** The lightning address is `bitcoinfilmfest@getalby.com`.
 
-| I want to... | Edit this |
-| --- | --- |
-| Add or update a **film** in the database | `site/_films/` — one file per film |
-| Add or update a **company / builder / ecosystem entry** | `site/_companies/` — one file per company |
-| Write a **Chronicle** entry (news, editorial, story) | `site/_chronicle/` |
-| Publish a **newsletter** | `site/_newsletters/` |
-| Add or edit a **normal page** (About, Cinema, Festivals…) | the matching `.md` file directly in `site/` |
-| Change **menu links** | `site/_data/navigation.yml` |
-| Update the **credits roll** | `site/_data/credits.json` |
-| Match the **look and feel** of the cinema design | read `site/design.md` first, reuse values from `site/tokens.css` |
+Small, focused pull requests are easiest to review. The full how-to, including what to edit for a film, a company or a news item, is in [DEVELOPMENT.md](DEVELOPMENT.md).
 
-Each of those content folders holds small, self-contained files — copy an existing one as a template, change the fields, and you have a new film, company, or story without touching any code.
+## 🔒 Please keep it public-safe
 
-For the full step-by-step (with examples of every field), see [`site/README.md`](site/README.md).
+This repository is public, so everything committed here can be read by anyone. Never commit passwords, keys, cookies, mailing-list exports, contracts or private production notes. A safety check runs on every pull request. Details: [docs/PUBLIC-REPO-SAFETY.md](docs/PUBLIC-REPO-SAFETY.md).
 
-## ⚙️ Technical overview
+## 🛠️ For developers
 
-| Topic | Where |
-| --- | --- |
-| Practical editing + local build guide | [`site/README.md`](site/README.md) |
-| Visual design system (colors, type, layout rules) | [`site/design.md`](site/design.md) |
-| Shared visual tokens (CSS variables) | [`site/tokens.css`](site/tokens.css) |
-| Component / layout styling | [`site/assets/css/cinema-frame.css`](site/assets/css/cinema-frame.css) |
-| Interactive behavior (nav, forms, motion) | [`site/assets/js/`](site/assets/js/) |
-| Shared page shell (header, footer, seats, bezel) | [`site/_layouts/default.html`](site/_layouts/default.html) |
-| Migration / roadmap plan | [`REBUILD-PHASES.md`](REBUILD-PHASES.md) |
-| Current handoff and ownership rules | [`BUILDER-GUIDE.md`](BUILDER-GUIDE.md) and [`HANDOFF-CURRENT.md`](HANDOFF-CURRENT.md) |
-| Verified milestones / history | [`BUILD-LOG.md`](BUILD-LOG.md) |
-| Public/private data-safety rules | [`docs/PUBLIC-REPO-SAFETY.md`](docs/PUBLIC-REPO-SAFETY.md) |
-
-### Local development on Windows
-
-Verified local toolchain: RubyInstaller Ruby 3.3.12, Bundler 2.5.22, GitHub Pages 232, Jekyll 3.10.0.
+A static [Jekyll](https://jekyllrb.com/) site: Markdown and YAML content, a shared "cinema frame" design system, GitHub Actions to build and GitHub Pages to publish. No server, no database.
 
 ```bash
 cd site
-C:/Ruby33-x64/bin/bundle.bat install
-C:/Ruby33-x64/bin/bundle.bat exec jekyll build --trace
-C:/Ruby33-x64/bin/jekyll.bat serve --host 127.0.0.1 --port 4000 --trace
+bundle install
+bundle exec jekyll serve --host 127.0.0.1 --port 4000
 ```
 
-Open `http://127.0.0.1:4000/` to preview locally before pushing.
+Open `http://127.0.0.1:4000/`. Windows commands, project structure, content guide, contribution workflow and decision log: **[DEVELOPMENT.md](DEVELOPMENT.md)**.
 
-### Contribution workflow
+## 📄 License and content use
 
-1. Start from an up-to-date `main` branch.
-2. Create one focused branch for one change.
-3. Edit the smallest responsible source file — a single film, a single page, one data file.
-4. Add a short comment only when the reason, boundary, or fallback isn't obvious from the code itself.
-5. Build locally and check the affected page at desktop and mobile widths.
-6. Run `git diff --check` and the public-repository safety check before committing.
-7. Commit with an honest message (`Add BFF26 golden rabbit winners`, `Fix mobile nav overlap`).
-8. Open a pull request. A push to `main` triggers the live GitHub Pages deployment automatically.
-9. Verify the public URL and the green Actions run before calling anything "done".
+There is no open-source license file in this repository yet. Code and content may carry different rights. Please do not reuse festival logos, photography, film stills, contributor names or third-party editorial material without checking the relevant permission. If you want to reuse something, just ask: [info@bitcoinfilmfest.com](mailto:info@bitcoinfilmfest.com).
 
-### How decisions are logged
+<div align="center">
 
-- **Code comments** — local implementation choices and safety boundaries.
-- **`CHANGELOG.md`** — short, dated public changes; required on every website-source PR.
-- **`BUILD-LOG.md`** — detailed verified milestones, tests, deployments, and known gaps.
-- **`BUILDER-GUIDE.md`** — ownership and non-regression rules.
-- **`HANDOFF-CURRENT.md`** — current operational state, for whoever picks this up next.
-- **Git commit messages and pull requests** — the full change history.
-- **`docs/`** — durable research notes and public/private data-boundary guidance.
+**Don't trust, verify.** ⚡ Made with 🧡 in Warsaw.
 
-Do not put private conversations, credentials, contact lists, or unverified claims into comments or commit messages — see repository safety below.
-
-## 🔒 Public repository safety
-
-This repository is public. **Anything committed here is readable by anyone**, even if Jekyll never turns it into a web page.
-
-Never commit:
-
-- passwords, API keys, private keys, cookies, or access tokens;
-- mailing-list exports or private contact databases;
-- film contracts, licensing documents, or private production notes;
-- `.env` files, backups, local databases, or private cloud links;
-- information that's only "safe" because a page is currently unlinked.
-
-[`scripts/check-public-repo.py`](scripts/check-public-repo.py) runs in every pull request and scans tracked files for forbidden paths and common credential patterns. See [`docs/PUBLIC-REPO-SAFETY.md`](docs/PUBLIC-REPO-SAFETY.md) for the full audit and current review items.
-
-## 🗂️ Project structure
-
-```text
-site/                       Jekyll website source
-site/_films/                Film database — one record per film
-site/_companies/            Company / ecosystem / builder directory
-site/_chronicle/            Editorial news and stories
-site/_newsletters/          Published newsletter records
-site/_includes/             Shared navigation, footer, and head fragments
-site/_layouts/              Shared page structures
-site/_data/                 Navigation, credits, and builder data
-site/assets/css/            Cinema-frame component styling
-site/assets/js/             Progressive-enhancement behavior
-site/assets/images/         Local production media
-.github/workflows/          Build and GitHub Pages deployment
-scripts/                    Repository safety checks
-
-docs/                       Durable research and safety guidance
-BUILD-LOG.md                Verified project record
-BUILDER-GUIDE.md            Ownership and builder rules
-HANDOFF-CURRENT.md          Current project handoff
-```
-
-## License and content use
-
-This repository is the collaboration and publishing source for Bitcoin FilmFest. Code and content may carry different rights. Do not reuse festival logos, photography, film stills, contributor names, or third-party editorial material without checking the relevant permission and source notes.
+</div>
