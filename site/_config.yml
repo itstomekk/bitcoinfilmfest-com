@@ -38,9 +38,9 @@ subscribe_blocklist:
 
 # Jekyll collections power the unified Reel archive and the /cinema/ ecosystem
 # section (see PLAN-CINEMA.md). Each
-# entry is one Markdown file with front matter — no build-time importer from
-# the private research KB; a curator hand-writes/reviews every file that lands
-# here, per the plan's data-source boundary.
+# entry is one reviewed Markdown file with front matter — no build-time import
+# from the private research KB. The News Log reaches _chronicle/ through an
+# explicit editorial export, and every generated file remains reviewable here.
 collections:
   reel:
     output: true
