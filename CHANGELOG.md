@@ -2,6 +2,13 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-28 — Bitcoin Cinema Chronicle: full reviewed news log
+
+- `/reel/#chronicle` now carries all 108 reviewed News Log entries (N0001 to N0109), up from 10. Files come from the editorial export `sync_public_chronicle.py`; the 10 existing curated entries keep their text and gain `news_id`, `date_precision`, `source_url` and `category`.
+- Entries show a category label (cinema, industry, adjacent) and an approximate date when only the month or year is known (`display_date`). "Read more" uses `source_url`, falling back to the old `link` key.
+- The press and media page links to the Chronicle.
+- Long source names (for example `dutchbitcoinembassy.com`) now wrap inside the date column instead of running into the headline.
+
 ## 2026-10-26 — AI doors: Markdown copies and AI robots policy
 
 - Pages built from the shared layout now have a Markdown copy at the same path with `.md` added (`/about/` is `/about/index.md`, the homepage is `/index.md`). `scripts/build_markdown_copies.py` writes the copies after the Jekyll build in `deploy-pages.yml`, from the same HTML, and each page links its copy from `<head>` with `<link rel="alternate" type="text/markdown">`. Built pages are the only source, so the copies follow every content change. 123 pages have a copy. The standalone `/26/press/` pages and `/presskit/` do not use the shared head and have none yet.

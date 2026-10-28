@@ -1944,6 +1944,29 @@ body.is-navigating {
   font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.06em;
+  overflow-wrap: anywhere;
+}
+
+.chronicle-category {
+  display: inline-block;
+  margin-block-start: var(--space-3xs);
+  padding: 0.16rem 0.3rem;
+  border: var(--rule-thin) solid var(--color-rule);
+  color: var(--color-muted);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.chronicle-category-adjacent {
+  border-color: var(--color-screen);
+  color: var(--color-screen);
+}
+
+.chronicle-category-industry {
+  border-color: var(--color-ink);
+  color: var(--color-ink);
 }
 
 .chronicle-body {
