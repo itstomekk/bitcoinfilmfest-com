@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-29 — Signup form moves from FormSubmit to Cloudflare
+
+- The footer form now posts to our own `bff-signup` Cloudflare Worker and stores e-mails and npubs in a D1 table, because FormSubmit was down (HTTP 521) and signups were failing. The form looks and behaves the same; the spam blocklist and honeypot still apply.
+
 ## 2026-10-28 — Bitcoin Cinema Chronicle: full reviewed news log
 
 - `/reel/#chronicle` now carries all 108 reviewed News Log entries (N0001 to N0109), up from 10. Files come from the editorial export `sync_public_chronicle.py`; the 10 existing curated entries keep their text and gain `news_id`, `date_precision`, `source_url` and `category`.
