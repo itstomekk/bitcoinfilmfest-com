@@ -27,12 +27,12 @@ social:
   linkedin: "https://linkedin.com/company/bitcoin-filmfest"
 
 # Public Nostr identity used by the site (the subscription form accepts an npub
-# as text and forwards it through FormSubmit; no private signing key is present).
+# as text and sends it to the signup Worker; no private signing key is present).
 nostr_npub: "npub1rjtrs7xqdvj3588r9njrexh2n750j7jdwx9qs543nutmdsj6ljaqpfmp8a"
 
-# Spam phrases for the footer signup form. FormSubmit drops any submission that
-# contains one (`_blacklist` field), and subscribe.js skips the request in the
-# browser. Lowercase, no commas inside an entry.
+# Spam phrases for the footer signup form. subscribe.js skips the request in the
+# browser; the bff-signup Worker keeps its own BLOCKLIST var, keep both in step.
+# Lowercase, no commas inside an entry.
 subscribe_blocklist:
   - maxxspace
 
