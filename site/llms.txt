@@ -25,6 +25,7 @@ BFF'27 runs June 24–27, 2027 at Kinoteka, Warsaw.
 - [Reel](https://bitcoinfilmfest.com/reel/): interviews, guest posts, and festival coverage archive.
 - [Golden Rabbits](https://bitcoinfilmfest.com/awards/): festival award winners, 2023–2026.
 - [Press & Media](https://bitcoinfilmfest.com/press-and-media/): press materials and contact.
+- [Bitcoin white paper](https://bitcoinfilmfest.com/bitcoin-whitepaper/): Satoshi Nakamoto's 2008 white paper as full text with figures and equations; the original PDF is at https://bitcoinfilmfest.com/bitcoin.pdf.
 - [Contribute](https://bitcoinfilmfest.com/join/): submit a film, volunteer, or partner.
 
 ## Machine-readable resources

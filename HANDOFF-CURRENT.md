@@ -11,6 +11,10 @@ The Git state and cinema status below were reconciled against the live checkout 
 
 The Jekyll rebuild is live through GitHub Pages and the configured custom domain. On top of the existing site (homepage, festival editions, Reel, Credits), the `/cinema/` section now contains the film database and company directory foundations, the essential-ten curation, the industry-footprint strip, and the first roadshow structure. The coherent Cinema ecosystem update was originally committed at `517c87f` and is included in the current `main`; the archive/current-edition visual pass landed in merge commit `4635bce`. The latest build and Pages deployment passed.
 
+### 2026-10-31 Bitcoin white paper page
+
+- Added `/bitcoin-whitepaper/` (full paper text, figures, equations, PDF card; paper-screen reading page in the shared shell, styles scoped as `.wp-page` at the end of `cinema-frame.css`, figures in `assets/images/whitepaper/`). Social card `assets/images/social/whitepaper-18-og.jpg` via front-matter `image:`. `/bitcoin.pdf` (unmodified, from 2026-10-30) is linked from the page; the older standalone `/whitepaper/` page is untouched and now duplicates the text, so pick one canonical page later.
+
 ### 2026-09-23 webmail compatibility route
 
 - Added a source route at `/webmail/` that redirects to `https://webmail.bitcoinfilmfest.com/`, preserving the SmartHost mail service while the website stays on GitHub Pages.

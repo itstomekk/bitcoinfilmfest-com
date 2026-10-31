@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-31 — Bitcoin white paper, 18 years: /bitcoin-whitepaper/
+
+- Added `/bitcoin-whitepaper/`, the Bitcoin white paper (Satoshi Nakamoto, 31 October 2008) as a full reading page inside the shared cinema shell on the paper screen: anniversary lede, PDF download card linking `/bitcoin.pdf`, section contents 1–12, all text with the seven figures, the four equations (MathML), the C listing, the results and the references, and a closing note linking the Polish reading version (translation by meeDamian). Page-scoped styles (`.wp-page`) live at the end of `cinema-frame.css`; figures are in `assets/images/whitepaper/`.
+- The page's social card is the new 18th-anniversary graphic `assets/images/social/whitepaper-18-og.jpg` (1200×630), set through the page's `image:` front matter. The site-wide default card is unchanged. `/bitcoin.pdf` is the same unmodified file added on 2026-10-30; `/whitepaper/` stays as it was.
+- Added the page to `llms.txt`.
+
 ## 2026-10-31 — Chronicle links to the white paper
 
 - The Chronicle entry on UNBANKED (17th anniversary of the Bitcoin White Paper) now links "Bitcoin White Paper" to `/whitepaper/`.
