@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-30 — Bitcoin white paper at /whitepaper/
+
+- Added `/whitepaper/`, the Bitcoin white paper by Satoshi Nakamoto as readable text (title, abstract, sections, figures, equations, references) in the site's paper look, and `/bitcoin.pdf`, the original PDF, byte-for-byte unmodified (SHA-256 `b1674191…f553`). The page links the original PDF at the top and in a slim thank-you bar at the bottom, which also shows the hash and a quiet link home. It is standalone HTML like `/presskit/` and carries the GoatCounter snippet.
+
 ## 2026-10-29 — Signup form moves from FormSubmit to Cloudflare
 
 - The footer form now posts to our own `bff-signup` Cloudflare Worker and stores e-mails and npubs in a D1 table, because FormSubmit was down (HTTP 521) and signups were failing. The form looks and behaves the same; the spam blocklist and honeypot still apply.
