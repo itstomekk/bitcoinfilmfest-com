@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-10-31 — Chronicle links to the white paper
+
+- The Chronicle entry on UNBANKED (17th anniversary of the Bitcoin White Paper) now links "Bitcoin White Paper" to `/whitepaper/`.
+
 ## 2026-10-30 — Bitcoin white paper at /whitepaper/
 
 - Added `/whitepaper/`, the Bitcoin white paper by Satoshi Nakamoto as readable text (title, abstract, sections, figures, equations, references) in the site's paper look, and `/bitcoin.pdf`, the original PDF, byte-for-byte unmodified (SHA-256 `b1674191…f553`). The page links the original PDF at the top and in a slim thank-you bar at the bottom, which also shows the hash and a quiet link home. It is standalone HTML like `/presskit/` and carries the GoatCounter snippet.
