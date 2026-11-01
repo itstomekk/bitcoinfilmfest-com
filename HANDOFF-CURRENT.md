@@ -15,6 +15,10 @@ The Jekyll rebuild is live through GitHub Pages and the configured custom domain
 
 - Added `/bitcoin-whitepaper/` (full paper text, figures, equations, PDF card; paper-screen reading page in the shared shell, styles scoped as `.wp-page` at the end of `cinema-frame.css`, figures in `assets/images/whitepaper/`). Social card `assets/images/social/whitepaper-18-og.jpg` via front-matter `image:`. `/bitcoin.pdf` (unmodified, from 2026-10-30) is linked from the page; the older standalone `/whitepaper/` page is untouched and now duplicates the text, so pick one canonical page later.
 
+### 2026-11-01 White paper round 2
+
+- Canonical page is `/bitcoin-whitepaper/` with the BFF-branded card `assets/images/social/whitepaper-18-bff-og.jpg`. `/whitepaper/` is a Jekyll stub (`redirect_to`, noindex, sitemap false). Footer (`_includes/footer.html`) links "Bitcoin white paper" beside "Site map". Card source art and composer files are in `Hermes/image-gen/2026-10-31-21-whitepaper-18/round2/bff/`.
+
 ### 2026-09-23 webmail compatibility route
 
 - Added a source route at `/webmail/` that redirects to `https://webmail.bitcoinfilmfest.com/`, preserving the SmartHost mail service while the website stays on GitHub Pages.

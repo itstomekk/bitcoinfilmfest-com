@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-01 — White paper: own 18th-birthday card, one canonical page, footer link
+
+- `/bitcoin-whitepaper/` is now the one canonical white paper page. Its social card is the new Bitcoin FilmFest 18th-birthday graphic `assets/images/social/whitepaper-18-bff-og.jpg` (blue cinema screen, paper with party hat, cake, cinema seats; BFF logo and Syne Mono / Courier Prime lettering, English only). The earlier card `whitepaper-18-og.jpg` stays in place for caches.
+- `/whitepaper/` (the 2026-10-30 standalone copy of the same text) is now a legacy stub: `redirect_to: /bitcoin-whitepaper/` (meta refresh + canonical to the new page), `noindex, follow`, kept out of the sitemap, carrying the same social card. GitHub Pages cannot send a 301, so the old URL keeps answering 200 and forwards in the browser.
+- The shared footer links "Bitcoin white paper" next to "Site map" on every page. The Chronicle entry on UNBANKED now links to `/bitcoin-whitepaper/`. `/bitcoin.pdf` is unchanged.
+
 ## 2026-10-31 — Bitcoin white paper, 18 years: /bitcoin-whitepaper/
 
 - Added `/bitcoin-whitepaper/`, the Bitcoin white paper (Satoshi Nakamoto, 31 October 2008) as a full reading page inside the shared cinema shell on the paper screen: anniversary lede, PDF download card linking `/bitcoin.pdf`, section contents 1–12, all text with the seven figures, the four equations (MathML), the C listing, the results and the references, and a closing note linking the Polish reading version (translation by meeDamian). Page-scoped styles (`.wp-page`) live at the end of `cinema-frame.css`; figures are in `assets/images/whitepaper/`.

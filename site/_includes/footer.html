@@ -44,7 +44,7 @@ The form behavior lives in assets/js/subscribe.js. Keep this footer in the share
         <a class="social-icon social-icon--nostr" href="https://primal.net/p/{{ site.nostr_npub }}" target="_blank" rel="noopener noreferrer" aria-label="Bitcoin FilmFest on Nostr" title="Nostr">{% include icons/social-nostr.svg %}<span class="sr-only">Nostr</span></a>
         {% if site.social.linkedin %}<a class="social-icon social-icon--linkedin" href="{{ site.social.linkedin }}" target="_blank" rel="noopener noreferrer" aria-label="Bitcoin FilmFest on LinkedIn" title="LinkedIn">{% include icons/social-linkedin.svg %}<span class="sr-only">LinkedIn</span></a>{% endif %}
       </p>
-      <p><a href="{{ '/sitemap/' | relative_url }}">Site map</a></p>
+      <p><a href="{{ '/bitcoin-whitepaper/' | relative_url }}">Bitcoin white paper</a> <span aria-hidden="true">·</span> <a href="{{ '/sitemap/' | relative_url }}">Site map</a></p>
       <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }} <span class="footer-version">v{{ site.version }}</span></p>
     </div>
   </div>
