@@ -13,7 +13,7 @@ The Jekyll rebuild is live through GitHub Pages and the configured custom domain
 
 ### 2026-10-31 Bitcoin white paper page
 
-- Added `/bitcoin-whitepaper/` (full paper text, figures, equations, PDF card; paper-screen reading page in the shared shell, styles scoped as `.wp-page` at the end of `cinema-frame.css`, figures in `assets/images/whitepaper/`). Social card `assets/images/social/whitepaper-18-og.jpg` via front-matter `image:`. `/bitcoin.pdf` (unmodified, from 2026-10-30) is linked from the page; the older standalone `/whitepaper/` page is untouched and now duplicates the text, so pick one canonical page later.
+- Added `/bitcoin-whitepaper/` (full paper text, figures, equations, PDF card; paper-screen reading page in the shared shell, styles scoped as `.wp-page` at the end of `cinema-frame.css`, figures in `assets/images/whitepaper/`). Social card is now `assets/images/social/whitepaper-18-bff-og.jpg` via front-matter `image:` (the first card, a Dwadzieścia Jeden graphic, was deleted 2026-11-01). `/bitcoin.pdf` (unmodified, from 2026-10-30) is linked from the page; the older standalone `/whitepaper/` page is untouched and now duplicates the text, so pick one canonical page later.
 
 ### 2026-11-01 White paper round 2
 

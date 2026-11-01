@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-01 — Remove the Dwadzieścia Jeden social card from the site
+
+- Deleted `assets/images/social/whitepaper-18-og.jpg`. It was the Dwadzieścia Jeden (21 Bitcoin Polska) card, with Polish text and their logo, and no page has used it since the BFF card `whitepaper-18-bff-og.jpg` replaced it. Every page on the site now points to a Bitcoin FilmFest image.
+
 ## 2026-11-01 — White paper: own 18th-birthday card, one canonical page, footer link
 
 - `/bitcoin-whitepaper/` is now the one canonical white paper page. Its social card is the new Bitcoin FilmFest 18th-birthday graphic `assets/images/social/whitepaper-18-bff-og.jpg` (blue cinema screen, paper with party hat, cake, cinema seats; BFF logo and Syne Mono / Courier Prime lettering, English only). The earlier card `whitepaper-18-og.jpg` stays in place for caches.
