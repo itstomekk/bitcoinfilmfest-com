@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-05 — Add Jason Zada's Satoshi to the cinema catalogue
+
+- Added a sourced profile for the planned feature, separate from similarly titled films. Spring 2027 filming is planned; the release date is not announced.
+
 ## 2026-11-01 — Remove the Dwadzieścia Jeden social card from the site
 
 - Deleted `assets/images/social/whitepaper-18-og.jpg`. It was the Dwadzieścia Jeden (21 Bitcoin Polska) card, with Polish text and their logo, and no page has used it since the BFF card `whitepaper-18-bff-og.jpg` replaced it. Every page on the site now points to a Bitcoin FilmFest image.
