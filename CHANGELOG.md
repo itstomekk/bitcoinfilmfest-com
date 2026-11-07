@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-07 — Add Jessica Solce's Forging a Country to the cinema catalogue
+
+- Added a sourced profile for the 2024 short documentary on President Nayib Bukele's re-election (33 minutes, free on YouTube). The poster is the official title card from the Encode Productions upload. Bitcoin FilmFest did not screen the film, so the page carries no festival selection.
+
 ## 2026-11-05 — Add Jason Zada's Satoshi to the cinema catalogue
 
 - Added a sourced profile for the planned feature, separate from similarly titled films. Spring 2027 filming is planned; the release date is not announced.
