@@ -9,10 +9,11 @@ cast:
   - "Avi Burra (host)"
 studio: null
 company: null
-poster: "/assets/images/cinema/films/finding-home-episode-4-poster.jpg"
-poster_alt: "Poster for Finding Home, Episode Four, London/Manchester, with Roger9000. Two men stand against a blue sky over the London skyline with St Paul's Cathedral. The title and credits are in white text on a beige band, with a strip of food photos along the bottom."
+last_modified_at: 2026-11-07
+poster: "/assets/images/cinema/films/finding-home-poster.jpg"
+poster_alt: "Official series poster for Finding Home. Text on the poster: Bitcoin FilmFest, Finding Home, Created by Avi Burra, Directed by Parker Worthington."
 poster_credit: "Avi Burra / Finding Home"
-poster_source_url: "https://indeehub.studio/film/finding-home/season/1/episode/4"
+poster_source_url: "https://indeehub.studio/film/finding-home"
 synopsis: >
   Host Avi Burra travels to meet Bitcoiners who have built a new home, from a
   Somali restaurant in Harlem to Prague, Paraguay and London and Manchester.
@@ -32,6 +33,8 @@ screenings:
 official_links:
   - label: "Finding Home on IndeeHub"
     url: "https://indeehub.studio/film/finding-home"
+  - label: "Series trailer on IndeeHub"
+    url: "https://indeehub.studio/watch/trailer/7f4395ae-b380-4797-a573-0e25283e16ca"
   - label: "Finding Home: official site (Casanostra Ink)"
     url: "https://findinghome.casanostra.ink/"
 sources:
@@ -39,6 +42,8 @@ sources:
     url: "https://indeehub.studio/film/finding-home"
   - label: "IndeeHub: episode 4, London/Manchester"
     url: "https://indeehub.studio/film/finding-home/season/1/episode/4"
+  - label: "IndeeHub: official episode posters with credits (episodes 1 to 4)"
+    url: "https://indeehub.studio/film/finding-home"
   - label: "Finding Home: official site"
     url: "https://findinghome.casanostra.ink/"
   - label: "Avi Burra on Nostr: series announcement and pilot (July 2025)"
@@ -54,9 +59,19 @@ bff_screening: "BFF'25 (episode 1, May 2025) and BFF'26 Official Selection (epis
 
 ## Episodes
 
-- **Episode 1, Pilot: Safari, New York** (34 min). At Safari, a Somali restaurant in Harlem, owner Shakib tells how he escaped civil war and found a new kind of sovereignty in the Bitcoin white paper.
-- **Episode 2, Prague** (27 min). Avi Burra asks what home is in Prague, through the story of a friend who built a community on trust and sovereignty.
-- **Episode 3, Paraguay** (34 min). In Asunción, with Czech expat Jan Kotas, the episode covers Bitcoin sovereignty, flag theory and Stoic philosophy.
+- **Episode 1, Pilot: Safari, New York** (34 min). At Safari, a Somali restaurant in Harlem, owner Shakib tells how he escaped civil war and found a new kind of sovereignty in the Bitcoin white paper. The official poster credits the series as created by Avi Burra and the episode as directed by Parker Worthington.
+- **Episode 2, Prague** (27 min). Avi Burra asks what home is in Prague, through the story of a friend who built a community on trust and sovereignty. The official poster names Grafton Clark as the guest and credits Avi Burra as writer and producer, Lahav Levi as director, Noa Gruman as editor and Kyle Huber for videography.
+- **Episode 3, Paraguay** (34 min). In Asunción, with Czech expat Jan Kotas, the episode covers Bitcoin sovereignty, flag theory and Stoic philosophy. The official poster credits Avi Burra as writer and director, Fanfares.io and Angor.io as executive producers, Lahav Levi for editing and post-production and Humberto Martinez for videography.
 - **Episode 4, London/Manchester** (39 min on IndeeHub). Avi Burra spends time with the Australian musician and chocolatier Roger9000 and looks at bureaucratic exclusion and building a sovereign life. The BFF'26 programme listed this episode at 32 minutes.
 
 Episode 4 credits on the official poster: written and directed by Avi Burra, executive producer Pretty Good Freedom Tech, director of post-production Lahav Levi, videography Jimmy Chiba. IndeeHub lists each episode as produced by Avi Burra.
+
+## Episode posters
+
+Official posters from IndeeHub. Episode 4 is the episode shown at Bitcoin FilmFest 2026.
+
+<div style="display:flex;flex-wrap:wrap;gap:1rem">
+  <figure style="margin:0;flex:1 1 9rem;max-width:12rem"><img src="{{ '/assets/images/cinema/films/finding-home-episode-2-poster.jpg' | relative_url }}" alt="Official poster for Finding Home, Episode Two: Prague, with Grafton Clark. Credits on the poster: written and produced by Avi Burra, directed by Lahav Levi, edited by Noa Gruman, videography by Kyle Huber." loading="lazy" style="width:100%;height:auto"><figcaption>Episode 2: Prague</figcaption></figure>
+  <figure style="margin:0;flex:1 1 9rem;max-width:12rem"><img src="{{ '/assets/images/cinema/films/finding-home-episode-3-poster.jpg' | relative_url }}" alt="Official poster for Finding Home, Episode Three: Paraguay, with Jan Kotas. Credits on the poster: written and directed by Avi Burra, executive producers Fanfares.io and Angor.io, editing and post by Lahav Levi, videography by Humberto Martinez." loading="lazy" style="width:100%;height:auto"><figcaption>Episode 3: Paraguay</figcaption></figure>
+  <figure style="margin:0;flex:1 1 9rem;max-width:12rem"><img src="{{ '/assets/images/cinema/films/finding-home-episode-4-poster.jpg' | relative_url }}" alt="Official poster for Finding Home, Episode Four, London/Manchester, with Roger9000. Two men stand against a blue sky over the London skyline with St Paul's Cathedral. The title and credits are in white text on a beige band, with a strip of food photos along the bottom." loading="lazy" style="width:100%;height:auto"><figcaption>Episode 4: London/Manchester</figcaption></figure>
+</div>

@@ -10,27 +10,33 @@ BUILT = ROOT / 'site' / '_site'
 PAGES = {
     'the-man-who-wouldnt-cry': (
         ['Emil T. Jonsson', 'Björn Boström', 'Stig Dagerman', 'Sweden',
-         'Västerås', 'the-man-who-wouldnt-cry-poster.jpg', 'Official Selection'],
+         'Västerås', 'the-man-who-wouldnt-cry-poster.jpg', 'Official Selection',
+         'player.vimeo.com/video/638899496', 'the-man-who-wouldnt-cry-still-1.jpg',
+         'the-man-who-wouldnt-cry-still-4.jpg', 'Oddvar Fågelsson', 'Peter Nylander',
+         'Bucharest ShortCut Cinefest', 'imdb.com/title/tt8960272'],
         'PT16M',
     ),
     'my-trust-in-you-is-broken': (
         ['Parker Worthington', 'Documentary', 'BTCPay Server', 'Audience Choice',
-         'my-trust-in-you-is-broken-title-card.jpg', 'CjpfAZdFbOw'],
+         'my-trust-in-you-is-broken-title-card.jpg', '8ywHizrZfAo', 'CjpfAZdFbOw'],
         'PT42M',
     ),
     'finding-home': (
         ['Avi Burra', 'Documentary Series', 'Roger9000', 'IndeeHub',
-         'finding-home-episode-4-poster.jpg'],
+         'finding-home-poster.jpg', 'finding-home-episode-4-poster.jpg',
+         'finding-home-episode-2-poster.jpg', 'finding-home-episode-3-poster.jpg',
+         'Parker Worthington', 'Grafton Clark', 'Lahav Levi',
+         'indeehub.studio/watch/trailer/7f4395ae-b380-4797-a573-0e25283e16ca'],
         None,
     ),
     'bitcoin-castle': (
         ['Bruno Schiebel', 'Schloss Bitcoin', 'Germany', 'Best Movie', 'Audience Choice',
-         'hf97ofTlZhk'],
+         'hf97ofTlZhk', 'Sami Hammi', 'Fernando Tábora', 'Michael Ep', 'Q-pZWvbNLa0'],
         'PT28M',
     ),
     'bitcoin-video-magazine': (
         ['Bitcoin Video Magazine', 'Documentary Series', 'The Bitcoin Motorcycle Diaries',
-         'Tim Tayshun', 'bitcoin-video-magazine-logo.jpg'],
+         'Tim Tayshun', 'bitcoin-video-magazine-logo.jpg', 'GVwE-h6ZTHY', 'Jv4QECI6cSA'],
         None,
     ),
 }
@@ -53,6 +59,20 @@ class NextFivePagesTest(unittest.TestCase):
                 self.assertNotIn('\u2014', self._main(page))
                 self.assertIn('/cinema/films/' + slug + '/', listing)
                 self.assertIn('/cinema/films/' + slug + '/', sitemap)
+
+    def test_sitemap_lastmod_is_set_from_front_matter(self):
+        sitemap = (BUILT / 'sitemap.xml').read_text(encoding='utf-8')
+        for slug in list(PAGES) + ['forging-a-country']:
+            with self.subTest(slug=slug):
+                m = re.search(r'<loc>[^<]*/cinema/films/' + slug + r'/</loc>\s*<lastmod>([^<]*)</lastmod>', sitemap)
+                self.assertIsNotNone(m, slug + ' needs a lastmod in sitemap.xml')
+                self.assertTrue(m.group(1).startswith('2026-11-07'), m.group(1))
+
+    def test_imdb_ids_are_in_schema(self):
+        for slug, imdb in (('the-man-who-wouldnt-cry', 'tt8960272'), ('forging-a-country', 'tt34094710')):
+            with self.subTest(slug=slug):
+                page = (BUILT / 'cinema' / 'films' / slug / 'index.html').read_text(encoding='utf-8')
+                self.assertEqual(self._movie_schema(page).get('sameAs'), 'https://www.imdb.com/title/' + imdb + '/')
 
     def test_type_values(self):
         types = {}

@@ -8,6 +8,7 @@ director: "Parker Worthington"
 studio: null
 company: null
 runtime: 42
+last_modified_at: 2026-11-07
 poster: "/assets/images/cinema/films/my-trust-in-you-is-broken-title-card.jpg"
 poster_alt: "Title card for My Trust in You Is Broken: a green-tinted aerial city view with a dark silhouette of a head, the title in large yellow capitals, a 2024 Bitcoin FilmFest Audience Choice laurel, the words BTCPay Server Documentary, and a green ticket reading Admit Any Forever."
 poster_credit: "BTCPay Server"
@@ -25,7 +26,7 @@ bitcoin_angle: >
   merchants and Bitcoin conferences accept payments directly. Filming began at
   the Bitcoin 2023 conference in Miami.
 platform: "YouTube (BTCPay Server channel, released May 22, 2024)"
-trailer: "https://www.youtube.com/watch?v=CjpfAZdFbOw"
+trailer: "https://www.youtube.com/watch?v=8ywHizrZfAo"
 awards:
   - "Audience Choice, Golden Rabbit, Bitcoin FilmFest 2024"
 screenings:
@@ -34,6 +35,10 @@ screenings:
 official_links:
   - label: "Watch on YouTube (BTCPay Server)"
     url: "https://www.youtube.com/watch?v=Z78ZbPcsc3g"
+  - label: "Official trailer on YouTube (BTCPay Server, April 4, 2024)"
+    url: "https://www.youtube.com/watch?v=8ywHizrZfAo"
+  - label: "Bitcoin FilmFest 2024 trailer on YouTube"
+    url: "https://www.youtube.com/watch?v=CjpfAZdFbOw"
   - label: "BTCPay Server blog: premiere announcement"
     url: "https://blog.btcpayserver.org/btcpay-documentary-my-trust-in-you-is-broken/"
 sources:
@@ -41,6 +46,8 @@ sources:
     url: "https://blog.btcpayserver.org/btcpay-documentary-my-trust-in-you-is-broken/"
   - label: "YouTube: official upload by BTCPay Server (May 22, 2024)"
     url: "https://www.youtube.com/watch?v=Z78ZbPcsc3g"
+  - label: "YouTube: official trailer by BTCPay Server (70 seconds, April 4, 2024)"
+    url: "https://www.youtube.com/watch?v=8ywHizrZfAo"
   - label: "TFTC: YouTube release on Bitcoin Pizza Day and Warsaw premiere (May 2024)"
     url: "https://www.tftc.io/btcpay-server-documentary-my-trust-in-you-is-broken"
   - label: "Bitcoin Magazine: premiere at Bitcoin FilmFest, April 19, 2024"

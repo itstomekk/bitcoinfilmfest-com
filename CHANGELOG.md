@@ -2,6 +2,15 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-07 — Enrich the six newest film and series pages with trailers, stills, credits and sources
+
+- Forging a Country, The Man Who Wouldn't Cry, My Trust in You Is Broken, Finding Home, Bitcoin Castle and Bitcoin Video Magazine now carry the extra material their official sources provide. Anything that could not be sourced is left out.
+- Trailers: official trailers added for Forging a Country (Encode Productions), The Man Who Wouldn't Cry (director's Vimeo) and Bitcoin Video Magazine (channel promo). My Trust in You Is Broken now embeds the official BTCPay Server trailer; the Bitcoin FilmFest 2024 trailer stays as a link. Finding Home links the series trailer on IndeeHub, which cannot be embedded.
+- Images: four official press stills for The Man Who Wouldn't Cry, one official still for Forging a Country, the official series poster for Finding Home plus the episode 2 and 3 posters. Bitcoin Castle still has no official artwork and shows none.
+- Credits, IMDb and festivals: full crew, IMDb link and the festival awards listed on IMDb for The Man Who Wouldn't Cry; producer, cinematographers, IMDb link and the Teatro Nacional world premiere for Forging a Country; per-episode credits from the official posters for Finding Home; music, sound, editing and gaffer credits for Bitcoin Castle; the Bitcoin FilmFest 2026 segment and Issue dates for Bitcoin Video Magazine.
+- Film template: the trailer field now also embeds Vimeo links and labels the fallback link by platform; a new optional `crew` list adds role rows to the film details; an `imdb` ID is published as `sameAs` in the Movie structured data.
+- Sitemap: the six pages already appeared in `sitemap.xml`; each now sets `last_modified_at: 2026-11-07` so its `lastmod` reflects the content change instead of the build time.
+
 ## 2026-11-07 — Add five film and series profiles to the cinema catalogue
 
 - Added sourced profiles for The Man Who Wouldn't Cry (2021 Swedish short), My Trust in You Is Broken (2024 documentary, 42 minutes), Finding Home (documentary series), Bitcoin Castle (2020 German short, double Golden Rabbit winner at BFF'26) and Bitcoin Video Magazine (video series, with its Bitcoin Motorcycle Diaries chapter shown at BFF'26).
