@@ -3,7 +3,8 @@ title: "Hummingbird: The Bitcoin Jungle Story"
 description: "Explores the origins of an organic farmer's market in Uvita, Costa Rica, weaving together themes of trust, spirituality, and Bitcoin adoption in a jungle community."
 year: 2026
 type: Documentary
-status: upcoming
+status: released
+last_modified_at: 2026-11-07
 director: "DirectorHodl"
 producers:
   - "Paul Keating"
