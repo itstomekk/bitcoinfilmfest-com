@@ -5,6 +5,7 @@ Short, human-readable record of public website changes. One dated entry is requi
 ## 2026-11-08 — BFF’27 early-bird tickets on sale
 
 - `/27/`: `bff27_tickets_api` is set, so both ticket buttons open the Lightning checkout (55,555 sats, until 31 December 2026). The tickets section says the early bird is on sale and lists the two other ways to pay: a Lightning address and a Nostr zap, each with the e-mail in the note. On-chain is no longer listed, the checkout does not take it.
+- The early-bird pass is capped at 100 tickets; the page says so, and the buttons turn to "Sold out" when they are gone.
 - Payments go straight to bitcoinfilmfest@getalby.com. Tested live with real sats on all three ways to pay before switching on.
 - To switch sales off, remove `bff27_tickets_api` from `_config.yml`: the page goes back to "Tickets coming soon".
 
