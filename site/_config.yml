@@ -30,6 +30,12 @@ social:
 # as text and sends it to the signup Worker; no private signing key is present).
 nostr_npub: "npub1rjtrs7xqdvj3588r9njrexh2n750j7jdwx9qs543nutmdsj6ljaqpfmp8a"
 
+# BFF'27 ticket sales: the bff-tickets Worker (Lightning checkout, Lightning
+# address, zaps). Set = /27/ shows live "Buy" buttons; remove the line to switch
+# sales off and bring back "Tickets coming soon". Payouts go to
+# bitcoinfilmfest@getalby.com; the Worker holds no spending key.
+bff27_tickets_api: "https://bff-tickets.kolotom.workers.dev"
+
 # Spam phrases for the footer signup form. subscribe.js skips the request in the
 # browser; the bff-signup Worker keeps its own BLOCKLIST var, keep both in step.
 # Lowercase, no commas inside an entry.

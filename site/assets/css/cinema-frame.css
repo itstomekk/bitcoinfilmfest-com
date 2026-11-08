@@ -5593,3 +5593,62 @@ body:has(.edition-page--bff26) .topnav .nav-link {
   .wp-pdf__btn { width: 100%; text-align: center; }
   .wp-defs { margin-inline-start: 0; }
 }
+
+/* BFF'27 ticket block: a paper ticket with a tear-off stub, plus a "how you pay" panel.
+   Placeholder state only: the stub button stays .bff27-btn--soon until the ticket URL exists. */
+.bff27-passes { display:grid; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); gap:var(--space-xl); align-items:stretch; margin-block-end:var(--space-xl); }
+.bff27-pass { position:relative; display:flex; border:1px solid var(--color-ink); border-radius:var(--radius-panel); background:var(--color-paper-2); color:var(--color-ink); }
+.bff27-pass-main { flex:1 1 auto; min-width:0; padding:var(--space-lg); }
+.bff27-pass-main p { margin:0; }
+.bff27-pass-kicker { color:var(--color-muted); font-family:var(--font-display); font-size:var(--text-xs); letter-spacing:.12em; text-transform:uppercase; }
+.bff27-pass-main h3 { margin-block:var(--space-xs); font-size:var(--text-xl); line-height:1; }
+.bff27-pass-meta { font-family:var(--font-display); font-size:var(--text-sm); }
+.bff27-pass-note { margin-block-start:var(--space-md) !important; max-width:34rem; font-size:var(--text-sm); }
+.bff27-pass-stub { position:relative; flex:0 0 14rem; display:flex; flex-direction:column; justify-content:center; gap:var(--space-md); padding:var(--space-lg); border-inline-start:2px dashed var(--color-ink); text-align:center; }
+.bff27-pass-stub::before,.bff27-pass-stub::after { content:""; position:absolute; inset-inline-start:-13px; width:24px; height:24px; border:1px solid var(--color-ink); border-radius:50%; background:var(--color-paper); }
+.bff27-pass-stub::before { inset-block-start:-13px; clip-path:inset(50% 0 0 0); }
+.bff27-pass-stub::after { inset-block-end:-13px; clip-path:inset(0 0 50% 0); }
+.bff27-pass-stub p { margin:0; }
+.bff27-pass-stub .bff27-btn { white-space:normal; }
+.bff27-pass-price { font-family:var(--font-display); font-size:var(--text-md); }
+.bff27-pass-no { color:var(--color-muted); font-family:var(--font-display); font-size:var(--text-xs); letter-spacing:.12em; text-transform:uppercase; }
+.bff27-pay { padding:var(--space-lg); border:1px solid color-mix(in oklch,var(--color-ink) 35%,transparent); border-radius:var(--radius-panel); }
+.bff27-pay h3 { margin-block:0 var(--space-md); font-size:var(--text-md); letter-spacing:.04em; text-transform:uppercase; }
+.bff27-pay ul { display:grid; gap:var(--space-sm); margin:0; padding:0; list-style:none; }
+.bff27-pay li { display:flex; flex-direction:column; gap:var(--space-3xs); padding-block-end:var(--space-sm); border-block-end:1px dashed color-mix(in oklch,var(--color-ink) 30%,transparent); }
+.bff27-pay li:last-child { border-block-end:0; padding-block-end:0; }
+.bff27-pay li strong { font-family:var(--font-display); font-size:var(--text-base); font-weight:400; }
+.bff27-pay li span { font-size:var(--text-sm); }
+.bff27-pay-address { display:block; margin-top:var(--space-3xs); font-size:var(--text-sm); overflow-wrap:anywhere; user-select:all; }
+.bff27-pay-note { margin:var(--space-md) 0 0; color:var(--color-muted); font-size:var(--text-sm); }
+@media (max-width:1024px) { .bff27-passes { grid-template-columns:1fr; } }
+@media (max-width:560px) {
+  .bff27-pass { flex-direction:column; }
+  .bff27-pass-stub { flex-basis:auto; }
+  .bff27-pass-stub { border-inline-start:0; border-block-start:2px dashed var(--color-ink); }
+  .bff27-pass-stub::before,.bff27-pass-stub::after { inset-block:-13px auto; }
+  .bff27-pass-stub::before { inset-inline:-13px auto; clip-path:inset(0 0 0 50%); }
+  .bff27-pass-stub::after { inset-inline:auto -13px; clip-path:inset(0 50% 0 0); }
+}
+
+/* BFF'27 Lightning checkout dialog (assets/js/bff27-checkout.js). Paper card over the room. */
+button.bff27-btn { cursor:pointer; }
+button.bff27-btn:disabled { cursor:not-allowed; }
+.bff27-btn--ghost { background:transparent; color:var(--color-ink); border-color:var(--color-ink); }
+.bff27-checkout { width:min(26rem, calc(100vw - 2rem)); max-height:calc(100dvh - 2rem); overflow:auto; padding:var(--space-lg); border:1px solid var(--color-ink); border-radius:var(--radius-panel); background:var(--color-paper); color:var(--color-ink); font-family:var(--font-body); }
+.bff27-checkout::backdrop { background:oklch(7% 0.005 245 / 0.78); }
+.bff27-checkout h2 { margin:0 0 var(--space-md); font-family:var(--font-display); font-size:var(--text-lg); line-height:1.15; }
+.bff27-checkout .bff27-section-label { margin:0 0 var(--space-xs); color:var(--color-muted); }
+.bff27-checkout-close { position:absolute; top:var(--space-sm); right:var(--space-sm); width:44px; height:44px; border:0; background:none; color:var(--color-ink); font-size:var(--text-xl); line-height:1; cursor:pointer; }
+.bff27-checkout-form { display:grid; gap:var(--space-xs); }
+.bff27-checkout-form label { font-size:var(--text-sm); color:var(--color-muted); }
+.bff27-checkout-form select, .bff27-checkout-form input { min-height:44px; padding:var(--space-xs) var(--space-sm); border:1px solid var(--color-ink); border-radius:var(--radius-control); background:oklch(99% 0.005 92); color:var(--color-ink); font:inherit; }
+.bff27-checkout-form .bff27-btn { margin-top:var(--space-sm); justify-self:start; min-height:44px; }
+.bff27-checkout-note { font-size:var(--text-sm); color:var(--color-muted); }
+.bff27-checkout-error { color:oklch(45% 0.17 27); font-size:var(--text-sm); }
+.bff27-checkout-status { margin-top:var(--space-md); font-family:var(--font-display); letter-spacing:.04em; }
+.bff27-checkout-form + .bff27-checkout-note { margin-top:var(--space-md); }
+.bff27-checkout-qr { display:block; width:100%; max-width:16rem; height:auto; margin:var(--space-md) auto; background:#fff; }
+.bff27-checkout-actions { display:flex; flex-wrap:wrap; gap:var(--space-xs); justify-content:center; }
+.bff27-checkout-actions .bff27-btn { min-height:44px; display:inline-flex; align-items:center; }
+.bff27-checkout-ticket { margin:0 0 var(--space-md); padding-bottom:var(--space-sm); border-bottom:1px dashed var(--color-ink); text-align:center; font-size:var(--text-sm); }
