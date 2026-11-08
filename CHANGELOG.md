@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-07 — Add five film and series profiles to the cinema catalogue
+
+- Added sourced profiles for The Man Who Wouldn't Cry (2021 Swedish short), My Trust in You Is Broken (2024 documentary, 42 minutes), Finding Home (documentary series), Bitcoin Castle (2020 German short, double Golden Rabbit winner at BFF'26) and Bitcoin Video Magazine (video series, with its Bitcoin Motorcycle Diaries chapter shown at BFF'26).
+- Four pages use an official poster, title card or channel logo with credit; Bitcoin Castle has no official artwork and shows none. Each page carries only the festival selections and awards that Bitcoin FilmFest's public programme and press pages confirm.
+
 ## 2026-11-07 — Add Jessica Solce's Forging a Country to the cinema catalogue
 
 - Added a sourced profile for the 2024 short documentary on President Nayib Bukele's re-election (33 minutes, free on YouTube). The poster is the official title card from the Encode Productions upload. Bitcoin FilmFest did not screen the film, so the page carries no festival selection.
