@@ -2,6 +2,18 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-08 — BFF’27 early-bird tickets on sale
+
+- `/27/`: `bff27_tickets_api` is set, so both ticket buttons open the Lightning checkout (55,555 sats, until 31 December 2026). The tickets section says the early bird is on sale and lists the two other ways to pay: a Lightning address and a Nostr zap, each with the e-mail in the note. On-chain is no longer listed, the checkout does not take it.
+- Payments go straight to bitcoinfilmfest@getalby.com. Tested live with real sats on all three ways to pay before switching on.
+- To switch sales off, remove `bff27_tickets_api` from `_config.yml`: the page goes back to "Tickets coming soon".
+
+## 2026-11-07 — BFF’27 tickets block redesigned as a ticket with a stub
+
+- `/27/`: the tickets section now shows an early-bird pass (a paper ticket with a tear-off stub) and a short "Pay with Bitcoin" panel. Still no price or link: the stub button stays "Tickets coming soon" until the ticket URL exists.
+- Layout holds on desktop, tablet and phone.
+- Checkout on the page, ready but switched off: once `bff27_tickets_api` is set in `_config.yml`, both ticket buttons open a Lightning checkout (invoice QR, then the ticket QR) served by the bff-tickets Worker. Until then the page looks and behaves as before, plus one small script that does nothing.
+
 ## 2026-11-07 — Enrich the six newest film and series pages with trailers, stills, credits and sources
 
 - Forging a Country, The Man Who Wouldn't Cry, My Trust in You Is Broken, Finding Home, Bitcoin Castle and Bitcoin Video Magazine now carry the extra material their official sources provide. Anything that could not be sourced is left out.
