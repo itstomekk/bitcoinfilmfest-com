@@ -1,6 +1,6 @@
-/* Bitcoin FilmFest — FormSubmit subscription form
-   AJAX keeps visitors on the BFF site. FormSubmit still forwards each
-   submission to mails@bitcoinfilmfest.com after the form is activated once.
+/* Bitcoin FilmFest — subscription form
+   AJAX keeps visitors on the BFF site. Signups are stored in Cloudflare D1
+   by the bff-signup Worker (projects/websites/bff-signup-worker).
 */
 
 (function () {
@@ -41,7 +41,7 @@
         .then(function (response) {
           return response.json().then(function (data) {
             if (!response.ok || data.success === false) {
-              throw new Error(data.message || 'The form could not be sent.');
+              throw new Error(data.error || data.message || 'The form could not be sent.');
             }
             return data;
           });

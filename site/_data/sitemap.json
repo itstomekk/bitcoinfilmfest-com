@@ -19,7 +19,7 @@
   "count_notes": [
     "Generated routes = 21 shared/core pages (including this site map) + 16 compatibility outputs + 64 film profiles + 7 company profiles + 30 Reel entries + 34 press-room pages + 1 presskit + 2 noindex builder/lab pages + 1 generated 404 page.",
     "Public/indexable routes = the 157 public routes above; excludes 16 noindex compatibility redirects, /effect-lab/, /lab/seats/, and the generated /404.html error page.",
-    "The 10 _chronicle files have output: false and create no routes; there is no newsletter collection in the current build. Counts were checked against the 2026-09-30 production-config build."
+    "The 108 _chronicle files have output: false and create no individual routes (they render together on /reel/#chronicle); there is no newsletter collection in the current build. Counts were checked against the 2026-09-30 production-config build."
   ],
   "categories": [
     {

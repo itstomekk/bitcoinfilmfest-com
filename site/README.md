@@ -89,7 +89,7 @@ Edit `_data/credits.json`. `credits.md` renders this structured data. `credits.y
 | `assets/css/cinema-frame.css` | Screen/frame/component styling. Use token variables, not ad-hoc design values. |
 | `assets/js/main.js` | Mobile menu, active states, accessible soft navigation, route announcements. |
 | `assets/js/credits-roll.js` | Optional Credits auto-scroll; stops after user input/reduced-motion. |
-| `assets/js/subscribe.js` | FormSubmit AJAX adapter; forwards e-mail/npub signups to the festival inbox and redirects to `/thanks/`. |
+| `assets/js/subscribe.js` | Subscribe adapter; posts e-mail/npub signups to the `bff-signup` Cloudflare Worker (D1) and redirects to `/thanks/`. |
 | `assets/images/` | Local production image assets. |
 
 ## GitHub Pages status
@@ -116,7 +116,7 @@ When the custom domain is ready, update the deployment configuration deliberatel
 ## Known gaps
 
 - Around 40+ catalogued archive/content routes still need migration.
-- Subscription uses a FormSubmit AJAX relay to notify `mails@bitcoinfilmfest.com`; it is not a subscriber database or campaign-management system.
+- Subscription posts to the `bff-signup` Cloudflare Worker, which stores signups in a D1 table (export via its admin endpoint); it is not a campaign-management system.
 - The final custom-domain switch and DNS are intentionally deferred.
 - Credits auto-scroll is accessibility-safe but should be visually checked in a normal browser with motion enabled after future UI changes.
 

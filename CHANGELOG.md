@@ -2,9 +2,66 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
-## 2026-10-27 — Sister event: Revolution.Rocks
+## 2026-11-08 — Sister event: Revolution.Rocks
 
 - The Minis & roadshows page (`/festivals/roadshows/`) lists Revolution.Rocks, a free music night at Samo Centrum in Warsaw on 25 June 2027, as a sister event of the Warsaw edition, with a link to revolution.rocks.
+
+## 2026-11-07 — Enrich the six newest film and series pages with trailers, stills, credits and sources
+
+- Forging a Country, The Man Who Wouldn't Cry, My Trust in You Is Broken, Finding Home, Bitcoin Castle and Bitcoin Video Magazine now carry the extra material their official sources provide. Anything that could not be sourced is left out.
+- Trailers: official trailers added for Forging a Country (Encode Productions), The Man Who Wouldn't Cry (director's Vimeo) and Bitcoin Video Magazine (channel promo). My Trust in You Is Broken now embeds the official BTCPay Server trailer; the Bitcoin FilmFest 2024 trailer stays as a link. Finding Home links the series trailer on IndeeHub, which cannot be embedded.
+- Images: four official press stills for The Man Who Wouldn't Cry, one official still for Forging a Country, the official series poster for Finding Home plus the episode 2 and 3 posters. Bitcoin Castle still has no official artwork and shows none.
+- Credits, IMDb and festivals: full crew, IMDb link and the festival awards listed on IMDb for The Man Who Wouldn't Cry; producer, cinematographers, IMDb link and the Teatro Nacional world premiere for Forging a Country; per-episode credits from the official posters for Finding Home; music, sound, editing and gaffer credits for Bitcoin Castle; the Bitcoin FilmFest 2026 segment and Issue dates for Bitcoin Video Magazine.
+- Film template: the trailer field now also embeds Vimeo links and labels the fallback link by platform; a new optional `crew` list adds role rows to the film details; an `imdb` ID is published as `sameAs` in the Movie structured data.
+- Sitemap: the six pages already appeared in `sitemap.xml`; each now sets `last_modified_at: 2026-11-07` so its `lastmod` reflects the content change instead of the build time.
+
+## 2026-11-07 — Add five film and series profiles to the cinema catalogue
+
+- Added sourced profiles for The Man Who Wouldn't Cry (2021 Swedish short), My Trust in You Is Broken (2024 documentary, 42 minutes), Finding Home (documentary series), Bitcoin Castle (2020 German short, double Golden Rabbit winner at BFF'26) and Bitcoin Video Magazine (video series, with its Bitcoin Motorcycle Diaries chapter shown at BFF'26).
+- Four pages use an official poster, title card or channel logo with credit; Bitcoin Castle has no official artwork and shows none. Each page carries only the festival selections and awards that Bitcoin FilmFest's public programme and press pages confirm.
+
+## 2026-11-07 — Add Jessica Solce's Forging a Country to the cinema catalogue
+
+- Added a sourced profile for the 2024 short documentary on President Nayib Bukele's re-election (33 minutes, free on YouTube). The poster is the official title card from the Encode Productions upload. Bitcoin FilmFest did not screen the film, so the page carries no festival selection.
+
+## 2026-11-05 — Add Jason Zada's Satoshi to the cinema catalogue
+
+- Added a sourced profile for the planned feature, separate from similarly titled films. Spring 2027 filming is planned; the release date is not announced.
+
+## 2026-11-01 — Remove the Dwadzieścia Jeden social card from the site
+
+- Deleted `assets/images/social/whitepaper-18-og.jpg`. It was the Dwadzieścia Jeden (21 Bitcoin Polska) card, with Polish text and their logo, and no page has used it since the BFF card `whitepaper-18-bff-og.jpg` replaced it. Every page on the site now points to a Bitcoin FilmFest image.
+
+## 2026-11-01 — White paper: own 18th-birthday card, one canonical page, footer link
+
+- `/bitcoin-whitepaper/` is now the one canonical white paper page. Its social card is the new Bitcoin FilmFest 18th-birthday graphic `assets/images/social/whitepaper-18-bff-og.jpg` (blue cinema screen, paper with party hat, cake, cinema seats; BFF logo and Syne Mono / Courier Prime lettering, English only). The earlier card `whitepaper-18-og.jpg` stays in place for caches.
+- `/whitepaper/` (the 2026-10-30 standalone copy of the same text) is now a legacy stub: `redirect_to: /bitcoin-whitepaper/` (meta refresh + canonical to the new page), `noindex, follow`, kept out of the sitemap, carrying the same social card. GitHub Pages cannot send a 301, so the old URL keeps answering 200 and forwards in the browser.
+- The shared footer links "Bitcoin white paper" next to "Site map" on every page. The Chronicle entry on UNBANKED now links to `/bitcoin-whitepaper/`. `/bitcoin.pdf` is unchanged.
+
+## 2026-10-31 — Bitcoin white paper, 18 years: /bitcoin-whitepaper/
+
+- Added `/bitcoin-whitepaper/`, the Bitcoin white paper (Satoshi Nakamoto, 31 October 2008) as a full reading page inside the shared cinema shell on the paper screen: anniversary lede, PDF download card linking `/bitcoin.pdf`, section contents 1–12, all text with the seven figures, the four equations (MathML), the C listing, the results and the references, and a closing note linking the Polish reading version (translation by meeDamian). Page-scoped styles (`.wp-page`) live at the end of `cinema-frame.css`; figures are in `assets/images/whitepaper/`.
+- The page's social card is the new 18th-anniversary graphic `assets/images/social/whitepaper-18-og.jpg` (1200×630), set through the page's `image:` front matter. The site-wide default card is unchanged. `/bitcoin.pdf` is the same unmodified file added on 2026-10-30; `/whitepaper/` stays as it was.
+- Added the page to `llms.txt`.
+
+## 2026-10-31 — Chronicle links to the white paper
+
+- The Chronicle entry on UNBANKED (17th anniversary of the Bitcoin White Paper) now links "Bitcoin White Paper" to `/whitepaper/`.
+
+## 2026-10-30 — Bitcoin white paper at /whitepaper/
+
+- Added `/whitepaper/`, the Bitcoin white paper by Satoshi Nakamoto as readable text (title, abstract, sections, figures, equations, references) in the site's paper look, and `/bitcoin.pdf`, the original PDF, byte-for-byte unmodified (SHA-256 `b1674191…f553`). The page links the original PDF at the top and in a slim thank-you bar at the bottom, which also shows the hash and a quiet link home. It is standalone HTML like `/presskit/` and carries the GoatCounter snippet.
+
+## 2026-10-29 — Signup form moves from FormSubmit to Cloudflare
+
+- The footer form now posts to our own `bff-signup` Cloudflare Worker and stores e-mails and npubs in a D1 table, because FormSubmit was down (HTTP 521) and signups were failing. The form looks and behaves the same; the spam blocklist and honeypot still apply.
+
+## 2026-10-28 — Bitcoin Cinema Chronicle: full reviewed news log
+
+- `/reel/#chronicle` now carries all 108 reviewed News Log entries (N0001 to N0109), up from 10. Files come from the editorial export `sync_public_chronicle.py`; the 10 existing curated entries keep their text and gain `news_id`, `date_precision`, `source_url` and `category`.
+- Entries show a category label (cinema, industry, adjacent) and an approximate date when only the month or year is known (`display_date`). "Read more" uses `source_url`, falling back to the old `link` key.
+- The press and media page links to the Chronicle.
+- Long source names (for example `dutchbitcoinembassy.com`) now wrap inside the date column instead of running into the headline.
 
 ## 2026-10-26 — AI doors: Markdown copies and AI robots policy
 

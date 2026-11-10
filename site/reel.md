@@ -37,12 +37,13 @@ screen: paper
         {% for entry in chronicle_entries %}
           <li class="chronicle-entry">
             <div>
-              <time class="chronicle-date" datetime="{{ entry.date | date_to_xmlschema }}">{{ entry.date | date: "%b %-d, %Y" }}</time>
+              <time class="chronicle-date" datetime="{{ entry.date | date_to_xmlschema }}">{% if entry.display_date %}{{ entry.display_date }}{% else %}{{ entry.date | date: "%b %-d, %Y" }}{% endif %}</time>
               {% if entry.source %}<span class="chronicle-source">{{ entry.source }}</span>{% endif %}
+              {% if entry.category %}<span class="chronicle-category chronicle-category-{{ entry.category }}">{{ entry.category }}</span>{% endif %}
             </div>
             <div class="chronicle-body">
               {{ entry.content }}
-              {% if entry.link %}<p><a href="{{ entry.link }}" target="_blank" rel="noopener noreferrer">Read more →</a></p>{% endif %}
+              {% assign read_more = entry.source_url | default: entry.link %}{% if read_more %}<p><a href="{{ read_more }}" target="_blank" rel="noopener noreferrer">Read more →</a></p>{% endif %}
             </div>
           </li>
         {% endfor %}

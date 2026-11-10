@@ -93,7 +93,8 @@
       "director": {"@type": "Person", "name": {{ page.director | jsonify }}}{% endif %}{% if page.cast and page.cast.size > 0 %},
       "actor": [{% for actor in page.cast %}{"@type": "Person", "name": {{ actor | jsonify }}}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.studio %},
       "productionCompany": {"@type": "Organization", "name": {{ page.studio | jsonify }}}{% endif %}{% if page.country %},
-      "countryOfOrigin": {"@type": "Country", "name": {{ page.country | jsonify }}}{% endif %}
+      "countryOfOrigin": {"@type": "Country", "name": {{ page.country | jsonify }}}{% endif %}{% if page.imdb %},
+      "sameAs": {{ page.imdb | prepend: 'https://www.imdb.com/title/' | append: '/' | jsonify }}{% endif %}
     }{% endif %}{% if page.schema_type == 'Festival' %},
     {
       "@type": "Festival",

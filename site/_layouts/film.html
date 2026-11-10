@@ -80,6 +80,7 @@ layout: default
     {% if page.producer %}<dt>Producer</dt><dd>{{ page.producer }}</dd>{% endif %}
     {% if page.cinematographer %}<dt>Cinematography</dt><dd>{{ page.cinematographer }}</dd>{% endif %}
     {% if page.executive_producer %}<dt>Executive producer</dt><dd>{{ page.executive_producer }}</dd>{% endif %}
+    {% if page.crew and page.crew.size > 0 %}{% for member in page.crew %}<dt>{{ member.role }}</dt><dd>{{ member.name }}</dd>{% endfor %}{% endif %}
     {% if page.cast and page.cast.size > 0 %}<dt>Cast</dt><dd>{{ page.cast | join: ", " }}</dd>{% endif %}
     {% if page.studio %}<dt>Studio</dt><dd>{{ page.studio }}</dd>{% endif %}
     {% if page.company %}<dt>Production company</dt><dd>{{ page.company }}</dd>{% endif %}
@@ -118,6 +119,7 @@ layout: default
   {% if page.trailer %}
     {% assign trailer_url = page.trailer | strip %}
     {% assign youtube_id = '' %}
+    {% assign vimeo_id = '' %}
     {% if trailer_url contains 'youtube.com/watch' %}
       {% assign trailer_query = trailer_url | split: '?' | last %}
       {% assign trailer_params = trailer_query | split: '&' %}
@@ -129,6 +131,8 @@ layout: default
       {% endfor %}
     {% elsif trailer_url contains 'youtu.be/' %}
       {% assign youtube_id = trailer_url | split: 'youtu.be/' | last | split: '?' | first | split: '#' | first | strip %}
+    {% elsif trailer_url contains 'vimeo.com/' %}
+      {% assign vimeo_id = trailer_url | split: 'vimeo.com/' | last | split: '?' | first | split: '#' | first | split: '/' | first | strip %}
     {% endif %}
 
     <section class="cinema-trailer">
@@ -143,8 +147,18 @@ layout: default
             allow="fullscreen; picture-in-picture"
             allowfullscreen></iframe>
         </div>
+      {% elsif vimeo_id != '' %}
+        <div class="cinema-trailer-embed">
+          <iframe
+            src="https://player.vimeo.com/video/{{ vimeo_id | escape }}?dnt=1"
+            title="{{ page.title | escape }} trailer"
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="fullscreen; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
       {% endif %}
-      <p class="cinema-trailer-fallback">If the embedded trailer does not load, <a href="{{ trailer_url | escape }}" target="_blank" rel="noopener noreferrer">Watch on YouTube →</a></p>
+      <p class="cinema-trailer-fallback">If the embedded trailer does not load, <a href="{{ trailer_url | escape }}" target="_blank" rel="noopener noreferrer">{% if vimeo_id != '' %}Watch on Vimeo →{% elsif youtube_id != '' %}Watch on YouTube →{% else %}Watch the trailer →{% endif %}</a></p>
     </section>
   {% endif %}
 
