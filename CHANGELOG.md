@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-09 — Add 16 Chronicle entries from the Bitcoin FilmFest X archive
+
+- Completed the review of the @bitcoinfilmfest X/Twitter archive for the Bitcoin Cinema Chronicle: 16 new verified milestones, N0099 and N0110-N0124 (124 entries in total).
+- New entries cover the first Golden Rabbit winners (BFF23), the BFF Mini editions in Lisbon, San Salvador, Cape Town and Funchal, the Pitch Your Movie win at BFF24, the Bitcoin FilmFest movie night in Dublin, and releases, premieres and awards for Block 170, the first Nostr documentary, Bitcoin & Friends, Revolución Bitcoin, The Maxis Club Show, Death Athletic, Forging a Country, Dirty Coin and UNBANKED.
+- Each item is dated to the verified event, not the announcement, and links a public source. Announcements, teasers, ticket promotion and unverified premieres were left out.
+
 ## 2026-11-08 — Sister event: Revolution.Rocks
 
 - The Minis & roadshows page (`/festivals/roadshows/`) lists Revolution.Rocks, a free music night at Samo Centrum in Warsaw on 25 June 2027, as a sister event of the Warsaw edition, with a link to revolution.rocks.
