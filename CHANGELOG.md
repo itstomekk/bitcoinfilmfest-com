@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+
+## 2026-11-10 — Film production status and cast
+
+- Clarify unreleased film status on profiles and metadata; update The Bitcoin Executor production status and cast.
+
 ## 2026-11-09 — Add 16 Chronicle entries from the Bitcoin FilmFest X archive
 
 - Completed the review of the @bitcoinfilmfest X/Twitter archive for the Bitcoin Cinema Chronicle: 16 new verified milestones, N0099 and N0110-N0124 (124 entries in total).

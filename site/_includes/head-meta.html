@@ -14,6 +14,10 @@
   Films share their own poster, not the generic festival card. The poster is also
   what the Movie node below advertises as `image`.
 {% endcomment %}
+{%- assign film_meta_status = page.status | downcase | replace: '_', '-' | replace: ' ', '-' %}
+{%- assign film_meta_pending = false %}
+{%- if page.collection == 'films' and film_meta_status == 'upcoming' or page.collection == 'films' and film_meta_status == 'in-production' or page.collection == 'films' and film_meta_status == 'development' %}{% assign film_meta_pending = true %}{% endif %}
+{%- if film_meta_pending %}{% assign status_prefix = film_meta_status | replace: '-', ' ' | capitalize | append: ' — not yet released. ' %}{% assign seo_description = status_prefix | append: seo_description %}{% assign schema_description = status_prefix | append: schema_description %}{% endif %}
 {%- assign seo_image = page.poster | default: page.image | default: site.social_image %}
 {%- assign seo_image_ext = seo_image | split: '.' | last | downcase %}
 {%- if seo_image_ext == 'png' %}{% assign seo_image_type = 'image/png' %}{% else %}{% assign seo_image_type = 'image/jpeg' %}{% endif %}
@@ -83,7 +87,7 @@
       "name": {{ page.title | jsonify }},
       "url": {{ page.url | absolute_url | jsonify }},
       "description": {{ schema_description | jsonify }},
-      "image": {{ seo_image | absolute_url | jsonify }}{% if page.year %},
+      "image": {{ seo_image | absolute_url | jsonify }}{% if page.year and film_meta_pending == false %},
       "datePublished": "{{ page.year }}"{% endif %}{% if page.runtime %},
       "duration": "PT{{ page.runtime }}M"{% endif %}{% comment %}
         Only claim `genre` where the front matter genuinely names a genre. "Feature"
