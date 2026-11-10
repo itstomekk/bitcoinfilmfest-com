@@ -65,7 +65,5 @@ sources:
     url: "https://www.imdb.com/title/tt34730254/"
   - label: "Christopher Arcella — official filmmaker site"
     url: "https://christopherarcella.com/"
-  - label: "Looking Glass Education — Rise of Bitcoin Cinema"
-    url: "https://lookingglasseducation.com/the-rise-of-bitcoin-cinema/"
 featured: true
 ---

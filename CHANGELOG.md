@@ -3,6 +3,10 @@
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
 
+## 2026-11-10 — Remove dead source link
+
+- Remove the defunct Looking Glass Education link from The Bitcoin Executor sources (domain no longer resolves; reported by the filmmaker).
+
 ## 2026-11-10 — Film production status and cast
 
 - Clarify unreleased film status on profiles and metadata; update The Bitcoin Executor production status and cast.
