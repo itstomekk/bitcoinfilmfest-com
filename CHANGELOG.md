@@ -3,6 +3,11 @@
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
 
+## 2026-11-15 — Bitcoin Season and Dare to Dream page updates
+
+- Bitcoin Season: add Stacey Herbert to the cast, the July 13, 2026 worldwide YouTube release, the official trailer link and an interview source.
+- Dare to Dream: add the official trailer, official site, Apple TV and Tubi links, DVD date and the profit pledge to Bitcoin Beach; list Graham Rittener as producer.
+
 ## 2026-11-10 — Remove dead source link
 
 - Remove the defunct Looking Glass Education link from The Bitcoin Executor sources (domain no longer resolves; reported by the filmmaker).
