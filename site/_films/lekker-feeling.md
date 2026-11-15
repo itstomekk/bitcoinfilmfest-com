@@ -38,20 +38,18 @@ poster_alt: "Poster for Lekker Feeling: A Bitcoin Ekasi Story. A rounded photo a
 poster_credit: "Lekker Feeling: A Bitcoin Ekasi Story, official premiere poster"
 poster_source_url: "https://lekkerfeelingfilm.com/"
 synopsis: >
-  The film takes you to Mossel Bay, South Africa, where a group called Bitcoin
-  Ekasi has partnered with a local surfing group to create new opportunities
-  with Bitcoin. In a community still divided by the legacy of Apartheid, they
-  teach the next generation Bitcoin and surfing as a pathway to individual
-  freedom. Bitcoin Ekasi grew out of The Surfer Kids, a donation-based
-  non-profit founded in 2010.
+  In Mossel Bay, South Africa, Bitcoin Ekasi and a local surfing group teach
+  township kids Bitcoin and surfing as a pathway to individual freedom, in a
+  community still divided by the legacy of Apartheid.
 bitcoin_angle: >
-  Bitcoin Ekasi is building a Bitcoin circular economy in a South African
+  Bitcoin Ekasi grew out of The Surfer Kids, a donation-based non-profit
+  founded in 2010. It is building a Bitcoin circular economy in a South African
   township, with financial literacy classes for young people and local
   businesses. The film was also a fundraiser: it asked viewers for 1 BTC or
   $30,000 to rebuild The Surfer Kids' facilities. According to Analogg Studios,
   the goal was passed six times over, more than $140,000, within 48 hours of the
   premiere, and the new surf center was finished nine months later.
-platform: "YouTube (free, The Aubservation with Aubrey Strobel channel, released July 19, 2023)"
+platform: "YouTube (free)"
 trailer: "https://www.youtube.com/watch?v=P8vlzaDSNY0"
 bff_screening: "BFF'24 ShortFest at Kinoteka, Warsaw (April 20, 2024)"
 screenings:
@@ -60,7 +58,7 @@ screenings:
 official_links:
   - label: "Official film site"
     url: "https://lekkerfeelingfilm.com/"
-  - label: "Watch the full film on YouTube (free)"
+  - label: "Watch the full film on YouTube (free, The Aubservation with Aubrey Strobel)"
     url: "https://www.youtube.com/watch?v=P8vlzaDSNY0"
   - label: "Bitcoin Ekasi"
     url: "https://bitcoinekasi.com/"
