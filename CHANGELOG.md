@@ -3,6 +3,10 @@
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
 
+## 2026-11-15 — Add Lekker Feeling to the cinema catalogue
+
+- Added a sourced profile for Lekker Feeling: A Bitcoin Ekasi Story (2023 short documentary, 14 minutes, free on YouTube), directed by Alexander Heil and produced and written by Aubrey Strobel. The poster is the official premiere poster from the film's site. The page carries the BFF'24 ShortFest screening that the BFF'24 edition record lists.
+
 ## 2026-11-10 — Remove dead source link
 
 - Remove the defunct Looking Glass Education link from The Bitcoin Executor sources (domain no longer resolves; reported by the filmmaker).
