@@ -38,7 +38,6 @@ Short, human-readable record of public website changes. One dated entry is requi
 
 - The film is no longer labelled "upcoming". The full film is free on YouTube and also on IndeeHub.studio, both already listed on its page, so the status is now "released". Nothing else on the page changed.
 
-
 ## 2026-11-07 — Enrich the six newest film and series pages with trailers, stills, credits and sources
 
 - Forging a Country, The Man Who Wouldn't Cry, My Trust in You Is Broken, Finding Home, Bitcoin Castle and Bitcoin Video Magazine now carry the extra material their official sources provide. Anything that could not be sourced is left out.
@@ -113,6 +112,11 @@ Short, human-readable record of public website changes. One dated entry is requi
 ## 2026-10-20 — Studio Gulch profiles removed
 
 - Removed the Studio Gulch company profile and its two short film profiles (*Bitcoin is like a tidal wave...*, *Not everyone is prepared to pay the Bitcoin Toll of Hormuz...*), added earlier the same day. They are too small for the Cinema database.
+
+## 2026-10-19 — BFF26 Future of Money AI Film Contest winner
+
+- Added the public Chronicle record for *The Agreement* by Nartamoto, chosen by live audience vote at BFF26 on 7 June 2026 and awarded 1,500,000 sats.
+
 
 ## 2026-10-15 — HodL film profile
 
