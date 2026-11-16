@@ -3,6 +3,11 @@
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
 
+## 2026-11-15 — Build on Bitcoin and The Legend of Landi page fixes
+
+- Build on Bitcoin: add the teaser post, Geyser and creator links, point the podcast source at the actual episode, and align the description with the director's own wording.
+- The Legend of Landi: fix the Free Cities Podcast link, note that the official site is now titled Free at Sea, remove the unconfirmed Summer 2027 release date and unverified claims about the filmmaker.
+
 ## 2026-11-15 — Bitcoin Season and Dare to Dream page updates
 
 - Bitcoin Season: add Stacey Herbert to the cast, the July 13, 2026 worldwide YouTube release, the official trailer link and an interview source.
