@@ -13,20 +13,23 @@ synopsis: >
   Italian entrepreneur Samuele Landi lived 13 months on the Aisland 1 in international waters, pursuing a dream of a sovereign floating city. On February 2, 2024, a rogue wave killed Landi and two crew members, raising questions about freedom, ocean governance, and the cost of radical autonomy.
 bitcoin_angle: >
   While not explicitly Bitcoin-focused, the documentary explores the broader ethos of decentralized living and economic sovereignty that resonates throughout Bitcoin and cryptocurrency communities. Landi represented a libertarian frontier logic—rejecting state control through complete geographic exit—that animates much of the Bitcoin ecosystem. The film examines whether true freedom is achievable when individuals circumvent institutional authority entirely.
-platform: "Coming Summer 2027"
+platform: "In production; no release date announced"
 trailer: null
 watch: null
+official_links:
+  - label: "Official site (now titled Free at Sea)"
+    url: "https://freeatseafilm.com/"
 sources:
-  - label: "The Legend of Landi official website"
-    url: "https://www.thelegendoflandi.com/"
+  - label: "Official site, now titled Free at Sea (thelegendoflandi.com redirects here)"
+    url: "https://freeatseafilm.com/"
   - label: "New York Times — 'How a Businessman Fleeing Fraud Charges Built a Life Offshore' (Jan 2025)"
     url: "https://www.nytimes.com/2025/01/07/business/samuele-landi-offshore-seastead.html"
   - label: "The Seasteading Institute — 'Secret Seastead Ends in Death' (Feb 2024)"
     url: "https://www.seasteading.org/secret-seastead-ends-in-death"
   - label: "Redd Monitor — 'Who is Samuele Landi? Italian fugitive, Liberian diplomat, seasteader' (Dec 2023)"
     url: "https://reddmonitor.substack.com/p/who-is-samuele-landi-italian-fugitive"
-  - label: "Free Cities Foundation — 'Podcast Episode 175: Oswald Horowitz on The Last Free Place' (Apr 2026)"
-    url: "https://free-cities.org/topics/seasteading"
+  - label: "Free Cities Foundation — 'Oswald Horowitz | The Last Free Place', Episode 175 (3 April 2026)"
+    url: "https://free-cities.org/oswald-horowitz-the-last-free-place"
 tags:
   - Documentary
   - Seasteading
@@ -41,7 +44,7 @@ tags:
 
 ## Overview
 
-**The Legend of Landi: Requiem for a Floating City** is an upcoming documentary by filmmaker Oswald Horowitz, set for release in Summer 2027. The film chronicles the extraordinary and tragic story of Samuele Landi, a 58-year-old Italian entrepreneur who became the first person to live continuously in international waters for over 13 months while pursuing an audacious dream: building a sovereign floating city-state beyond the reach of any nation's laws.
+**The Legend of Landi: Requiem for a Floating City** is an upcoming documentary by filmmaker Oswald Horowitz. It is in production and no release date is announced on the official site. That site now presents the film as *Free at Sea*; the title used here is the one the Free Cities Podcast used in April 2026. The film chronicles the extraordinary and tragic story of Samuele Landi, a 58-year-old Italian entrepreneur who became the first person to live continuously in international waters for over 13 months while pursuing an audacious dream: building a sovereign floating city-state beyond the reach of any nation's laws.
 
 ## The Story
 
@@ -59,7 +62,7 @@ This vision aligned with the broader **seasteading movement**, which seeks to es
 
 ### The Documentary & Filmmaker
 
-Oswald Horowitz, a filmmaker with a keen eye for libertarian and exit-culture narratives, began documenting Landi's experiment in late 2023. Horowitz visited the Aisland in December 2023, capturing intimate footage of Landi aboard the barge, discussing his philosophy and plans. The filmmaker would later recall Landi's words: "I will die at sea for sure. I'm not going back."
+Oswald Horowitz is the film's director. In the Free Cities Podcast episode, he describes a long search for Landi that began with ignored Telegram messages and included a Dubai fisherman willing to sail forty miles offshore.
 
 ### Tragedy in the Persian Gulf
 
@@ -85,17 +88,17 @@ Landi's escape from Italian legal jurisdiction raises complex questions about ec
 
 ### Courage and Hubris
 
-Horowitz's portrayal avoids simple judgment. Landi emerges as charismatic, determined, and visionary—yet also stubborn and perhaps reckless. The filmmaker has emphasized that Landi inspired everyone who met him; his death is treated not as vindication of warnings against seasteading but as a tragedy that reflects the genuine costs of pioneering.
+The Free Cities Podcast episode description says Landi's life turned out to be nothing like the press had painted it, and that the story takes turns nobody could have scripted.
 
 ## Production & Release
 
-**Director:** Oswald Horowitz (known for documentary work on libertarian and frontier narratives)
+**Director:** Oswald Horowitz
 
 **Production Company:** Maverick Moves
 
-**Status:** In production; set for release Summer 2027
+**Status:** In production; no release date announced
 
-**Notable Contributors:** The Seasteading Institute has engaged with the documentary; Joe Quirk, president of the Institute, has discussed Landi's legacy in public statements. The film has drawn interest from the Free Cities Foundation and the broader libertarian and alternative-governance communities.
+**In the press and podcasts:** Horowitz discussed the film on the Free Cities Podcast, Episode 175 (3 April 2026). The official site lists press coverage of Landi's story from The New York Times, the Financial Times, L'Espresso and RaiPlay.
 
 ## Connection to Bitcoin & Cryptocurrency Culture
 
@@ -109,10 +112,4 @@ In the seasteading community, Samuele Landi is remembered as a heroic figure—t
 
 ---
 
-**Last Verified:** September 23, 2026
-
-**File Created:** 2026-09-23
-
-**Production Status:** In Production; release expected Summer 2027
-
-**Notable Context:** This film documents a tragedy that occurred February 2, 2024, with reporting and verification completed by major news outlets including The New York Times. Oswald Horowitz's documentary is currently in post-production and will premiere in 2027.
+*Last updated: November 15, 2026*

@@ -2,6 +2,15 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-15 — Build on Bitcoin and The Legend of Landi page fixes
+
+- Build on Bitcoin: add the teaser post, Geyser and creator links, point the podcast source at the actual episode, and align the description with the director's own wording.
+- The Legend of Landi: fix the Free Cities Podcast link, note that the official site is now titled Free at Sea, remove the unconfirmed Summer 2027 release date and unverified claims about the filmmaker.
+
+## 2026-11-15 — Bitcoin Season and Dare to Dream page updates
+
+- Bitcoin Season: add Stacey Herbert to the cast, the July 13, 2026 worldwide YouTube release, the official trailer link and an interview source.
+- Dare to Dream: add the official trailer, official site, Apple TV and Tubi links, DVD date and the profit pledge to Bitcoin Beach; list Graham Rittener as producer.
 
 ## 2026-11-15 — Add Lekker Feeling to the cinema catalogue
 
@@ -24,6 +33,11 @@ Short, human-readable record of public website changes. One dated entry is requi
 ## 2026-11-08 — Sister event: Revolution.Rocks
 
 - The Minis & roadshows page (`/festivals/roadshows/`) lists Revolution.Rocks, a free music night at Samo Centrum in Warsaw on 25 June 2027, as a sister event of the Warsaw edition, with a link to revolution.rocks.
+
+## 2026-11-07 — Mark Hummingbird: The Bitcoin Jungle Story as released
+
+- The film is no longer labelled "upcoming". The full film is free on YouTube and also on IndeeHub.studio, both already listed on its page, so the status is now "released". Nothing else on the page changed.
+
 
 ## 2026-11-07 — Enrich the six newest film and series pages with trailers, stills, credits and sources
 

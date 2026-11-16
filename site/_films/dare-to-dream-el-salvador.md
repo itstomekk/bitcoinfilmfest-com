@@ -22,6 +22,18 @@ poster_credit: "Dare to Dream / Bitcoin FilmFest local archive"
 poster_source: "Official Dare to Dream poster archived by Bitcoin FilmFest"
 poster_source_url: "https://daretodream-film.com/"
 poster_asset_type: "Official poster"
+trailer: "https://www.youtube.com/watch?v=912eCr8Yjmo"
+official_links:
+  - label: "Dare to Dream — official site"
+    url: "https://daretodream-film.com/"
+  - label: "Official trailer (Freestyle Digital Media)"
+    url: "https://www.youtube.com/watch?v=912eCr8Yjmo"
+  - label: "Apple TV"
+    url: "https://tv.apple.com/gb/movie/dare-to-dream-a-story-from-el-salvador/umc.cmc.4eo7odk5fhw7vjm2wvy1f9i6r"
+  - label: "Tubi"
+    url: "https://tubitv.com/movies/100020615/dare-to-dream-a-story-from-el-salvador"
+  - label: "Bitcoin Beach, the project the film is about"
+    url: "https://www.bitcoinbeach.com/"
 synopsis: "Two young Salvadoran dreamers dedicate themselves to bringing hope and change to their violence-stricken country. An anonymous Bitcoin donor's support catalyzes their mission, leading to historic global change through Bitcoin Beach and El Salvador's revolutionary adoption of Bitcoin as legal tender."
 category: Documentary
 tags:
@@ -35,7 +47,7 @@ tags:
 
 ## Overview
 
-**Dare to Dream: A Story From El Salvador** is a documentary that chronicles the inspiring true story of Bitcoin Beach and El Salvador's groundbreaking journey toward Bitcoin adoption. Directed by British-French filmmaker Joe Delahunty and funded by producer Graham Rittener, the film uncovers the human stories behind one of the most significant financial revolutions of our time.
+**Dare to Dream: A Story From El Salvador** is a documentary that chronicles the inspiring true story of Bitcoin Beach and El Salvador's groundbreaking journey toward Bitcoin adoption. Directed by British-French filmmaker Joe Delahunty and produced by Graham Rittener, the film uncovers the human stories behind one of the most significant financial revolutions of our time.
 
 ## Synopsis
 
@@ -62,9 +74,9 @@ Moises Lopez Arenivar, Michael Atwood, Nicolas Burtey, Chris Hunter, Max Keiser,
 ## Production Details
 
 - **Director:** Joe Delahunty (British-French filmmaker, LensCulture-featured photographer/director)
-- **Producer/Funder:** Graham Rittener
+- **Producer:** Graham Rittener
 - **Filming Location:** El Zonte and throughout El Salvador
-- **Release Date:** September 5, 2023 (United States)
+- **Release Date:** September 5, 2023 (United States); DVD September 19, 2023
 - **Runtime:** 1 hour 36 minutes
 - **Audio:** English (Dolby 5.1, AAC)
 - **Subtitles:** English (CC), Spanish (Latin America)
@@ -73,11 +85,11 @@ Moises Lopez Arenivar, Michael Atwood, Nicolas Burtey, Chris Hunter, Max Keiser,
 
 ## Distribution & Availability
 
-The film is available on major streaming platforms including Apple TV and Amazon Prime Video. Freestyle Digital Media secured a distribution deal to bring the documentary to mass audiences globally.
+The film is available on Apple TV, Amazon Prime Video and Tubi, and on DVD. Freestyle Digital Media secured a distribution deal to bring the documentary to mass audiences. Per the film's official site, at least 90% of any profits go to Bitcoin Beach and its social projects in El Zonte.
 
 ## Filmmaker Notes
 
-Director Joe Delahunty, known for his work capturing human connection and untold stories, brings his signature global perspective to this documentary. His photography and filmmaking are shaped by a deliberate use of light, composition, and focus on subtle narratives within everyday life. Producer Graham Rittener noticed a gap in Bitcoin coverage—while technical and macroeconomic content abounded, the human stories behind Bitcoin Beach remained largely untold. This inspired him to fund the film as a means to illuminate the transformative power of Bitcoin through authentic voices.
+Director Joe Delahunty, known for his work capturing human connection and untold stories, brings his signature global perspective to this documentary. His photography and filmmaking are shaped by a deliberate use of light, composition, and focus on subtle narratives within everyday life. Producer Graham Rittener noticed a gap in Bitcoin coverage—while technical and macroeconomic content abounded, the human stories behind Bitcoin Beach remained largely untold. This inspired him to bring the film to life as a means to illuminate the transformative power of Bitcoin through authentic voices.
 
 ## Critical Reception & Impact
 
@@ -96,6 +108,9 @@ This film exemplifies the convergence of Bitcoin adoption, financial sovereignty
 3. **Bitcoin Magazine** — "Dare to Dream: A Film Unveiling the Genesis of Bitcoin Beach" — In-depth analysis of the film's narrative, themes, and impact on Bitcoin Beach documentation
 4. **CoinDesk** — "El Salvador Dispatch #4: How Bitcoin Taught a Nation to Dream" — Context on El Salvador's Bitcoin adoption journey and community perspectives
 
+5. **Official site** — daretodream-film.com — Story, team and the profit pledge to Bitcoin Beach
+6. **Freestyle Digital Media trailer** — YouTube — Official trailer
+
 ---
 
-*Last updated: September 23, 2026*
+*Last updated: November 15, 2026*
