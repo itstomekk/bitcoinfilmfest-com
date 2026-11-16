@@ -2,9 +2,38 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-15 — Build on Bitcoin and The Legend of Landi page fixes
+
+- Build on Bitcoin: add the teaser post, Geyser and creator links, point the podcast source at the actual episode, and align the description with the director's own wording.
+- The Legend of Landi: fix the Free Cities Podcast link, note that the official site is now titled Free at Sea, remove the unconfirmed Summer 2027 release date and unverified claims about the filmmaker.
+
+## 2026-11-15 — Bitcoin Season and Dare to Dream page updates
+
+- Bitcoin Season: add Stacey Herbert to the cast, the July 13, 2026 worldwide YouTube release, the official trailer link and an interview source.
+- Dare to Dream: add the official trailer, official site, Apple TV and Tubi links, DVD date and the profit pledge to Bitcoin Beach; list Graham Rittener as producer.
+
+## 2026-11-10 — Remove dead source link
+
+- Remove the defunct Looking Glass Education link from The Bitcoin Executor sources (domain no longer resolves; reported by the filmmaker).
+
+## 2026-11-10 — Film production status and cast
+
+- Clarify unreleased film status on profiles and metadata; update The Bitcoin Executor production status and cast.
+
+## 2026-11-09 — Add 16 Chronicle entries from the Bitcoin FilmFest X archive
+
+- Completed the review of the @bitcoinfilmfest X/Twitter archive for the Bitcoin Cinema Chronicle: 16 new verified milestones, N0099 and N0110-N0124 (124 entries in total).
+- New entries cover the first Golden Rabbit winners (BFF23), the BFF Mini editions in Lisbon, San Salvador, Cape Town and Funchal, the Pitch Your Movie win at BFF24, the Bitcoin FilmFest movie night in Dublin, and releases, premieres and awards for Block 170, the first Nostr documentary, Bitcoin & Friends, Revolución Bitcoin, The Maxis Club Show, Death Athletic, Forging a Country, Dirty Coin and UNBANKED.
+- Each item is dated to the verified event, not the announcement, and links a public source. Announcements, teasers, ticket promotion and unverified premieres were left out.
+
+## 2026-11-08 — Sister event: Revolution.Rocks
+
+- The Minis & roadshows page (`/festivals/roadshows/`) lists Revolution.Rocks, a free music night at Samo Centrum in Warsaw on 25 June 2027, as a sister event of the Warsaw edition, with a link to revolution.rocks.
+
 ## 2026-11-07 — Mark Hummingbird: The Bitcoin Jungle Story as released
 
 - The film is no longer labelled "upcoming". The full film is free on YouTube and also on IndeeHub.studio, both already listed on its page, so the status is now "released". Nothing else on the page changed.
+
 
 ## 2026-11-07 — Enrich the six newest film and series pages with trailers, stills, credits and sources
 

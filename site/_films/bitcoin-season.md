@@ -20,6 +20,7 @@ cast:
   - "Jonathan Sumers"
   - "Natalie Brunell"
   - "Greg Foss"
+  - "Stacey Herbert"
 studio: "Full Surrender Films"
 country: "USA"
 runtime: 83
@@ -41,11 +42,14 @@ trailer: "https://www.youtube.com/watch?v=dUIWK0sMJDA"
 screenings:
   - "Premiere — San Clemente, California (June 3, 2026)"
   - "Seattle International Film Festival — July 11, 2026"
+  - "Worldwide release, free on YouTube — July 13, 2026"
 official_links:
   - label: "Bitcoin Season — official site"
     url: "https://www.bitcoinseason.film/"
   - label: "Watch free on YouTube"
     url: "https://www.youtube.com/watch?v=vaHDsOt2Ovk"
+  - label: "Official trailer on YouTube"
+    url: "https://www.youtube.com/watch?v=dUIWK0sMJDA"
 sources:
   - label: "Bitcoin Season — official site"
     url: "https://www.bitcoinseason.film/"
@@ -55,6 +59,8 @@ sources:
     url: "https://www.prnewswire.com/news-releases/swan-bitcoin-full-surrender-films-release-bitcoin-season-a-documentary-on-bitcoins-arrival-in-professional-basketball-302823375.html"
   - label: "Bitcoin Magazine — premiere and film background"
     url: "https://bitcoinmagazine.com/news/bitcoin-season-charts-bitcoins-in-the-nba"
+  - label: "Muse by Clios — interview with Mike Nicoll (July 29, 2026)"
+    url: "https://musebyclios.com/2-minutes-with/mike-nicoll-says-his-latest-filmmaking-experience-changed-the-way-he-sees-the-world"
 bff_screening: null
 featured: true
 ---

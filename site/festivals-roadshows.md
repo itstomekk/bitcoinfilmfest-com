@@ -33,6 +33,13 @@ screen: paper
       </li>
       <li class="cinema-row roadshow-row">
         <div class="cinema-row-link">
+          <span class="cinema-row-title">Warsaw, 25 June 2027</span>
+          <span class="cinema-row-meta"><span>Revolution.Rocks</span><span class="cinema-status cinema-status--active">sister event</span></span>
+          <p class="cinema-row-description">A free music night at Samo Centrum by the Palace of Culture, during the Bitcoin FilmFest Warsaw week (24–27 June 2027). Fans pay artists directly over Bitcoin. <a href="https://revolution.rocks/">revolution.rocks</a></p>
+        </div>
+      </li>
+      <li class="cinema-row roadshow-row">
+        <div class="cinema-row-link">
           <span class="cinema-row-title">Lisbon</span>
           <span class="cinema-row-meta"><span>Mini edition</span><span class="cinema-status">archive reference</span></span>
           <p class="cinema-row-description">An early Mini format mixing film, short pieces and conversations about monetary freedom, Bitcoin adoption and independent culture.</p>

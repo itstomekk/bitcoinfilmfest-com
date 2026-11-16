@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+{% assign film_status = page.status | downcase | replace: '_', '-' | replace: ' ', '-' %}
+{% assign film_pending = false %}
+{% if film_status == 'upcoming' or film_status == 'in-production' or film_status == 'development' %}{% assign film_pending = true %}{% endif %}
 <article class="cinema-profile">
   <a class="cinema-back" href="{{ '/cinema/films/' | relative_url }}">← All films</a>
 
@@ -28,8 +31,9 @@ layout: default
           </figure>
         {% endif %}
         <div class="cinema-hero-meta">
-          <p class="cinema-hero-type">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
+          <p class="cinema-hero-type">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status and film_pending == false %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
           <h1 class="cinema-hero-title">{{ page.title }}</h1>
+          {% if film_pending %}<p class="cinema-film-status">{{ film_status | replace: '-', ' ' | capitalize }} <span>— Not yet released</span></p>{% endif %}
           <div class="cinema-hero-chips">
             {% if page.runtime %}<span class="chip chip--runtime">{{ page.runtime }} min</span>{% endif %}
             {% if page.country %}<span class="chip chip--country">{{ page.country }}</span>{% endif %}
@@ -43,8 +47,9 @@ layout: default
     </header>
   {% else %}
     <header class="page-masthead">
-      <p class="page-context">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
+      <p class="page-context">{{ page.type }}{% if page.year %} · {{ page.year }}{% endif %}{% if page.status and film_pending == false %} · {{ page.status | replace: '-', ' ' }}{% endif %}</p>
       <h1>{{ page.title }}</h1>
+      {% if film_pending %}<p class="cinema-film-status">{{ film_status | replace: '-', ' ' | capitalize }} <span>— Not yet released</span></p>{% endif %}
       {% if page.synopsis %}<p>{{ page.synopsis }}</p>{% endif %}
     </header>
   {% endif %}

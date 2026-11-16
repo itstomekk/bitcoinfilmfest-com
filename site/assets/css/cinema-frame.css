@@ -5593,3 +5593,16 @@ body:has(.edition-page--bff26) .topnav .nav-link {
   .wp-pdf__btn { width: 100%; text-align: center; }
   .wp-defs { margin-inline-start: 0; }
 }
+
+/* Film profile status: readable over artwork and in the plain masthead. */
+.cinema-profile .cinema-film-status {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-screen);
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
