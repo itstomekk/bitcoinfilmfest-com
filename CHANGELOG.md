@@ -2,9 +2,121 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-15 — Build on Bitcoin and The Legend of Landi page fixes
+
+- Build on Bitcoin: add the teaser post, Geyser and creator links, point the podcast source at the actual episode, and align the description with the director's own wording.
+- The Legend of Landi: fix the Free Cities Podcast link, note that the official site is now titled Free at Sea, remove the unconfirmed Summer 2027 release date and unverified claims about the filmmaker.
+
+## 2026-11-15 — Bitcoin Season and Dare to Dream page updates
+
+- Bitcoin Season: add Stacey Herbert to the cast, the July 13, 2026 worldwide YouTube release, the official trailer link and an interview source.
+- Dare to Dream: add the official trailer, official site, Apple TV and Tubi links, DVD date and the profit pledge to Bitcoin Beach; list Graham Rittener as producer.
+
+## 2026-11-15 — Add Lekker Feeling to the cinema catalogue
+
+- Added a sourced profile for Lekker Feeling: A Bitcoin Ekasi Story (2023 short documentary, 14 minutes, free on YouTube), directed by Alexander Heil and produced and written by Aubrey Strobel. The poster is the official premiere poster from the film's site. The page carries the BFF'24 ShortFest screening that the BFF'24 edition record lists.
+
+## 2026-11-10 — Remove dead source link
+
+- Remove the defunct Looking Glass Education link from The Bitcoin Executor sources (domain no longer resolves; reported by the filmmaker).
+
+## 2026-11-10 — Film production status and cast
+
+- Clarify unreleased film status on profiles and metadata; update The Bitcoin Executor production status and cast.
+
+## 2026-11-09 — Add 16 Chronicle entries from the Bitcoin FilmFest X archive
+
+- Completed the review of the @bitcoinfilmfest X/Twitter archive for the Bitcoin Cinema Chronicle: 16 new verified milestones, N0099 and N0110-N0124 (124 entries in total).
+- New entries cover the first Golden Rabbit winners (BFF23), the BFF Mini editions in Lisbon, San Salvador, Cape Town and Funchal, the Pitch Your Movie win at BFF24, the Bitcoin FilmFest movie night in Dublin, and releases, premieres and awards for Block 170, the first Nostr documentary, Bitcoin & Friends, Revolución Bitcoin, The Maxis Club Show, Death Athletic, Forging a Country, Dirty Coin and UNBANKED.
+- Each item is dated to the verified event, not the announcement, and links a public source. Announcements, teasers, ticket promotion and unverified premieres were left out.
+
+## 2026-11-08 — Sister event: Revolution.Rocks
+
+- The Minis & roadshows page (`/festivals/roadshows/`) lists Revolution.Rocks, a free music night at Samo Centrum in Warsaw on 25 June 2027, as a sister event of the Warsaw edition, with a link to revolution.rocks.
+
+## 2026-11-07 — Mark Hummingbird: The Bitcoin Jungle Story as released
+
+- The film is no longer labelled "upcoming". The full film is free on YouTube and also on IndeeHub.studio, both already listed on its page, so the status is now "released". Nothing else on the page changed.
+
+## 2026-11-07 — Enrich the six newest film and series pages with trailers, stills, credits and sources
+
+- Forging a Country, The Man Who Wouldn't Cry, My Trust in You Is Broken, Finding Home, Bitcoin Castle and Bitcoin Video Magazine now carry the extra material their official sources provide. Anything that could not be sourced is left out.
+- Trailers: official trailers added for Forging a Country (Encode Productions), The Man Who Wouldn't Cry (director's Vimeo) and Bitcoin Video Magazine (channel promo). My Trust in You Is Broken now embeds the official BTCPay Server trailer; the Bitcoin FilmFest 2024 trailer stays as a link. Finding Home links the series trailer on IndeeHub, which cannot be embedded.
+- Images: four official press stills for The Man Who Wouldn't Cry, one official still for Forging a Country, the official series poster for Finding Home plus the episode 2 and 3 posters. Bitcoin Castle still has no official artwork and shows none.
+- Credits, IMDb and festivals: full crew, IMDb link and the festival awards listed on IMDb for The Man Who Wouldn't Cry; producer, cinematographers, IMDb link and the Teatro Nacional world premiere for Forging a Country; per-episode credits from the official posters for Finding Home; music, sound, editing and gaffer credits for Bitcoin Castle; the Bitcoin FilmFest 2026 segment and Issue dates for Bitcoin Video Magazine.
+- Film template: the trailer field now also embeds Vimeo links and labels the fallback link by platform; a new optional `crew` list adds role rows to the film details; an `imdb` ID is published as `sameAs` in the Movie structured data.
+- Sitemap: the six pages already appeared in `sitemap.xml`; each now sets `last_modified_at: 2026-11-07` so its `lastmod` reflects the content change instead of the build time.
+
+## 2026-11-07 — Add five film and series profiles to the cinema catalogue
+
+- Added sourced profiles for The Man Who Wouldn't Cry (2021 Swedish short), My Trust in You Is Broken (2024 documentary, 42 minutes), Finding Home (documentary series), Bitcoin Castle (2020 German short, double Golden Rabbit winner at BFF'26) and Bitcoin Video Magazine (video series, with its Bitcoin Motorcycle Diaries chapter shown at BFF'26).
+- Four pages use an official poster, title card or channel logo with credit; Bitcoin Castle has no official artwork and shows none. Each page carries only the festival selections and awards that Bitcoin FilmFest's public programme and press pages confirm.
+
+## 2026-11-07 — Add Jessica Solce's Forging a Country to the cinema catalogue
+
+- Added a sourced profile for the 2024 short documentary on President Nayib Bukele's re-election (33 minutes, free on YouTube). The poster is the official title card from the Encode Productions upload. Bitcoin FilmFest did not screen the film, so the page carries no festival selection.
+
+## 2026-11-05 — Add Jason Zada's Satoshi to the cinema catalogue
+
+- Added a sourced profile for the planned feature, separate from similarly titled films. Spring 2027 filming is planned; the release date is not announced.
+
+## 2026-11-01 — Remove the Dwadzieścia Jeden social card from the site
+
+- Deleted `assets/images/social/whitepaper-18-og.jpg`. It was the Dwadzieścia Jeden (21 Bitcoin Polska) card, with Polish text and their logo, and no page has used it since the BFF card `whitepaper-18-bff-og.jpg` replaced it. Every page on the site now points to a Bitcoin FilmFest image.
+
+## 2026-11-01 — White paper: own 18th-birthday card, one canonical page, footer link
+
+- `/bitcoin-whitepaper/` is now the one canonical white paper page. Its social card is the new Bitcoin FilmFest 18th-birthday graphic `assets/images/social/whitepaper-18-bff-og.jpg` (blue cinema screen, paper with party hat, cake, cinema seats; BFF logo and Syne Mono / Courier Prime lettering, English only). The earlier card `whitepaper-18-og.jpg` stays in place for caches.
+- `/whitepaper/` (the 2026-10-30 standalone copy of the same text) is now a legacy stub: `redirect_to: /bitcoin-whitepaper/` (meta refresh + canonical to the new page), `noindex, follow`, kept out of the sitemap, carrying the same social card. GitHub Pages cannot send a 301, so the old URL keeps answering 200 and forwards in the browser.
+- The shared footer links "Bitcoin white paper" next to "Site map" on every page. The Chronicle entry on UNBANKED now links to `/bitcoin-whitepaper/`. `/bitcoin.pdf` is unchanged.
+
+## 2026-10-31 — Bitcoin white paper, 18 years: /bitcoin-whitepaper/
+
+- Added `/bitcoin-whitepaper/`, the Bitcoin white paper (Satoshi Nakamoto, 31 October 2008) as a full reading page inside the shared cinema shell on the paper screen: anniversary lede, PDF download card linking `/bitcoin.pdf`, section contents 1–12, all text with the seven figures, the four equations (MathML), the C listing, the results and the references, and a closing note linking the Polish reading version (translation by meeDamian). Page-scoped styles (`.wp-page`) live at the end of `cinema-frame.css`; figures are in `assets/images/whitepaper/`.
+- The page's social card is the new 18th-anniversary graphic `assets/images/social/whitepaper-18-og.jpg` (1200×630), set through the page's `image:` front matter. The site-wide default card is unchanged. `/bitcoin.pdf` is the same unmodified file added on 2026-10-30; `/whitepaper/` stays as it was.
+- Added the page to `llms.txt`.
+
+## 2026-10-31 — Chronicle links to the white paper
+
+- The Chronicle entry on UNBANKED (17th anniversary of the Bitcoin White Paper) now links "Bitcoin White Paper" to `/whitepaper/`.
+
+## 2026-10-30 — Bitcoin white paper at /whitepaper/
+
+- Added `/whitepaper/`, the Bitcoin white paper by Satoshi Nakamoto as readable text (title, abstract, sections, figures, equations, references) in the site's paper look, and `/bitcoin.pdf`, the original PDF, byte-for-byte unmodified (SHA-256 `b1674191…f553`). The page links the original PDF at the top and in a slim thank-you bar at the bottom, which also shows the hash and a quiet link home. It is standalone HTML like `/presskit/` and carries the GoatCounter snippet.
+
+## 2026-10-29 — Signup form moves from FormSubmit to Cloudflare
+
+- The footer form now posts to our own `bff-signup` Cloudflare Worker and stores e-mails and npubs in a D1 table, because FormSubmit was down (HTTP 521) and signups were failing. The form looks and behaves the same; the spam blocklist and honeypot still apply.
+
+## 2026-10-28 — Bitcoin Cinema Chronicle: full reviewed news log
+
+- `/reel/#chronicle` now carries all 108 reviewed News Log entries (N0001 to N0109), up from 10. Files come from the editorial export `sync_public_chronicle.py`; the 10 existing curated entries keep their text and gain `news_id`, `date_precision`, `source_url` and `category`.
+- Entries show a category label (cinema, industry, adjacent) and an approximate date when only the month or year is known (`display_date`). "Read more" uses `source_url`, falling back to the old `link` key.
+- The press and media page links to the Chronicle.
+- Long source names (for example `dutchbitcoinembassy.com`) now wrap inside the date column instead of running into the headline.
+
+## 2026-10-26 — AI doors: Markdown copies and AI robots policy
+
+- Pages built from the shared layout now have a Markdown copy at the same path with `.md` added (`/about/` is `/about/index.md`, the homepage is `/index.md`). `scripts/build_markdown_copies.py` writes the copies after the Jekyll build in `deploy-pages.yml`, from the same HTML, and each page links its copy from `<head>` with `<link rel="alternate" type="text/markdown">`. Built pages are the only source, so the copies follow every content change. 123 pages have a copy. The standalone `/26/press/` pages and `/presskit/` do not use the shared head and have none yet.
+- `robots.txt` adds `Content-Signal: search=yes, ai-input=yes, ai-train=no` and disallows the training crawlers (GPTBot, ClaudeBot, CCBot, Applebot-Extended, Meta-ExternalAgent, Amazonbot, Bytespider, cohere-training-data-crawler). Search and user-triggered fetchers stay allowed.
+- `llms.txt` says where the Markdown copies are.
+
+## 2026-10-26 — Analytics on press pages
+
+- Added the GoatCounter snippet to the 34 hand-written pages under `/26/press/` and to `/presskit/`. They are standalone HTML and did not use the shared layout, so visits to them were not counted.
+
+## 2026-10-22 — Signup spam filter
+
+- The footer signup form now drops submissions from the `maxxspace` spam domain. FormSubmit discards them server-side through its `_blacklist` field, and the browser skips the request. Blocked phrases live in `subscribe_blocklist` in `site/_config.yml`.
+
+## 2026-10-20 — Studio Gulch profiles removed
+
+- Removed the Studio Gulch company profile and its two short film profiles (*Bitcoin is like a tidal wave...*, *Not everyone is prepared to pay the Bitcoin Toll of Hormuz...*), added earlier the same day. They are too small for the Cinema database.
+
 ## 2026-10-19 — BFF26 Future of Money AI Film Contest winner
 
 - Added the public Chronicle record for *The Agreement* by Nartamoto, chosen by live audience vote at BFF26 on 7 June 2026 and awarded 1,500,000 sats.
+
 
 ## 2026-10-15 — HodL film profile
 

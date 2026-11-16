@@ -48,6 +48,19 @@ jobs:
         working-directory: site
         run: bundle exec jekyll build --trace --config _config.yml
 
+      - name: Set up Python for Markdown copies
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Markdown copy dependencies
+        run: pip install beautifulsoup4 lxml markdownify
+
+      # Writes <page>.md for every built page whose <head> links to it, so the
+      # copies come from the same build as the links and cannot go stale.
+      - name: Write Markdown copies for AI agents
+        run: python3 scripts/build_markdown_copies.py --site site/_site
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

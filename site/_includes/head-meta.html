@@ -14,6 +14,10 @@
   Films share their own poster, not the generic festival card. The poster is also
   what the Movie node below advertises as `image`.
 {% endcomment %}
+{%- assign film_meta_status = page.status | downcase | replace: '_', '-' | replace: ' ', '-' %}
+{%- assign film_meta_pending = false %}
+{%- if page.collection == 'films' and film_meta_status == 'upcoming' or page.collection == 'films' and film_meta_status == 'in-production' or page.collection == 'films' and film_meta_status == 'development' %}{% assign film_meta_pending = true %}{% endif %}
+{%- if film_meta_pending %}{% assign status_prefix = film_meta_status | replace: '-', ' ' | capitalize | append: ' — not yet released. ' %}{% assign seo_description = status_prefix | append: seo_description %}{% assign schema_description = status_prefix | append: schema_description %}{% endif %}
 {%- assign seo_image = page.poster | default: page.image | default: site.social_image %}
 {%- assign seo_image_ext = seo_image | split: '.' | last | downcase %}
 {%- if seo_image_ext == 'png' %}{% assign seo_image_type = 'image/png' %}{% else %}{% assign seo_image_type = 'image/jpeg' %}{% endif %}
@@ -35,6 +39,8 @@
   {% endif %}
 {% endif %}
 <link rel="canonical" href="{% if page.redirect_to %}{{ redirect_target }}{% else %}{{ page.url | absolute_url }}{% endif %}">
+{% comment %}Markdown copy link: scripts/build_markdown_copies.py writes the copy at build time, only for pages that get this line.{% endcomment %}{% assign md_ext = page.url | split: '.' | last | downcase %}{% assign md_noidx = page.robots | default: '' %}{% assign md_skip = false %}{% if page.sitemap == false or page.redirect_to or page.url == '/404.html' or md_noidx contains 'noindex' %}{% assign md_skip = true %}{% endif %}{% unless md_skip %}{% assign md_last = page.url | slice: -1 %}{% if md_last == '/' %}{% assign md_href = page.url | append: 'index.md' %}{% elsif md_ext == 'html' %}{% assign md_href = page.url | replace_last: '.html', '.md' %}{% else %}{% assign md_href = page.url | append: '.md' %}{% endif %}<link rel="alternate" type="text/markdown" href="{{ md_href | relative_url }}">
+{% endunless -%}
 {% if page.redirect_to %}<meta http-equiv="refresh" content="0; url={{ redirect_target }}">{% endif %}
 
 <meta property="og:locale" content="{{ site.locale }}">
@@ -81,7 +87,7 @@
       "name": {{ page.title | jsonify }},
       "url": {{ page.url | absolute_url | jsonify }},
       "description": {{ schema_description | jsonify }},
-      "image": {{ seo_image | absolute_url | jsonify }}{% if page.year %},
+      "image": {{ seo_image | absolute_url | jsonify }}{% if page.year and film_meta_pending == false %},
       "datePublished": "{{ page.year }}"{% endif %}{% if page.runtime %},
       "duration": "PT{{ page.runtime }}M"{% endif %}{% comment %}
         Only claim `genre` where the front matter genuinely names a genre. "Feature"
@@ -91,7 +97,8 @@
       "director": {"@type": "Person", "name": {{ page.director | jsonify }}}{% endif %}{% if page.cast and page.cast.size > 0 %},
       "actor": [{% for actor in page.cast %}{"@type": "Person", "name": {{ actor | jsonify }}}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.studio %},
       "productionCompany": {"@type": "Organization", "name": {{ page.studio | jsonify }}}{% endif %}{% if page.country %},
-      "countryOfOrigin": {"@type": "Country", "name": {{ page.country | jsonify }}}{% endif %}
+      "countryOfOrigin": {"@type": "Country", "name": {{ page.country | jsonify }}}{% endif %}{% if page.imdb %},
+      "sameAs": {{ page.imdb | prepend: 'https://www.imdb.com/title/' | append: '/' | jsonify }}{% endif %}
     }{% endif %}{% if page.schema_type == 'Festival' %},
     {
       "@type": "Festival",

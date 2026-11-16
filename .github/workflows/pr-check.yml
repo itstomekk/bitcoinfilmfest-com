@@ -55,6 +55,19 @@ jobs:
           test -f _site/assets/images/favicon.ico
           test -f _site/assets/images/social/bff-social-default.jpg
 
+      - name: Set up Python for Markdown copies
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Same step as the deploy workflow, so a broken copy script fails the PR,
+      # not the production deploy.
+      - name: Write Markdown copies for AI agents
+        run: |
+          pip install beautifulsoup4 lxml markdownify
+          python3 scripts/test_build_markdown_copies.py
+          python3 scripts/build_markdown_copies.py --site site/_site --baseurl /bitcoinfilmfest-com
+
       # A reviewer can download this artifact directly from the PR's Checks tab.
       # It is never deployed, so an unreviewed branch cannot replace production.
       - name: Upload downloadable preview artifact

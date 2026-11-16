@@ -3,7 +3,7 @@ title: "The Bitcoin Executor"
 description: "An economics professor becomes the executor of a Bitcoin will for his friend and colleague who has mysteriously disappeared."
 year: null
 type: Feature
-status: upcoming
+status: in-production
 essential_rank: 7
 director: "Christopher Arcella"
 writer: "Christopher Arcella; Daniel Mross"
@@ -11,8 +11,12 @@ producer: "Christopher Arcella"
 executive_producer: "Daniel Mross"
 cast:
   - "Amari Cheatom"
-  - "Fabian Brando Alvarez"
+  - "Hally Smith"
+  - "Mike Rudko"
+  - "Graham Wardle"
   - "Prem Lee Barbosa"
+  - "Isabella Santos"
+  - "Paul Keating"
 country: "USA"
 poster: "/assets/images/cinema/films/bitcoin-executor-poster-final.jpg"
 poster_credit: "Christopher Arcella / The Bitcoin Executor"
@@ -61,7 +65,5 @@ sources:
     url: "https://www.imdb.com/title/tt34730254/"
   - label: "Christopher Arcella — official filmmaker site"
     url: "https://christopherarcella.com/"
-  - label: "Looking Glass Education — Rise of Bitcoin Cinema"
-    url: "https://lookingglasseducation.com/the-rise-of-bitcoin-cinema/"
 featured: true
 ---

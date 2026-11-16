@@ -25,6 +25,10 @@ The full press kit for the current edition — ready-to-run articles and intervi
 
 Official logos, the rabbit mark, posters, laurels, colour palette and type specimens are at [/presskit/]({{ '/presskit/' | relative_url }}).
 
+<p class="section-label">Bitcoin Cinema Chronicle</p>
+
+The running public record of films, festivals and people shaping Bitcoin cinema lives in the [Bitcoin Cinema Chronicle]({{ '/reel/#chronicle' | relative_url }}). It is updated from our reviewed news log as new stories are added.
+
 <p class="section-label">Past coverage</p>
 
 Independent coverage of Bitcoin FilmFest from past editions:
