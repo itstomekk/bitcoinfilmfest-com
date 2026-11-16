@@ -2,7 +2,6 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
-
 ## 2026-11-15 — Build on Bitcoin and The Legend of Landi page fixes
 
 - Build on Bitcoin: add the teaser post, Geyser and creator links, point the podcast source at the actual episode, and align the description with the director's own wording.
@@ -30,6 +29,11 @@ Short, human-readable record of public website changes. One dated entry is requi
 ## 2026-11-08 — Sister event: Revolution.Rocks
 
 - The Minis & roadshows page (`/festivals/roadshows/`) lists Revolution.Rocks, a free music night at Samo Centrum in Warsaw on 25 June 2027, as a sister event of the Warsaw edition, with a link to revolution.rocks.
+
+## 2026-11-07 — Mark Hummingbird: The Bitcoin Jungle Story as released
+
+- The film is no longer labelled "upcoming". The full film is free on YouTube and also on IndeeHub.studio, both already listed on its page, so the status is now "released". Nothing else on the page changed.
+
 
 ## 2026-11-07 — Enrich the six newest film and series pages with trailers, stills, credits and sources
 
