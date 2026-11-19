@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-19 — The Satoshi Mystery credits
+
+- Add Leslie Menahem and Rémi Forte to the writer credit (per Unifrance) and drop the expired ARTE availability date.
+
 ## 2026-11-18 — Immutable History page corrected, linked to Immutable Democracy
 
 - Immutable History: replace wrong credits (Andreas Antonopoulos, Bitcoin Design Community, 58 min, invented trailer link) with the real film: Chapter 1 by Javier Borrayo for Simple Proof, about Screven County, Georgia. Add the real trailer, full-film links and the Simple Proof sources.
