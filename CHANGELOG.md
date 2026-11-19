@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-18 — Immutable History page corrected, linked to Immutable Democracy
+
+- Immutable History: replace wrong credits (Andreas Antonopoulos, Bitcoin Design Community, 58 min, invented trailer link) with the real film: Chapter 1 by Javier Borrayo for Simple Proof, about Screven County, Georgia. Add the real trailer, full-film links and the Simple Proof sources.
+- The page now also covers the earlier Immutable Democracy film, and Immutable Democracy links back to it.
+
 ## 2026-11-15 — Build on Bitcoin and The Legend of Landi page fixes
 
 - Build on Bitcoin: add the teaser post, Geyser and creator links, point the podcast source at the actual episode, and align the description with the director's own wording.
