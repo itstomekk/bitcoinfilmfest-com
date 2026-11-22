@@ -2,15 +2,16 @@
 layout: film
 title: "Bitcoin and Friends"
 slug: bitcoin-and-friends
-year: 2021
+year: 2019
 type: Animated Series
 status: released
-director: Multiple (animated series)
-runtime: 11 min per episode
-country: USA/International
+director: "Uncle Chris"
+producer: "Robert Allen"
+runtime: 25 min per episode
+country: USA
 language: English
-studio: Independent production
-release_date: 2021-03-15
+studio: "Uncle Chris Productions"
+release_date: 2019-03-29
 featured: false
 essential_rank: 4
 poster: "/assets/images/cinema/films/bitcoin-and-friends-key-art.png"
@@ -20,65 +21,51 @@ poster_source: "Local Bitcoin FilmFest archive, matched to the official Bitcoin 
 poster_source_url: "https://www.btcandfriends.com/assets/img/GroupPhotoTransparent.png"
 poster_asset_type: "Official key art"
 
-synopsis: "Animated educational series introducing Bitcoin and cryptocurrency concepts to general audiences through accessible, character-driven storytelling and humor."
+synopsis: "An adult animated comedy series in which \"B\", a personified bitcoin, wakes up alone in a hospital and sets out to find his creator, Satoshi Nakamoto. Eight episodes, funded by the Bitcoin community."
 
-bitcoin_angle: "Uses animation and comedy to demystify Bitcoin, blockchain, and cryptocurrency concepts, making technical and financial ideas engaging for diverse audiences."
+bitcoin_angle: "Bitcoin is the main character. The series retells Bitcoin's origins and culture as raunchy slapstick, with Ethereum, bankers and other crypto personalities as the supporting cast. Episodes two to eight were released as donation milestones were reached."
 
-cast: "Voice actors (animated series)"
+cast: "Voice cast of the animated series"
+
+bff_screening: "Bitcoin FilmFest: Plan B, Lugano (October 2023)"
 
 platform:
-  - streaming: "YouTube, Educational platforms"
-  - broadcast: "Web distribution"
+  - streaming: "YouTube"
 
-trailer: "https://www.youtube.com/watch?v=bitcoin-and-friends-trailer"
+trailer: "https://www.youtube.com/watch?v=PYLM5tRUEVg"
 
 watch:
-  - title: "YouTube"
-    url: "https://www.youtube.com/@bitcoinandfriendsofficial"
+  - title: "Official website"
+    url: "https://btcandfriends.com/"
 
 sources:
-  - YouTube
-  - Bitcoin educational resources
-  - Animation production databases
+  - label: "Bitcoin.com News: first episode"
+    url: "https://news.bitcoin.com/bitcoin-and-friends-animated-series-airs-spicy-first-episode/"
+  - label: "Decrypt: viewer-funded Bitcoin cartoon series"
+    url: "https://decrypt.co/6186/bitcoin-and-friends"
+  - label: "Series trailer on YouTube"
+    url: "https://www.youtube.com/watch?v=PYLM5tRUEVg"
 
 tags:
   - bitcoin
-  - cryptocurrency
   - animation
-  - education
+  - comedy
   - series
-  - blockchain
-  - explainer
+  - adult
 ---
 
 ## Overview
 
-*Bitcoin and Friends* is an animated educational series designed to make Bitcoin and cryptocurrency accessible to general audiences. Through colorful characters, humor, and engaging storytelling, the series breaks down complex concepts into understandable explanations suitable for both newcomers and learners.
+*Bitcoin and Friends* is an eight-episode animated comedy from Uncle Chris Productions, a pseudonymous team who say they have been active in Bitcoin since 2013. The first episode, "Tears of a Clown", went online on 29 March 2019. The show is NSFW and raunchy, with South Park-style humour.
 
-## Series Format
+## The story
 
-- **Educational Animation**: Technical concepts explained through visual storytelling
-- **Character-Driven**: Relatable characters guiding viewers through Bitcoin concepts
-- **Comedy & Humor**: Making finance and technology entertaining
-- **Diverse Topics**: Mining, wallets, transactions, decentralization, and more
-- **Accessibility**: Designed for audiences without technical background
+The hero is "B", a bitcoin who finds himself in a hospital with no memory and goes looking for his father, Satoshi Nakamoto. Along the way he meets characters such as Mitalik (Ethereum), Pal Fifty, Itty Bitty and the Bankster Henchmen.
 
-## Key Topics Covered
+## Production
 
-- **What is Bitcoin?**: Basic introduction and history
-- **How Blockchain Works**: Simplified explanation of distributed ledger technology
-- **Mining & Rewards**: How Bitcoin creation and validation operate
-- **Wallets & Security**: Practical cryptocurrency management
-- **Use Cases**: Real-world applications of Bitcoin and blockchain
-- **Economic Concepts**: Decentralization, monetary policy, financial freedom
+The series was crowd-funded. Donations paid for voice talent, sound design, original music and character design, and supporters could win perks such as a personalised character. According to the producers, the plan was a first season of eight episodes and a second season if more funding came in. Only the first eight episodes have been released.
 
-## Production & Release
+## Bitcoin FilmFest connection
 
-**Released:** March 15, 2021  
-**Format:** Animated series (11-minute episodes)  
-**Platform:** YouTube, educational distribution  
-**Target Audience:** General audiences, education, newcomers to Bitcoin
-
-## Bitcoin FilmFest Connection
-
-Represents Bitcoin media expanding into accessible, family-friendly educational content designed to broaden understanding of cryptocurrency beyond technical audiences.
+The series was on the programme of Bitcoin FilmFest: Plan B in Lugano on 22 October 2023.
