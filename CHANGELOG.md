@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-21 — Add Coined in Watercolor, fill in Bond to Unbind
+
+- Coined in Watercolor: new page for Gavin Robertson's documentary about the watercolor artist TJ Murphy, premiered at Bitcoin FilmFest 2026, with the YouTube link and the festival poster.
+- Bond to Unbind: add the director (Tomer Kantor), Proof of Work Media, the free YouTube link and the March 26, 2023 Bitcoin FilmFest screening with its sources.
+
 ## 2026-11-19 — Add Anatomy of Bitcoin, rewrite Maxis Club Show and Bitcoin and Friends pages
 
 - Anatomy of Bitcoin: new page for the open-source, community-funded film led by Pedro, with clips, the 3D explorer, GitHub source and the Plan B Lugano 2023 screening.
