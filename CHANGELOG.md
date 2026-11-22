@@ -2,6 +2,12 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-19 — Add Anatomy of Bitcoin, rewrite Maxis Club Show and Bitcoin and Friends pages
+
+- Anatomy of Bitcoin: new page for the open-source, community-funded film led by Pedro, with clips, the 3D explorer, GitHub source and the Plan B Lugano 2023 screening.
+- The Maxis Club Show: replace the generic talk-show description with the real animated sitcom (Chapters 1 to 3), the Geyser funding, and the BFF26 Golden Rabbit for Best Short.
+- Bitcoin and Friends: correct the series to the 2019 adult animated comedy (eight episodes, Uncle Chris Productions), replace the placeholder trailer link and add the Bitcoin.com News and Decrypt sources.
+
 ## 2026-11-19 — The Satoshi Mystery credits
 
 - Add Leslie Menahem and Rémi Forte to the writer credit (per Unifrance) and drop the expired ARTE availability date.
