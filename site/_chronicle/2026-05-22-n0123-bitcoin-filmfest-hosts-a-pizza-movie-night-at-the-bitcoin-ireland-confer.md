@@ -7,4 +7,4 @@ url: https://x.com/BitcoinconfIRL/status/2057901509568790645
 source_url: https://x.com/BitcoinconfIRL/status/2057901509568790645
 category: cinema
 ---
-Bitcoin FilmFest hosts a Pizza Movie Night at the Bitcoin Ireland Conference in Dublin, screening Finding Home
+Bitcoin FilmFest hosts a Pizza Movie Night at the Bitcoin Ireland Conference in Dublin, screening <a class="film-title" href="/cinema/films/finding-home/">Finding Home</a>

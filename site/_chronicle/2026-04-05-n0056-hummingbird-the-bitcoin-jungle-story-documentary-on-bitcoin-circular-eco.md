@@ -7,4 +7,4 @@ url: https://www.awake.cr/event-details/film-hummingbird-the-bitcoin-jungle-stor
 source_url: https://www.awake.cr/event-details/film-hummingbird-the-bitcoin-jungle-story
 category: cinema
 ---
-Hummingbird: The Bitcoin Jungle Story — documentary on Bitcoin circular economy in Uvita, Costa Rica; BFF'26 lineup
+<a class="film-title" href="/cinema/films/hummingbird-bitcoin-jungle/">Hummingbird: The Bitcoin Jungle Story</a> — documentary on Bitcoin circular economy in Uvita, Costa Rica; BFF'26 lineup

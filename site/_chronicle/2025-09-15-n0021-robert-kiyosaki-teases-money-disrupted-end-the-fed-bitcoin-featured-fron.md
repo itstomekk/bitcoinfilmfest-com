@@ -7,4 +7,4 @@ url: https://coincentral.com/robert-kiyosaki-teases-end-the-fed-documentary-bitc
 source_url: https://coincentral.com/robert-kiyosaki-teases-end-the-fed-documentary-bitcoin-in-focus/
 category: cinema
 ---
-Robert Kiyosaki teases Money Disrupted: End the Fed — Bitcoin featured front and center as inflation hedge and dollar alternative
+Robert Kiyosaki teases <span class="film-title">Money Disrupted: End the Fed</span> — Bitcoin featured front and center as inflation hedge and dollar alternative

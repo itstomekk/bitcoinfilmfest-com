@@ -7,4 +7,4 @@ date_precision: day
 source_url: https://www.benzinga.com/crypto/cryptocurrency/26/04/52161046/jack-dorsey-backs-bitcoin-world-premiere-of-julian-assange-documentary-there-was-natural-resonance-with-the-btc-community
 category: cinema
 ---
-Jack Dorsey is backing a Bitcoin-only world premiere of the Julian Assange documentary *Six Billion Dollar Man* — tickets are 0.01 BTC, no other currency accepted. The global watch party is set for June 27.
+Jack Dorsey is backing a Bitcoin-only world premiere of the Julian Assange documentary <span class="film-title">Six Billion Dollar Man</span> — tickets are 0.01 BTC, no other currency accepted. The global watch party is set for June 27.

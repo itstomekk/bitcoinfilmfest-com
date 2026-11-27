@@ -7,4 +7,4 @@ url: https://thebitcoinexecutor.com/
 source_url: https://thebitcoinexecutor.com/
 category: cinema
 ---
-The Bitcoin Executor — Bitcoin wallet inheritance arthouse noir by Christopher Arcella, in BFF'26 lineup
+<a class="film-title" href="/cinema/films/the-bitcoin-executor/">The Bitcoin Executor</a> — Bitcoin wallet inheritance arthouse noir by Christopher Arcella, in BFF'26 lineup

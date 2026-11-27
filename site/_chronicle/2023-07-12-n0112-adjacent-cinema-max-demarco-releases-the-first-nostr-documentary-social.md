@@ -8,4 +8,4 @@ source_url: https://www.youtube.com/watch?v=aA-jiiepOrE
 category: adjacent
 adjacent: true
 ---
-Adjacent cinema: Max DeMarco releases the first Nostr documentary, Social Media Is Broken. Can We Fix It?, on YouTube
+Adjacent cinema: Max DeMarco releases the first Nostr documentary, <span class="film-title">Social Media Is Broken. Can We Fix It?</span>, on YouTube

@@ -8,4 +8,4 @@ display_date: 2015
 source_url: https://collider.com/bitcoin-movie-aimy-in-a-cage-horror/
 category: cinema
 ---
-Aimy in a Cage — first feature film funded via Bitcoin, horror/fantasy by Hooroo Jackson
+<a class="film-title" href="/cinema/films/aimy-in-a-cage/">Aimy in a Cage</a> — first feature film funded via Bitcoin, horror/fantasy by Hooroo Jackson

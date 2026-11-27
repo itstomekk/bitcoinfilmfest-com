@@ -2,6 +2,16 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-27 — Reel Chronicle: film titles, seven new entries, old newsletter links; Dutch & Razzlekhan page removed
+
+- Chronicle film titles are now bold capitals. A title with a film page on this site gets an orange marker stripe and links to that page.
+- The Chronicle's left column shows only the date; the source name and category label are gone. Every entry keeps its "Read more" link.
+- Seven new Chronicle entries (owner-approved): the first Bitcoin FilmFest at Kinoteka (March 2023), The Bitcoin Executor casting call, the Searching for Satoshi announcement, Anatomy of Bitcoin, Blood Before Bitcoin, Filmweb's BFF24 partnership, and the Tuttle Twins Season 3 premiere.
+- The Lightning Luminary entry now links to the live Summer 2024 Bitcoin Cinema Digest instead of a dead page.
+- Thirteen old newsletter addresses (for example /june-2024/ and /newsletters/2024-01/) now redirect to their Bitcoin Cinema Digest pages in the Reel archive.
+- Dutch & Razzlekhan: remove the film page (owner decision). /cinema/films/dutch-and-razzlekhan/ now returns 404.
+- MaxisClub in the BFF26 Golden Rabbits entry now links to The Maxis Club Show page.
+
 ## 2026-11-26 — Take down the Satoshi (Jason Zada) page for now
 
 - Satoshi (Jason Zada): remove the film page and its page test. The project is still only announced, with filming planned for spring 2027. The page may return when there is more to show.

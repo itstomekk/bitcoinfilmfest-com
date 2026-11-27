@@ -8,4 +8,4 @@ source_url: https://www.worldofreel.com/blog/2026/2/13/doug-limans-killing-satos
 category: cinema
 story_group: killing-satoshi
 ---
-Killing Satoshi will shoot entirely on AI-generated stages — no physical locations, first for a major Hollywood production
+<span class="film-title">Killing Satoshi</span> will shoot entirely on AI-generated stages — no physical locations, first for a major Hollywood production

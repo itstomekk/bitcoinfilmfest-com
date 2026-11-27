@@ -7,4 +7,4 @@ url: https://ordain.art/bff26
 source_url: https://ordain.art/bff26
 category: cinema
 ---
-The Agreement wins BFF26’s Future of Money AI Film Contest
+<span class="film-title">The Agreement</span> wins BFF26’s Future of Money AI Film Contest

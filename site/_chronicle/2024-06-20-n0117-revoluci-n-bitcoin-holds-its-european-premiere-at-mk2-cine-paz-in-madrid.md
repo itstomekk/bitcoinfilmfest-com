@@ -7,4 +7,4 @@ url: https://tynmagazine.com/revolucion-bitcoin-se-estrenara-en-salas-de-cine-en
 source_url: https://tynmagazine.com/revolucion-bitcoin-se-estrenara-en-salas-de-cine-en-madrid/
 category: cinema
 ---
-Revolución Bitcoin holds its European premiere at MK2 Cine Paz in Madrid
+<a class="film-title" href="/cinema/films/revolucion-bitcoin/">Revolución Bitcoin</a> holds its European premiere at MK2 Cine Paz in Madrid

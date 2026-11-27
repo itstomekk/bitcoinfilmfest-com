@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1782047607344259109
 source_url: https://x.com/bitcoinfilmfest/status/1782047607344259109
 category: cinema
 ---
-My Trust in You Is Broken wins BFF24 Audience Choice
+<a class="film-title" href="/cinema/films/my-trust-in-you-is-broken/">My Trust in You Is Broken</a> wins BFF24 Audience Choice

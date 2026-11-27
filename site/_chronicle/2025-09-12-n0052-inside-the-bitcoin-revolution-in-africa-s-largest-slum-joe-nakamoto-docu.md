@@ -7,4 +7,4 @@ url: https://www.youtube.com/watch?v=LRSQSkiil0M
 source_url: https://www.youtube.com/watch?v=LRSQSkiil0M
 category: cinema
 ---
-Inside the Bitcoin Revolution in Africa's Largest Slum — Joe Nakamoto documents Kibera, Nairobi's Bitcoin circular economy, HRF-supported
+<span class="film-title">Inside the Bitcoin Revolution in Africa's Largest Slum</span> — Joe Nakamoto documents Kibera, Nairobi's Bitcoin circular economy, HRF-supported

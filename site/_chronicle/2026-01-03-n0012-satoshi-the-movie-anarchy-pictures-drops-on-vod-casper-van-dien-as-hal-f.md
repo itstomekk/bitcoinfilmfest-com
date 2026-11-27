@@ -7,4 +7,4 @@ url: https://vitrina.ai/blog/casper-van-dien-stars-in-bitcoins-satoshi-the-movie
 source_url: https://vitrina.ai/blog/casper-van-dien-stars-in-bitcoins-satoshi-the-movie-exclusive-first-look-teaser/
 category: cinema
 ---
-Satoshi: The Movie (Anarchy Pictures) drops on VOD — Casper Van Dien as Hal Finney, Peter Shinkoda as Satoshi Nakamoto
+<span class="film-title">Satoshi: The Movie</span> (Anarchy Pictures) drops on VOD — Casper Van Dien as Hal Finney, Peter Shinkoda as Satoshi Nakamoto

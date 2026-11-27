@@ -8,4 +8,4 @@ display_date: Jun 2024 (approx.)
 source_url: https://www.hollywoodreporter.com/movies/movie-reviews/cold-wallet-review-raul-castillo-1235847098/
 category: cinema
 ---
-Cold Wallet — crypto-scam vigilante thriller starring Raul Castillo premieres at SXSW
+<a class="film-title" href="/cinema/films/cold-wallet/">Cold Wallet</a> — crypto-scam vigilante thriller starring Raul Castillo premieres at SXSW

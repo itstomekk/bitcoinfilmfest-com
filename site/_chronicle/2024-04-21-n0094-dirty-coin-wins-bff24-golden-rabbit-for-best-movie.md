@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1782049582215504366
 source_url: https://x.com/bitcoinfilmfest/status/1782049582215504366
 category: cinema
 ---
-Dirty Coin wins BFF24 Golden Rabbit for Best Movie
+<a class="film-title" href="/cinema/films/dirty-coin/">Dirty Coin</a> wins BFF24 Golden Rabbit for Best Movie

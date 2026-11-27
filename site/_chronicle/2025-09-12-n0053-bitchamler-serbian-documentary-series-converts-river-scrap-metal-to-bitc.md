@@ -7,4 +7,4 @@ url: https://www.youtube.com/watch?v=jr8qKpocH9M
 source_url: https://www.youtube.com/watch?v=jr8qKpocH9M
 category: cinema
 ---
-BitChamler — Serbian documentary series converts river scrap metal to Bitcoin, ecology meets activism on the Danube
+<span class="film-title">BitChamler</span> — Serbian documentary series converts river scrap metal to Bitcoin, ecology meets activism on the Danube

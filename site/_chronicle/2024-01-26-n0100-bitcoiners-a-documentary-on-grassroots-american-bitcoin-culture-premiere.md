@@ -7,4 +7,4 @@ url: https://bitcoinfilmfest.com/reel/bitcoin-cinema-digest-january-2024/
 source_url: https://bitcoinfilmfest.com/reel/bitcoin-cinema-digest-january-2024/
 category: cinema
 ---
-Bitcoiners, a documentary on grassroots American Bitcoin culture, premieres in Austin
+<a class="film-title" href="/cinema/films/bitcoiners/">Bitcoiners</a>, a documentary on grassroots American Bitcoin culture, premieres in Austin

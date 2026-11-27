@@ -7,4 +7,4 @@ date_precision: day
 source_url: https://milkroad.com/movies/
 category: cinema
 ---
-Netflix's *Biggest Heist Ever* documents the 2016 Bitfinex hack, in which 120,000 BTC were stolen. The film follows the IRS investigation that eventually traced the funds to Heather Morgan and Ilya Lichtenstein.
+Netflix's <span class="film-title">Biggest Heist Ever</span> documents the 2016 Bitfinex hack, in which 120,000 BTC were stolen. The film follows the IRS investigation that eventually traced the funds to Heather Morgan and Ilya Lichtenstein.

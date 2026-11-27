@@ -7,4 +7,4 @@ url: https://thecryptoradio.com/Bitcoin-FilmFest-2025-Stories-no-one-else-is-tel
 source_url: https://thecryptoradio.com/Bitcoin-FilmFest-2025-Stories-no-one-else-is-telling
 category: cinema
 ---
-Satoshi, the Creation of Bitcoin — Artur Machado short wins Best Short Film BFF25; poetic dramatization traces Bitcoin's origin from Brazil to London
+<a class="film-title" href="/cinema/films/satoshi-the-creation-of-bitcoin/">Satoshi, the Creation of Bitcoin</a> — Artur Machado short wins Best Short Film BFF25; poetic dramatization traces Bitcoin's origin from Brazil to London

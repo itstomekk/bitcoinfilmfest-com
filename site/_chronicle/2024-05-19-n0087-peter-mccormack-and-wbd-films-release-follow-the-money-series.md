@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1792243319092982119
 source_url: https://x.com/bitcoinfilmfest/status/1792243319092982119
 category: cinema
 ---
-Peter McCormack and WBD Films release Follow the Money series
+Peter McCormack and WBD Films release <span class="film-title">Follow the Money</span> series

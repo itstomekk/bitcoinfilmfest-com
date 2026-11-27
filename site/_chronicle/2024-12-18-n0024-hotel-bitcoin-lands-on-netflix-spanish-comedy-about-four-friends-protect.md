@@ -7,4 +7,4 @@ url: https://www.netflix.com/title/81680262
 source_url: https://www.netflix.com/title/81680262
 category: cinema
 ---
-Hotel Bitcoin lands on Netflix — Spanish comedy about four friends protecting 4,000 lost bitcoins through a chaotic hotel weekend
+<a class="film-title" href="/cinema/films/hotel-bitcoin/">Hotel Bitcoin</a> lands on Netflix — Spanish comedy about four friends protecting 4,000 lost bitcoins through a chaotic hotel weekend

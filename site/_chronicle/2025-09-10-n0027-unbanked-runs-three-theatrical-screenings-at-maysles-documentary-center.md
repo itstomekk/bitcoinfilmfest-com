@@ -7,4 +7,4 @@ url: https://www.maysles.org/calendar/unbanked-9-10-25
 source_url: https://www.maysles.org/calendar/unbanked-9-10-25
 category: cinema
 ---
-UNBANKED runs three theatrical screenings at Maysles Documentary Center, NYC — Oscar-qualifying run ahead of Halloween streaming launch
+<a class="film-title" href="/cinema/films/unbanked/">UNBANKED</a> runs three theatrical screenings at Maysles Documentary Center, NYC — Oscar-qualifying run ahead of Halloween streaming launch

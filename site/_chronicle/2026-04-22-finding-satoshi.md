@@ -7,4 +7,4 @@ date_precision: day
 source_url: https://decrypt.co/365075/finding-satoshi-makes-the-case-for-hal-finney-len-sassaman-as-bitcoin-co-creators
 category: cinema
 ---
-The documentary *Finding Satoshi*, from Tucker Tooley and Matthew Miele, names Hal Finney and Len Sassaman as Bitcoin's likely co-creators. Coinbase's CEO called it "the most thoughtful take on this subject" yet made.
+The documentary <a class="film-title" href="/cinema/films/finding-satoshi/">Finding Satoshi</a>, from Tucker Tooley and Matthew Miele, names Hal Finney and Len Sassaman as Bitcoin's likely co-creators. Coinbase's CEO called it "the most thoughtful take on this subject" yet made.

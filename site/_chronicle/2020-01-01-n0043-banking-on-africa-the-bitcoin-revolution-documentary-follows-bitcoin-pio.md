@@ -8,4 +8,4 @@ display_date: 2020
 source_url: https://www.amazon.com/Banking-Africa-Revolution/dp/B084DFL8YM
 category: cinema
 ---
-Banking on Africa: The Bitcoin Revolution — documentary follows Bitcoin pioneers including Alakanani Itireleng and Botswana's SatoshiCentre
+<a class="film-title" href="/cinema/films/banking-on-africa-bitcoin/">Banking on Africa: The Bitcoin Revolution</a> — documentary follows Bitcoin pioneers including Alakanani Itireleng and Botswana's SatoshiCentre

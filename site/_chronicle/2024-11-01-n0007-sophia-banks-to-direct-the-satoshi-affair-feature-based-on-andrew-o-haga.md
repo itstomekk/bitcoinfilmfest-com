@@ -8,4 +8,4 @@ display_date: Nov 2024
 source_url: https://deadline.com/2024/11/sophia-banks-bitcoin-founder-satoshi-nakamoto-1236186968/
 category: cinema
 ---
-Sophia Banks to direct The Satoshi Affair feature, based on Andrew O'Hagan's LRB article — produced by David O. Sacks Productions
+Sophia Banks to direct <a class="film-title" href="/cinema/films/the-satoshi-affair/">The Satoshi Affair</a> feature, based on Andrew O'Hagan's LRB article — produced by David O. Sacks Productions

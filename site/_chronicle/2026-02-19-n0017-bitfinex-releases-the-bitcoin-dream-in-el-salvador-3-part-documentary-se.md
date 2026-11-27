@@ -7,4 +7,4 @@ url: https://blog.bitfinex.com/announcements/bitfinex-launches-documentary-celeb
 source_url: https://blog.bitfinex.com/announcements/bitfinex-launches-documentary-celebrating-el-salvadors-bitcoin-journey/
 category: cinema
 ---
-Bitfinex releases The Bitcoin Dream in El Salvador — 3-part documentary series on grassroots Bitcoin usage four years after legal tender
+Bitfinex releases <span class="film-title">The Bitcoin Dream in El Salvador</span> — 3-part documentary series on grassroots Bitcoin usage four years after legal tender

@@ -7,4 +7,4 @@ url: https://bitcoinmagazine.com/press-releases/unbanked-documentary-premiere
 source_url: https://bitcoinmagazine.com/press-releases/unbanked-documentary-premiere
 category: cinema
 ---
-UNBANKED premieres on Apple TV, Amazon Prime and Google TV on the 17th anniversary of the <a href="/bitcoin-whitepaper/">Bitcoin White Paper</a> — wins Best Documentary at Manhattan Film Festival
+<a class="film-title" href="/cinema/films/unbanked/">UNBANKED</a> premieres on Apple TV, Amazon Prime and Google TV on the 17th anniversary of the <a href="/bitcoin-whitepaper/">Bitcoin White Paper</a> — wins Best Documentary at Manhattan Film Festival

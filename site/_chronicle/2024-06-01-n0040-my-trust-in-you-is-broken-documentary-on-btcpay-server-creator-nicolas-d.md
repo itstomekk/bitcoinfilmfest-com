@@ -8,4 +8,4 @@ display_date: Jun 2024 (approx.)
 source_url: https://bitcoinfilmfest.com/
 category: cinema
 ---
-My Trust in You is Broken — documentary on BTCPay Server creator Nicolas Dorier and the fight against trusted third parties, screens at Bitcoin FilmFest 2024
+<a class="film-title" href="/cinema/films/my-trust-in-you-is-broken/">My Trust in You is Broken</a> — documentary on BTCPay Server creator Nicolas Dorier and the fight against trusted third parties, screens at Bitcoin FilmFest 2024

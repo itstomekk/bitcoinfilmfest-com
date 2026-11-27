@@ -8,4 +8,4 @@ adjacent: true
 source_url: https://www.imdb.com/title/tt26843513/
 category: adjacent
 ---
-Adjacent cinema: Sovereign — Nick Offerman, Jacob Tremblay theatrical drama on Sovereign Citizens; freedom-vs-state themes, critical portrayal
+Adjacent cinema: <a class="film-title" href="/cinema/films/sovereign/">Sovereign</a> — Nick Offerman, Jacob Tremblay theatrical drama on Sovereign Citizens; freedom-vs-state themes, critical portrayal

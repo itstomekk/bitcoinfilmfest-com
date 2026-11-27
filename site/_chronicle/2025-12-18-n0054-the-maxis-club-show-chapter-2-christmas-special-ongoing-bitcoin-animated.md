@@ -7,4 +7,4 @@ url: https://www.youtube.com/watch?v=JAdaCSjg6S8
 source_url: https://www.youtube.com/watch?v=JAdaCSjg6S8
 category: cinema
 ---
-The Maxis Club Show Chapter 2 Christmas Special — ongoing Bitcoin animated sitcom from independent creators
+<a class="film-title" href="/cinema/films/the-maxis-club-show/">The Maxis Club Show</a> Chapter 2 Christmas Special — ongoing Bitcoin animated sitcom from independent creators

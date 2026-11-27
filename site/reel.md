@@ -38,8 +38,6 @@ screen: paper
           <li class="chronicle-entry">
             <div>
               <time class="chronicle-date" datetime="{{ entry.date | date_to_xmlschema }}">{% if entry.display_date %}{{ entry.display_date }}{% else %}{{ entry.date | date: "%b %-d, %Y" }}{% endif %}</time>
-              {% if entry.source %}<span class="chronicle-source">{{ entry.source }}</span>{% endif %}
-              {% if entry.category %}<span class="chronicle-category chronicle-category-{{ entry.category }}">{{ entry.category }}</span>{% endif %}
             </div>
             <div class="chronicle-body">
               {{ entry.content }}

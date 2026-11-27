@@ -7,4 +7,4 @@ url: https://playpodcasts.com/podcasts/bitcoin-and-friends/episode-1-bitcoin-fri
 source_url: https://playpodcasts.com/podcasts/bitcoin-and-friends/episode-1-bitcoin-friends-a-coin-is-born
 category: cinema
 ---
-Bitcoin & Friends relaunches on YouTube with the episode "A Coin Is Born"
+<a class="film-title" href="/cinema/films/bitcoin-and-friends/">Bitcoin &amp; Friends</a> relaunches on YouTube with the episode "A Coin Is Born"

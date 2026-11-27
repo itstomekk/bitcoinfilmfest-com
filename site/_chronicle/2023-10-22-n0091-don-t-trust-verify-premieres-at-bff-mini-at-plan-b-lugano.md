@@ -7,4 +7,4 @@ url: https://blog.bitfinex.com/announcements/leading-bitcoin-figures-unite-to-ch
 source_url: https://blog.bitfinex.com/announcements/leading-bitcoin-figures-unite-to-champion-financial-freedom-bitfinex-freedom-manifesto-takes-center-stage/
 category: cinema
 ---
-Don’t Trust…Verify premieres at BFF Mini at Plan B Lugano
+<span class="film-title">Don’t Trust…Verify</span> premieres at BFF Mini at Plan B Lugano

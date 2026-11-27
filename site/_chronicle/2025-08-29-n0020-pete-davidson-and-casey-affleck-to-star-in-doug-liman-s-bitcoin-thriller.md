@@ -8,4 +8,4 @@ source_url: https://news.bitcoin.com/killing-satoshi-film-sets-2026-release-as-d
 category: cinema
 story_group: killing-satoshi
 ---
-Pete Davidson and Casey Affleck to star in Doug Liman's Bitcoin thriller Killing Satoshi, slated for 2026 — screenplay by Nick Schenk (Gran Torino)
+Pete Davidson and Casey Affleck to star in Doug Liman's Bitcoin thriller <span class="film-title">Killing Satoshi</span>, slated for 2026 — screenplay by Nick Schenk (<span class="film-title">Gran Torino</span>)

@@ -8,4 +8,4 @@ display_date: Jun 2024 (approx.)
 source_url: https://bitcoinfilmfest.com/
 category: cinema
 ---
-Lekker Feeling — short film about Bitcoin Ekasi adoption in Mossel Bay, South Africa, screens at Bitcoin FilmFest 2024
+<a class="film-title" href="/cinema/films/lekker-feeling/">Lekker Feeling</a> — short film about Bitcoin Ekasi adoption in Mossel Bay, South Africa, screens at Bitcoin FilmFest 2024
