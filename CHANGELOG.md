@@ -2,6 +2,10 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-26 — Take down the Satoshi (Jason Zada) page for now
+
+- Satoshi (Jason Zada): remove the film page and its page test. The project is still only announced, with filming planned for spring 2027. The page may return when there is more to show.
+
 ## 2026-11-21 — Add Coined in Watercolor, fill in Bond to Unbind
 
 - Coined in Watercolor: new page for Gavin Robertson's documentary about the watercolor artist TJ Murphy, premiered at Bitcoin FilmFest 2026, with the YouTube link and the festival poster.
