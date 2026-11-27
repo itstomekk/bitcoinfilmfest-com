@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1708589430129164421
 source_url: https://x.com/bitcoinfilmfest/status/1708589430129164421
 category: cinema
 ---
-Stranded wins an award at iHollywood Film Festival
+<span class="film-title">Stranded</span> wins an award at iHollywood Film Festival

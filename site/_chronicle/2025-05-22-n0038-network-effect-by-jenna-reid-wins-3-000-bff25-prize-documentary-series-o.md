@@ -7,4 +7,4 @@ url: https://bitcoinfilmfest.com/
 source_url: https://bitcoinfilmfest.com/
 category: cinema
 ---
-Network Effect by Jenna Reid wins $3,000 BFF25 prize — documentary series on grassroots Bitcoin communities worldwide
+<span class="film-title">Network Effect</span> by Jenna Reid wins $3,000 BFF25 prize — documentary series on grassroots Bitcoin communities worldwide

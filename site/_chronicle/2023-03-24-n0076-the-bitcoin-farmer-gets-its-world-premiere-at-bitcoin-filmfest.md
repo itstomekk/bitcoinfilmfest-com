@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1639315274120806410
 source_url: https://x.com/bitcoinfilmfest/status/1639315274120806410
 category: cinema
 ---
-The Bitcoin Farmer gets its world premiere at Bitcoin FilmFest
+<span class="film-title">The Bitcoin Farmer</span> gets its world premiere at Bitcoin FilmFest

@@ -7,4 +7,4 @@ url: https://bitcoinfilmfest.com/reel/our-history-begins-2023/
 source_url: https://bitcoinfilmfest.com/reel/our-history-begins-2023/
 category: cinema
 ---
-The Satoshi Mystery wins Best Movie and HUMAN B Audience Choice at the first Golden Rabbit awards, BFF23
+<a class="film-title" href="/cinema/films/the-satoshi-mystery/">The Satoshi Mystery</a> wins Best Movie and <a class="film-title" href="/cinema/films/human-b/">HUMAN B</a> Audience Choice at the first Golden Rabbit awards, BFF23

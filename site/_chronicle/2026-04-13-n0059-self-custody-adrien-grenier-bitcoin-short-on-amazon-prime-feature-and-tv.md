@@ -7,4 +7,4 @@ url: https://www.moviemaker.com/self-custody-garrett-patten-adrien-grenier/
 source_url: https://www.moviemaker.com/self-custody-garrett-patten-adrien-grenier/
 category: cinema
 ---
-Self Custody — Adrien Grenier Bitcoin short on Amazon Prime; feature and TV series in development
+<a class="film-title" href="/cinema/films/self-custody/">Self Custody</a> — Adrien Grenier Bitcoin short on Amazon Prime; feature and TV series in development

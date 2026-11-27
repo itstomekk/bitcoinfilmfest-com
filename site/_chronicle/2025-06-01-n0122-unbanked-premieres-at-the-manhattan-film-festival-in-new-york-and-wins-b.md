@@ -8,4 +8,4 @@ source_url: https://bitcoinmagazine.com/press-releases/unbanked-documentary-prem
 category: cinema
 display_date: Jun 2025
 ---
-UNBANKED premieres at the Manhattan Film Festival in New York and wins Best Documentary
+<a class="film-title" href="/cinema/films/unbanked/">UNBANKED</a> premieres at the Manhattan Film Festival in New York and wins Best Documentary

@@ -7,4 +7,4 @@ url: https://bitcoinfilmfest.com/reel/bitcoin-cinema-digest-november-2024/
 source_url: https://bitcoinfilmfest.com/reel/bitcoin-cinema-digest-november-2024/
 category: cinema
 ---
-Jessica Solce releases Forging a Country free to watch online
+Jessica Solce releases <a class="film-title" href="/cinema/films/forging-a-country/">Forging a Country</a> free to watch online

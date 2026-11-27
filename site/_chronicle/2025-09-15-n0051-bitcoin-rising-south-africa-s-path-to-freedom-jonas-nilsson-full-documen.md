@@ -7,4 +7,4 @@ url: https://www.youtube.com/watch?v=uAG5SeE6THM
 source_url: https://www.youtube.com/watch?v=uAG5SeE6THM
 category: cinema
 ---
-Bitcoin Rising: South Africa's Path to Freedom — Jonas Nilsson full documentary on Bitcoin circular economies in South African townships
+<a class="film-title" href="/cinema/films/bitcoin-rising-south-africa/">Bitcoin Rising: South Africa's Path to Freedom</a> — Jonas Nilsson full documentary on Bitcoin circular economies in South African townships

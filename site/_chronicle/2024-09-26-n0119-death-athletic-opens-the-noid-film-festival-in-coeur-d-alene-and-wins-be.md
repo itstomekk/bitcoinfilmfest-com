@@ -7,4 +7,4 @@ url: https://noidff.com/thepast
 source_url: https://noidff.com/thepast
 category: cinema
 ---
-Death Athletic opens the NoID Film Festival in Coeur d'Alene and wins Best Documentary Feature
+<a class="film-title" href="/cinema/films/death-athletic/">Death Athletic</a> opens the NoID Film Festival in Coeur d'Alene and wins Best Documentary Feature

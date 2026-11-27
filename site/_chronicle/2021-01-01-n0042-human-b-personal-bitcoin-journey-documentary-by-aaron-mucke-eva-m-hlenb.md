@@ -8,4 +8,4 @@ display_date: 2021
 source_url: https://cointelegraph.com/features/film-review-human-b-shows-a-personal-journey-with-bitcoin
 category: cinema
 ---
-Human B — personal Bitcoin journey documentary by Aaron Mucke & Eva Mühlenbäumer
+<a class="film-title" href="/cinema/films/human-b/">Human B</a> — personal Bitcoin journey documentary by Aaron Mucke & Eva Mühlenbäumer

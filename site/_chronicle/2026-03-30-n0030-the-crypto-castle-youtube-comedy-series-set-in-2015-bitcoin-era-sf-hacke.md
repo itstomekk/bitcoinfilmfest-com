@@ -7,4 +7,4 @@ url: https://deadline.com/2026/03/the-crypto-castle-viv-ford-roman-coppola-12367
 source_url: https://deadline.com/2026/03/the-crypto-castle-viv-ford-roman-coppola-1236758680/
 category: cinema
 ---
-The Crypto Castle — YouTube comedy series set in 2015 Bitcoin-era SF hacker house, from Roman Coppola's Decentralized Pictures
+<a class="film-title" href="/cinema/films/the-crypto-castle/">The Crypto Castle</a> — YouTube comedy series set in 2015 Bitcoin-era SF hacker house, from Roman Coppola's Decentralized Pictures

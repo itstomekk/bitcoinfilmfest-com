@@ -8,4 +8,4 @@ source_url: https://variety.com/2026/film/news/pete-davidson-killing-satoshi-ai-
 category: cinema
 story_group: killing-satoshi
 ---
-Casey Affleck and Pete Davidson star in Doug Liman's Bitcoin conspiracy thriller Killing Satoshi, set for 2026 release
+Casey Affleck and Pete Davidson star in Doug Liman's Bitcoin conspiracy thriller <span class="film-title">Killing Satoshi</span>, set for 2026 release

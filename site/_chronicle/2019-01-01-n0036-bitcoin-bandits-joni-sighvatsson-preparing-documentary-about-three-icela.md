@@ -8,4 +8,4 @@ display_date: 2019
 source_url: https://www.screendaily.com/news/joni-sighvatsson-preparing-bitcoin-bandits-films-exclusive/5146905.article
 category: cinema
 ---
-Bitcoin Bandits — Joni Sighvatsson preparing documentary about three Icelanders who allegedly stole $200M in supercomputers for Bitcoin mining
+<span class="film-title">Bitcoin Bandits</span> — Joni Sighvatsson preparing documentary about three Icelanders who allegedly stole $200M in supercomputers for Bitcoin mining

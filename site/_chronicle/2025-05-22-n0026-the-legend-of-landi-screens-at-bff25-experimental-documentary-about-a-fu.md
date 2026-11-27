@@ -7,4 +7,4 @@ url: https://www.thelegendoflandi.com
 source_url: https://www.thelegendoflandi.com
 category: cinema
 ---
-The Legend of Landi screens at BFF25 — experimental documentary about a fugitive's Bitcoin-powered floating micronation in the Indian Ocean
+<a class="film-title" href="/cinema/films/the-legend-of-landi/">The Legend of Landi</a> screens at BFF25 — experimental documentary about a fugitive's Bitcoin-powered floating micronation in the Indian Ocean

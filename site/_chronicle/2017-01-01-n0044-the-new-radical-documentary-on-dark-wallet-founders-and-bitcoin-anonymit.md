@@ -8,4 +8,4 @@ display_date: Jan 2017
 source_url: https://www.indiewire.com/features/general/the-new-radical-trailer-bitcoin-mr-robot-documentary-1201773820/
 category: cinema
 ---
-The New Radical — documentary on Dark Wallet founders and Bitcoin anonymity premieres in U.S. Documentary Competition at Sundance
+<a class="film-title" href="/cinema/films/the-new-radical/">The New Radical</a> — documentary on Dark Wallet founders and Bitcoin anonymity premieres in U.S. Documentary Competition at Sundance

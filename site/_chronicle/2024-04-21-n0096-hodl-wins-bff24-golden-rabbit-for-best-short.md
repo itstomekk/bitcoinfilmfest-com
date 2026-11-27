@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1782050104733528251
 source_url: https://x.com/bitcoinfilmfest/status/1782050104733528251
 category: cinema
 ---
-HODL wins BFF24 Golden Rabbit for Best Short
+<a class="film-title" href="/cinema/films/hodl/">HODL</a> wins BFF24 Golden Rabbit for Best Short

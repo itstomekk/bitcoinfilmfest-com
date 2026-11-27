@@ -7,4 +7,4 @@ url: https://www.rottentomatoes.com/m/god_bless_bitcoin_layer_2
 source_url: https://www.rottentomatoes.com/m/god_bless_bitcoin_layer_2
 category: cinema
 ---
-God Bless Bitcoin: Layer 2 — 16-hour expanded anthology with 27 interviews lands on Apple TV and Prime Video
+<a class="film-title" href="/cinema/films/god-bless-bitcoin/">God Bless Bitcoin: Layer 2</a> — 16-hour expanded anthology with 27 interviews lands on Apple TV and Prime Video

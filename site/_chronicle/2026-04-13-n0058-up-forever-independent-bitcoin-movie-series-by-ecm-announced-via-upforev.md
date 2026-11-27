@@ -7,4 +7,4 @@ url: https://x.com/upforevermovie
 source_url: https://x.com/upforevermovie
 category: cinema
 ---
-Up Forever — independent Bitcoin movie series by ECM, announced via @upforevermovie on X
+<span class="film-title">Up Forever</span> — independent Bitcoin movie series by ECM, announced via @upforevermovie on X

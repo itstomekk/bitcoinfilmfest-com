@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1853371860890550669
 source_url: https://x.com/bitcoinfilmfest/status/1853371860890550669
 category: cinema
 ---
-Paid in Bitcoin premieres on the BTCPay Server YouTube channel
+<span class="film-title">Paid in Bitcoin</span> premieres on the BTCPay Server YouTube channel

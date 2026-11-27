@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1710038512853033060
 source_url: https://x.com/bitcoinfilmfest/status/1710038512853033060
 category: cinema
 ---
-The Fight for the US Dollar reaches script completion
+<span class="film-title">The Fight for the US Dollar</span> reaches script completion

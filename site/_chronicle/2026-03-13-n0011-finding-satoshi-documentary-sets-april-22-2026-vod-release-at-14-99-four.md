@@ -7,4 +7,4 @@ url: https://www.tooleyentertainment.com/documentary/finding-satoshi
 source_url: https://www.tooleyentertainment.com/documentary/finding-satoshi
 category: cinema
 ---
-Finding Satoshi documentary sets April 22, 2026 VOD release at $14.99 — four years of investigation into Satoshi's identity
+<a class="film-title" href="/cinema/films/finding-satoshi/">Finding Satoshi</a> documentary sets April 22, 2026 VOD release at $14.99 — four years of investigation into Satoshi's identity

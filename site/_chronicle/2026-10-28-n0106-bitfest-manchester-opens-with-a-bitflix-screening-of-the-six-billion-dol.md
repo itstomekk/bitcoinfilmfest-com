@@ -7,4 +7,4 @@ url: https://bitfest.uk/
 source_url: https://bitfest.uk/
 category: cinema
 ---
-Bitfest Manchester opens with a Bitflix screening of The Six Billion Dollar Man on 19 November 2026
+Bitfest Manchester opens with a Bitflix screening of <span class="film-title">The Six Billion Dollar Man</span> on 19 November 2026

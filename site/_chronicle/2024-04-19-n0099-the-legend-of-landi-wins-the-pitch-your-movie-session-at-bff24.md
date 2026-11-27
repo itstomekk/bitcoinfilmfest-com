@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1781657819151802371
 source_url: https://x.com/bitcoinfilmfest/status/1781657819151802371
 category: cinema
 ---
-The Legend of Landi wins the Pitch Your Movie session at BFF24
+<a class="film-title" href="/cinema/films/the-legend-of-landi/">The Legend of Landi</a> wins the Pitch Your Movie session at BFF24

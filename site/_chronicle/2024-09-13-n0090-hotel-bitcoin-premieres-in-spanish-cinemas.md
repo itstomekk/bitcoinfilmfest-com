@@ -7,4 +7,4 @@ url: https://www.imdb.com/title/tt31308426
 source_url: https://www.imdb.com/title/tt31308426
 category: cinema
 ---
-Hotel Bitcoin premieres in Spanish cinemas
+<a class="film-title" href="/cinema/films/hotel-bitcoin/">Hotel Bitcoin</a> premieres in Spanish cinemas

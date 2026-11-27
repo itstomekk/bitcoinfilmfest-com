@@ -7,4 +7,4 @@ url: https://www.youtube.com/watch?v=O_WjH0mqKww
 source_url: https://www.youtube.com/watch?v=O_WjH0mqKww
 category: cinema
 ---
-FT Film: Michael Saylor's $40 Billion Bitcoin Bet — 27-min Financial Times documentary on MicroStrategy's Bitcoin treasury strategy
+FT Film: <span class="film-title">Michael Saylor's $40 Billion Bitcoin Bet</span> — 27-min Financial Times documentary on MicroStrategy's Bitcoin treasury strategy

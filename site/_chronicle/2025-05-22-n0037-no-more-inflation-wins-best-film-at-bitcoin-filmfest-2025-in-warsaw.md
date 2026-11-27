@@ -7,4 +7,4 @@ url: https://bitcoinfilmfest.com/
 source_url: https://bitcoinfilmfest.com/
 category: cinema
 ---
-No More Inflation wins Best Film at Bitcoin FilmFest 2025 in Warsaw
+<a class="film-title" href="/cinema/films/no-more-inflation/">No More Inflation</a> wins Best Film at Bitcoin FilmFest 2025 in Warsaw

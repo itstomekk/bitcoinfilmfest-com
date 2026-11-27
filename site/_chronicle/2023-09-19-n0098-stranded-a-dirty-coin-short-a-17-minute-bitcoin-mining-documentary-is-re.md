@@ -7,4 +7,4 @@ url: https://www.dirtycointhemovie.com/blogs/news/stranded-a-dirty-coin-short
 source_url: https://www.dirtycointhemovie.com/blogs/news/stranded-a-dirty-coin-short
 category: cinema
 ---
-Stranded: A Dirty Coin Short, a 17-minute Bitcoin mining documentary, is released
+<span class="film-title">Stranded: A Dirty Coin Short</span>, a 17-minute Bitcoin mining documentary, is released

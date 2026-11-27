@@ -8,4 +8,4 @@ display_date: 2015
 source_url: https://www.imdb.com/title/tt4654844/
 category: cinema
 ---
-Bitcoin: The End of Money as We Know It — Torsten Hoffmann's documentary on Bitcoin's challenge to global finance
+<a class="film-title" href="/cinema/films/bitcoin-end-of-money/">Bitcoin: The End of Money as We Know It</a> — Torsten Hoffmann's documentary on Bitcoin's challenge to global finance

@@ -7,4 +7,4 @@ date_precision: day
 source_url: https://milkroad.com/movies/
 category: cinema
 ---
-HBO's *Money Electric: The Bitcoin Mystery*, directed by Cullen Hoback, claimed to reveal Satoshi Nakamoto's real identity. The film sparked heated debate across the Bitcoin community over whether its case actually holds up.
+HBO's <a class="film-title" href="/cinema/films/money-electric-the-bitcoin-mystery/">Money Electric: The Bitcoin Mystery</a>, directed by Cullen Hoback, claimed to reveal Satoshi Nakamoto's real identity. The film sparked heated debate across the Bitcoin community over whether its case actually holds up.

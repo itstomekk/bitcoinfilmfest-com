@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1824413147404370113
 source_url: https://x.com/bitcoinfilmfest/status/1824413147404370113
 category: cinema
 ---
-Forging a Country premieres in San Salvador
+<a class="film-title" href="/cinema/films/forging-a-country/">Forging a Country</a> premieres in San Salvador

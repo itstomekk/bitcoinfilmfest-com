@@ -7,4 +7,4 @@ date_precision: day
 source_url: https://variety.com/2026/film/global/thriller-lifehack-theatrical-release-in-u-s-1236679074/
 category: cinema
 ---
-*LifeHack*, the Fassbender-produced screenlife thriller built around a Bitcoin cyber-heist, got a US theatrical release date of May 15. The film unfolds entirely through screens and devices.
+<a class="film-title" href="/cinema/films/lifehack/">LifeHack</a>, the Fassbender-produced screenlife thriller built around a Bitcoin cyber-heist, got a US theatrical release date of May 15. The film unfolds entirely through screens and devices.

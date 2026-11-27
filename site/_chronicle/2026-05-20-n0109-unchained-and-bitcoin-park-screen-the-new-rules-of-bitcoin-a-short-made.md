@@ -7,4 +7,4 @@ url: https://bitcoinmagazine.com/press-releases/unchained-and-bitcoin-park-hit-t
 source_url: https://bitcoinmagazine.com/press-releases/unchained-and-bitcoin-park-hit-the-road-for-bitcoin-pizza-day-with-the-new-rules-of-bitcoin
 category: cinema
 ---
-Unchained and Bitcoin Park screen The New Rules of Bitcoin, a short made with Atlantic Re:think, in ten US cities for Pizza Day
+Unchained and Bitcoin Park screen <span class="film-title">The New Rules of Bitcoin</span>, a short made with Atlantic Re:think, in ten US cities for Pizza Day

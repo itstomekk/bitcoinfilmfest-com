@@ -8,4 +8,4 @@ display_date: Nov 2025
 source_url: https://www.hollywoodreporter.com/movies/movie-news/new-money-comedy-film-bitcoin-rain-rannu-tallinn-poff-2025-1236430508/
 category: cinema
 ---
-New Money — Estonian comedy about a couple grappling with sudden Bitcoin wealth, directed by Rain Rannu, premieres at Tallinn Black Nights (POFF)
+<a class="film-title" href="/cinema/films/new-money/">New Money</a> — Estonian comedy about a couple grappling with sudden Bitcoin wealth, directed by Rain Rannu, premieres at Tallinn Black Nights (POFF)

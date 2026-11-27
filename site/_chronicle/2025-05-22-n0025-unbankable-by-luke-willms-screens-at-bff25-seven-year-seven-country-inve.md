@@ -7,4 +7,4 @@ url: https://www.amazon.com/Unbankable-Luke-Willms-Documentary/dp/B0F473SHM3
 source_url: https://www.amazon.com/Unbankable-Luke-Willms-Documentary/dp/B0F473SHM3
 category: cinema
 ---
-Unbankable by Luke Willms screens at BFF25 — seven-year, seven-country investigation into Bitcoin adoption across Africa
+<a class="film-title" href="/cinema/films/unbankable/">Unbankable</a> by Luke Willms screens at BFF25 — seven-year, seven-country investigation into Bitcoin adoption across Africa

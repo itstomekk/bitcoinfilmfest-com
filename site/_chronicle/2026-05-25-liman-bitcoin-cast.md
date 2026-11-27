@@ -8,4 +8,4 @@ source_url: https://deadline.com/2026/05/doug-liman-ai-crypto-bitcoin-bezos-zuck
 category: cinema
 story_group: killing-satoshi
 ---
-Doug Liman's AI-made feature *Bitcoin* (formerly *Killing Satoshi*) will use likenesses of Bezos, Zuckerberg, Putin, and Eric Trump. The $70M film shoots in just 20 days.
+Doug Liman's AI-made feature <span class="film-title">Bitcoin</span> (formerly <span class="film-title">Killing Satoshi</span>) will use likenesses of Bezos, Zuckerberg, Putin, and Eric Trump. The $70M film shoots in just 20 days.

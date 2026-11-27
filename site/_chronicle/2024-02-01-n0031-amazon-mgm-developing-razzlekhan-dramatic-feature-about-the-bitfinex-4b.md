@@ -8,4 +8,4 @@ display_date: Feb 2024
 source_url: https://decrypt.co/214436/razzlekhan-amazon-bitfinex-bitcoin-heist-movie
 category: cinema
 ---
-Amazon MGM developing Razzlekhan — dramatic feature about the Bitfinex $4B Bitcoin laundering case, Lili Reinhart co-producing
+Amazon MGM developing <span class="film-title">Razzlekhan</span> — dramatic feature about the Bitfinex $4B Bitcoin laundering case, Lili Reinhart co-producing

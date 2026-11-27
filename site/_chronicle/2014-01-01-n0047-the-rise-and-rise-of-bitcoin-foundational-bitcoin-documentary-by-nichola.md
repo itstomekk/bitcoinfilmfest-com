@@ -8,4 +8,4 @@ display_date: 2014
 source_url: https://www.coindesk.com/markets/2014/10/10/rise-and-rise-of-bitcoin-documentary-gets-long-awaited-worldwide-release
 category: cinema
 ---
-The Rise and Rise of Bitcoin — foundational Bitcoin documentary by Nicholas Mross premieres at Tribeca Film Festival
+<a class="film-title" href="/cinema/films/the-rise-and-rise-of-bitcoin/">The Rise and Rise of Bitcoin</a> — foundational Bitcoin documentary by Nicholas Mross premieres at Tribeca Film Festival

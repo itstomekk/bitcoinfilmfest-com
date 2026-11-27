@@ -7,4 +7,4 @@ url: https://x.com/bitcoinfilmfest/status/1834968634310951157
 source_url: https://x.com/bitcoinfilmfest/status/1834968634310951157
 category: cinema
 ---
-Searching for Satoshi wins BFF24 Golden Rabbit for Best Story
+<a class="film-title" href="/cinema/films/searching-for-satoshi/">Searching for Satoshi</a> wins BFF24 Golden Rabbit for Best Story
