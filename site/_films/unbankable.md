@@ -1,6 +1,6 @@
 ---
 title: "Unbankable"
-description: "Luke Willms' debut documentary travels through seven African countries over seven years to ask whether local traditions, grassroots finance and technological experiments can offer lessons for Western economic renewal."
+description: "Luke Willms' debut documentary travels through seven countries over seven years to ask whether local traditions, grassroots finance and technological experiments can offer lessons for Western economic renewal."
 year: 2024
 type: Documentary
 status: released
@@ -13,16 +13,16 @@ writer: "Luke Willms"
 producer: "Luke Willms"
 cast:
   - "Luke Willms"
-studio: "Filmhub"
+studio: "Mbuntu Media"
 company: null
 country: "Canada"
-runtime: 68
+runtime: 70
 synopsis: >
-  Over seven years and across seven African countries, Luke Willms listens to
+  Over seven years and across seven countries, Luke Willms listens to
   people building financial systems outside the traditional banking model. His
   investigation connects microfinance, community lending, mobile money and
   digital finance to a wider question: can Africa's experience help renew the
-  West?
+  West? The filmmaker's listing gives a runtime of 70 minutes; streaming listings vary.
 bitcoin_angle: >
   Bitcoin appears as one part of a wider investigation into who gets served by
   money and who does not. The film places a brief look at Bitcoin alongside
@@ -41,14 +41,18 @@ official_links:
 sources:
   - label: "Unbankable — official synopsis"
     url: "https://unbankablemovie.com/synopsis"
-  - label: "Apple TV — film listing and runtime"
+  - label: "Mbuntu Media — production company"
+    url: "https://www.mbuntumedia.com/"
+  - label: "FilmFreeway — filmmaker credits and 70-minute runtime"
+    url: "https://filmfreeway.com/UNBANKABLE"
+  - label: "Apple TV — film listing (runtime varies)"
     url: "https://tv.apple.com/ca/movie/unbankable/umc.cmc.2b51h3w0b2lbdrvt0af8vklx2"
   - label: "Bitcoin FilmFest — BFF'25 edition dates"
     url: "https://bitcoinfilmfest.com/bff25"
-  - label: "Bitcoin FilmFest — BFF'25 official selection"
-    url: "https://bitcoinfilmfest.com/part-one-official-selection-feature-films-at-bff25"
+  - label: "Bitcoin FilmFest — BFF'25 archive and programme"
+    url: "https://bitcoinfilmfest.com/25/"
   - label: "Bitcoin FilmFest — Luke Willms interview"
-    url: "https://bitcoinfilmfest.com/luke-willms-unbankable-may-2025/"
+    url: "https://bitcoinfilmfest.com/reel/luke-willms-unbankable/"
   - label: "The News Forum — Canadian broadcast announcement"
     url: "https://www.globenewswire.com/news-release/2024/12/05/2992128/0/en/the-news-forum-exclusive-canadian-broadcast-debut-unbankable-air-saturday-december-7th-and-sunday-december-8th-at-8-00-pm-et.html"
 bff_screening: "BFF'25 (May 2025, Warsaw)"

@@ -93,7 +93,8 @@
         Only claim `genre` where the front matter genuinely names a genre. "Feature"
         and "Short" are release forms, not genres, and would be junk data.
       {% endcomment %}{% if page.type contains 'Documentar' %},
-      "genre": "Documentary"{% endif %}{% if page.director %},
+      "genre": "Documentary"{% endif %}{% if page.directors and page.directors.size > 0 %},
+      "director": [{% for director in page.directors %}{"@type": "Person", "name": {{ director | jsonify }}}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% elsif page.director %},
       "director": {"@type": "Person", "name": {{ page.director | jsonify }}}{% endif %}{% if page.cast and page.cast.size > 0 %},
       "actor": [{% for actor in page.cast %}{"@type": "Person", "name": {{ actor | jsonify }}}{% unless forloop.last %}, {% endunless %}{% endfor %}]{% endif %}{% if page.studio %},
       "productionCompany": {"@type": "Organization", "name": {{ page.studio | jsonify }}}{% endif %}{% if page.country %},

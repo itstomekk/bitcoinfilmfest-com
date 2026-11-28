@@ -4,9 +4,12 @@ description: "A global Bitcoin documentary exploring how millions find financial
 year: 2025
 type: Documentary
 status: released
+director: "David Kuhn and Lauren Sieckmann"
 directors:
   - "David Kuhn"
   - "Lauren Sieckmann"
+writer: "David Kuhn and Lauren Sieckmann"
+producer: "David Kuhn; Lauren Sieckmann (co-producer)"
 cast:
   - "Jack Dorsey"
   - "Michael Saylor"
@@ -24,10 +27,8 @@ synopsis: >
   Nigeria, London, and Portugal, Unbanked explores how millions may find financial freedom
   by becoming their own banks and cutting out the middleman.
 bitcoin_angle: >
-  The film directly addresses Bitcoin's role in financial inclusion for the unbanked
-  population globally. It challenges the assumption that Western financial systems are
-  the sole solution provider, showcasing real-world stories of individuals and communities
-  using Bitcoin to escape crushing inflation and access to decentralized monetary systems.
+  The filmmakers explore whether Bitcoin can offer monetary self-determination and
+  financial access to people underserved by traditional financial systems.
 studio: "Full Time Films"
 platform: "Apple TV, Amazon Prime Video, Google TV"
 release_date: "June 20, 2025 (initial premiere); October 31, 2025 (wide release)"
@@ -35,14 +36,13 @@ trailer: "https://www.youtube.com/watch?v=LaPYNycHfcs"
 awards:
   - "Best Documentary, Manhattan Film Festival"
   - "Spotlight Award, Harlem International Film Festival"
-  - "2026 Academy Awards contender, Best Documentary Feature"
 sources:
   - label: "IMDb"
     url: "https://www.imdb.com/title/tt31329590/"
   - label: "Bitcoin Magazine - Press Release"
     url: "https://bitcoinmagazine.com/press-releases/unbanked-documentary-premiere"
-  - label: "Unbanked Official Website"
-    url: "https://www.unbankedmovie.com/"
+  - label: "Unbanked — filmmaker credits and official website"
+    url: "https://www.unbankedmovie.com/trailer"
   - label: "Yahoo Entertainment - Coverage"
     url: "https://www.yahoo.com/entertainment/movies/articles/bitcoin-documentary-featuring-michael-saylor-212026552.html"
 ---
