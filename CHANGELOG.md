@@ -2,6 +2,11 @@
 
 Short, human-readable record of public website changes. One dated entry is required for every source change that affects the website.
 
+## 2026-11-27 — Correct Unbanked and Unbankable film credits
+
+- Unbanked: show directors David Kuhn and Lauren Sieckmann and correct the Bitcoin description using the film team’s sources.
+- Unbankable: correct the production company, filming-country description and use the filmmaker’s 70-minute festival-listing runtime; add the film’s own credits and BFF interview sources. Runtime varies across listings.
+
 ## 2026-11-26 — Take down the Satoshi (Jason Zada) page for now
 
 - Satoshi (Jason Zada): remove the film page and its page test. The project is still only announced, with filming planned for spring 2027. The page may return when there is more to show.
